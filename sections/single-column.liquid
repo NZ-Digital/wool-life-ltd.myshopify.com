@@ -1,0 +1,133 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.single-column_background_color }};
+  }
+  .wl_single-column {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    align-items: start;
+    justify-items: start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 96px 20px;
+    min-height: 320px;
+    max-width: 1280px;
+    gap: 20px;
+  }
+  .wl_single-column_inner {
+    grid-column: 3 / 11;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: {{ section.settings.single-column_text_color }};
+    text-align: center;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 42px */
+    text-align: left;
+    justify-self: center;
+  }
+  .wl_single-column_inner span {
+    font-weight: 700;
+  }
+  .wl_single-column_inner h2 {
+    color: #154734;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 30px */
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .wl_single-column_inner h3 {
+    color: #154734;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 767px) {
+    .wl_single-column {
+      padding: 60px 20px;
+    }
+    .wl_single-column_inner {
+      grid-column: 1 / -1;
+    }
+    .wl_single-column_inner {
+      font-size: 14px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_single-column">
+  <div class="wl_single-column_inner">
+    {{ section.settings.single-column_text }}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Single Column",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "single-column_text",
+     "label": "Text",
+    },
+        {
+        "type": "select",
+        "id": "single-column_text_color",
+        "label": "Text Color",
+        "options": [
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          },   
+          {
+            "value": "#E9DDC6",
+            "label": "Beige"
+          } 
+        ],
+        "default": "#154734"
+      },
+        {
+        "type": "select",
+        "id": "single-column_background_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "value": "#E9DDC6",
+            "label": "Beige"
+          },    
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          },
+          {
+            "value": "#FFF5E5",
+            "label": "Beige - Light"
+          }    
+        ],
+        "default": "#E9DDC6"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Single Column"
+    }
+  ]
+}
+{% endschema %}

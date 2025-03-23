@@ -1,0 +1,77 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background: #FFF5E5;
+  }
+  
+  #shopify-section-{{ section.id }} .wl_image-full-width {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    min-height: 448px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('{{ section.settings.image-full-width_image_picker| image_url }}');
+    background-position: bottom left, top right, center center;
+    background-size: auto, auto, cover;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    margin: auto;
+  }
+  #shopify-section-{{ section.id }} .wl_image-full-width.no-squiggles {
+    background-image: url('{{ section.settings.image-full-width_image_picker| image_url }}');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl_image-full-width {
+      min-height: 320px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_image-full-width {{ section.settings.image-full-width_show-squiggles }}">
+  
+</div>
+
+
+{% schema %}
+{
+  "name": "Image Full Width",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image-full-width_image_picker",
+     "label": "Image",
+    },
+      {
+        "type": "select",
+        "id": "image-full-width_show-squiggles",
+        "label": "Show squiggles?",
+        "options": [
+          {
+            "value": "",
+            "label": "Show"
+          },  
+          {
+            "value": "no-squiggles",
+            "label": "Hide"
+          }  
+        ],
+        "default": ""
+      },
+  ],
+  "presets": [
+    {
+      "name": "Image"
+    }
+  ]
+}
+{% endschema %}

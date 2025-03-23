@@ -1,0 +1,180 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    
+  }
+
+  .wl_cta {
+    display: flex;
+    flex-direction: row;
+  }
+  .wl_cta_content-col {
+    width: 50%;
+    min-height: 600px;
+    display: flex;
+    background-color: {{ section.settings.cta_background_color }};
+    padding: 96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    height: fit-content;
+    background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/cta_triangle_squiggle_squares.svg?v=1733781114');
+    background-position: bottom left; /* Positions of each background */
+    background-size: contain; /* Sizing for each background */
+    background-repeat: no-repeat; /* Repeat settings */
+  }
+  .wl_cta_content-col_inner {
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 400px;
+  }
+  .wl_cta_heading {
+    color: #E9DDC6;
+    font-family: Sora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 52.8px */
+  }
+  .wl_cta_link {
+    color: #E9DDC6;
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  .wl_cta_link:hover {
+    opacity: 0.75;
+  }
+  .wl_cta_img-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    min-height: 600px;
+    width: 50%;
+    /* background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/cta_triangle_squiggle_squares.svg?v=1733781114'); */
+    background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('{{ section.settings.cta_image_picker| image_url }}');
+    background-position: top right, center center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 1024px) {
+    .wl_cta_content-col {
+      padding: 48px;
+    }
+  }
+  @media (max-width: 767px) {
+    .wl_cta {
+        flex-direction: column;
+    }
+    .wl_cta_content-col {
+      width: 100%;
+      min-height: 400px;
+    }
+    .wl_cta_img-col {
+      width: 100%;
+      min-height: 320px;
+    }
+    .wl_cta_heading {
+      font-size: 32px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_cta">
+  <div class="wl_cta_content-col">
+    <div class="wl_cta_content-col_inner">
+      <h2 class="wl_cta_heading">{{ section.settings.cta_heading }}</h2>
+      <a class="wl_cta_link" href="{{ section.settings.cta_link-url }}">{{ section.settings.cta_link-text }}</a>
+    </div>
+  </div>
+  <div class="wl_cta_img-col">
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Call To Action",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "cta_image_picker",
+     "label": "Image",
+    },
+    {
+      "type": "text",
+      "id": "cta_heading",
+     "label": "Heading",
+    },
+    {
+        "type": "select",
+        "id": "cta_heading_color",
+        "label": "Heading Color",
+        "options": [
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          },  
+          {
+            "value": "#E9DDC6",
+            "label": "Beige"
+          }  
+        ],
+        "default": "#154734"
+      },
+      {
+        "type": "select",
+        "id": "cta_background_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "value": "#FFF5E5",
+            "label": "Beige - Light"
+          },    
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          },
+          {
+            "value": "#44693D",
+            "label": "Green - Light"
+          }
+        ],
+        "default": "#FFF5E5"
+      },
+      {
+        "type": "text",
+        "id": "cta_link-text",
+       "label": "Link",
+      },
+      {
+        "type": "text",
+        "id": "cta_link-url",
+       "label": "URL",
+      },
+  ],
+  "presets": [
+    {
+      "name": "Call To Action"
+    }
+  ]
+}
+{% endschema %}

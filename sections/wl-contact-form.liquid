@@ -1,0 +1,212 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: #154734;
+    color: #E9DDC6;
+  }
+  #shopify-section-{{ section.id }} .wl_contact-form {
+    display: flex;
+    gap: 64px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 128px 20px 80px 20px;
+    max-width: 512px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .wl_contact-form_heading {
+    color: #E9DDC6;
+    font-family: Sora;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 40px */
+  }
+  .wl_contact-form_heading-message {
+    color: #E9DDC6;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 40px */
+  }
+  .wl_form-status-list li {
+    color: #E9DDC6;
+    font-family: Sora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 40px */
+  }
+  .contact__fields {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .wl_message-field {
+    margin-top: 20px;
+  }
+  .contact__button {
+    margin-top: 0;
+  }
+  .wl_button-submit {
+    background: #E9DDC6;
+    color: #154734 !important;
+    padding: 20px 24px;
+    text-align: center;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    min-width: 160px;
+    max-width: fit-content;
+    margin-top: 48px !important;
+    transition: background 0.3s ease;
+  }
+  .wl_button-submit:hover {
+    background: #E9DDC680;
+  }
+  input {
+    box-shadow: none;
+  }
+  textarea {
+    box-shadow: none;
+  }
+  .field__input:focus {
+    box-shadow: none;
+  }
+  .field:hover.field:after , .field:after {
+    box-shadow: none;
+  }
+  .wl_button-submit:before, .wl_button-submit:after {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+
+  }
+{%- endstyle -%}
+
+<div class="wl_contact-form">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="wl_contact-form_heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+      {%- if form.posted_successfully? -%}
+        <h2 class="wl_contact-form_heading-message form-status form-status-list form__message" tabindex="-1" autofocus>
+          {{- 'icon-success.svg' | inline_asset_content -}}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="wl_contact-form_heading-message form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {{- 'icon-error.svg' | inline_asset_content -}}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+        </div>
+        <ul class="wl_form-status-list form-status-list caption-large" role="list">
+          <li>
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+          </li>
+        </ul>
+      {%- endif -%}
+      <div class="contact__fields">
+        <div class="field">
+          <input
+            class="field__input"
+            autocomplete="name"
+            type="text"
+            id="ContactForm-name"
+            name="contact[{{ 'templates.contact.form.name' | t }}]"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            placeholder="{{ 'templates.contact.form.name' | t }}"
+          >
+          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+        </div>
+        <div class="field field--with-error">
+          <input
+            autocomplete="email"
+            type="email"
+            id="ContactForm-email"
+            class="field__input"
+            name="contact[email]"
+            spellcheck="false"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+              aria-describedby="ContactForm-email-error"
+            {% endif %}
+            placeholder="{{ 'templates.contact.form.email' | t }}"
+          >
+          <label class="field__label" for="ContactForm-email">
+            {{- 'templates.contact.form.email' | t }}
+            <span aria-hidden="true">*</span></label
+          >
+          {%- if form.errors contains 'email' -%}
+            <small class="contact__field-error" id="ContactForm-email-error">
+              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+              <span class="form__message">
+                <span class="svg-wrapper">
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                </span>
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </span>
+            </small>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="wl_message-field field">
+        <textarea
+          rows="10"
+          id="ContactForm-body"
+          class="text-area field__input"
+          name="contact[{{ 'templates.contact.form.comment' | t }}]"
+          placeholder="Please enter your message"
+        >
+          {{- form.body -}}
+        </textarea>
+        <label class="form__label field__label" for="ContactForm-body">
+          Message
+        </label>
+      </div>
+      <div class="contact__button">
+        <button type="submit" class="wl_button-submit button">
+          {{ 'templates.contact.form.send' | t }}
+        </button>
+      </div>
+    {%- endform -%}
+</div>
+
+{% schema %}
+{
+  "name": "WL Contact Form",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "t:sections.contact-form.settings.title.default",
+      "label": "t:sections.contact-form.settings.title.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "WL Contact Form"
+    }
+  ]
+}
+{% endschema %}

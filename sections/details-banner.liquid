@@ -1,0 +1,172 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background: #FFF5E5;
+  }
+  
+  .wl_details-banner {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    min-height: 448px;
+    background-image: url('{{ section.settings.details-banner_image_picker| image_url }}');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    margin: auto;
+  }
+  .wl_details-banner_details-wrapper {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #154734;
+    margin: 0 auto;
+  }
+  .wl_details-banner_details {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    gap: 20px;
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    padding: 64px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .wl_details-banner_details-inner {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+    gap: 64px 64px;
+  }
+  .wl_details-banner_details_grid-item {
+    width: 192px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .wl_details-banner_details_grid-item img {
+    max-width: 192px;
+    height: 48px;
+  }
+  .wl_details-banner_details_grid-item_heading {
+    color: #E9DDC6;
+    text-align: center;
+    font-family: Sora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 14px */  
+    margin-top: 24px;
+  }
+  .wl_details-banner_details_grid-item p {
+    color: #E9DDC6CC;
+    text-align: center;
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 15px */
+    margin-top: 8px;
+  }
+  
+  @media (max-width: 767px) {
+    .wl_details-banner {
+      min-height: 320px;
+    }
+    .wl_details-banner_details {
+      padding: 40px 20px;
+    }
+    .wl_details-banner_details-inner {
+      grid-template-columns: 1fr 1fr;
+      grid-column: span 12;
+      gap: 32px;
+    }
+    .wl_details-banner_details_grid-item {
+      width: 100%;
+      max-width: 192px;
+    }
+    .wl_details-banner_details_grid-item img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .wl_details-banner_details_grid-item_heading {
+      font-size: 10px;
+    }
+    .wl_details-banner_details_grid-item p {
+      font-size: 8px;
+      margin-top: 4px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_details-banner"></div>
+<div class="wl_details-banner_details-wrapper">
+  <div class="wl_details-banner_details">
+    <div class="wl_details-banner_details-inner">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'grid-item' %}
+            <div class="wl_details-banner_details_grid-item">
+              <img src="{{ block.settings.grid-item_image | image_url }}">
+              <h3 class="wl_details-banner_details_grid-item_heading">{{ block.settings.grid-item_heading }}</h3>
+              {{ block.settings.grid-item_paragraph }}
+            </div>
+        {% endcase %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Details Banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "details-banner_image_picker",
+     "label": "Image",
+    }
+  ],
+    "blocks": [
+    {
+      "type": "grid-item",
+      "name": "Grid Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "grid-item_image",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "grid-item_heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "grid-item_paragraph",
+          "label": "Paragraph"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Details Banner"
+    }
+  ]
+}
+{% endschema %}

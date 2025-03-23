@@ -1,0 +1,115 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: #154734;
+  }
+  
+  #shopify-section-{{ section.id }} .wl_content-column {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    min-height: 448px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggles-beige-bottom-left.svg'), url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggles-beige-top-right.svg');
+    background-position: bottom left, top right;
+    background-size: auto, auto;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: center;
+  }
+  #shopify-section-{{ section.id }} .wl_content-column.no-squiggles {
+    background-image: unset;
+  }
+  #shopify-section-{{ section.id }} .wl_content-column_inner {
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 0 auto;
+    grid-column: span 12;
+    padding: 96px 20px;
+  }
+  #shopify-section-{{ section.id }} .wl_content-column_heading {
+    color: #E9DDC6;
+    text-align: center;
+    font-family: Sora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 52.8px */
+  }
+  #shopify-section-{{ section.id }} .wl_content-column_content {
+    color: #E9DDC6CC;
+    text-align: center;
+    font-family: Sora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+  }
+
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl_content-column {
+      min-height: 320px;
+      background-image: none;
+    }
+    #shopify-section-{{ section.id }} .wl_content-column_heading {
+        font-size: 24px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_content-column {{ section.settings.content-column_show-squiggles }}">
+  <div class="wl_content-column_inner">
+    <h2 class="wl_content-column_heading">{{ section.settings.content-column_heading }}</h2>
+    <p class="wl_content-column_content">{{ section.settings.content-column_text }}</p>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Content Column",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "content-column_heading",
+     "label": "Heading",
+    },
+      {
+      "type": "textarea",
+      "id": "content-column_text",
+     "label": "Text",
+    },
+    {
+      "type": "select",
+      "id": "content-column_show-squiggles",
+      "label": "Show squiggles?",
+      "options": [
+        {
+          "value": "",
+          "label": "Show"
+        },  
+        {
+          "value": "no-squiggles",
+          "label": "Hide"
+        }  
+      ],
+      "default": ""
+    },
+  ],
+  "presets": [
+    {
+      "name": "Content Column"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,91 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    width: 100%;
+    background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('{{ section.settings.image-box_image_picker| image_url }}');
+    background-position: bottom left, top right, center center;
+    background-size: auto, auto, cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #shopify-section-{{ section.id }} .wl_image-box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    min-height: 448px;
+    max-width: 1280px;
+    justify-content: center;
+    gap: 20px;
+    padding: 96px 20px;
+  }
+  #shopify-section-{{ section.id }} .wl_image-box_box {
+    background: #E9DDC6;
+    width: 480px;
+    height: 448px;
+    flex-shrink: 0;
+    padding: 80px 72px;
+  }
+  #shopify-section-{{ section.id }} .wl_image-box_heading {
+    color: #154734;
+    font-family: Sora;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 40px */
+  }
+
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl_image-box {
+      min-height: 320px;
+      padding: 60px 20px;
+    }
+    #shopify-section-{{ section.id }} .wl_image-box_box {
+      padding: 40px 36px;
+      width: unset;
+      grid-column: span 10;
+      height: unset;
+  }
+    #shopify-section-{{ section.id }} .wl_image-box_heading {
+      font-size: 20px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_image-box">
+  <div class="wl_image-box_box">
+    <h2 class="wl_image-box_heading">{{ section.settings.image-box_heading }}</h2>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Image Box",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image-box_image_picker",
+     "label": "Image",
+    },
+    {
+      "type": "textarea",
+      "id": "image-box_heading",
+     "label": "Heading",
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Box"
+    }
+  ]
+}
+{% endschema %}

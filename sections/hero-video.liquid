@@ -1,0 +1,204 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.hero-video_background_color }};
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video {
+    height: 90vh;
+    display: flex;
+    position: relative;
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 71, 52, 0.25); /* Green with 90% opacity */
+    z-index: 1; /* Place behind content */
+    background-image: url(https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggles-green-light.svg?v=1733883814);
+    background-position: bottom right;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video_wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    gap: 20px; /* Gutter between columns */
+    margin: 40px; /* Margin around the grid */
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 96px 20px;
+    max-width: 1280px;
+    z-index: 1;
+    height: 90vh;
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video_inner {
+    grid-column: 1 / -1;
+    display: flex;
+    max-width: 590px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video_subheading {
+    color: {{ section.settings.hero-video_subheading_color }};
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video_heading {
+    color: {{ section.settings.hero-video_heading_color}};
+    font-family: Sora;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 70.4px */
+    text-transform: capitalize;
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video_button {
+    background: #E9DDC6;
+    padding: 20px 24px;
+    color: #154734; 
+    text-align: center;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  #shopify-section-{{ section.id }} .wl_hero-video_button:hover {
+    background: #E9DDC680;
+  }
+
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl_hero-video_wrapper {
+      padding: 60px 20px;
+    }
+    #shopify-section-{{ section.id }} .wl_hero-video_inner {
+      grid-column: span 12;
+    }
+    #shopify-section-{{ section.id }} .wl_hero-video_heading {
+      font-size: 32px;
+    }
+    #shopify-section-{{ section.id }} .wl_hero-video_button {
+      font-size: 14px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="wl_hero-video">
+  <video style="width: 100%; height: auto; object-fit: cover; position: absolute; height: 90vh;" autoplay loop muted playsinline playsinline="playsinline" autoplay="autoplay" preload="metadata" poster="//woollife-dev.myshopify.com/cdn/shop/files/preview_images/f761fb0fb0e341d6b8561b31cdeefa50.thumbnail.0000000000_1100x.jpg?v=1733880686">
+    <source src="{{ section.settings.hero-video_video.sources[1].url }}" type="video/mp4">
+    <img src="//woollife-dev.myshopify.com/cdn/shop/files/preview_images/f761fb0fb0e341d6b8561b31cdeefa50.thumbnail.0000000000_1100x.jpg?v=1733880686">
+  </video>
+  <div class="wl_hero-video_wrapper">
+    <div class="wl_hero-video_inner">
+      <h5 class="wl_hero-video_subheading">{{ section.settings.hero-video_subheading }}</h5>
+      <h1 class="wl_hero-video_heading">{{ section.settings.hero-video_heading }}</h1>
+      <a href="{{ section.settings.hero-video_button-url }}" class="wl_hero-video_button">{{ section.settings.hero-video_button-text }}</a>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Hero Video",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero-video_subheading",
+     "label": "Subheading",
+    },
+    {
+      "type": "text",
+      "id": "hero-video_heading",
+     "label": "Heading",
+    },
+    {
+      "type": "text",
+      "id": "hero-video_button-text",
+     "label": "Button Text",
+    },
+    {
+      "type": "url",
+      "id": "hero-video_button-url",
+     "label": "Button URL",
+    },
+    {
+      "type": "video",
+      "id": "hero-video_video",
+     "label": "Video",
+    },
+    {
+        "type": "select",
+        "id": "hero-video_subheading_color",
+        "label": "Subheading Color",
+        "options": [
+          {
+            "value": "#E9DDC680",
+            "label": "Beige - 50%"
+          },
+          {
+            "value": "#15473480",
+            "label": "Green - Dark - 50%"
+          }    
+        ],
+        "default": "#E9DDC680"
+      },
+        {
+        "type": "select",
+        "id": "hero-video_heading_color",
+        "label": "Heading Color",
+        "options": [
+          {
+            "value": "#E9DDC6",
+            "label": "Beige"
+          },
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          }    
+        ],
+        "default": "#E9DDC6"
+      },
+        {
+        "type": "select",
+        "id": "hero-video_background_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          },
+          {
+            "value": "#FFF5E5",
+            "label": "Beige - Light"
+          }    
+        ],
+        "default": "#154734"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Hero Video"
+    }
+  ]
+}
+{% endschema %}

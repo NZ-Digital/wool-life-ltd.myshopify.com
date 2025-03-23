@@ -1,0 +1,169 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.product-description_background_color }};
+  }
+  .wl_product-description {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    gap: 20px;
+    align-items: start;
+    justify-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+    padding: 96px 20px;
+    max-width: 1280px;
+  }
+  .wl_product-description_heading-col {
+    grid-column: 2 / 7;
+  }
+  .wl_product-description_box {
+    grid-column: 7 / -2;
+    background: #FFF9EF;
+    padding: 40px 52px 40px 40px;
+  }
+  .wl_product-description_heading {
+      color: #154734;
+      font-family: Sora;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 125%; /* 25px */
+      margin-bottom: 24px;
+  }
+  .wl_product-description p {
+    color: rgba(21, 71, 52, 0.80);
+    /* P */
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+  }
+  .wl_product-description li {
+    color: rgba(21, 71, 52, 0.80);
+    /* P */
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+  }
+  .wl_product-description p:not(:first-of-type) {
+    margin-top: 20px; /* Adjust the margin size as needed */
+  }
+
+
+  .wl_product-description_box {
+    max-width: 352px;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+  .wl_product-description_box_heading {
+    color: #154734;
+    /* H4 */
+    font-family: Sora;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 30px */
+    margin-bottom: 20px;
+  }
+  .wl_product-description_box_link {
+    color: #154734;
+    /* CTA */
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  .wl_product-description_box_link:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 767px) {
+    .wl_product-description {
+      padding: 60px 20px;
+    }
+    .wl_product-description p {
+      font-size: 14px;
+    }
+    .wl_product-description_heading-col {
+      grid-column: span 12;
+    }
+    .wl_product-description_heading {
+      font-size: 20px;
+    }
+    .wl_product-description_text-col {
+      grid-column: span 12;
+    }
+    .wl_product-description_box {
+        grid-column: 4 / -1;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_product-description">
+    <div class="wl_product-description_heading-col">
+      <h2 class="wl_product-description_heading">{{ section.settings.product-description_heading }}</h2>
+      {{ section.settings.product-description_text }}
+    </div>
+    <div class="wl_product-description_box">
+      <h4 class="wl_product-description_box_heading">Not sure what size roll to get?</h4>
+      <a class="wl_product-description_box_link" href="#">View Calculator</a>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Product Description",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "product-description_heading",
+     "label": "Heading",
+    },
+    {
+      "type": "textarea",
+      "id": "product-description_text",
+     "label": "Text",
+    },
+      {
+        "type": "select",
+        "id": "product-description_background_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "value": "#FFF5E5",
+            "label": "Beige - Light"
+          },    
+          {
+            "value": "#E9DDC6",
+            "label": "Beige"
+          },
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          }
+        ],
+        "default": "#FFF5E5"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Product Description"
+    }
+  ]
+}
+{% endschema %}

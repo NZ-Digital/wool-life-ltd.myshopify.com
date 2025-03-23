@@ -1,0 +1,98 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: #FFF5E5;
+    padding: 96px 20px;
+  }
+  .wl_download-box {
+    display: flex;
+    max-width: 352px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #FFF9EF;
+    padding: 40px;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  .wl_download-box_text {
+    color: #154734;
+    /* H4 */
+    font-family: Sora;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 30px */
+  }
+  .wl_download-box_text span {
+    font-weight: 700;
+  }
+  .wl_download-box_link {
+    color: #154734;
+    /* CTA */
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-algin: left;
+    transition: opacity 0.3s ease;
+  }
+  .wl_download-box_link:hover {
+      opacity: 0.75;
+  }
+
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} {
+      padding: 64px 20px 48px 20px;
+    }
+    .wl_download-box_text {
+      font-size: 16px;
+    }
+    .wl_download-box_link {
+      margin-top: 32px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_download-box">
+    <p class="wl_download-box_text">{{ section.settings.download-box_text }}</p>
+    <a class="wl_download-box_link" href="{{ section.settings.download-box_link-link }}" target="_blank">{{ section.settings.download-box_link-text }}</a>
+</div>
+
+
+{% schema %}
+{
+  "name": "Download Box",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "download-box_text",
+     "label": "Text",
+    },
+    {
+      "type": "text",
+      "id": "download-box_link-text",
+     "label": "Link Text",
+    },
+      {
+      "type": "text",
+      "id": "download-box_link-link",
+     "label": "Link Link",
+    }
+  ],
+  "presets": [
+    {
+      "name": "Download Box"
+    }
+  ]
+}
+{% endschema %}

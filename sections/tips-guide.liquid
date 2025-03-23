@@ -1,0 +1,175 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background: #FFF5E5;
+  }
+  
+  .wl_guide {
+    display: flex;
+    flex-direction: column;
+    padding: 96px 20px;
+    margin: 0 auto;
+  }
+  .wl_guide_heading {
+    color: #154734;
+    font-family: Sora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 60px */
+    text-align: center;
+  }
+  .wl_guide_steps {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 96px;
+    gap: 80px;
+    max-width: 794px;
+  }
+  .wl_guide_step {
+    display: flex;
+    gap: 64px;
+  }
+  .wl_guide_step img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .wl_guide_step_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 20px;
+  }
+  .wl_guide_step_heading {
+    color: #154734;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+  }
+  .wl_guide_step p {
+    color: #154734;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+  }
+  .wl_guide_button {
+    background: #154734;
+    padding: 20px 24px;
+    color: #E9DDC6;
+    text-align: center;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: fit-content;
+    transition: background 0.3s ease;
+    margin: 0 auto;
+    margin-top: 96px;
+  }
+  .wl_guide_button:hover {
+    background: #15473480;
+  }
+
+  
+  @media (max-width: 767px) {
+    .wl_guide_heading {
+      font-size: 24px;
+    }
+    .wl_guide_steps {
+        gap: 64px;
+        margin-top: 48px;
+    }
+    .wl_guide_step {
+        gap: 12px;
+        flex-direction: column;
+        max-width: 320px;
+      font-size: 14px;
+    }
+    .wl_guide_step_heading {
+      font-size: 14px;
+    }
+    .wl_guide_step p {
+      font-size: 14px;
+    }
+    .wl_guide_button {
+      font-size: 14px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_guide">
+    <h2 class="wl_guide_heading">Steps</h2>
+  
+    <div class="wl_guide_steps">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'step' %}
+            <div class="wl_guide_step">
+              <img src="{{ block.settings.step_image | image_url }}" width="320" height="188">
+              <div class="wl_guide_step_content">
+                <h3 class="wl_guide_step_heading">{{ block.settings.step_heading }}</h3>
+                {{ block.settings.step_paragraph }}
+              </div>
+            </div>
+        {% endcase %}
+      {%- endfor -%}
+    </div>
+
+  <a class="wl_guide_button" href="{{ section.settings.guide_product-link.url }}">View Product</a>
+</div>
+
+
+{% schema %}
+{
+  "name": "Guide",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "product",
+      "id": "guide_product-link",
+     "label": "Product Link",
+    }
+  ],
+    "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "step_image",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "step_heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "step_paragraph",
+          "label": "Paragraph"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Guide"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,142 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.hero_background_color }};
+  }
+  .wl_hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    gap: 20px; /* Gutter between columns */
+    margin: 40px; /* Margin around the grid */
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 80px 20px;
+    min-height: 400px;
+    max-width: 1280px;
+  }
+  .wl_hero_inner {
+    grid-column: 3 / -1;
+    display: flex;
+    max-width: 590px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .wl_hero_subheading {
+    color: {{ section.settings.hero_subheading_color }};
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+  .wl_hero_heading {
+    color: {{ section.settings.hero_heading_color}};
+    font-family: Sora;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 70.4px */
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 767px) {
+    .wl_hero {
+      padding-bottom: 60px;
+    }
+    .wl_hero_inner {
+      grid-column: span 10;
+    }
+    .wl_hero_heading {
+      font-size: 32px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_hero">
+  <div class="wl_hero_inner">
+    <h5 class="wl_hero_subheading">{{ section.settings.hero_subheading }}</h5>
+    <h1 class="wl_hero_heading">{{ section.settings.hero_heading }}</h1>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero_subheading",
+     "label": "Subheading",
+    },
+    {
+      "type": "textarea",
+      "id": "hero_heading",
+     "label": "Heading",
+    },
+    {
+        "type": "select",
+        "id": "hero_subheading_color",
+        "label": "Subheading Color",
+        "options": [
+          {
+            "value": "#E9DDC680",
+            "label": "Beige - 50%"
+          },
+          {
+            "value": "#15473480",
+            "label": "Green - Dark - 50%"
+          }    
+        ],
+        "default": "#E9DDC680"
+      },
+        {
+        "type": "select",
+        "id": "hero_heading_color",
+        "label": "Heading Color",
+        "options": [
+          {
+            "value": "#E9DDC6",
+            "label": "Beige"
+          },
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          }    
+        ],
+        "default": "#E9DDC6"
+      },
+        {
+        "type": "select",
+        "id": "hero_background_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          },
+          {
+            "value": "#FFF5E5",
+            "label": "Beige - Light"
+          }    
+        ],
+        "default": "#154734"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}

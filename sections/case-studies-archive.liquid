@@ -1,0 +1,361 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: #FFF5E5;
+    position: relative;
+  }  
+  #shopify-section-{{ section.id }} .wl_case-studies-archive {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+      margin: 40px;
+      align-items: end;
+      justify-items: start;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px 20px 0px 20px;
+      padding-bottom: 96px;
+      max-width: 1280px;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_heading-wrapper {
+    grid-column: 2 / 12;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_heading {
+    color: #154734;
+    font-family: Sora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 52.8px */
+    max-width: 569px;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_description {
+    color: #154734;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+    max-width: 480px;
+    margin-top: 16px;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_btn {
+    background: #154734;
+    padding: 20px 24px;
+    color: #E9DDC6;
+    text-align: center;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    width: fit-content;
+    transition: background 0.3s ease;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_btn:hover {
+    background: #15473480;
+  }
+
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_listing {
+    grid-column: 2 / 12;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    grid-gap: 40px 20px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    align-items: start;
+    justify-items: start;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item {
+      grid-column: span 6;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      color: #154734;
+      font-family: Sora;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 175%;
+      width: 100%;
+      height: 100%;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_content {
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_title-a {
+    text-decoration: none;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_title {
+    color: var(--Green---Dark, #154734);
+    font-family: Sora;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 30px */
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_title:hover {
+      opacity: 0.75;
+      cursor: pointer;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_link {
+    color: #154734;
+    /* CTA */
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_link:hover {
+      opacity: 0.75;
+  }
+
+
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl_case-studies-archive {
+      padding: 30px 20px;
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_heading-wrapper {
+      grid-column: span 12;
+      flex-direction: column;
+      gap: 20px;
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_listing {
+      grid-column: span 12;
+      margin-top: 32px;
+      gap: 16px;
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_heading {
+        font-size: 40px;
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_item {
+      grid-column: span 12;
+      /* height: 360px; */
+      background-position: center;
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_item_content {
+      padding: 28px 40px 24px 32px;
+      /* background-color: #154734; */
+      /* color: #E9DDC6; */
+      /* height: 160px; */
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_item_title {
+      font-size: 20px;
+      color: #E9DDC6;
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_green {
+      display: none !important;
+    }
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_item_link {
+      color: #E9DDC6;
+    }
+  }
+
+
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_img-cont {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_img-cont_img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_img-cont_quote-box {
+    background-color: #154734CC;
+    padding: 40px;
+    max-width: 352px;
+    height: fit-content;
+    /* min-height: 180px; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_img-cont_quote {
+    color: #E9DDC6;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 12.5px */
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_img-cont_quote-box p {
+    color: #E9DDC6;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 12.5px */
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_author {
+    color: #E9DDC680;
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    margin-top: 12px;
+    transition: opacity 0.3s ease;
+}
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_content {
+    border: 1px solid #E4D7BB;
+    border-top: none;
+    padding: 32px;
+}
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_title-a {
+    text-decoration: none;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_title {
+    color: #154734;
+    font-family: Sora;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 22px */
+    text-decoration: none;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_title:hover {
+    opacity: 0.75;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_content_excerpt {
+    margin-top: 16px;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_content_excerpt p {
+    font-size: 14px;
+    line-height: 150%;
+    color: #154734CC;
+  }
+  #shopify-section-{{ section.id }} .wl_case-studies-archive_item_link {
+    display: block;
+    color: #154734;
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 16px */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 32px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #shopify-section-{{ section.id }} .wl_case-studies-archive_img-cont_quote-box {
+      height:  100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+{%- endstyle -%}
+
+{%- paginate blog.articles by 6 -%}
+  <div class="wl_case-studies-archive">
+
+    <div class="wl_case-studies-archive_listing">
+      {%- for article in blog.articles -%}
+        <div class="wl_case-studies-archive_item">
+        <div class="wl_case-studies-archive_img-cont">
+            {% if article.image.src %}
+              <img class="wl_case-studies-archive_img-cont_img" src="{{ article.image.src | img_url: '488x488' }}" alt="{{ article.image.alt }}">
+            {% endif %}
+          <div class="wl_case-studies-archive_img-cont_quote-box">
+            <p class="wl_case-studies-archive_img-cont_quote">{{ article.content }}</p>
+          </div>
+        </div>
+        <div class="wl_case-studies-archive_item_content">
+          <a class="wl_case-studies-archive_item_title-a" href="{{ article.url }}">
+            <h3 class="wl_case-studies-archive_item_title">{{ article.title }}</h3>
+          </a>
+          <div class="wl_case-studies-archive_item_content_excerpt">{{ article.excerpt }}</div>
+          <a class="wl_case-studies-archive_item_link" href="{{ article.url }}">Read Case Study</a>
+        </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "Case Studies Archive",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "case-studies-archive_heading",
+     "label": "Heading",
+    },
+    {
+      "type": "richtext",
+      "id": "case-studies-archive_description",
+     "label": "Description",
+    },
+    {
+      "type": "image_picker",
+      "id": "case-studies-archive_case-study-1_img",
+     "label": "Case Study 1 - Image",
+    },
+    {
+      "type": "text",
+      "id": "case-studies-archive_case-study-1_title",
+     "label": "Case Study 1 - Title",
+    },
+    {
+      "type": "text",
+      "id": "case-studies-archive_case-study-1_link",
+     "label": "Case Study 1 - Link",
+    },
+    {
+      "type": "image_picker",
+      "id": "case-studies-archive_case-study-2_img",
+     "label": "Case Study 2 - Image",
+    },
+    {
+      "type": "text",
+      "id": "case-studies-archive_case-study-2_title",
+     "label": "Case Study 2 - Title",
+    },
+    {
+      "type": "text",
+      "id": "case-studies-archive_case-study-2_link",
+     "label": "Case Study 2 - Link",
+    }
+  ],
+  "presets": [
+    {
+      "name": "Case Studies Archive",
+    }
+  ]
+}
+{% endschema %}

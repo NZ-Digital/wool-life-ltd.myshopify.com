@@ -1,0 +1,163 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background: url('{{ section.settings.hero-background_image_picker| image_url }}');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #shopify-section-{{ section.id }}::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 71, 52, 0.75); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensures the overlay is above the background */
+  }
+  .wl_hero-background {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    gap: 20px; /* Gutter between columns */
+    margin: 40px; /* Margin around the grid */
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 80px 20px;
+    min-height: 500px;
+    max-width: 1280px;
+    z-index: 1;
+    position: relative;
+  }
+  .wl_hero-background_inner {
+    grid-column: 3 / -1;
+    display: flex;
+    max-width: 590px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .wl_hero-background_subheading {
+    color: {{ section.settings.hero-background_subheading_color }};
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+  .wl_hero-background_heading {
+    color: {{ section.settings.hero-background_heading_color}};
+    font-family: Sora;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 70.4px */
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 767px) {
+    .wl_hero-background {
+      padding-bottom: 60px;
+      min-height: 400px;
+    }
+    .wl_hero-background_inner {
+      grid-column: span 10;
+    }
+    .wl_hero-background_heading {
+      font-size: 32px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_hero-background">
+  <div class="wl_hero-background_inner">
+    <h5 class="wl_hero-background_subheading">{{ section.settings.hero-background_subheading }}</h5>
+    <h1 class="wl_hero-background_heading">{{ section.settings.hero-background_heading }}</h1>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Hero - Background",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero-background_image_picker",
+     "label": "Image",
+    },
+    {
+      "type": "text",
+      "id": "hero-background_subheading",
+     "label": "Subheading",
+    },
+    {
+      "type": "textarea",
+      "id": "hero-background_heading",
+     "label": "Heading",
+    },
+    {
+        "type": "select",
+        "id": "hero-background_subheading_color",
+        "label": "Subheading Color",
+        "options": [
+          {
+            "value": "#E9DDC680",
+            "label": "Beige - 50%"
+          },
+          {
+            "value": "#15473480",
+            "label": "Green - Dark - 50%"
+          }    
+        ],
+        "default": "#E9DDC680"
+      },
+        {
+        "type": "select",
+        "id": "hero-background_heading_color",
+        "label": "Heading Color",
+        "options": [
+          {
+            "value": "#E9DDC6",
+            "label": "Beige"
+          },
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          }    
+        ],
+        "default": "#E9DDC6"
+      },
+        {
+        "type": "select",
+        "id": "hero-background_background_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "value": "#154734",
+            "label": "Green - Dark"
+          },
+          {
+            "value": "#FFF5E5",
+            "label": "Beige - Light"
+          }    
+        ],
+        "default": "#154734"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Hero - Background"
+    }
+  ]
+}
+{% endschema %}

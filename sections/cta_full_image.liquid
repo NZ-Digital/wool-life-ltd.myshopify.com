@@ -1,0 +1,151 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: #154734;
+  }
+  
+  .wl_cta-image {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+      margin: 40px;
+      align-items: end;
+      justify-items: start;
+      width: 100%;
+      margin: 0 auto;
+      padding: 128px 20px 0px 20px;
+      max-width: 1280px;
+      background-color: #154734;
+  }
+  .wl_cta-image_inner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(233, 221, 198, 0.75);
+      z-index: 1;
+      background-position: bottom right;
+      background-size: auto;
+      background-repeat: no-repeat;
+  }
+  .wl_cta-image_inner {
+      grid-column: span 12;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+
+      min-height: 448px;
+      background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('{{ section.settings.cta-image_image_picker | image_url }}');
+      background-position: bottom left, top right, center center;
+      background-size: auto, auto, cover;
+      background-repeat: no-repeat;
+      position: relative;
+  }
+  .wl_cta-image_content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .wl_cta-image_inner h2 {
+    color: #154734;
+    text-align: center;
+    
+    /* H2 */
+    font-family: Sora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 52.8px */
+  }
+  .wl_cta-image_inner p {
+    color: #154734;
+    text-align: center;
+    
+    /* P */
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+    margin-top: 12px;
+  }
+  .wl_cta-image_btn {
+      background: var(--Green---Dark, #154734);
+      padding: 20px 24px;
+      color: var(--Beige, #E9DDC6);
+      text-align: center;
+      font-family: Sora;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-top: 48px;
+      transition: background 0.3s ease;
+      width: fit-content;
+      align-self: center;
+  }
+  .wl_cta-image_btn:hover {
+      background: #15473480;
+  }
+
+  @media (max-width: 767px) {
+    .wl_cta-image {
+      padding: 0px;
+    }
+    .wl_image-full-width {
+      min-height: 320px;
+    }
+     .wl_cta-image_inner h2 {
+       font-size: 24px;
+     }
+    .wl_cta-image_inner p {
+      font-size: 14px;
+    }
+    .wl_cta-image_btn {
+        font-size: 14px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="wl_cta-image">
+  <div class="wl_cta-image_inner">
+      <div class="wl_cta-image_content">
+        <h2>See Our Products</h2>
+        <p>Innovative wool products for a more sustainable world.</p>
+        <a class="wl_cta-image_btn" href="/collections/all">Shop Products</a>
+      </div>
+  </div>  
+</div>
+
+
+
+{% schema %}
+{
+  "name": "CTA Image",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "cta-image_image_picker",
+     "label": "Image",
+    }
+  ],
+  "presets": [
+    {
+      "name": "Call To Action Image"
+    }
+  ]
+}
+{% endschema %}
