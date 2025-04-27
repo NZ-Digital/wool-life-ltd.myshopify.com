@@ -150,6 +150,10 @@
     #shopify-section-{{ section.id }} .wl_image-with-content_content a {
          font-size: 14px;
     }
+
+    #shopify-section-{{ section.id }} .wl_image-with-content_preimage{
+      width: 70px;
+    }
     /* .wl_image-with-content.image-with-content_text-first .wl_image-with-content_heading {
         align-self: flex-start;
     }
@@ -164,9 +168,14 @@
   <div class="wl_image-with-content_img-col" style="background-image: url('{{ section.settings.image-with-content_image_picker| image_url }}');">
   </div>
   <div class="wl_image-with-content_content-col">
+    {% if section.settings.image-with-content_preimage %}
+      <img src="{{ section.settings.image-with-content_preimage | image_url }}" alt="Preimage" class="wl_image-with-content_preimage">
+    {% endif %}
     <h2 class="wl_image-with-content_heading">{{ section.settings.image-with-content_heading }}</h2>
     <p class="wl_image-with-content_content">{{ section.settings.image-with-content_text }}</p>
-  </div>
+    {% if section.settings.image-with-content_button_link %}
+      <a href="{{ section.settings.image-with-content_button_link }}" class="wl_button {{ section.settings.image-with-content_button_style }}">{{ section.settings.image-with-content_button_name }}</a>
+    {% endif %}
 </div>
 
 
