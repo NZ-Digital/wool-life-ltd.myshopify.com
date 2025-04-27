@@ -64,10 +64,10 @@
       "type": "image-with-content",
       "settings": {
         "image-with-content_layout": "image-with-content_text-first",
-        "image-with-content_image_picker": "shopify://shop_images/f62f7f3bc49980781ba49b72e964cf3ea2304f1c_1.jpg",
-        "image-with-content_heading": "Recycled, Recyclable, and Built to Last",
+        "image-with-content_image_picker": "shopify://shop_images/2298758b4c55868e3607aa81d3f771a6e61c291b.jpg",
+        "image-with-content_heading": "Sustainable Local Partnerships",
         "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "Your home deserves the natural comfort of wool – and now, so does your dog. Introducing a pet bed that combines exceptional comfort with purposeful sustainability, designed with the same care we put into our products for your home and garden.\nshop now",
+        "image-with-content_text": "Through our trusted textile partners, we proudly transform quality New Zealand textile waste into premium, sustainable pet comfort - 100% manufactured in New Zealand, supporting local communities and sustainable practices while ensuring your pet enjoys the finest materials our country has to offer.",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
         "image-with-content_id": ""
@@ -79,8 +79,8 @@
         "grid_item_yAGaAX": {
           "type": "grid-item",
           "settings": {
-            "grid-item_heading": "Designed For Comfort",
-            "grid-item_paragraph": "<p>The unique production process forms 100% New Zealand wool into small, springy knops that are firm enough to provide support, but soft enough to relax into. The production process has been refined to produce the most comfortable product possible, and we’re confident that once you’ve tried Comfort Knops, you’ll never want to go back.</p>",
+            "grid-item_heading": "Natural Wool Benefits",
+            "grid-item_paragraph": "<p>Stay cool in summer, warm in  winter—with hypoallergenic, moisture-wicking comfort that’s  kind to your dog and the planet. </p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -88,8 +88,8 @@
         "grid_item_WttHcw": {
           "type": "grid-item",
           "settings": {
-            "grid-item_heading": "Fire Resistant",
-            "grid-item_paragraph": "<p>Wool is one of the only fibres that naturally resists flaming, making it a safer option for home furnishings. In the event of a fire, your wool products will smoulder and singe instead of bursting into flame.</p>",
+            "grid-item_heading": "Thoughtfully Designed",
+            "grid-item_paragraph": "<p>Structured support, stylish looks, and easy-care comfort. Built to last and made for stretchers, sprawlers, and snoozers.  Available in multiple sizes.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -97,8 +97,8 @@
         "grid_item_8KChaC": {
           "type": "grid-item",
           "settings": {
-            "grid-item_heading": "100% New Zealand Wool",
-            "grid-item_paragraph": "<p>Wool is a totally natural and renewable resource. The environmental impact from the production has been reduced even further by using a low-energy manufacturing process and making Comfort Knops right here in New Zealand.</p>",
+            "grid-item_heading": "Unmatched Sustainability",
+            "grid-item_paragraph": "<p>New Zealand’s only fully circular dog bed. Locally made with recycled materials, built to last, and designed to be recycled again.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -119,7 +119,7 @@
     "featured_collection_home_3bpgQM": {
       "type": "featured-collection-home",
       "settings": {
-        "title": "Products for your home",
+        "title": "Products for your Pet",
         "heading_size": "h1",
         "description": "",
         "button_label": "",
