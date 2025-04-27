@@ -81,20 +81,21 @@
   /* Mobile layout */
   @media (max-width: 767px) {
     #shopify-section-{{ section.id }} .wl_image-box {
-      min-height: 280px;
+      min-height: 285px;
       display: flex;
       flex-direction: column;
       padding: 0 20px 40px;
+      background-image: url('{{ section.settings.image-box_image_picker | image_url }}');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     #shopify-section-{{ section.id }} .wl_image-box_box {
       width: 100%;
       height: auto;
       padding: 40px 20px;
       margin-top: 0px;
-      background-image: url('{{ section.settings.image-box_image_picker | image_url }}');
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
+
     }
     #shopify-section-{{ section.id }} .wl_image-box_heading    { font-size: 24px; }
     #shopify-section-{{ section.id }} .wl_image-box_subheading { font-size: 18px; }
