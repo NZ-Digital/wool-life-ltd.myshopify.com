@@ -13,7 +13,8 @@
       "type": "hero",
       "custom_css": [
         ".wl_hero_inner {max-width: 880px;}",
-        "@media (min-width: 767px) {.wl_hero_heading {font-size: 48px; }}"
+        "@media (min-width: 767px) {.wl_hero_heading {font-size: 48px; }}",
+        ".wl_hero_heading{width: 700px; max-width: 100%;}"
       ],
       "settings": {
         "hero_subheading": "PRODUCT CATEGORY - PETS",
