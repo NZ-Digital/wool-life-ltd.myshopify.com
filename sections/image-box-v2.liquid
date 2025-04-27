@@ -1,14 +1,4 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} {
-    width: 100%;
-    background-image: url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('https://cdn.shopify.com/s/files/1/0716/3884/3606/files/squiggle-squares-x2.svg?v=1733782757'), url('{{ section.settings.image-box_image_picker | image_url }}');
-    background-position: bottom left, top right, center center;
-    background-size: auto, auto, cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   /* Wrapper */
   #shopify-section-{{ section.id }} .wl_image-box {
@@ -70,6 +60,10 @@
   #shopify-section-{{ section.id }} .wl_image-box_button:hover {
     background: #15473480;
 }
+#shopify-section-{{ section.id }} .m-hide {
+      display: none;
+    }
+
 
   /* Mobile layout */
   @media (max-width: 767px) {
@@ -87,11 +81,17 @@
     }
     #shopify-section-{{ section.id }} .wl_image-box_heading    { font-size: 24px; }
     #shopify-section-{{ section.id }} .wl_image-box_subheading { font-size: 18px; }
+    #shopify-section-{{ section.id }} .d-hide {
+      display: none;
+    }
+    #shopify-section-{{ section.id }} .m-hide {
+      display: flex;
+    }
   }
 {%- endstyle -%}
 
 <div class="wl_image-box">
-  <div class="wl_image-box_box">
+  <div class="wl_image-box_box m-hide">
     {%- if section.settings.image-box_heading != blank -%}
       <h2 class="wl_image-box_heading">{{ section.settings.image-box_heading }}</h2>
     {%- endif -%}
@@ -110,6 +110,25 @@
       </a>
     {%- endif -%}
   </div>
+</div>
+<div class="wl_image-box_box d-hide">
+  {%- if section.settings.image-box_heading != blank -%}
+    <h2 class="wl_image-box_heading">{{ section.settings.image-box_heading }}</h2>
+  {%- endif -%}
+
+  {%- if section.settings.image-box_subheading != blank -%}
+    <h5 class="wl_image-box_subheading">{{ section.settings.image-box_subheading }}</h5>
+  {%- endif -%}
+
+  {%- if section.settings.image-box_description != blank -%}
+    <p class="wl_image-box_description">{{ section.settings.image-box_description }}</p>
+  {%- endif -%}
+
+  {%- if section.settings.image-box_button_text != blank and section.settings.image-box_button_link != blank -%}
+    <a href="{{ section.settings.image-box_button_link }}" class="wl_image-box_button">
+      {{ section.settings.image-box_button_text }}
+    </a>
+  {%- endif -%}
 </div>
 
 {% schema %}
