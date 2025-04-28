@@ -13,12 +13,11 @@
       "type": "hero",
       "custom_css": [
         ".wl_hero_inner {max-width: 880px;}",
-        "@media (min-width: 767px) {.wl_hero_heading {font-size: 48px; }}",
-        ".wl_hero_heading {width: 700px; max-width: 100%;}"
+        "@media (min-width: 767px) {.wl_hero_heading {font-size: 48px; }}"
       ],
       "settings": {
         "hero_subheading": "PRODUCT CATEGORY - PETS",
-        "hero_heading": "New Zealand's ONLY Fully Circular Dog Bed",
+        "hero_heading": "New Zealand's ONLY Fully <br>Circular Dog Bed",
         "hero_subheading_color": "#15473480",
         "hero_heading_color": "#154734",
         "hero_background_color": "#FFF5E5"
