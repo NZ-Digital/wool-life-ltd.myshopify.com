@@ -98,7 +98,7 @@
       ],
       "settings": {
         "product-description_heading": "Product Description",
-        "product-description_text": "<p>Introducing Wool.Life Pillows - the ultimate sleep solution for a healthier and more sustainable future. Our pillows have proven to improve deep sleep, leading to better brain function, memory and overall wellbeing. </p>\n<p>Made with natural ingredients and free from dust mites and harmful chemicals, Wool.Life Pillows provide relief from night sweats while contributing to a healthier, sustainable global future. Experience the comfort and benefits of our pillows and start sleeping your way to a better life.</p>",
+        "product-description_text": "<p>Crafted in New Zealand from 80% recycled wool-rich textiles, Wool.Life dog beds are New Zealand’s most sustainable dog bed! Our dog beds are designed for lasting comfort and true sustainability. Featuring a soft, supportive 100mm inner, a pre-shrunk poly-cotton cover, and an internal dust cover for added protection, they’re built to stay comfortable and strong for years. </p>\n<p>Better for your dog, better for the planet - and fully recyclable at the end of its life. A bed for your furry friend doesn’t have to cost the earth.</p>",
         "product-description_background_color": "#E9DDC6"
       }
     },
@@ -132,7 +132,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "weed-mulch-mat-rolls",
+        "collection": "fleck-socks",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
