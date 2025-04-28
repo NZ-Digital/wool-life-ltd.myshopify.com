@@ -4,6 +4,8 @@
       "type": "hero",
       "custom_css": [
         ".wl_hero_inner {max-width: 880px;}",
+        ".wl_hero_heading {width: 700px;}",
+        "@media (max-width: 767px) {.wl_hero_heading {width: 100%; }}",
         "@media (min-width: 767px) {.wl_hero_heading {font-size: 48px; }}"
       ],
       "settings": {
@@ -30,7 +32,7 @@
       "settings": {
         "image-with-content_layout": "image-with-content_text-first",
         "image-with-content_image_picker": "shopify://shop_images/f62f7f3bc49980781ba49b72e964cf3ea2304f1c_1.jpg",
-        "image-with-content_heading": "Recycled, Recyclable, and Built to Last",
+        "image-with-content_heading": "Recycled, Recyclable, <br>and Built to Last",
         "image-with-content_heading_color": "#154734",
         "image-with-content_text": "Your home deserves the natural comfort of wool – and now, so does your dog. Introducing a pet bed that combines exceptional comfort with purposeful sustainability, designed with the same care we put into our products for your home and garden.\nshop now",
         "image-with-content_text_color": "#154734",
@@ -45,7 +47,7 @@
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
         "image-with-content_image_picker": "shopify://shop_images/63f9e18149cf9ddd10c02ac3e9b9295fbb0c9bd5.jpg",
-        "image-with-content_heading": "More than just another dog bed",
+        "image-with-content_heading": "More than just <br>another dog bed",
         "image-with-content_heading_color": "#154734",
         "image-with-content_text": "The Wool.Life Dog Bed combines exceptional comfort with purposeful design. Made in New Zealand from 80% wool-rich recycled textiles, it offers your dog the perfect place to rest while giving new life to materials that would otherwise end up in landfill.",
         "image-with-content_text_color": "#154734",
@@ -116,6 +118,7 @@
     },
     "featured_collection_home_3bpgQM": {
       "type": "featured-collection-home",
+      "disabled": true,
       "settings": {
         "title": "Products for your Pet",
         "heading_size": "h1",
