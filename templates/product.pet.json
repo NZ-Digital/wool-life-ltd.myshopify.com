@@ -123,6 +123,7 @@
     },
     "product_related_products_RF49cV": {
       "type": "product-related-products",
+      "disabled": true,
       "custom_css": [
         ".card-information {display: none;}"
       ],
