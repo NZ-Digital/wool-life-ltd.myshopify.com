@@ -71,7 +71,6 @@
     },
     "image_box_v2_6aaJQC": {
       "type": "image-box-v2",
-      "disabled": true,
       "name": "Image Box V2",
       "settings": {
         "image-box_image_picker": "shopify://shop_images/Pet_feature_Image.jpg",

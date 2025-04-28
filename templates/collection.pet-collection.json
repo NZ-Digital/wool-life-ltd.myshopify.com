@@ -127,6 +127,7 @@
     },
     "featured_collection_home_3bpgQM": {
       "type": "featured-collection-home",
+      "disabled": true,
       "settings": {
         "title": "Products for your Pet",
         "heading_size": "h1",
