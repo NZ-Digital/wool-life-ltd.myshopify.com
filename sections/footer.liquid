@@ -204,6 +204,10 @@
     border: 1px solid #849681;
   }
 
+  .sub-heading{
+    padding-top: 27px;
+  }
+
 
 
   @media (max-width: 767px) {
@@ -247,6 +251,10 @@
     }
     .wl_footer_newsletter input.email {
       min-width: unset;
+    }
+
+    .sub-heading{
+      padding-top: 40px;
     }
   }
 
@@ -310,7 +318,7 @@
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
-        <h5 style="padding-top: 20px;" class="wl_footer_menu-col_heading">Case Studies</h5>
+        <h5 style="padding-top: 27px;" class="wl_footer_menu-col_heading sub-heading">Case Studies</h5>
         <ul>
           {% for link in linklists.footer-case-studies.links %}
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
