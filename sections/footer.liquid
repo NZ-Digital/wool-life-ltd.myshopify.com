@@ -343,6 +343,14 @@
           {% endfor %}
         </ul>
       </div>
+    <div class="wl_footer_menu-col">
+        <h5 class="wl_footer_menu-col_heading">Pet Products</h5>
+        <ul>
+          {% for link in linklists.footer-pet.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+    </div>
     </div>
     <div class="wl_footer_bottom">
       <h6 class="wl_footer_copyright">©{{ 'now' | date: '%Y' }} Copyright All rights reserved | Wool.Life</h6>
