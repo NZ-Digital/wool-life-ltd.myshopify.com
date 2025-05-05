@@ -310,6 +310,12 @@
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
+        <h5 class="wl_footer_menu-col_heading">Case Studies</h5>
+        <ul>
+          {% for link in linklists.footer-case-studies.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
       <div class="wl_footer_menu-col">
         <h5 class="wl_footer_menu-col_heading">Home Products</h5>
@@ -343,14 +349,6 @@
           {% endfor %}
         </ul>
     </div>
-      <div class="wl_footer_menu-col">
-        <h5 class="wl_footer_menu-col_heading">Case Studies</h5>
-        <ul>
-          {% for link in linklists.footer-case-studies.links %}
-            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
 
     </div>
     <div class="wl_footer_bottom">
