@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_7BNgpe": {
@@ -9,7 +18,7 @@
         "@media (min-width: 767px) {.wl_hero_heading {font-size: 48px; }}"
       ],
       "settings": {
-        "hero_subheading": "PRODUCT CATEGORY - PETS",
+        "hero_subheading": "PRODUCT CATEGORY - PET",
         "hero_heading": "New Zealand's ONLY Fully Circular Dog Bed",
         "hero_subheading_color": "#15473480",
         "hero_heading_color": "#154734",
@@ -32,14 +41,14 @@
       "settings": {
         "image-with-content_layout": "image-with-content_text-first",
         "image-with-content_image_picker": "shopify://shop_images/f62f7f3bc49980781ba49b72e964cf3ea2304f1c_1.jpg",
-        "image-with-content_heading": "Recycled, Recyclable, <br>and Built to Last",
+        "image-with-content_heading": "Recycled, Recyclable, and Built to Last",
         "image-with-content_heading_color": "#154734",
         "image-with-content_text": "Your home deserves the natural comfort of wool – and now, so does your dog. Introducing a pet bed that combines exceptional comfort with purposeful sustainability, designed with the same care we put into our products for your home and garden.\nshop now",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
         "image-with-content_id": "",
         "image-with-content_button_name": "SHOP NOW",
-        "image-with-content_button_link": "shopify://collections/pet"
+        "image-with-content_button_link": "shopify://products/dog-bed"
       }
     },
     "image_with_content_ptgAaD": {
@@ -47,14 +56,14 @@
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
         "image-with-content_image_picker": "shopify://shop_images/63f9e18149cf9ddd10c02ac3e9b9295fbb0c9bd5.jpg",
-        "image-with-content_heading": "More than just <br>another dog bed",
+        "image-with-content_heading": "More than just another dog bed",
         "image-with-content_heading_color": "#154734",
         "image-with-content_text": "The Wool.Life Dog Bed combines exceptional comfort with purposeful design. Made in New Zealand from 80% wool-rich recycled textiles, it offers your dog the perfect place to rest while giving new life to materials that would otherwise end up in landfill.",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
         "image-with-content_id": "",
         "image-with-content_button_name": "SHOP NOW",
-        "image-with-content_button_link": "shopify://collections/pet"
+        "image-with-content_button_link": "shopify://products/dog-bed"
       }
     },
     "image_with_content_BpFmTk": {
@@ -70,7 +79,7 @@
         "image-with-content_background_color": "#FFF5E5",
         "image-with-content_id": "",
         "image-with-content_button_name": "SHOP NOW",
-        "image-with-content_button_link": "shopify://collections/pet"
+        "image-with-content_button_link": "shopify://products/dog-bed"
       }
     },
     "3_columns_heading_icons_z4zwaU": {
