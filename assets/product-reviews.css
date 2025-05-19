@@ -5,16 +5,22 @@
 .product-reviews h3{
     color: #154734;
     font-weight: 300;
+    font-size: 23px;
+    letter-spacing: -4%;
 }
 
 .product-reviews p{
     color: #737373;
     font-weight: 300;
+    font-size: 16px;
+    letter-spacing: -4%;
 }
 
 .product-reviews p1{
     color: #154734;
     opacity: 0.8;
+    font-size: 14px;
+    letter-spacing: -4%;
 }
 
 
