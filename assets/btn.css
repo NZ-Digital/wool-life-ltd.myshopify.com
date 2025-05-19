@@ -1,0 +1,11 @@
+.btn-6{
+    p{
+        text-decoration: underline;
+    }
+}
+
+.theme-dark .btn-6{
+    p{
+        color: #fff;
+    }
+}

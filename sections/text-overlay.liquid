@@ -8,7 +8,7 @@
 </style>
 
 
-<div class="background_image">
+<div class="background_image theme-dark">
     <div class="row-1 a-cc">
         <div
             class="col p-xxl-tb a-cc g-sm"
@@ -34,6 +34,8 @@
                 {% endfor %}
                 </div>
             {% endif %}
+            </div>
+            <div class="col g-sm">
 
             {% comment %} Header Text {% endcomment %}
             {% if section.settings.header_text != blank %}
@@ -42,16 +44,18 @@
                 {{ section.settings.header_text }}
                 </{{ header_tag }}>
             {% endif %}
-
+            </div>
+            <div class="col g-sm">
             {% comment %} Button {% endcomment %}
             {% if section.settings.button_text != blank and section.settings.button_link != blank %}
                 <a
                 href="{{ section.settings.button_link }}"
-                class="wl_button btn-1"
+                class="wl_button btn-6"
                 >
-                {{ section.settings.button_text }}
+                <p>{{ section.settings.button_text }}</p>
                 </a>
             {% endif %}
+            </div>
             </div>
         </div>
     </div>
