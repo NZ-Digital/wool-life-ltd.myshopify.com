@@ -4,10 +4,10 @@
 <div class="shortz product-reviews">
   <div class="theme-standard">
     <div class="ingrid p-xl-tb">
-      <div class="grid-2 m-grid-1 g-sm review-list">
+      <div class="grid-2 m-grid-1 g-md review-list">
       {% for block in section.blocks %}
         {% assign r = block.settings %}
-        <div class="col g-md review m-md-b" {{ block.shopify_attributes }}>
+        <div class="col g-md review m-sm-b" {{ block.shopify_attributes }}>
           <div class="row g-sm a">
             <div class="row g-sm">
               {% if r.reviewer_name != blank %}
