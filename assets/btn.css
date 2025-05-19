@@ -1,11 +1,11 @@
 .btn-6{
-    p{
+    p, p1{
         text-decoration: underline;
     }
 }
 
 .theme-dark .btn-6{
-    p{
+    p, p1{
         color: #fff;
     }
 }

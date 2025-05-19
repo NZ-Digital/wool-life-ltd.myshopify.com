@@ -1,4 +1,4 @@
-.h0{
+h0{
     font-family: Sora;
     font-weight: 400;
     font-size: 60px;
@@ -10,3 +10,13 @@
     }
 }
 
+p1{
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 159%;
+    letter-spacing: -1%;
+    @media (max-width: 767px) {
+        font-size: 13px;
+    }
+}
