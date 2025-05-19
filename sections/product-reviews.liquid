@@ -2,11 +2,12 @@
 
 {% comment %} INSERT_YOUR_REWRITE_HERE {% endcomment %}
 <div class="shortz product-reviews">
-  <div class="ingrid">
-    <div class="grid-2 m-grid-1 g-sm review-list">
+  <div class="theme-standard">
+    <div class="ingrid ">
+      <div class="grid-2 m-grid-1 g-sm review-list">
       {% for block in section.blocks %}
         {% assign r = block.settings %}
-        <div class="col g-lg review" {{ block.shopify_attributes }}>
+        <div class="col g-md review" {{ block.shopify_attributes }}>
           <div class="row g-sm a">
             <div class="row g-sm">
               {% if r.reviewer_name != blank %}
@@ -38,15 +39,16 @@
           {% endif %}
             {%- comment -%} Review Title & Description {%- endcomment -%}
             {% if r.review_title != blank %}
-              <h4 class="review-title">{{ r.review_title }}</h4>
+              <h3 class="review-title">{{ r.review_title }}</h3>
             {% endif %}
             {% if r.review_description != blank %}
-              <p class="review-description">{{ r.review_description }}</p>
+              <p1 class="review-description">{{ r.review_description }}</p1>
             {% endif %}
           </div>
           <div class="col g-sm"></div>
         </div>
       {% endfor %}
+      </div>
     </div>
   </div>
 </div>
