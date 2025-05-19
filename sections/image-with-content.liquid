@@ -197,10 +197,12 @@
   <div class="wl_image-with-content_img-col" style="background-image: url('{{ section.settings.image-with-content_image_picker| image_url }}');">
   </div>
   <div class="wl_image-with-content_content-col">
+    <div class="{{ section.settings.image-with-content_preimage_location }} g-md">
     {% if section.settings.image-with-content_preimage %}
       <img src="{{ section.settings.image-with-content_preimage | image_url }}" alt="Preimage" class="wl_image-with-content_preimage">
     {% endif %}
     <h2 class="wl_image-with-content_heading">{{ section.settings.image-with-content_heading }}</h2>
+    </div>
     <p class="wl_image-with-content_content">{{ section.settings.image-with-content_text }}</p>
     {% if section.settings.image-with-content_button_link %}
       <a href="{{ section.settings.image-with-content_button_link }}" class="wl_button btn-1 {{ section.settings.image-with-content_button_style }}">{{ section.settings.image-with-content_button_name }}</a>
@@ -242,6 +244,22 @@
       "type": "image_picker",
       "id": "image-with-content_preimage",
       "label": "Preimage"
+    },
+    {
+      "type": "select",
+      "id": "image-with-content_preimage_location",
+      "label": "Pre-image Location",
+      "options": [
+        {
+          "value": "col",
+          "label": "Above"
+        },
+        {
+          "value": "row",
+          "label": "Left"
+        }
+      ],
+      "default": "col"
     },
     {
       "type": "text",
