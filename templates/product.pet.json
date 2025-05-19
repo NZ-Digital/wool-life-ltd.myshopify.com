@@ -105,11 +105,14 @@
     },
     "image_with_content_tpneW4": {
       "type": "image-with-content",
+      "custom_css": [
+        ".image-with-content_text-first {padding-top: 0px !important;}"
+      ],
       "settings": {
         "image-with-content_layout": "image-with-content_text-first",
         "image-with-content_image_picker": "shopify://shop_images/Dog_Bed_Details.jpg",
         "image-with-content_preimage_location": "col",
-        "image-with-content_heading": "More than just another dog bed",
+        "image-with-content_heading": "More than just <br>another dog bed",
         "image-with-content_heading_color": "#154734",
         "image-with-content_text": "The Wool.Life Dog Bed combines exceptional comfort with purposeful design. Made in New Zealand from 80% wool-rich recycled textiles, it offers your dog the perfect place to rest while giving new life to materials that would otherwise end up in landfill.",
         "image-with-content_text_color": "#154734",
@@ -121,6 +124,9 @@
     },
     "image_with_content_MxzqfW": {
       "type": "image-with-content",
+      "custom_css": [
+        ".image-with-content_image-first {padding-top: 0px !important;}"
+      ],
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
         "image-with-content_image_picker": "shopify://shop_images/Pet_feature_Image.jpg",
