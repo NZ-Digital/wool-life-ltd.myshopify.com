@@ -121,6 +121,9 @@
     },
     "image_with_content_MxzqfW": {
       "type": "image-with-content",
+      "custom_css": [
+        ".image-with-content_image-first {padding-top: 0px !important;}"
+      ],
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
         "image-with-content_image_picker": "shopify://shop_images/Pet_feature_Image.jpg",
