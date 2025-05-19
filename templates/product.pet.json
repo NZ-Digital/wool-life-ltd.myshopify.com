@@ -131,10 +131,46 @@
             "review_title": "🐶 “Best bed we’ve ever bought”",
             "review_description": "We’ve gone through a few dog beds over the years, but this one’s on another level. Our border collie, Archie, jumped straight on it and didn’t move for hours. It’s super sturdy but still soft, and I love that it’s made from recycled materials. Bonus points for being NZ-made too feels good to support local"
           }
+        },
+        "review_HGpDzt": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Blair T, Tauranga",
+            "tag": "Verified Buyer",
+            "date": "28 April 2025",
+            "number_of_stars": "5",
+            "review_title": "🐾 “Looks good and he actually uses it”",
+            "review_description": "Our golden retriever usually ends up on the couch, but since getting this bed she’s actually sleeping on it every night. It doesn’t go flat like the cheap ones, and it’s easy to unzip the cover and chuck it in the wash. Also doesn’t look ugly in the lounge, which is a win."
+          }
+        },
+        "review_9QxThc": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "",
+            "tag": "",
+            "date": "",
+            "number_of_stars": "5",
+            "review_title": "",
+            "review_description": ""
+          }
+        },
+        "review_bNdJcJ": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "",
+            "tag": "",
+            "date": "",
+            "number_of_stars": "5",
+            "review_title": "",
+            "review_description": ""
+          }
         }
       },
       "block_order": [
-        "review_PKe9in"
+        "review_PKe9in",
+        "review_HGpDzt",
+        "review_9QxThc",
+        "review_bNdJcJ"
       ],
       "name": "Product Reviews",
       "settings": {}
