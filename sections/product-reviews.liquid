@@ -1,0 +1,103 @@
+{% comment %} INSERT_YOUR_REWRITE_HERE {% endcomment %}
+<div class="shortz product-reviews">
+  <div class="grid-2 m-grid-1 g-sm review-list">
+    {% for block in section.blocks %}
+      {% assign r = block.settings %}
+      <div class="col review" {{ block.shopify_attributes }}>
+        {%- comment -%} Star Rating {%- endcomment -%}
+        {% if r.number_of_stars != blank %}
+          {% assign stars = r.number_of_stars | plus: 0 %}
+          <div class="stars row g-xxs a-b p-b-xs">
+            {% for i in (1..stars) %}
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
+              </svg>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {%- comment -%} Review Title & Description {%- endcomment -%}
+        {% if r.review_title != blank %}
+          <h4 class="review-title">{{ r.review_title }}</h4>
+        {% endif %}
+        {% if r.review_description != blank %}
+          <p class="review-description">{{ r.review_description }}</p>
+        {% endif %}
+
+        {%- comment -%} Meta (Reviewer, Tag, Date) {%- endcomment -%}
+        <div class="review-meta row g-xxs a-cb">
+          {% if r.reviewer_name != blank %}
+            <p class="reviewer-name">{{ r.reviewer_name }}</p>
+          {% endif %}
+          {% if r.tag != blank %}
+            <span class="review-tag">{{ r.tag }}</span>
+          {% endif %}
+          {% if r.date != blank %}
+            <span class="review-date">{{ r.date }}</span>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Reviews",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "reviewer_name",
+          "label": "Reviewer name"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date"
+        },
+        {
+          "type": "select",
+          "id": "number_of_stars",
+          "label": "Number of stars",
+          "default": "5",
+          "options": [
+            { "value": "1", "label": "1" },
+            { "value": "2", "label": "2" },
+            { "value": "3", "label": "3" },
+            { "value": "4", "label": "4" },
+            { "value": "5", "label": "5" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "review_title",
+          "label": "Review title"
+        },
+        {
+          "type": "text",
+          "id": "review_description",
+          "label": "Review description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Reviews",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}
