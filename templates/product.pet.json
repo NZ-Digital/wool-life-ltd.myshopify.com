@@ -118,6 +118,27 @@
         "button_link": "#reviews"
       }
     },
+    "product_reviews_3bctnb": {
+      "type": "product-reviews",
+      "blocks": {
+        "review_PKe9in": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Maddie R, Nelson",
+            "tag": "Verified Buyer",
+            "date": "21 April 2025",
+            "number_of_stars": "5",
+            "review_title": "🐶 “Best bed we’ve ever bought”",
+            "review_description": "We’ve gone through a few dog beds over the years, but this one’s on another level. Our border collie, Archie, jumped straight on it and didn’t move for hours. It’s super sturdy but still soft, and I love that it’s made from recycled materials. Bonus points for being NZ-made too feels good to support local"
+          }
+        }
+      },
+      "block_order": [
+        "review_PKe9in"
+      ],
+      "name": "Product Reviews",
+      "settings": {}
+    },
     "image_with_content_tpneW4": {
       "type": "image-with-content",
       "custom_css": [
@@ -213,6 +234,7 @@
     "main",
     "product_description_YWHVBE",
     "text_overlay_MxxhgY",
+    "product_reviews_3bctnb",
     "image_with_content_tpneW4",
     "image_with_content_MxzqfW",
     "related-products",
