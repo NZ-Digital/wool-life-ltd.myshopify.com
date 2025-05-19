@@ -6,7 +6,7 @@
     color: #154734;
     font-weight: 300;
     font-size: 23px;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.01em;
 }
 
 .product-reviews p{
@@ -19,11 +19,12 @@
 .product-reviews p1{
     color: #154734;
     opacity: 0.8;
+    letter-spacing: -0.01em;
+    font-family: Sora;
+    font-weight: 300;
     font-size: 14px;
-    letter-spacing: -0.04em;
+    line-height: 159%;
 }
-
-
 
 
 .review-tag-con{
