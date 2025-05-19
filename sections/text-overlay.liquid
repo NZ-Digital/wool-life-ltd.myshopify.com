@@ -1,0 +1,150 @@
+{% comment %} INSERT_YOUR_CODE {% endcomment %}
+<style>
+    .background_image {
+        background-image: url('{{ section.settings.background_image | image_url }}');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+
+<div class="background_image">
+    <div class="row-1 a-cc">
+        <div
+            class="col p-xxl-tb a-cc g-sm"
+            style="max-width: {{ section.settings.header_max_width }}"
+        >
+            <div class="row g-sm a-cb">
+            {% comment %} Eyebrow Text {% endcomment %}
+            {% if section.settings.eyebrow_text != blank %}
+                {% assign eyebrow_tag = section.settings.eyebrow_text_size %}
+                <{{ eyebrow_tag }} class="eyebrow-text">
+                {{ section.settings.eyebrow_text }}
+                </{{ eyebrow_tag }}>
+            {% endif %}
+
+            {% comment %} Star Rating {% endcomment %}
+            {% if section.settings.number_of_stars != blank %}
+                <div class="stars row g-xxs">
+                {% comment %} INSERT_YOUR_REWRITE_HERE {% endcomment %}
+                {% for i in (1..section.settings.number_of_stars | plus: 0) %}
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
+                    </svg>
+                {% endfor %}
+                </div>
+            {% endif %}
+
+            {% comment %} Header Text {% endcomment %}
+            {% if section.settings.header_text != blank %}
+                {% assign header_tag = section.settings.header_text_size %}
+                <{{ header_tag }} class="header-text">
+                {{ section.settings.header_text }}
+                </{{ header_tag }}>
+            {% endif %}
+
+            {% comment %} Button {% endcomment %}
+            {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+                <a
+                href="{{ section.settings.button_link }}"
+                class="wl_button btn-1"
+                >
+                {{ section.settings.button_text }}
+                </a>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text Overlay",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow text"
+    },
+    {
+      "type": "select",
+      "id": "eyebrow_text_size",
+      "label": "Eyebrow Text Size",
+      "default": "h6",
+      "options": [
+        { "value": "h1", "label": "h1" },
+        { "value": "h2", "label": "h2" },
+        { "value": "h3", "label": "h3" },
+        { "value": "h4", "label": "h4" },
+        { "value": "h5", "label": "h5" },
+        { "value": "h6", "label": "h6" },
+        { "value": "p",  "label": "p"  },
+        { "value": "p1", "label": "p1" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "number_of_stars",
+      "label": "Number of stars",
+      "default": "5",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" },
+        { "value": "5", "label": "5" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Header text"
+    },
+    {
+      "type": "select",
+      "id": "header_text_size",
+      "label": "Header Text Size",
+      "default": "h2",
+      "options": [
+        { "value": "h1", "label": "h1" },
+        { "value": "h2", "label": "h2" },
+        { "value": "h3", "label": "h3" },
+        { "value": "h4", "label": "h4" },
+        { "value": "h5", "label": "h5" },
+        { "value": "h6", "label": "h6" },
+        { "value": "p",  "label": "p"  },
+        { "value": "p1", "label": "p1" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "header_max_width",
+      "label": "Header max width",
+      "default": "600px"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text Overlay"
+    }
+  ]
+}
+{% endschema %}
+
