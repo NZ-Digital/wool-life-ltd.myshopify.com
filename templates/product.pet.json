@@ -103,6 +103,21 @@
         "product-description_background_color": "#E9DDC6"
       }
     },
+    "text_overlay_MxxhgY": {
+      "type": "text-overlay",
+      "name": "Text Overlay",
+      "settings": {
+        "background_image": "shopify://shop_images/Dog_review_background_Image.jpg",
+        "eyebrow_text": "5.0",
+        "eyebrow_text_size": "h1",
+        "number_of_stars": "5",
+        "header_text": "Happy Humans,  Happier Dogs",
+        "header_text_size": "h1",
+        "header_max_width": "500px",
+        "button_text": "Based on 4 Reviews",
+        "button_link": "#reviews"
+      }
+    },
     "image_with_content_tpneW4": {
       "type": "image-with-content",
       "custom_css": [
@@ -197,6 +212,7 @@
     "custom_liquid_7DLRrh",
     "main",
     "product_description_YWHVBE",
+    "text_overlay_MxxhgY",
     "image_with_content_tpneW4",
     "image_with_content_MxzqfW",
     "related-products",
