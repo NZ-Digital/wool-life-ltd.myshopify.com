@@ -1,64 +1,56 @@
-{% comment %} INSERT_YOUR_CODE {% endcomment %}
+{% comment %} INSERT_YOUR_REWRITE_HERE {% endcomment %}
+{%- comment -%}
+  Added a “presets” key to the section schema so the section appears
+  in the Shopify Theme Editor’s “Add section” list.
+{%- endcomment -%}
+
 <style>
-    .background_image {
-        background-image: url('{{ section.settings.background_image | image_url }}');
-        background-size: cover;
-        background-position: center;
-    }
+  /* Scope background image to this section instance */
+  #shopify-section-{{ section.id }} .background_image {
+    background-image: url('{{ section.settings.background_image | image_url }}');
+    background-size: cover;
+    background-position: center;
+  }
 </style>
 
-
 <div class="background_image theme-dark">
-    <div class="row-1 a-cc">
-        <div
-            class="col p-xxl-tb a-cc g-sm"
-            style="max-width: {{ section.settings.header_max_width }}"
-        >
-            <div class="row g-sm a-cb">
-            {% comment %} Eyebrow Text {% endcomment %}
-            {% if section.settings.eyebrow_text != blank %}
-                {% assign eyebrow_tag = section.settings.eyebrow_text_size %}
-                <{{ eyebrow_tag }} class="eyebrow-text">
-                {{ section.settings.eyebrow_text }}
-                </{{ eyebrow_tag }}>
-            {% endif %}
+  <div class="row-1 a-cc">
+    <div class="col p-xxl-tb a-cc g-sm" style="max-width: {{ section.settings.header_max_width }}">
+      
+      <div class="row g-sm a-cb">
+        {%- comment -%} Eyebrow Text {%- endcomment -%}
+        {%- if section.settings.eyebrow_text != blank -%}
+          {%- assign eyebrow_tag = section.settings.eyebrow_text_size -%}
+          <{{ eyebrow_tag }} class="eyebrow-text">{{ section.settings.eyebrow_text }}</{{ eyebrow_tag }}>
+        {%- endif -%}
 
-            {% comment %} Star Rating {% endcomment %}
-            {% if section.settings.number_of_stars != blank %}
-                <div class="stars row g-xxs">
-                {% comment %} INSERT_YOUR_REWRITE_HERE {% endcomment %}
-                {% for i in (1..section.settings.number_of_stars | plus: 0) %}
-                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
-                    </svg>
-                {% endfor %}
-                </div>
-            {% endif %}
-            </div>
-            <div class="col g-sm">
+        {%- comment -%} Star Rating {%- endcomment -%}
+        {%- if section.settings.number_of_stars != blank -%}
+          <div class="stars row g-xxs">
+            {%- for i in (1..section.settings.number_of_stars | plus: 0) -%}
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
+              </svg>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
 
-            {% comment %} Header Text {% endcomment %}
-            {% if section.settings.header_text != blank %}
-                {% assign header_tag = section.settings.header_text_size %}
-                <{{ header_tag }} class="header-text">
-                {{ section.settings.header_text }}
-                </{{ header_tag }}>
-            {% endif %}
-            </div>
-            <div class="col g-sm">
-            {% comment %} Button {% endcomment %}
-            {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-                <a
-                href="{{ section.settings.button_link }}"
-                class="wl_button btn-6"
-                >
-                <p>{{ section.settings.button_text }}</p>
-                </a>
-            {% endif %}
-            </div>
-            </div>
-        </div>
+      {%- comment -%} Header Text {%- endcomment -%}
+      {%- if section.settings.header_text != blank -%}
+        {%- assign header_tag = section.settings.header_text_size -%}
+        <{{ header_tag }} class="header-text">{{ section.settings.header_text }}</{{ header_tag }}>
+      {%- endif -%}
+
+      {%- comment -%} Button {%- endcomment -%}
+      {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="wl_button btn-6">
+          <p>{{ section.settings.button_text }}</p>
+        </a>
+      {%- endif -%}
+
     </div>
+  </div>
 </div>
 
 {% schema %}
@@ -66,14 +58,12 @@
   "name": "Text Overlay",
   "tag": "section",
   "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
+  "disabled_on": { "groups": ["header", "footer"] },
   "settings": [
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background Image"
+      "label": "Background image"
     },
     {
       "type": "text",
@@ -83,7 +73,7 @@
     {
       "type": "select",
       "id": "eyebrow_text_size",
-      "label": "Eyebrow Text Size",
+      "label": "Eyebrow text size",
       "default": "h6",
       "options": [
         { "value": "h1", "label": "h1" },
@@ -117,7 +107,7 @@
     {
       "type": "select",
       "id": "header_text_size",
-      "label": "Header Text Size",
+      "label": "Header text size",
       "default": "h2",
       "options": [
         { "value": "h1", "label": "h1" },
@@ -133,7 +123,7 @@
     {
       "type": "text",
       "id": "header_max_width",
-      "label": "Header max width",
+      "label": "Header max-width",
       "default": "600px"
     },
     {
@@ -149,9 +139,11 @@
   ],
   "presets": [
     {
-      "name": "Text Overlay"
+      "name": "Text Overlay",
+      "category": "Text"
     }
   ]
 }
 {% endschema %}
+       
 
