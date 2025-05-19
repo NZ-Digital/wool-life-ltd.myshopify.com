@@ -2,9 +2,22 @@
     border-bottom: 1px solid rgba(21, 71, 52, 0.5);
 }
 
+.product-reviews h3{
+    color: #154734;
+}
+
+.product-reviews p{
+    color: #737373;
+}
+
+.product-reviews p1{
+    color: rgba(21, 71, 52, 0.5);
+}
+
+
 .review-tag-con{
     background: #518246;
-    padding: 0px 15px;
+    padding: 0px 12px;
     border-radius: 100px;
 }
 
