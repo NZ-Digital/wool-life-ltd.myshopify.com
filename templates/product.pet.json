@@ -103,6 +103,37 @@
         "product-description_background_color": "#E9DDC6"
       }
     },
+    "image_with_content_tpneW4": {
+      "type": "image-with-content",
+      "settings": {
+        "image-with-content_layout": "image-with-content_text-first",
+        "image-with-content_image_picker": "shopify://shop_images/Dog_Bed_Details.jpg",
+        "image-with-content_heading": "More than just another dog bed",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "The Wool.Life Dog Bed combines exceptional comfort with purposeful design. Made in New Zealand from 80% wool-rich recycled textiles, it offers your dog the perfect place to rest while giving new life to materials that would otherwise end up in landfill.",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": "shopify://products/dog-bed"
+      }
+    },
+    "image_with_content_MxzqfW": {
+      "type": "image-with-content",
+      "settings": {
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_image_picker": "shopify://shop_images/Pet_feature_Image.jpg",
+        "image-with-content_preimage": "shopify://shop_images/NORSEWARE.png",
+        "image-with-content_heading": "Sustainable Local Partnerships",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "Through our trusted textile partners, we proudly transform quality New Zealand textile waste into premium, sustainable pet comfort - 100% manufactured in New Zealand, supporting local communities and sustainable practices while ensuring your pet enjoys the finest materials our country has to offer.",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": "shopify://products/dog-bed"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -124,7 +155,6 @@
     },
     "product_related_products_RF49cV": {
       "type": "product-related-products",
-      "disabled": true,
       "custom_css": [
         ".card-information {display: none;}"
       ],
@@ -159,6 +189,8 @@
     "custom_liquid_7DLRrh",
     "main",
     "product_description_YWHVBE",
+    "image_with_content_tpneW4",
+    "image_with_content_MxzqfW",
     "related-products",
     "product_related_products_RF49cV"
   ]
