@@ -1,9 +1,9 @@
 h0{
     font-family: Sora;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 60px;
-    line-height: 150%;
-    letter-spacing: -4%;
+    line-height: 120%;
+    letter-spacing: -2px;
     vertical-align: bottom;
     @media (max-width: 767px) {
         font-size: 42px;
@@ -12,7 +12,7 @@ h0{
 
 p1{
     font-family: Sora;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 159%;
     letter-spacing: -1%;
