@@ -105,6 +105,9 @@
     },
     "image_with_content_tpneW4": {
       "type": "image-with-content",
+      "custom_css": [
+        ".image-with-content_text-first {padding-top: 0px !important;}"
+      ],
       "settings": {
         "image-with-content_layout": "image-with-content_text-first",
         "image-with-content_image_picker": "shopify://shop_images/Dog_Bed_Details.jpg",
