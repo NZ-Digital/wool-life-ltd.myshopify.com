@@ -197,7 +197,6 @@
       gap: 24px;
     }
 
-
     /* .wl_image-with-content.image-with-content_text-first .wl_image-with-content_heading {
         align-self: flex-start;
     }
@@ -213,10 +212,10 @@
   </div>
   <div class="wl_image-with-content_content-col">
     <div class="{{ section.settings.image-with-content_preimage_location }} g-md">
-    {% if section.settings.image-with-content_preimage %}
-      <img src="{{ section.settings.image-with-content_preimage | image_url }}" alt="Preimage" class="wl_image-with-content_preimage">
-    {% endif %}
-    <h2 class="wl_image-with-content_heading">{{ section.settings.image-with-content_heading }}</h2>
+      {% if section.settings.image-with-content_preimage %}
+        <img src="{{ section.settings.image-with-content_preimage | image_url }}" alt="Preimage" class="wl_image-with-content_preimage">
+      {% endif %}
+      <h2 class="wl_image-with-content_heading">{{ section.settings.image-with-content_heading }}</h2>
     </div>
     <p class="wl_image-with-content_content">{{ section.settings.image-with-content_text }}</p>
     {% if section.settings.image-with-content_button_link %}
