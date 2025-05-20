@@ -68,12 +68,70 @@
         "title_text_size": "h0",
         "review_rating": "5"
       }
+    },
+    "product_reviews_DqFLzW": {
+      "type": "product-reviews",
+      "blocks": {
+        "review_A7mqmW": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Maddie R, Nelson",
+            "tag": "Verified Buyer",
+            "date": "21 April 2025",
+            "number_of_stars": "5",
+            "review_title": "🐶 “Best bed we’ve ever bought”",
+            "review_description": "We’ve gone through a few dog beds over the years, but this one’s on another level. Our border collie, Archie, jumped straight on it and didn’t move for hours. It’s super sturdy but still soft, and I love that it’s made from recycled materials. Bonus points for being NZ-made too feels good to support local"
+          }
+        },
+        "review_JzfKra": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Blair T, Tauranga",
+            "tag": "Verified Buyer",
+            "date": "28 April 2025",
+            "number_of_stars": "5",
+            "review_title": "🐾 “Looks good and he actually uses it”",
+            "review_description": "Our golden retriever usually ends up on the couch, but since getting this bed she’s actually sleeping on it every night. It doesn’t go flat like the cheap ones, and it’s easy to unzip the cover and chuck it in the wash. Also doesn’t look ugly in the lounge, which is a win."
+          }
+        },
+        "review_ccceJn": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jess W, Christchurch",
+            "tag": "Verified Buyer",
+            "date": "4 May 2025",
+            "number_of_stars": "5",
+            "review_title": "🛏️ “Comfy, eco, and built to last”",
+            "review_description": "We’ve gone through a few dog beds over the years, but this one’s on another level. Our border collie, Archie, jumped straight on it and didn’t move for hours. It’s super sturdy but still soft, and I love that it’s made from recycled materials. Bonus points for being NZ-made too feels good to support local"
+          }
+        },
+        "review_kWdkR3": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Liam R, Dunedin",
+            "tag": "Verified Buyer",
+            "date": "11 May 2025",
+            "number_of_stars": "5",
+            "review_title": "“Perfect for picky pups”",
+            "review_description": "“Our Frenchie, Louie, is super fussy and usually ends up on the couch (or our bed). But since we got him the Wool.Life bed, he actually chooses it. It’s cosy, firm enough to support him properly, and doesn’t overheat like some of the fluffy ones. Plus, it looks great in our space.”"
+          }
+        }
+      },
+      "block_order": [
+        "review_A7mqmW",
+        "review_JzfKra",
+        "review_ccceJn",
+        "review_kWdkR3"
+      ],
+      "name": "Product Reviews",
+      "settings": {}
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
     "1738729337d1fe498d",
-    "reviews_title_Acbpim"
+    "reviews_title_Acbpim",
+    "product_reviews_DqFLzW"
   ]
 }
