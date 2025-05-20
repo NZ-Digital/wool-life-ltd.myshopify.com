@@ -753,7 +753,7 @@
               {%- when 'rating' -%}
                 {%- comment -%} Render custom star rating + review text supplied from block settings {%- endcomment -%}
                 {%- if block.settings.star_rating != blank or block.settings.review_text != blank -%}
-                  <div class="shortz">
+                  <div class="shortz m-0">
                     {%- if block.settings.star_rating != blank -%}
                       <div class="row g-xs a-cl summary-rating-con">
                       {%- assign star_count = block.settings.star_rating | plus: 0 -%}

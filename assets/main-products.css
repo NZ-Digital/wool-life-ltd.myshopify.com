@@ -10,6 +10,7 @@
 
 .product_template_updated .wl_product_title.product__title{
     margin-bottom: 0px !important;
+    margin-top:15px !important;
 }
 
 .product_template_updated .price-item.price-item--regular{
@@ -99,7 +100,7 @@
 
 .product_template_updated .size-chart-con p1{
     font-family: Sora;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.4px;
@@ -186,7 +187,14 @@
     color: rgba(21, 71, 52, 0.8);
 }
 
+.product_template_updated .product__accordion:last-of-type {
+    border-bottom: none !important;
+}
 
+.product_template_updated .m-0{
+ margin-bottom: 0px !important;
+ margin-top: 0px !important;
+}
 
 
 @media (min-width: 1024px) {
