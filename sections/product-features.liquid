@@ -45,7 +45,7 @@
                     <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.header | escape }}" style="max-width:50px;">
                 {%- endif -%}
 
-                <div class="col g-sm">
+                <div class="col">
                     {%- if block.settings.header != blank -%}
                     {%- assign hdr_tag = block.settings.header_size -%}
                     <{{ hdr_tag }} style="font-weight: {{ block.settings.header_weight }}">{{ block.settings.header }}</{{ hdr_tag }}>
