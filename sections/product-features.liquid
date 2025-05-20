@@ -27,12 +27,12 @@
 
             {%- if section.settings.title != blank -%}
             {%- assign title_tag = section.settings.title_size -%}
-            <{{ title_tag }}>{{ section.settings.title }}</{{ title_tag }}>
+            <{{ title_tag }} style="font-weight: {{ section.settings.title_weight }}">{{ section.settings.title }}</{{ title_tag }}>
             {%- endif -%}
 
             {%- if section.settings.subtitle != blank -%}
             {%- assign subtitle_tag = section.settings.subtitle_size -%}
-            <{{ subtitle_tag }}>{{ section.settings.subtitle }}</{{ subtitle_tag }}>
+            <{{ subtitle_tag }} style="font-weight: {{ section.settings.subtitle_weight }}">{{ section.settings.subtitle }}</{{ subtitle_tag }}>
             {%- endif -%}
         </div>
 
@@ -95,6 +95,23 @@
     },
     {
       "type": "select",
+      "id": "title_weight",
+      "label": "Title weight",
+      "default": "400",
+      "options": [
+        { "value": "100", "label": "100" },
+        { "value": "200", "label": "200" },
+        { "value": "300", "label": "300" },
+        { "value": "400", "label": "400" },
+        { "value": "500", "label": "500" },
+        { "value": "600", "label": "600" },
+        { "value": "700", "label": "700" },
+        { "value": "800", "label": "800" },
+        { "value": "900", "label": "900" }
+      ]
+    },
+    {
+      "type": "select",
       "id": "title_size",
       "label": "Title size",
       "default": "h2",
@@ -114,6 +131,23 @@
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "subtitle_weight",
+      "label": "Subtitle weight",
+      "default": "400",
+      "options": [
+        { "value": "100", "label": "100" },
+        { "value": "200", "label": "200" },
+        { "value": "300", "label": "300" },
+        { "value": "400", "label": "400" },
+        { "value": "500", "label": "500" },
+        { "value": "600", "label": "600" },
+        { "value": "700", "label": "700" },
+        { "value": "800", "label": "800" },
+        { "value": "900", "label": "900" }
+      ]
     },
     {
       "type": "select",
