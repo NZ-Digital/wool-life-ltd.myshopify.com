@@ -6,21 +6,33 @@
 {%- endcomment -%}
 
 <div class="shortz reviews-title">
-  {%- if section.settings.review_rating != blank -%}
-    {%- assign stars = section.settings.review_rating | plus: 0 -%}
-    <div class="stars row g-xxs a-b p-b-xs">
-      {%- for i in (1..stars) -%}
-        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
-        </svg>
-      {%- endfor -%}
-    </div>
-  {%- endif -%}
+    <div class="theme-standard">
+        <div class="ingrid">
+            <div class="row g-md a">
+                <div class="col a-cl">
+                    {%- if section.settings.title_text != blank -%}
+                        {%- assign title_tag = section.settings.title_text_size -%}
+                        <{{ title_tag }} class="reviews-title-text">{{ section.settings.title_text }}</{{ title_tag }}>
+                    {%- endif -%}
+                </div>
+                <div class="row a-cr">
+                {%- if section.settings.review_rating != blank -%}
+                    {%- assign stars = section.settings.review_rating | plus: 0 -%}
+                    <{{ title_tag }} class="reviews-title-stars">{{ section.settings.stars }}</{{ title_tag }}>
+                    <div class="stars row g-xxs a-b p-b-xs">
+                    {%- for i in (1..stars) -%}
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
+                        </svg>
+                    {%- endfor -%}
+                    </div>
+                {%- endif -%}
+                </div>
 
-  {%- if section.settings.title_text != blank -%}
-    {%- assign title_tag = section.settings.title_text_size -%}
-    <{{ title_tag }} class="reviews-title-text">{{ section.settings.title_text }}</{{ title_tag }}>
-  {%- endif -%}
+
+            </div>
+        </div>
+    </div>
 </div>
 
 {% schema %}
