@@ -167,8 +167,10 @@
         "top_image": "shopify://shop_images/Vector_Dog_Product_Features.png",
         "top_section_max_width": "600px",
         "title": "Introducing: New Zealand's ONLY Fully Circular Dog Bed",
+        "title_weight": "300",
         "title_size": "h1",
         "subtitle": " Recycled, Recyclable, and Built to Last",
+        "subtitle_weight": "300",
         "subtitle_size": "h2"
       }
     },
