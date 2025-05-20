@@ -36,6 +36,10 @@
           "type": "title",
           "settings": {}
         },
+        "rating_HCzLNc": {
+          "type": "rating",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -96,6 +100,7 @@
       "block_order": [
         "custom_liquid_eKkNei",
         "title",
+        "rating_HCzLNc",
         "price",
         "variant_picker",
         "quantity_selector",
