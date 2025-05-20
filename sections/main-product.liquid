@@ -436,7 +436,7 @@
                           {% if dynamic_meta != blank %}
                             {{ dynamic_meta | metafield_tag }}
                           {% endif %}
-                          {{ block.settings.content_dynamic_text }}
+    
                         </div>
                       {% endif %}
                     </div>
@@ -449,7 +449,7 @@
 
                 
                 <div class="shortz quick-add-hidden" {{ block.shopify_attributes }}>
-                  <div class="theme-light col p-xsxxs a-cc special_code_con g-xs">
+                  <div class="theme-light col p-xsxxs a-cc special_code_con g-xs" style="border-radius: 5px;">
                     <div class="row g-xxs">
                       {%- if block.settings.deal_text != blank -%}
                         <{{ block.settings.deal_text_size | default: 'p' }}
