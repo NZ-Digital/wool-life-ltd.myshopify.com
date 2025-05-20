@@ -49,6 +49,7 @@
         },
         "link_DPTjYM": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "link_url": "#sizechart",
             "link_text": "Size Chart"
