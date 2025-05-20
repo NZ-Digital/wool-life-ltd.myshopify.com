@@ -4,6 +4,7 @@
   Reviews Title Section
   Displays a heading (with selectable HTML tag) and an optional star-rating.
 {%- endcomment -%}
+{%- assign title_tag = section.settings.title_text_size -%}
 
 <div class="shortz reviews-title">
     <div class="theme-standard">
@@ -11,15 +12,15 @@
             <div class="row g-md a">
                 <div class="col a-cl">
                     {%- if section.settings.title_text != blank -%}
-                        {%- assign title_tag = section.settings.title_text_size -%}
+                        
                         <{{ title_tag }} class="reviews-title-text">{{ section.settings.title_text }}</{{ title_tag }}>
                     {%- endif -%}
                 </div>
                 <div class="row a-cr">
                 {%- if section.settings.review_rating != blank -%}
                     {%- assign stars = section.settings.review_rating | plus: 0 -%}
-                    {% if section.settings.stars != blank %}
-                        <{{ title_tag }} class="reviews-title-stars">{{ section.settings.stars }}</{{ title_tag }}>
+                    {% if section.settings.review_rating != blank %}
+                        <{{ title_tag }} class="reviews-title-stars">{{ section.settings.review_rating }}</{{ title_tag }}>
                     {% endif %}
                     <div class="stars row g-xxs a-b p-b-xs">
                     {%- for i in (1..stars) -%}
