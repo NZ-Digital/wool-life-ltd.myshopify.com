@@ -97,7 +97,7 @@
             "heading": "Shipping & Returns",
             "custom_svg_icon": "shopify://shop_images/Icon_Shipping_Returns.svg",
             "icon": "check_mark",
-            "content_dynamic_text": "",
+            "content_dynamic_text": "shipping_returns",
             "content": "",
             "page": ""
           }
