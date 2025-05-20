@@ -37,10 +37,10 @@
         </div>
 
         {%- comment -%} Featured blocks {%- endcomment -%}
-        <div class="grid-4 m-grid-2">
+        <div class="grid-4 m-grid-2 g-md">
             {%- if section.blocks.size > 0 -%}
             {%- for block in section.blocks -%}
-                <div class="col g-sm a-tc" {{ block.shopify_attributes }}>
+                <div class="col g-sm a-tc p-md-b" {{ block.shopify_attributes }}>
                 {%- if block.settings.icon != blank -%}
                     <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.header | escape }}" style="max-width:50px;">
                 {%- endif -%}
