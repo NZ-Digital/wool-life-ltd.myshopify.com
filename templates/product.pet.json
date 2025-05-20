@@ -86,7 +86,7 @@
             "heading": "Materials & Care",
             "custom_svg_icon": "shopify://shop_images/Icon_Materials_Care.svg",
             "icon": "check_mark",
-            "content_dynamic_text": "",
+            "content_dynamic_text": "materials_care",
             "content": "",
             "page": ""
           }
