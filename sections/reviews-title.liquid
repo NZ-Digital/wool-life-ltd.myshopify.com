@@ -7,7 +7,7 @@
 
 <div class="shortz reviews-title">
     <div class="theme-standard">
-        <div class="ingrid">
+        <div class="ingrid p-lg-t">
             <div class="row g-md a">
                 <div class="col a-cl">
                     {%- if section.settings.title_text != blank -%}
@@ -18,7 +18,9 @@
                 <div class="row a-cr">
                 {%- if section.settings.review_rating != blank -%}
                     {%- assign stars = section.settings.review_rating | plus: 0 -%}
-                    <{{ title_tag }} class="reviews-title-stars">{{ section.settings.stars }}</{{ title_tag }}>
+                    {% if section.settings.stars != blank %}
+                        <{{ title_tag }} class="reviews-title-stars">{{ section.settings.stars }}</{{ title_tag }}>
+                    {% endif %}
                     <div class="stars row g-xxs a-b p-b-xs">
                     {%- for i in (1..stars) -%}
                         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
