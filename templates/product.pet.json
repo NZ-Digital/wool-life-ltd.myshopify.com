@@ -49,6 +49,7 @@
         },
         "link_DPTjYM": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "link_url": "#sizechart",
             "link_text": "Size Chart"
@@ -57,7 +58,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
         },
