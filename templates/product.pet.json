@@ -65,12 +65,9 @@
             "show_gift_card_recipient": false
           }
         },
-        "text_X3gXdw": {
-          "type": "text",
-          "settings": {
-            "text": "Introducing Wool.Life Dog Beds - crafted in New Zealand from 80% recycled wool-rich textiles, combining lasting comfort with true sustainability. With a supportive 100mm inner, durable pre-shrunk cover, and internal dust protection, these fully recyclable beds prove that premium pet comfort doesn't have to cost the earth.",
-            "text_style": "body"
-          }
+        "description_QgwW6n": {
+          "type": "description",
+          "settings": {}
         },
         "collapsible_tab_HYhaFh": {
           "type": "collapsible_tab",
@@ -111,7 +108,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "text_X3gXdw",
+        "description_QgwW6n",
         "collapsible_tab_HYhaFh",
         "collapsible_tab_69a7NJ",
         "collapsible_tab_aPJ7At"
