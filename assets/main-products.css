@@ -107,6 +107,10 @@
     
 }
 
+.product_template_updated .special_code_con{
+    padding: 15px 20px 10px;
+}
+
 .product_template_updated .special_code_con h4{
     font-family: Sora;
     font-size: 16px;
@@ -124,6 +128,8 @@
     text-align: center;
     
 }
+
+
 
 @media (min-width: 1024px) {
     .product_template_updated .size-chart-con{
