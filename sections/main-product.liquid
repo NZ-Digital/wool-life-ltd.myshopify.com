@@ -436,7 +436,7 @@
                           {% if dynamic_meta != blank %}
                             {{ dynamic_meta | metafield_tag }}
                           {% endif %}
-                          {% comment %} {{ block.settings.content_dynamic_text }} {% endcomment %}
+                          {{ block.settings.content_dynamic_text }}
                         </div>
                       {% endif %}
                     </div>
