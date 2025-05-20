@@ -161,8 +161,8 @@
 }
 
 .product_template_updated .accordion{
-    border-top: 1px solid rgba(91, 123, 105, 0.8);
-    border-bottom: 1px solid rgba(91, 123, 105, 0.8);
+    border-top: 1px solid rgba(91, 123, 105, 0.2);
+    border-bottom: 1px solid rgba(91, 123, 105, 0.2);
 }
 
 @media (min-width: 1024px) {
