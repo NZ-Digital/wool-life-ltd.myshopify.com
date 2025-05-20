@@ -16,11 +16,11 @@
                         <{{ title_tag }} class="reviews-title-text">{{ section.settings.title_text }}</{{ title_tag }}>
                     {%- endif -%}
                 </div>
-                <div class="row a-cr">
+                <div class="row a-cr g-xs a-b">
                 {%- if section.settings.review_rating != blank -%}
                     {%- assign stars = section.settings.review_rating | plus: 0 -%}
                     {% if section.settings.review_rating != blank %}
-                        <{{ title_tag }} class="reviews-title-stars">{{ section.settings.review_rating }}</{{ title_tag }}>
+                        <{{ title_tag }} class="reviews-title-stars">{{ section.settings.review_rating }}.0</{{ title_tag }}>
                     {% endif %}
                     <div class="stars row g-xxs a-b p-b-xs">
                     {%- for i in (1..stars) -%}
