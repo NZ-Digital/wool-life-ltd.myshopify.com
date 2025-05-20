@@ -150,6 +150,7 @@
       ],
       "custom_css": [],
       "settings": {
+        "design_style": "product_template_updated",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "large",
