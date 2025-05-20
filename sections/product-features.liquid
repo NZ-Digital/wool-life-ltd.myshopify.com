@@ -16,50 +16,51 @@
 
 <div class="shortz">
   <div class="theme-highlight background_image">
-    <div class="ingird p-xl-tb a-cc">
+    <div class="ingird g-md p-xl-tb a-cc">
+        <div class="col g-md a-cc"></div>
 
-      {%- comment -%} Top area (image, title, subtitle) {%- endcomment -%}
-      <div class="col g-sm a-cc" style="max-width: {{ section.settings.top_section_max_width }}">
-        {%- if section.settings.top_image != blank -%}
-          <img src="{{ section.settings.top_image | image_url }}" alt="{{ section.settings.title | escape }}" style="max-width:270px;">
-        {%- endif -%}
+        {%- comment -%} Top area (image, title, subtitle) {%- endcomment -%}
+        <div class="col g-sm a-cc p-sm-b" style="max-width: {{ section.settings.top_section_max_width }}">
+            {%- if section.settings.top_image != blank -%}
+            <img src="{{ section.settings.top_image | image_url }}" alt="{{ section.settings.title | escape }}" style="max-width:270px;">
+            {%- endif -%}
 
-        {%- if section.settings.title != blank -%}
-          {%- assign title_tag = section.settings.title_size -%}
-          <{{ title_tag }}>{{ section.settings.title }}</{{ title_tag }}>
-        {%- endif -%}
+            {%- if section.settings.title != blank -%}
+            {%- assign title_tag = section.settings.title_size -%}
+            <{{ title_tag }}>{{ section.settings.title }}</{{ title_tag }}>
+            {%- endif -%}
 
-        {%- if section.settings.subtitle != blank -%}
-          {%- assign subtitle_tag = section.settings.subtitle_size -%}
-          <{{ subtitle_tag }}>{{ section.settings.subtitle }}</{{ subtitle_tag }}>
-        {%- endif -%}
-      </div>
+            {%- if section.settings.subtitle != blank -%}
+            {%- assign subtitle_tag = section.settings.subtitle_size -%}
+            <{{ subtitle_tag }}>{{ section.settings.subtitle }}</{{ subtitle_tag }}>
+            {%- endif -%}
+        </div>
 
-      {%- comment -%} Featured blocks {%- endcomment -%}
-      <div class="grid-4 m-grid-2">
-        {%- if section.blocks.size > 0 -%}
-          {%- for block in section.blocks -%}
-            <div class="col g-sm a-cc" {{ block.shopify_attributes }}>
-              {%- if block.settings.icon != blank -%}
-                <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.header | escape }}" style="max-width:50px;">
-              {%- endif -%}
-
-              <div class="col g-sm">
-                {%- if block.settings.header != blank -%}
-                  {%- assign hdr_tag = block.settings.header_size -%}
-                  <{{ hdr_tag }} style="font-weight: {{ block.settings.header_weight }}">{{ block.settings.header }}</{{ hdr_tag }}>
+        {%- comment -%} Featured blocks {%- endcomment -%}
+        <div class="grid-4 m-grid-2">
+            {%- if section.blocks.size > 0 -%}
+            {%- for block in section.blocks -%}
+                <div class="col g-sm a-tc" {{ block.shopify_attributes }}>
+                {%- if block.settings.icon != blank -%}
+                    <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.header | escape }}" style="max-width:50px;">
                 {%- endif -%}
 
-                {%- if block.settings.description != blank -%}
-                  {%- assign desc_tag = block.settings.description_size -%}
-                  <{{ desc_tag }} style="font-weight: {{ block.settings.description_weight }}">{{ block.settings.description }}</{{ desc_tag }}>
-                {%- endif -%}
-              </div>
-            </div>
-          {%- endfor -%}
-        {%- endif -%}
-      </div>
+                <div class="col g-sm">
+                    {%- if block.settings.header != blank -%}
+                    {%- assign hdr_tag = block.settings.header_size -%}
+                    <{{ hdr_tag }} style="font-weight: {{ block.settings.header_weight }}">{{ block.settings.header }}</{{ hdr_tag }}>
+                    {%- endif -%}
 
+                    {%- if block.settings.description != blank -%}
+                    {%- assign desc_tag = block.settings.description_size -%}
+                    <{{ desc_tag }} style="font-weight: {{ block.settings.description_weight }}">{{ block.settings.description }}</{{ desc_tag }}>
+                    {%- endif -%}
+                </div>
+                </div>
+            {%- endfor -%}
+            {%- endif -%}
+        </div>
+      </div>
     </div>
   </div>
 </div>
