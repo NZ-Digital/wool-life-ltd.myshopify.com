@@ -405,10 +405,20 @@
                     <summary>
                       <div class="summary__title">
                         {% comment %} INSERT_YOUR_REWRITE_HERE {% endcomment %}
+                         
                         {% if block.settings.custom_svg_icon != blank %}
-                          <img src="{{ block.settings.custom_svg_icon | img_url: '28x' }}" alt="Custom Icon" style="max-width: 28px;">
+                          <div class="icon_con" style="padding-right: 15px;">
+                            <img src="{{ block.settings.custom_svg_icon | img_url: '28x' }}" alt="Custom Icon" style="max-width: 28px;">
+                          </div>
                         {% else %}
                           {% render 'icon-accordion', icon: block.settings.icon %}
+                        {% endif %}
+                       
+                        {% comment %} INSERT_YOUR_CODE {% endcomment %}
+                        {% if block.settings.content_dynamic_text != blank %}
+                          <div class="col g-sm">
+                            {{ block.settings.content_dynamic_text }}
+                          </div>
                         {% endif %}
                         <h2 class="h4 accordion__title inline-richtext">
                           {{ block.settings.heading | default: block.settings.page.title | escape }}
@@ -1608,6 +1618,11 @@
           ],
           "default": "check_mark",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content_dynamic_text",
+          "label": "Content Dynamic Text"
         },
         {
           "type": "richtext",
