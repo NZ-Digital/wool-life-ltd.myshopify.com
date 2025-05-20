@@ -16,13 +16,13 @@
 
 <div class="shortz">
   <div class="theme-highlight background_image">
-    <div class="ingird g-md p-xl-tb a-cc">
+    <div class="ingird g-md p-lg-tb a-cc">
         <div class="col g-md a-cc"></div>
 
         {%- comment -%} Top area (image, title, subtitle) {%- endcomment -%}
         <div class="col g-sm a-cc p-sm-b" style="max-width: {{ section.settings.top_section_max_width }}">
             {%- if section.settings.top_image != blank -%}
-            <img src="{{ section.settings.top_image | image_url }}" alt="{{ section.settings.title | escape }}" style="max-width:270px;">
+            <img class="p-xs-b" src="{{ section.settings.top_image | image_url }}" alt="{{ section.settings.title | escape }}" style="max-width:270px;">
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
