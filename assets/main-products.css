@@ -146,6 +146,25 @@
     
 }
 
+.product_template_updated .summary__title{
+    align-items: center;
+}
+
+.product_template_updated .accordion__title{
+    height: fit-content;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #154734;
+}
+
+.product_template_updated .accordion{
+    border-top: 1px solid rgba(91, 123, 105, 0.8);
+    border-bottom: 1px solid rgba(91, 123, 105, 0.8);
+}
+
 @media (min-width: 1024px) {
     .product_template_updated .size-chart-con{
         margin-bottom: -40px;
