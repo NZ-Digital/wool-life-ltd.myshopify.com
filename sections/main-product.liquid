@@ -455,7 +455,7 @@
                 
                 <div class="shortz quick-add-hidden" {{ block.shopify_attributes }}>
                   <div class="theme-light col a-cc special_code_con g-xs" style="border-radius: 5px;">
-                    <div class="row g-xxs">
+                    <div class="row m-col g-xxs">
                       {%- if block.settings.deal_text != blank -%}
                         <{{ block.settings.deal_text_size | default: 'p' }}
                           style="font-weight:{{ block.settings.deal_text_weight | default: '400' }};">
@@ -499,7 +499,7 @@
               {% comment %} INSERT_YOUR_CODE {% endcomment %}
               {%- when 'link' -%}
                 <div class="shortz quick-add-hidden" {{ block.shopify_attributes }}>
-                  <div class="row-1 a-tr size-chart-con">
+                  <div class="row-1 a-tr size-chart-con m-hide">
                     <a href="{{ block.settings.link_url }}" class="btn-6">
                       <p1>{{ block.settings.link_text }}</p1>
                     </a>
