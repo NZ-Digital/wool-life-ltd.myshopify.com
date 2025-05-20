@@ -1,3 +1,25 @@
+.btn-3{
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 5px;
+    background-color: #F76627;
+    border: 1px solid #F76627;
+    transition: all 0.3s ease;
+
+}
+
+.btn-3:hover{
+    background-color: #fff;
+}
+
+.btn-3 h0, .btn-3 h1, .btn-3 h2, .btn-3 h3, .btn-3 h4, .btn-3 h5, .btn-3 h6, .btn-3 p, .btn-3 p1{
+    color: white
+}
+
+.btn-3:hover h0, .btn-3:hover h1, .btn-3:hover h2, .btn-3:hover h3, .btn-3:hover h4, .btn-3:hover h5, .btn-3:hover h6, .btn-3:hover p, .btn-3:hover p1{
+    color: white;
+}
+
 .btn-6{
     p, p1{
         text-decoration: underline;

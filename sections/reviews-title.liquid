@@ -16,7 +16,7 @@
                         <{{ title_tag }} class="reviews-title-text">{{ section.settings.title_text }}</{{ title_tag }}>
                     {%- endif -%}
                 </div>
-                <div class="row a-cr g-xs a-b">
+                <div class="row a-cr g-sm a-b">
                 {%- if section.settings.review_rating != blank -%}
                     {%- assign stars = section.settings.review_rating | plus: 0 -%}
                     {% if section.settings.review_rating != blank %}
@@ -31,8 +31,6 @@
                     </div>
                 {%- endif -%}
                 </div>
-
-
             </div>
         </div>
     </div>

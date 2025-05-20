@@ -379,9 +379,12 @@
                   {%- endif -%}
                 </p>
               {%- when 'description' -%}
+                
                 {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
+                  <div class="shortz"></div>
+                      <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                        <p1>{{ product.description }}</p1>
+                      </div>
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}
@@ -401,7 +404,12 @@
                   <details id="Details-{{ block.id }}-{{ section.id }}">
                     <summary>
                       <div class="summary__title">
-                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        {% comment %} INSERT_YOUR_REWRITE_HERE {% endcomment %}
+                        {% if block.settings.custom_svg_icon != blank %}
+                          <img src="{{ block.settings.custom_svg_icon | img_url: '28x' }}" alt="Custom Icon" style="max-width: 28px;">
+                        {% else %}
+                          {% render 'icon-accordion', icon: block.settings.icon %}
+                        {% endif %}
                         <h2 class="h4 accordion__title inline-richtext">
                           {{ block.settings.heading | default: block.settings.page.title | escape }}
                         </h2>
@@ -414,6 +422,60 @@
                     </div>
                   </details>
                 </div>
+              {% comment %} INSERT_YOUR_CODE {% endcomment %}
+              {%- when 'special_code' -%}
+                <div class="shortz quick-add-hidden" {{ block.shopify_attributes }}>
+                  <div class="theme-light row p-xxs a-cc">
+                    <div class="row g-xxs">
+                      {%- if block.settings.deal_text != blank -%}
+                        <{{ block.settings.deal_text_size | default: 'p' }}
+                          style="font-weight:{{ block.settings.deal_text_weight | default: '400' }};">
+                          {{ block.settings.deal_text }}
+                        </{{ block.settings.deal_text_size | default: 'p' }}>
+                      {%- endif -%}
+                      {%- if block.settings.deal_text_2 != blank -%}
+                        <{{ block.settings.deal_text_2_size | default: 'p' }}
+                          style="font-weight:{{ block.settings.deal_text_2_weight | default: '400' }};">
+                          {{ block.settings.deal_text_2 }}
+                        </{{ block.settings.deal_text_2_size | default: 'p' }}>
+                      {%- endif -%}
+                    </div>
+
+                    <div class="row g-xxs btn-3">
+                      {%- if block.settings.code_pretext != blank -%}
+                        <{{ block.settings.code_pretext_size | default: 'p' }}
+                          style="font-weight:{{ block.settings.code_pretext_weight | default: '400' }};">
+                          {{ block.settings.code_pretext }}
+                        </{{ block.settings.code_pretext_size | default: 'p' }}>
+                      {%- endif -%}
+                      {%- if block.settings.code_text != blank -%}
+                        <{{ block.settings.code_text_size | default: 'p' }}
+                          style="font-weight:{{ block.settings.code_text_weight | default: '400' }};">
+                          {{ block.settings.code_text }}
+                        </{{ block.settings.code_text_size | default: 'p' }}>
+                      {%- endif -%}
+                    </div>
+
+                    <div class="row g-xxs">
+                      {%- if block.settings.description != blank -%}
+                        <{{ block.settings.description_text_size | default: 'p' }}
+                          style="font-weight:{{ block.settings.description_text_weight | default: '400' }};">
+                          {{ block.settings.description }}
+                        </{{ block.settings.description_text_size | default: 'p' }}>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              {% comment %} INSERT_YOUR_CODE {% endcomment %}
+              {%- when 'link' -%}
+                <div class="shortz quick-add-hidden" {{ block.shopify_attributes }}>
+                  <div class="row-1 a-tr">
+                    <a href="{{ block.settings.link_url }}" class="btn-6">
+                      <p1>{{ block.settings.link_text }}</p1>
+                    </a>
+                  </div>
+                </div>
+
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
@@ -1141,6 +1203,213 @@
       ]
     },
     {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link Text"
+        }
+      ]
+    },
+    {
+      "type": "special_code",
+      "name": "t:sections.main-product.blocks.special_code.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "deal_text",
+          "label": "Deal Text"
+        },
+        {
+          "type": "select",
+          "id": "deal_text_size",
+          "label": "Deal Text Size",
+          "options": [
+            { "value": "h0", "label": "h0" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" },
+            { "value": "p", "label": "p" },
+            { "value": "p1", "label": "p1" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "deal_text_weight",
+          "label": "Deal Text Weight",
+          "options": [
+            { "value": "100", "label": "100" },
+            { "value": "200", "label": "200" },
+            { "value": "300", "label": "300" },
+            { "value": "400", "label": "400" },
+            { "value": "500", "label": "500" },
+            { "value": "600", "label": "600" },
+            { "value": "700", "label": "700" },
+            { "value": "800", "label": "800" },
+            { "value": "900", "label": "900" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "deal_text_2",
+          "label": "Deal Text 2"
+        },
+        {
+          "type": "select",
+          "id": "deal_text_2_size",
+          "label": "Deal Text 2 Size",
+          "options": [
+            { "value": "h0", "label": "h0" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" },
+            { "value": "p", "label": "p" },
+            { "value": "p1", "label": "p1" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "deal_text_2_weight",
+          "label": "Deal Text 2 Weight",
+          "options": [
+            { "value": "100", "label": "100" },
+            { "value": "200", "label": "200" },
+            { "value": "300", "label": "300" },
+            { "value": "400", "label": "400" },
+            { "value": "500", "label": "500" },
+            { "value": "600", "label": "600" },
+            { "value": "700", "label": "700" },
+            { "value": "800", "label": "800" },
+            { "value": "900", "label": "900" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "code_pretext",
+          "label": "Code Pretext"
+        },
+        {
+          "type": "select",
+          "id": "code_pretext_size",
+          "label": "Code Pretext Size",
+          "options": [
+            { "value": "h0", "label": "h0" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" },
+            { "value": "p", "label": "p" },
+            { "value": "p1", "label": "p1" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "code_pretext_weight",
+          "label": "Code Pretext Weight",
+          "options": [
+            { "value": "100", "label": "100" },
+            { "value": "200", "label": "200" },
+            { "value": "300", "label": "300" },
+            { "value": "400", "label": "400" },
+            { "value": "500", "label": "500" },
+            { "value": "600", "label": "600" },
+            { "value": "700", "label": "700" },
+            { "value": "800", "label": "800" },
+            { "value": "900", "label": "900" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "code_text",
+          "label": "Code Text"
+        },
+        {
+          "type": "select",
+          "id": "code_text_size",
+          "label": "Code Text Size",
+          "options": [
+            { "value": "h0", "label": "h0" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" },
+            { "value": "p", "label": "p" },
+            { "value": "p1", "label": "p1" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "code_text_weight",
+          "label": "Code Text Weight",
+          "options": [
+            { "value": "100", "label": "100" },
+            { "value": "200", "label": "200" },
+            { "value": "300", "label": "300" },
+            { "value": "400", "label": "400" },
+            { "value": "500", "label": "500" },
+            { "value": "600", "label": "600" },
+            { "value": "700", "label": "700" },
+            { "value": "800", "label": "800" },
+            { "value": "900", "label": "900" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "select",
+          "id": "description_text_size",
+          "label": "Description Text Size",
+          "options": [
+            { "value": "h0", "label": "h0" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" },
+            { "value": "p", "label": "p" },
+            { "value": "p1", "label": "p1" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "description_text_weight",
+          "label": "Description Text Weight",
+          "options": [
+            { "value": "100", "label": "100" },
+            { "value": "200", "label": "200" },
+            { "value": "300", "label": "300" },
+            { "value": "400", "label": "400" },
+            { "value": "500", "label": "500" },
+            { "value": "600", "label": "600" },
+            { "value": "700", "label": "700" },
+            { "value": "800", "label": "800" },
+            { "value": "900", "label": "900" }
+          ]
+        }   
+      ]
+    },
+    {
       "type": "collapsible_tab",
       "name": "t:sections.main-product.blocks.collapsible_tab.name",
       "settings": [
@@ -1150,6 +1419,11 @@
           "default": "t:sections.main-product.blocks.collapsible_tab.settings.heading.default",
           "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_svg_icon",
+          "label": "Custom SVG Icon"
         },
         {
           "type": "select",
@@ -1372,6 +1646,24 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        },
+        {
+          "type": "select",
+          "id": "star_rating",
+          "label": "Star Rating",
+          "options": [
+            { "value": "1", "label": "1" },
+            { "value": "2", "label": "2" },
+            { "value": "3", "label": "3" },
+            { "value": "4", "label": "4" },
+            { "value": "5", "label": "5" }
+          ],
+          "default": "5"
+        },
+        {
+          "type": "text",
+          "id": "review_text",
+          "label": "Review Text"
         }
       ]
     },
