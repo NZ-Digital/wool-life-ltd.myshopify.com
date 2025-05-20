@@ -39,11 +39,11 @@
 }
 
 .product_template_updated legend{
-    font-family: Sora;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.4px;
+    font-family: Sora !important;
+    font-weight: 300 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    letter-spacing: 0.4px !important;
     
 }
 
