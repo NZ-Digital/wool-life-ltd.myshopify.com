@@ -73,6 +73,24 @@
             "content": "",
             "page": ""
           }
+        },
+        "collapsible_tab_69a7NJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials & Care",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_aPJ7At": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -83,7 +101,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "collapsible_tab_HYhaFh"
+        "collapsible_tab_HYhaFh",
+        "collapsible_tab_69a7NJ",
+        "collapsible_tab_aPJ7At"
       ],
       "custom_css": [],
       "settings": {
