@@ -38,7 +38,10 @@
         },
         "rating_HCzLNc": {
           "type": "rating",
-          "settings": {}
+          "settings": {
+            "star_rating": "5",
+            "review_text": ""
+          }
         },
         "price": {
           "type": "price",
@@ -62,17 +65,15 @@
             "show_gift_card_recipient": false
           }
         },
-        "text_X3gXdw": {
-          "type": "text",
-          "settings": {
-            "text": "Introducing Wool.Life Dog Beds - crafted in New Zealand from 80% recycled wool-rich textiles, combining lasting comfort with true sustainability. With a supportive 100mm inner, durable pre-shrunk cover, and internal dust protection, these fully recyclable beds prove that premium pet comfort doesn't have to cost the earth.",
-            "text_style": "body"
-          }
+        "description_QgwW6n": {
+          "type": "description",
+          "settings": {}
         },
         "collapsible_tab_HYhaFh": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Size Guide",
+            "custom_svg_icon": "shopify://shop_images/Icon_sizeguide.svg",
             "icon": "check_mark",
             "content": "",
             "page": ""
@@ -82,6 +83,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materials & Care",
+            "custom_svg_icon": "shopify://shop_images/Icon_Materials_Care.svg",
             "icon": "check_mark",
             "content": "",
             "page": ""
@@ -91,6 +93,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Returns",
+            "custom_svg_icon": "shopify://shop_images/Icon_Shipping_Returns.svg",
             "icon": "check_mark",
             "content": "",
             "page": ""
@@ -105,7 +108,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "text_X3gXdw",
+        "description_QgwW6n",
         "collapsible_tab_HYhaFh",
         "collapsible_tab_69a7NJ",
         "collapsible_tab_aPJ7At"
