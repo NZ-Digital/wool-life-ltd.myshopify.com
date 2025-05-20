@@ -445,6 +445,9 @@
               {% endif %}
               {% comment %} INSERT_YOUR_CODE {% endcomment %}
               {%- when 'special_code' -%}
+                {% if block.settings.code_text != blank %}
+
+                
                 <div class="shortz quick-add-hidden" {{ block.shopify_attributes }}>
                   <div class="theme-light col p-xxs a-cc">
                     <div class="row g-xxs">
@@ -487,6 +490,7 @@
                     </div>
                   </div>
                 </div>
+              {% endif %}
               {% comment %} INSERT_YOUR_CODE {% endcomment %}
               {%- when 'link' -%}
                 <div class="shortz quick-add-hidden" {{ block.shopify_attributes }}>
