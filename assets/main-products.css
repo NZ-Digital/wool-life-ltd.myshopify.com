@@ -130,7 +130,15 @@
     
 }
 
-
+.product_template_updated .product__description p{
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24.5px;
+    letter-spacing: 0.6px;
+    color: rgba(21, 71, 52, 0.8);
+    
+}
 
 @media (min-width: 1024px) {
     .product_template_updated .size-chart-con{

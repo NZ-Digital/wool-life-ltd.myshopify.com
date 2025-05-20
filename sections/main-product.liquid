@@ -388,7 +388,7 @@
                 {%- if product.description != blank -%}
                   <div class="shortz">
                       <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                        <p1>{{ product.description }}</p1>
+                        {{ product.description }}
                       </div>
                   </div>
                 {%- endif -%}
