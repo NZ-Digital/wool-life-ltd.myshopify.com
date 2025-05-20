@@ -9,8 +9,8 @@
 }
 
 .product_template_updated .wl_product_title.product__title{
-    margin-bottom: 0px !important;
-    margin-top:15px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
 }
 
 .product_template_updated .price-item.price-item--regular{
@@ -194,6 +194,10 @@
 .product_template_updated .m-0{
  margin-bottom: 0px !important;
  margin-top: 0px !important;
+}
+
+.product_template_updated .price-con{
+    margin-top: 0px !important;
 }
 
 
