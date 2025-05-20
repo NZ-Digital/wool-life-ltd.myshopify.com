@@ -130,6 +130,12 @@
     
 }
 
+.product_template_updated .product__description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .product_template_updated .product__description p{
     font-family: Sora;
     font-weight: 400;
