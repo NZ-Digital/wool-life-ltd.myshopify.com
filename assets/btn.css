@@ -7,5 +7,6 @@
 .theme-dark .btn-6{
     p, p1{
         color: #fff;
+        letter-spacing: -0.03em;
     }
 }

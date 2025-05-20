@@ -5,3 +5,13 @@
 .theme-dark h0, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6, .theme-dark p, .theme-dark p1{
     color: #fff;
 }
+
+.theme-highlight {
+    background-color: #4A653C;
+}
+
+.theme-highlight h0, .theme-highlight h1, .theme-highlight h2, .theme-highlight h3, .theme-highlight h4, .theme-highlight h5, .theme-highlight h6, .theme-highlight p, .theme-highlight p1{
+    color: #fff;
+}
+
+

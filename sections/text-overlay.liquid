@@ -17,7 +17,7 @@
         <div class="row-1 a-cc">
             <div class="col p-xxl-tb a-cc g-sm" style="max-width: {{ section.settings.header_max_width }}">
             <div class="col a-cc">
-                <div class="row g-xs a-cb">
+                <div class="row g-sm a-cb">
                     {%- comment -%} Eyebrow Text {%- endcomment -%}
                     {%- if section.settings.eyebrow_text != blank -%}
                     {%- assign eyebrow_tag = section.settings.eyebrow_text_size -%}
@@ -27,7 +27,7 @@
                     {%- comment -%} Star Rating {%- endcomment -%}
                     {%- if section.settings.number_of_stars != blank -%}
                     {%- assign stars = section.settings.number_of_stars | plus: 0 -%}
-                    <div class="stars row g-xxs a-b p-md-b">
+                    <div class="stars row g-xxs a-b p-sm-b">
                         {%- for i in (1..stars) -%}
                         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
