@@ -83,16 +83,16 @@
             "deal_text_weight": "300",
             "deal_text_2": "This Month Only!",
             "deal_text_2_size": "h4",
-            "deal_text_2_weight": "100",
+            "deal_text_2_weight": "200",
             "code_pretext": "USE CODE:",
             "code_pretext_size": "h3",
-            "code_pretext_weight": "100",
+            "code_pretext_weight": "200",
             "code_text": "FREESHIP",
             "code_text_size": "h3",
             "code_text_weight": "600",
             "description": "At Checkout",
-            "description_text_size": "h5",
-            "description_text_weight": "100"
+            "description_text_size": "h4",
+            "description_text_weight": "200"
           }
         },
         "description_QgwW6n": {
