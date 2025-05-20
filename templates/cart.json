@@ -1,1 +1,137 @@
-{"sections":{"cart-items":{"type":"main-cart-items","custom_css":[".gradient {background-color: #fff5e5;}"," {background-color: #fff5e5; padding-bottom: 96px;}",".cart__empty-text,.cart__login-title,.cart__login-paragraph,.link,.title {color: #154734;}",".button {background-color: #154734; color: #fff5e5;}"],"settings":{"color_scheme":"scheme-1","padding_top":36,"padding_bottom":36}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["subtotal","buttons"],"settings":{"color_scheme":"scheme-1","padding_top":20,"padding_bottom":40}},"1738729337d1fe498d":{"type":"apps","blocks":{"upsell_product_add_ons_sg_app_block_AnfYbR":{"type":"shopify:\/\/apps\/upsell-product-add-ons-sg\/blocks\/app-block\/b5caaaa1-43aa-4d84-9497-26284c984153","settings":{}}},"block_order":["upsell_product_add_ons_sg_app_block_AnfYbR"],"settings":{"include_margins":true}}},"order":["cart-items","cart-footer","1738729337d1fe498d"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "custom_css": [
+        ".gradient {background-color: #fff5e5;}",
+        " {background-color: #fff5e5; padding-bottom: 96px;}",
+        ".cart__empty-text,.cart__login-title,.cart__login-paragraph,.link,.title {color: #154734;}",
+        ".button {background-color: #154734; color: #fff5e5;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "1738729337d1fe498d": {
+      "type": "apps",
+      "blocks": {
+        "upsell_product_add_ons_sg_app_block_AnfYbR": {
+          "type": "shopify://apps/upsell-product-add-ons-sg/blocks/app-block/b5caaaa1-43aa-4d84-9497-26284c984153",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "upsell_product_add_ons_sg_app_block_AnfYbR"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "reviews_title_Acbpim": {
+      "type": "reviews-title",
+      "name": "Reviews Title",
+      "settings": {
+        "title_text": "Reviews",
+        "title_text_size": "h0",
+        "review_rating": "5"
+      }
+    },
+    "product_reviews_DqFLzW": {
+      "type": "product-reviews",
+      "blocks": {
+        "review_A7mqmW": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Maddie R, Nelson",
+            "tag": "Verified Buyer",
+            "date": "21 April 2025",
+            "number_of_stars": "5",
+            "review_title": "🐶 “Best bed we’ve ever bought”",
+            "review_description": "We’ve gone through a few dog beds over the years, but this one’s on another level. Our border collie, Archie, jumped straight on it and didn’t move for hours. It’s super sturdy but still soft, and I love that it’s made from recycled materials. Bonus points for being NZ-made too feels good to support local"
+          }
+        },
+        "review_JzfKra": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Blair T, Tauranga",
+            "tag": "Verified Buyer",
+            "date": "28 April 2025",
+            "number_of_stars": "5",
+            "review_title": "🐾 “Looks good and he actually uses it”",
+            "review_description": "Our golden retriever usually ends up on the couch, but since getting this bed she’s actually sleeping on it every night. It doesn’t go flat like the cheap ones, and it’s easy to unzip the cover and chuck it in the wash. Also doesn’t look ugly in the lounge, which is a win."
+          }
+        },
+        "review_ccceJn": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jess W, Christchurch",
+            "tag": "Verified Buyer",
+            "date": "4 May 2025",
+            "number_of_stars": "5",
+            "review_title": "🛏️ “Comfy, eco, and built to last”",
+            "review_description": "We’ve gone through a few dog beds over the years, but this one’s on another level. Our border collie, Archie, jumped straight on it and didn’t move for hours. It’s super sturdy but still soft, and I love that it’s made from recycled materials. Bonus points for being NZ-made too feels good to support local"
+          }
+        },
+        "review_kWdkR3": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Liam R, Dunedin",
+            "tag": "Verified Buyer",
+            "date": "11 May 2025",
+            "number_of_stars": "5",
+            "review_title": "“Perfect for picky pups”",
+            "review_description": "“Our Frenchie, Louie, is super fussy and usually ends up on the couch (or our bed). But since we got him the Wool.Life bed, he actually chooses it. It’s cosy, firm enough to support him properly, and doesn’t overheat like some of the fluffy ones. Plus, it looks great in our space.”"
+          }
+        }
+      },
+      "block_order": [
+        "review_A7mqmW",
+        "review_JzfKra",
+        "review_ccceJn",
+        "review_kWdkR3"
+      ],
+      "name": "Product Reviews",
+      "settings": {}
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "1738729337d1fe498d",
+    "reviews_title_Acbpim",
+    "product_reviews_DqFLzW"
+  ]
+}
