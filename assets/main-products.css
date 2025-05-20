@@ -23,6 +23,15 @@
 
 .product_template_updated .product__info-wrapper .summary-rating-con p1{
     font-size: 12px;
+    color: #154734;
+}
+
+.product_template_updated .quantity__button svg path{
+    fill: #154734 !important;
+}
+
+.product_template_updated .quantity__input {
+    border: none !important
 }
 
 .product_template_updated .product__tax.caption, .product__tax.caption a{
@@ -34,18 +43,25 @@
     color: #154734;
 }
 
+.product_template_updated .quantity-input{
+ background-color: white !important;
+}
+
 .product_template_updated .product__tax.caption a{
     text-decoration: underline;
 }
 
-.product_template_updated legend{
+.product_template_updated variant-selects legend, .product_template_updated label.quantity__label{
     font-family: Sora !important;
     font-weight: 300 !important;
     font-size: 12px !important;
     line-height: 16px !important;
     letter-spacing: 0.4px !important;
+    text-transform: capitalize !important;
     
 }
+
+
 
 .product_template_updated .product-form__input--pill input[type=radio]+label{
     background-color: white;
@@ -77,6 +93,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.4px;
+    color: #154734;
     
 }
 
