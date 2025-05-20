@@ -50,7 +50,7 @@
         "link_DPTjYM": {
           "type": "link",
           "settings": {
-            "link_url": "/#sizechart",
+            "link_url": "#sizechart",
             "link_text": "Size Chart"
           }
         },
