@@ -47,6 +47,13 @@
           "type": "price",
           "settings": {}
         },
+        "link_DPTjYM": {
+          "type": "link",
+          "settings": {
+            "link_url": "/#sizechart",
+            "link_text": "Size Chart"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -108,6 +115,7 @@
         "title",
         "rating_HCzLNc",
         "price",
+        "link_DPTjYM",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
