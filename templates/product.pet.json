@@ -34,7 +34,10 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "title_size": "h2",
+            "title_weight": "300"
+          }
         },
         "rating_HCzLNc": {
           "type": "rating",
@@ -49,7 +52,6 @@
         },
         "link_DPTjYM": {
           "type": "link",
-          "disabled": true,
           "settings": {
             "link_url": "#sizechart",
             "link_text": "Size Chart"
@@ -75,7 +77,6 @@
         },
         "special_code_6Nhkbn": {
           "type": "special_code",
-          "disabled": true,
           "settings": {
             "deal_text": "Free NZ Shipping",
             "deal_text_size": "h4",
