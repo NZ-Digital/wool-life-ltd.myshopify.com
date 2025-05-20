@@ -285,7 +285,10 @@
                 </p>
               {%- when 'title' -%}
                 <div class="wl_product_title product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.title | escape }}</h1>
+                  <{{ block.settings.title_size | default: 'h1' }}
+                    style="font-weight:{{ block.settings.title_weight | default: '400' }};">
+                    {{ product.title | escape }}
+                  </{{ block.settings.title_size | default: 'h1' }}>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
@@ -1063,7 +1066,43 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "title_size",
+          "label": "t:sections.main-product.blocks.title.settings.title_size.label",
+          "options": [
+            { "value": "h0", "label": "h0" },
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" },
+            { "value": "p", "label": "p" },
+            { "value": "p1", "label": "p1" }
+          ],
+          "default": "h1"
+        },
+        {
+          "type": "select",
+          "id": "title_weight",
+          "label": "t:sections.main-product.blocks.title.settings.title_weight.label",
+          "options": [
+            { "value": "100", "label": "100" },
+            { "value": "200", "label": "200" },
+            { "value": "300", "label": "300" },
+            { "value": "400", "label": "400" },
+            { "value": "500", "label": "500" },
+            { "value": "600", "label": "600" },
+            { "value": "700", "label": "700" },
+            { "value": "800", "label": "800" },
+            { "value": "900", "label": "900" }
+          ],
+          "default": "400"
+        }
+      ]
     },
     {
       "type": "price",
