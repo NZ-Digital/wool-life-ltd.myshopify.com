@@ -194,8 +194,8 @@
       "type": "reviews-title",
       "name": "Reviews Title",
       "settings": {
-        "title_text": "",
-        "title_text_size": "h2",
+        "title_text": "Reviews",
+        "title_text_size": "h0",
         "review_rating": "5"
       }
     },
