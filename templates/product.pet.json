@@ -103,6 +103,75 @@
         "product-description_background_color": "#E9DDC6"
       }
     },
+    "product_features_nTQ8UJ": {
+      "type": "product-features",
+      "blocks": {
+        "feature_FMDjiY": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/PF_icon_1.svg",
+            "header": "Superior Comfort",
+            "header_size": "p",
+            "header_weight": "400",
+            "description": "Structured support that resists flattening for better rest",
+            "description_size": "p",
+            "description_weight": "200"
+          }
+        },
+        "feature_3irAcr": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/PF_icon_2.svg",
+            "header": "Temperature Regulating",
+            "header_size": "p",
+            "header_weight": "400",
+            "description": "Cooler in summer and warmer in winter",
+            "description_size": "p",
+            "description_weight": "200"
+          }
+        },
+        "feature_yrFUqj": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/PF_icon_3.svg",
+            "header": "Locally Crafted",
+            "header_size": "p",
+            "header_weight": "400",
+            "description": "100% NZ manufactured supporting local communities",
+            "description_size": "p",
+            "description_weight": "200"
+          }
+        },
+        "feature_KYDdd6": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/PF_icon_4.svg",
+            "header": "Complete Lifecycle",
+            "header_size": "p",
+            "header_weight": "400",
+            "description": "End-of-life recycling program for true circularity",
+            "description_size": "p",
+            "description_weight": "200"
+          }
+        }
+      },
+      "block_order": [
+        "feature_FMDjiY",
+        "feature_3irAcr",
+        "feature_yrFUqj",
+        "feature_KYDdd6"
+      ],
+      "name": "Product Features",
+      "settings": {
+        "background_image": "shopify://shop_images/Background-Featured-Products.jpg",
+        "top_image": "shopify://shop_images/Vector_Dog_Product_Features.png",
+        "top_section_max_width": "600px",
+        "title": "Introducing: New Zealand's ONLY Fully Circular Dog Bed",
+        "title_size": "h1",
+        "subtitle": " Recycled, Recyclable, and Built to Last",
+        "subtitle_size": "h2"
+      }
+    },
     "text_overlay_MxxhgY": {
       "type": "text-overlay",
       "name": "Text Overlay",
@@ -269,6 +338,7 @@
     "custom_liquid_7DLRrh",
     "main",
     "product_description_YWHVBE",
+    "product_features_nTQ8UJ",
     "text_overlay_MxxhgY",
     "product_reviews_3bctnb",
     "image_with_content_tpneW4",
