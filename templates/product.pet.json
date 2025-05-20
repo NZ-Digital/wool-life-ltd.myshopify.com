@@ -35,7 +35,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "h1",
+            "title_size": "h2",
             "title_weight": "300"
           }
         },
