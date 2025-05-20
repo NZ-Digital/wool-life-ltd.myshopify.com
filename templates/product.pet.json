@@ -41,6 +41,7 @@
         },
         "rating_HCzLNc": {
           "type": "rating",
+          "disabled": true,
           "settings": {
             "star_rating": "5",
             "review_text": "3 Reviews"
@@ -103,6 +104,7 @@
         },
         "collapsible_tab_HYhaFh": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Size Guide",
             "custom_svg_icon": "shopify://shop_images/Icon_sizeguide.svg",
@@ -114,6 +116,7 @@
         },
         "collapsible_tab_69a7NJ": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials & Care",
             "custom_svg_icon": "shopify://shop_images/Icon_Materials_Care.svg",
@@ -125,6 +128,7 @@
         },
         "collapsible_tab_aPJ7At": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "custom_svg_icon": "shopify://shop_images/Icon_Shipping_Returns.svg",
