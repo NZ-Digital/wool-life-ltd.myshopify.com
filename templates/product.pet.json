@@ -38,7 +38,10 @@
         },
         "rating_HCzLNc": {
           "type": "rating",
-          "settings": {}
+          "settings": {
+            "star_rating": "5",
+            "review_text": ""
+          }
         },
         "price": {
           "type": "price",
@@ -73,6 +76,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Size Guide",
+            "custom_svg_icon": "shopify://shop_images/Icon_sizeguide.svg",
             "icon": "check_mark",
             "content": "",
             "page": ""
@@ -82,6 +86,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materials & Care",
+            "custom_svg_icon": "shopify://shop_images/Icon_Materials_Care.svg",
             "icon": "check_mark",
             "content": "",
             "page": ""
@@ -91,6 +96,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Returns",
+            "custom_svg_icon": "shopify://shop_images/Icon_Shipping_Returns.svg",
             "icon": "check_mark",
             "content": "",
             "page": ""
