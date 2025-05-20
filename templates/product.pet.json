@@ -40,12 +40,19 @@
           "type": "rating",
           "settings": {
             "star_rating": "5",
-            "review_text": ""
+            "review_text": "3 Reviews"
           }
         },
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "link_DPTjYM": {
+          "type": "link",
+          "settings": {
+            "link_url": "/#sizechart",
+            "link_text": "Size Chart"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -63,6 +70,26 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
+          }
+        },
+        "special_code_6Nhkbn": {
+          "type": "special_code",
+          "settings": {
+            "deal_text": "Free NZ Shipping",
+            "deal_text_size": "h4",
+            "deal_text_weight": "300",
+            "deal_text_2": "This Month Only!",
+            "deal_text_2_size": "h4",
+            "deal_text_2_weight": "100",
+            "code_pretext": "USE CODE:",
+            "code_pretext_size": "h3",
+            "code_pretext_weight": "100",
+            "code_text": "FREESHIP",
+            "code_text_size": "h3",
+            "code_text_weight": "600",
+            "description": "At Checkout",
+            "description_text_size": "h5",
+            "description_text_weight": "100"
           }
         },
         "description_QgwW6n": {
@@ -108,9 +135,11 @@
         "title",
         "rating_HCzLNc",
         "price",
+        "link_DPTjYM",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "special_code_6Nhkbn",
         "description_QgwW6n",
         "collapsible_tab_HYhaFh",
         "collapsible_tab_69a7NJ",
