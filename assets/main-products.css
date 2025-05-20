@@ -1,4 +1,4 @@
-.wl_product_title.product__title h2{
+.product_template_updated .wl_product_title.product__title h2{
     font-family: Sora;
     font-weight: 400;
     font-size: 32px;
@@ -8,18 +8,39 @@
     color: #154734;
 }
 
-.wl_product_title.product__title{
+.product_template_updated .wl_product_title.product__title{
     margin-bottom: 0px;
 }
 
-.product__info-wrapper .stars svg{
+.product_template_updated .price-item.price-item--regular{
+    margin-top: 0px;
+}
+
+.product_template_updated .product__info-wrapper .stars svg{
     width: 14px;
     height: 14px;
 }
 
-.product__info-wrapper .summary-rating-con p1{
+.product_template_updated .product__info-wrapper .summary-rating-con p1{
     font-size: 12px;
 }
+
+.product_template_updated .product__tax.caption, .product__tax.caption a{
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+    letter-spacing: 0.7px;
+    color: #154734;
+}
+
+.product_template_updated .product__tax.caption a{
+    text-decoration: underline;
+}
+
+
+
+
 
 
 
