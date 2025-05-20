@@ -91,7 +91,7 @@
             "code_text_size": "h3",
             "code_text_weight": "600",
             "description": "At Checkout",
-            "description_text_size": "h5",
+            "description_text_size": "h4",
             "description_text_weight": "100"
           }
         },
