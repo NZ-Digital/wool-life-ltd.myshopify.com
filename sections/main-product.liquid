@@ -1,3 +1,5 @@
+{{ 'main-products.css' | asset_url | stylesheet_tag }}
+
 <product-info
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -753,9 +755,9 @@
                 {%- if block.settings.star_rating != blank or block.settings.review_text != blank -%}
                   <div class="shortz">
                     {%- if block.settings.star_rating != blank -%}
-                      <div class="row g-xs a-cl">
+                      <div class="row g-xs a-cl summary-rating-con">
                       {%- assign star_count = block.settings.star_rating | plus: 0 -%}
-                      <div class="stars row g-xxs a-b p-xs-b m-xxs-b">
+                      <div class="stars row g-xxs">
                         {%- for i in (1..star_count) -%}
                           <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.32886 0.783936L12.2115 6.25881L18.6577 7.14214L13.9933 11.4013L15.0941 17.4185L9.32886 14.5761L3.56363 17.4185L4.66443 11.4013L0 7.14214L6.44624 6.25881L9.32886 0.783936Z" fill="#F76627"/>
