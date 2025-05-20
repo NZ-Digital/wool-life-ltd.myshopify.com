@@ -74,7 +74,6 @@
         },
         "special_code_6Nhkbn": {
           "type": "special_code",
-          "disabled": true,
           "settings": {
             "deal_text": "Free NZ Shipping",
             "deal_text_size": "h4",
