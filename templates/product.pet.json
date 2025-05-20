@@ -36,21 +36,18 @@
           "type": "title",
           "settings": {}
         },
+        "rating_HCzLNc": {
+          "type": "rating",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
         },
-        "text_X3gXdw": {
-          "type": "text",
-          "settings": {
-            "text": "Introducing Wool.Life Dog Beds - crafted in New Zealand from 80% recycled wool-rich textiles, combining lasting comfort with true sustainability. With a supportive 100mm inner, durable pre-shrunk cover, and internal dust protection, these fully recyclable beds prove that premium pet comfort doesn't have to cost the earth.",
-            "text_style": "body"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown",
+            "picker_type": "button",
             "swatch_shape": "circle"
           }
         },
@@ -64,16 +61,54 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
+        },
+        "text_X3gXdw": {
+          "type": "text",
+          "settings": {
+            "text": "Introducing Wool.Life Dog Beds - crafted in New Zealand from 80% recycled wool-rich textiles, combining lasting comfort with true sustainability. With a supportive 100mm inner, durable pre-shrunk cover, and internal dust protection, these fully recyclable beds prove that premium pet comfort doesn't have to cost the earth.",
+            "text_style": "body"
+          }
+        },
+        "collapsible_tab_HYhaFh": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Guide",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_69a7NJ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials & Care",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_aPJ7At": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "custom_liquid_eKkNei",
         "title",
+        "rating_HCzLNc",
         "price",
-        "text_X3gXdw",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "text_X3gXdw",
+        "collapsible_tab_HYhaFh",
+        "collapsible_tab_69a7NJ",
+        "collapsible_tab_aPJ7At"
       ],
       "custom_css": [],
       "settings": {
