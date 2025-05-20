@@ -141,9 +141,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    background-color: white !important;
+    background-color: transparent;
     border: 1px solid rgba(21, 71, 52, 0.2);
     border-color: rgba(21, 71, 52, 0.2);
+  }
+
+  #shopify-section-{{ section.id }} .product-template-updated .quantity {
+    background-color: white !important;
   }
   #shopify-section-{{ section.id }} .quantity:before {
     background-color: transparent !important;
@@ -470,7 +474,9 @@
                       {%- endif -%}
                     </div>
 
-                    <div class="row g-xxs btn-3">
+                    
+
+                    <div class="row g-xxs btn-3 copy-top-clip" data-script="{{ block.settings.code_text }}">
                       {%- if block.settings.code_pretext != blank -%}
                         <{{ block.settings.code_pretext_size | default: 'p' }}
                           style="font-weight:{{ block.settings.code_pretext_weight | default: '400' }};">
@@ -1023,6 +1029,27 @@
     </script>
   </div>
 </product-info>
+
+{% comment %} INSERT_YOUR_CODE {% endcomment %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const copyButtons = document.querySelectorAll('.copy-top-clip');
+
+    copyButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const dataScript = button.getAttribute('data-script');
+        if (dataScript) {
+          navigator.clipboard.writeText(dataScript).then(() => {
+            console.log('Text copied to clipboard');
+          }).catch(err => {
+            console.error('Could not copy text: ', err);
+          });
+        }
+      });
+    });
+  });
+</script>
+
 
 {% schema %}
 {

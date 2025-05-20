@@ -10,6 +10,13 @@ h0{
     }
 }
 
+h0.reviews-title-text{
+    font-size: 64px;
+    @media (max-width: 767px) {
+        font-size: 44px;
+    }
+}
+
 p1{
     font-family: Sora;
     font-weight: 300;
