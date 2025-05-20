@@ -92,6 +92,7 @@
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
         "image-with-content_image_picker": "shopify://shop_images/DJI_0148.jpg",
+        "image-with-content_preimage_location": "col",
         "image-with-content_heading": "Commercial Products",
         "image-with-content_heading_color": "#E9DDC6",
         "image-with-content_text": "Wool.Life provides a variety of commercial solutions designed to support sustainability across different industries. \n\nOur products, made from 100% New Zealand wool, are eco-friendly alternatives that cater to the needs of sectors such as landscaping, agriculture, packaging, and insulation. We help businesses reduce their environmental impact while offering effective, natural solutions that promote long-term sustainability and growth.\n<a href=\"/pages/contact\">Contact us</a>",
@@ -133,6 +134,15 @@
       "settings": {
         "cta-image_image_picker": "shopify://shop_images/STR_1892.jpg"
       }
+    },
+    "reviews_title_Htrc8w": {
+      "type": "reviews-title",
+      "name": "Reviews Title",
+      "settings": {
+        "title_text": "Reviews",
+        "title_text_size": "h0",
+        "review_rating": "5"
+      }
     }
   },
   "order": [
@@ -143,6 +153,7 @@
     "image_with_content_iAFNWT",
     "image_box_fqCEaQ",
     "case_studies_listing_LVm9NT",
-    "cta_full_image_6wCFNR"
+    "cta_full_image_6wCFNR",
+    "reviews_title_Htrc8w"
   ]
 }
