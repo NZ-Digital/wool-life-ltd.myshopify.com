@@ -9,7 +9,7 @@
 }
 
 .product_template_updated .wl_product_title.product__title{
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
 }
 
 .product_template_updated .price-item.price-item--regular{
@@ -36,6 +36,41 @@
 
 .product_template_updated .product__tax.caption a{
     text-decoration: underline;
+}
+
+.product_template_updated .legend{
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    
+}
+
+.product_template_updated .product-form__input--pill input[type=radio]:checked+label{
+    background-color: #154734;
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product_template_updated .size-chart-con p1{
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    
+}
+
+@media (min-width: 1024px) {
+    .product_template_updated .size-chart-con{
+        margin-bottom: -40px;
+    }
 }
 
 
