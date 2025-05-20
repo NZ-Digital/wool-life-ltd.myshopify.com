@@ -75,6 +75,7 @@
             "heading": "Size Guide",
             "custom_svg_icon": "shopify://shop_images/Icon_sizeguide.svg",
             "icon": "check_mark",
+            "content_dynamic_text": "size_guide",
             "content": "",
             "page": ""
           }
@@ -85,6 +86,7 @@
             "heading": "Materials & Care",
             "custom_svg_icon": "shopify://shop_images/Icon_Materials_Care.svg",
             "icon": "check_mark",
+            "content_dynamic_text": "",
             "content": "",
             "page": ""
           }
@@ -95,6 +97,7 @@
             "heading": "Shipping & Returns",
             "custom_svg_icon": "shopify://shop_images/Icon_Shipping_Returns.svg",
             "icon": "check_mark",
+            "content_dynamic_text": "",
             "content": "",
             "page": ""
           }
