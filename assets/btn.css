@@ -21,10 +21,14 @@
 }
 
 .btn-6{
-    p, p1{
-        text-decoration: underline;
-    }
+    all: unset;
+    cursor: pointer;
 }
+    
+.btn-6 p, .btn-6 p1{
+        text-decoration: underline;
+}
+
 
 .theme-dark .btn-6{
     p, p1{
