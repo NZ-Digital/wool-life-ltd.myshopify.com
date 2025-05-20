@@ -34,7 +34,10 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "title_size": "h1",
+            "title_weight": "300"
+          }
         },
         "rating_HCzLNc": {
           "type": "rating",
