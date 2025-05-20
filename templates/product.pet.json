@@ -112,7 +112,7 @@
             "icon": "shopify://shop_images/PF_icon_1.svg",
             "header": "Superior Comfort",
             "header_size": "p",
-            "header_weight": "400",
+            "header_weight": "500",
             "description": "Structured support that resists flattening for better rest",
             "description_size": "p",
             "description_weight": "200"
@@ -124,7 +124,7 @@
             "icon": "shopify://shop_images/PF_icon_2.svg",
             "header": "Temperature Regulating",
             "header_size": "p",
-            "header_weight": "400",
+            "header_weight": "500",
             "description": "Cooler in summer and warmer in winter",
             "description_size": "p",
             "description_weight": "200"
@@ -136,7 +136,7 @@
             "icon": "shopify://shop_images/PF_icon_3.svg",
             "header": "Locally Crafted",
             "header_size": "p",
-            "header_weight": "400",
+            "header_weight": "500",
             "description": "100% NZ manufactured supporting local communities",
             "description_size": "p",
             "description_weight": "200"
@@ -148,7 +148,7 @@
             "icon": "shopify://shop_images/PF_icon_4.svg",
             "header": "Complete Lifecycle",
             "header_size": "p",
-            "header_weight": "400",
+            "header_weight": "500",
             "description": "End-of-life recycling program for true circularity",
             "description_size": "p",
             "description_weight": "200"
