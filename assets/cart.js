@@ -68,11 +68,23 @@ class CartItems extends HTMLElement {
       message = window.quickOrderListStrings.step_error.replace('[step]', event.target.step);
     }
 
+    if (inputValue === 0) {
+      // Allow a quantity of 0 to remove the item from the cart without triggering min-quantity validation
+      event.target.setCustomValidity('');
+      this.updateQuantity(
+        index,
+        0,
+        document.activeElement.getAttribute('name'),
+        event.target.dataset.quantityVariantId
+      );
+      return;
+    }
+
     if (message) {
       this.setValidity(event, index, message);
     } else {
+      // Clear any previous custom validity messages so that the input is treated as valid while we process the removal.
       event.target.setCustomValidity('');
-      event.target.reportValidity();
       this.updateQuantity(
         index,
         inputValue,
