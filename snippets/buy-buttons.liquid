@@ -60,6 +60,26 @@
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
 
+        {%- comment -%} START: Custom pet name input for dog bed personalization {%- endcomment -%}
+        {%- if product.handle == 'dog-bed' -%}
+          <div class="product-form__input" style="margin-top: 1rem;">
+            <label for="PetName-{{ section_id }}" class="form__label">
+              Make It Personal<br>
+              <small>Want to add your dog's name? Type it below (max 12 characters).</small>
+            </label>
+            <input
+              id="PetName-{{ section_id }}"
+              type="text"
+              name="properties[Pet Name]"
+              maxlength="12"
+              placeholder="Your dog's name"
+              required
+              class="input"
+            >
+          </div>
+        {%- endif -%}
+        {%- comment -%} END: Custom pet name input {%- endcomment -%}
+
         <div class="product-form__buttons">
           {%- liquid
             assign check_against_inventory = true
