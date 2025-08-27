@@ -34,7 +34,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "{{ article.image }}",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 40,
         "image_height": "medium",
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
