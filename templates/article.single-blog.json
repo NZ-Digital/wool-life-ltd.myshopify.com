@@ -115,6 +115,14 @@
       "settings": {
         "single-column_text": "<p>{{ article.metafields.custom.testimonial | metafield_tag }}</p>",
         "single-column_text_color": "#154734",
+        "single-column_background_color": "#E9DDC6"
+      }
+    },
+    "single_column_Nby9GX": {
+      "type": "single-column",
+      "settings": {
+        "single-column_text": "{{ article.metafields.custom.blog_second_text_content | metafield_tag }}",
+        "single-column_text_color": "#154734",
         "single-column_background_color": "#FFF5E5"
       }
     },
@@ -136,6 +144,7 @@
     "single_column_TQdLCQ",
     "image_full_width_jNNTJf",
     "single_column_q6kWKx",
+    "single_column_Nby9GX",
     "call_to_action_HcGT7f"
   ]
 }
