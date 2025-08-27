@@ -12,24 +12,24 @@
     "image_banner_UMMtz9": {
       "type": "image-banner",
       "blocks": {
-        "heading_cdmLxK": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
         "text_8q3HV6": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "NEWS",
+            "text_style": "subtitle"
+          }
+        },
+        "heading_cdmLxK": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ article.title }}",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "heading_cdmLxK",
-        "text_8q3HV6"
+        "text_8q3HV6",
+        "heading_cdmLxK"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -82,45 +82,6 @@
       "disabled": true,
       "settings": {}
     },
-    "image_full_width_YbrHzc": {
-      "type": "image-full-width",
-      "name": "Image",
-      "settings": {
-        "image-full-width_image_picker": "{{ article.image }}",
-        "image-full-width_show-squiggles": "no-squiggles"
-      }
-    },
-    "rich_text_rDKMgr": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_79EcJF": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ article.title }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_BrCjNc": {
-          "type": "text",
-          "settings": {
-            "text": "{{ article.excerpt }}"
-          }
-        }
-      },
-      "block_order": [
-        "heading_79EcJF",
-        "text_BrCjNc"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "single_column_TQdLCQ": {
       "type": "single-column",
       "settings": {
@@ -160,8 +121,6 @@
   "order": [
     "image_banner_UMMtz9",
     "main",
-    "image_full_width_YbrHzc",
-    "rich_text_rDKMgr",
     "single_column_TQdLCQ",
     "image_full_width_jNNTJf",
     "single_column_q6kWKx",
