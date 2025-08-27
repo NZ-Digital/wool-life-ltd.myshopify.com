@@ -1,0 +1,125 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_background_9DNiPn": {
+      "type": "hero-background",
+      "settings": {
+        "hero-background_image_picker": "shopify://shop_images/wool-life-using-natural-weed-mats.jpg",
+        "hero-background_subheading": "News",
+        "hero-background_heading": "Airport entrance gets a woolly transformation",
+        "hero-background_subheading_color": "#E9DDC680",
+        "hero-background_heading_color": "#E9DDC6",
+        "hero-background_background_color": "#154734"
+      }
+    },
+    "single_column_TQdLCQ": {
+      "type": "single-column",
+      "settings": {
+        "single-column_text": "<h2>Wool Innovation</h2><p></p><p>Gisborne Airport and Ngai Tāwhiri recently hosted a native planting day at the entrance of the airport. The community initiative focused on promoting environmental sustainability and biodiversity within the premises.<br/><br/>Gisborne Airport Manager Murray Bell said, \"One way of achieving this was by using more eco-friendly alternatives such as wool weed matting.\"<br/><br/>Wool.Life NZ sources the wool from local Tairāwhiti farms and manufactures it into conventional weed matting, improving biodegradability and enhancing water retention.</p>",
+        "single-column_text_color": "#154734",
+        "single-column_background_color": "#FFF5E5"
+      }
+    },
+    "image_full_width_VtHVjt": {
+      "type": "image-full-width",
+      "settings": {
+        "image-full-width_image_picker": "shopify://shop_images/wool-life-using-natural-weed-mats.jpg",
+        "image-full-width_show-squiggles": "no-squiggles"
+      }
+    },
+    "single_column_xTNM8Y": {
+      "type": "single-column",
+      "settings": {
+        "single-column_text": "<p>Managing Director of Wool.Life NZ Gareth Mentzer said, \"We’re very proud to be involved with this project - there is something special about our products being used to nurture the whenua they are sourced from.<br/>We produce our mats entirely from wool, they biodegrade over 12 – 18 months, restricting weeds and releasing nutrient elements into the soil to encourage plant growth.\"</p>",
+        "single-column_text_color": "#154734",
+        "single-column_background_color": "#FFF5E5"
+      }
+    },
+    "text_column_w7BKxi": {
+      "type": "text-column",
+      "custom_css": [
+        "h5 {color: #44693d; font-family: Sora; font-size: 12px; font-style: normal; font-weight: 700; line-height: 100%; letter-spacing: 0.24px; text-transform: uppercase; margin-top: 32px;}"
+      ],
+      "settings": {
+        "text-column_text": "\"To assist the rejuvenation of native ecosystems the local landscape is in need of sustainable weed management. The introduction of wool weed matting to the Airport Planting Programme is a welcome approach to weed control.\"\n\n<h5>Thelma Karaitiana of Ngai Tāwhiri</h5>",
+        "text-column_text_color": "#154734",
+        "text-column_background_color": "#E9DDC6",
+        "text-column_btn-text": "",
+        "text-column_btn-link": ""
+      }
+    },
+    "single_column_q6kWKx": {
+      "type": "single-column",
+      "settings": {
+        "single-column_text": "<p>Te Hapara and Awapuni School children were involved in planting the 950 harakeke, and carex grass amongst the wool matting.<br/><br/>Christina Robinson of Ngai Tāwhiri said, \"It has been brilliant seeing the enthusiasm of the children and it has been great to watch them learn and gather understanding of what they’re doing. The airport is the gateway to the region and as the plants grow it will remind us of the tracks that our ancestors walked through.\"</p>",
+        "single-column_text_color": "#154734",
+        "single-column_background_color": "#FFF5E5"
+      }
+    },
+    "call_to_action_HcGT7f": {
+      "type": "call-to-action",
+      "settings": {
+        "cta_image_picker": "shopify://shop_images/DJI_0126_65bcd742-fe19-4400-8424-cd35542620b2.jpg",
+        "cta_heading": "Explore our Products",
+        "cta_heading_color": "#E9DDC6",
+        "cta_background_color": "#154734",
+        "cta_link-text": "EXPLORE PRODUCTS",
+        "cta_link-url": "/collections/all"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_background_9DNiPn",
+    "single_column_TQdLCQ",
+    "image_full_width_VtHVjt",
+    "single_column_xTNM8Y",
+    "text_column_w7BKxi",
+    "single_column_q6kWKx",
+    "call_to_action_HcGT7f"
+  ]
+}
