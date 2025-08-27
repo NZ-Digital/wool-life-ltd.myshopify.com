@@ -45,36 +45,34 @@
       "disabled": true,
       "settings": {}
     },
-    "hero_background_9DNiPn": {
-      "type": "hero-background",
+    "image_full_width_YbrHzc": {
+      "type": "image-full-width",
+      "name": "Image",
       "settings": {
-        "hero-background_image_picker": "shopify://shop_images/wool-life-using-natural-weed-mats.jpg",
-        "hero-background_subheading": "News",
-        "hero-background_heading": "Airport entrance gets a woolly transformation",
-        "hero-background_subheading_color": "#E9DDC680",
-        "hero-background_heading_color": "#E9DDC6",
-        "hero-background_background_color": "#154734"
+        "image-full-width_image_picker": "{{ article.image }}",
+        "image-full-width_show-squiggles": ""
       }
     },
     "single_column_TQdLCQ": {
       "type": "single-column",
       "settings": {
-        "single-column_text": "<h2>Wool Innovation</h2><p></p><p>Gisborne Airport and Ngai Tāwhiri recently hosted a native planting day at the entrance of the airport. The community initiative focused on promoting environmental sustainability and biodiversity within the premises.<br/><br/>Gisborne Airport Manager Murray Bell said, \"One way of achieving this was by using more eco-friendly alternatives such as wool weed matting.\"<br/><br/>Wool.Life NZ sources the wool from local Tairāwhiti farms and manufactures it into conventional weed matting, improving biodegradability and enhancing water retention.</p>",
+        "single-column_text": "{{ article.content }}",
         "single-column_text_color": "#154734",
         "single-column_background_color": "#FFF5E5"
       }
     },
-    "image_full_width_VtHVjt": {
+    "image_full_width_jNNTJf": {
       "type": "image-full-width",
+      "name": "Image",
       "settings": {
-        "image-full-width_image_picker": "shopify://shop_images/wool-life-using-natural-weed-mats.jpg",
-        "image-full-width_show-squiggles": "no-squiggles"
+        "image-full-width_image_picker": "{{ article.metafields.custom.blog_in_page_image.value }}",
+        "image-full-width_show-squiggles": ""
       }
     },
     "single_column_xTNM8Y": {
       "type": "single-column",
       "settings": {
-        "single-column_text": "<p>Managing Director of Wool.Life NZ Gareth Mentzer said, \"We’re very proud to be involved with this project - there is something special about our products being used to nurture the whenua they are sourced from.<br/>We produce our mats entirely from wool, they biodegrade over 12 – 18 months, restricting weeds and releasing nutrient elements into the soil to encourage plant growth.\"</p>",
+        "single-column_text": "<p>{{ article.metafields.custom.testimonial | metafield_tag }}</p>",
         "single-column_text_color": "#154734",
         "single-column_background_color": "#FFF5E5"
       }
@@ -114,9 +112,9 @@
   },
   "order": [
     "main",
-    "hero_background_9DNiPn",
+    "image_full_width_YbrHzc",
     "single_column_TQdLCQ",
-    "image_full_width_VtHVjt",
+    "image_full_width_jNNTJf",
     "single_column_xTNM8Y",
     "text_column_w7BKxi",
     "single_column_q6kWKx",
