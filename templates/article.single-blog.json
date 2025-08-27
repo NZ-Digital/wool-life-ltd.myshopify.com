@@ -84,7 +84,9 @@
     },
     "single_column_TQdLCQ": {
       "type": "single-column",
-      "custom_css": [],
+      "custom_css": [
+        "ul {padding: 10px 15px;}"
+      ],
       "settings": {
         "single-column_text": "{{ article.content }}",
         "single-column_text_color": "#154734",
