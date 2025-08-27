@@ -50,7 +50,38 @@
       "name": "Image",
       "settings": {
         "image-full-width_image_picker": "{{ article.image }}",
-        "image-full-width_show-squiggles": ""
+        "image-full-width_show-squiggles": "no-squiggles"
+      }
+    },
+    "rich_text_rDKMgr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_79EcJF": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ article.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_BrCjNc": {
+          "type": "text",
+          "settings": {
+            "text": "{{ article.excerpt }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_79EcJF",
+        "text_BrCjNc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "single_column_TQdLCQ": {
@@ -69,31 +100,10 @@
         "image-full-width_show-squiggles": ""
       }
     },
-    "single_column_xTNM8Y": {
-      "type": "single-column",
-      "settings": {
-        "single-column_text": "<p>{{ article.metafields.custom.testimonial | metafield_tag }}</p>",
-        "single-column_text_color": "#154734",
-        "single-column_background_color": "#FFF5E5"
-      }
-    },
-    "text_column_w7BKxi": {
-      "type": "text-column",
-      "custom_css": [
-        "h5 {color: #44693d; font-family: Sora; font-size: 12px; font-style: normal; font-weight: 700; line-height: 100%; letter-spacing: 0.24px; text-transform: uppercase; margin-top: 32px;}"
-      ],
-      "settings": {
-        "text-column_text": "\"To assist the rejuvenation of native ecosystems the local landscape is in need of sustainable weed management. The introduction of wool weed matting to the Airport Planting Programme is a welcome approach to weed control.\"\n\n<h5>Thelma Karaitiana of Ngai Tāwhiri</h5>",
-        "text-column_text_color": "#154734",
-        "text-column_background_color": "#E9DDC6",
-        "text-column_btn-text": "",
-        "text-column_btn-link": ""
-      }
-    },
     "single_column_q6kWKx": {
       "type": "single-column",
       "settings": {
-        "single-column_text": "<p>Te Hapara and Awapuni School children were involved in planting the 950 harakeke, and carex grass amongst the wool matting.<br/><br/>Christina Robinson of Ngai Tāwhiri said, \"It has been brilliant seeing the enthusiasm of the children and it has been great to watch them learn and gather understanding of what they’re doing. The airport is the gateway to the region and as the plants grow it will remind us of the tracks that our ancestors walked through.\"</p>",
+        "single-column_text": "<p>{{ article.metafields.custom.testimonial | metafield_tag }}</p>",
         "single-column_text_color": "#154734",
         "single-column_background_color": "#FFF5E5"
       }
@@ -113,10 +123,9 @@
   "order": [
     "main",
     "image_full_width_YbrHzc",
+    "rich_text_rDKMgr",
     "single_column_TQdLCQ",
     "image_full_width_jNNTJf",
-    "single_column_xTNM8Y",
-    "text_column_w7BKxi",
     "single_column_q6kWKx",
     "call_to_action_HcGT7f"
   ]
