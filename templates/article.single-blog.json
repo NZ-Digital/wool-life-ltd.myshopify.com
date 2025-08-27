@@ -9,6 +9,43 @@
  */
 {
   "sections": {
+    "image_banner_UMMtz9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_cdmLxK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_8q3HV6": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cdmLxK",
+        "text_8q3HV6"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "{{ article.image }}",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -121,6 +158,7 @@
     }
   },
   "order": [
+    "image_banner_UMMtz9",
     "main",
     "image_full_width_YbrHzc",
     "rich_text_rDKMgr",
