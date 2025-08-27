@@ -103,6 +103,9 @@
     },
     "single_column_q6kWKx": {
       "type": "single-column",
+      "custom_css": [
+        ".wl_single-column {align-items: center;}"
+      ],
       "settings": {
         "single-column_text": "<p>{{ article.metafields.custom.testimonial | metafield_tag }}</p>",
         "single-column_text_color": "#154734",
