@@ -110,18 +110,6 @@
         "single-column_background_color": "#E9DDC6"
       }
     },
-    "single_column_Nby9GX": {
-      "type": "single-column",
-      "disabled": true,
-      "custom_css": [
-        ".wl_single-column {min-height: unset; padding: unset;}"
-      ],
-      "settings": {
-        "single-column_text": "{{ article.metafields.custom.blog_second_text_content | metafield_tag }}",
-        "single-column_text_color": "#154734",
-        "single-column_background_color": "#FFF5E5"
-      }
-    },
     "image_full_width_jNNTJf": {
       "type": "image-full-width",
       "name": "Image",
@@ -147,7 +135,6 @@
     "main",
     "single_column_TQdLCQ",
     "single_column_q6kWKx",
-    "single_column_Nby9GX",
     "image_full_width_jNNTJf",
     "call_to_action_HcGT7f"
   ]
