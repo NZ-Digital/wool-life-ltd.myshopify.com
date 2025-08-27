@@ -15,8 +15,8 @@
         "text_8q3HV6": {
           "type": "text",
           "settings": {
-            "text": "NEWS",
-            "text_style": "subtitle"
+            "text": "{{ article.metafields.custom.blog_type.value }}",
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "heading_cdmLxK": {
