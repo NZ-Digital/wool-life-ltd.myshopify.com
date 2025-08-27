@@ -103,7 +103,8 @@
       "type": "single-column",
       "custom_css": [
         ".wl_single-column {align-items: center;}",
-        "h4 {color: #154734; text-align: center; font-family: Sora; font-size: 25px; font-style: normal; font-weight: 400; line-height: 175%;}"
+        "h4 {color: #154734; text-align: center; font-family: Sora; font-size: 25px; font-style: normal; font-weight: 400; line-height: 175%;}",
+        "@media (max-width: 767px) {h4 {font-size: 17px; }}"
       ],
       "settings": {
         "single-column_text": "<h4>{{ article.metafields.custom.testimonial | metafield_tag }}</h4>",
