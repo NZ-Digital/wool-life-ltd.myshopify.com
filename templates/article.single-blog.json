@@ -35,7 +35,7 @@
         ".banner:after,.banner__media:after {background: #154734;}",
         ".banner__content {max-width: 910px;}",
         "h2 {color: #e9ddc6;}",
-        "@media (max-width: 767px) {h2 {font-size: 20px; }}"
+        "@media (max-width: 767px) {h2 {font-size: 27px; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
