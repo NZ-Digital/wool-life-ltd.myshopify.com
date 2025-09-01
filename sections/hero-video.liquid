@@ -104,7 +104,10 @@
   </video>
   <div class="wl_hero-video_wrapper">
     <div class="wl_hero-video_inner">
-      <h5 class="wl_hero-video_subheading">{{ section.settings.hero-video_subheading }}</h5>
+      
+      {% if section.settings.hero-video_subheading != blank %}
+        <h5 class="wl_hero-video_subheading">{{ section.settings.hero-video_subheading }}</h5>
+      {% endif %}
       <h1 class="wl_hero-video_heading">{{ section.settings.hero-video_heading }}</h1>
       <a href="{{ section.settings.hero-video_button-url }}" class="wl_hero-video_button">{{ section.settings.hero-video_button-text }}</a>
     </div>

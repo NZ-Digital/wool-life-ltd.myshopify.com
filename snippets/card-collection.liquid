@@ -83,7 +83,7 @@
       {%- else -%}
         <div class="card__content">
           <div class="card__information">
-            <h3 class="card__heading">
+            <h3 class="card__heading nzd3">
               <a
                 {% if card_collection == blank %}
                   role="link" aria-disabled="true"
@@ -119,7 +119,7 @@
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading">
+          <h3 class="card__heading nzd4">
             <a
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
@@ -154,7 +154,7 @@
     {%- if card_collection == blank -%}
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading card__heading--placeholder">
+          <h3 class="card__heading card__heading--placeholder nzd5">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.collection_title' | t }}
               <span class="icon-wrap">
