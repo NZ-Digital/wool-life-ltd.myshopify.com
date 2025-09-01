@@ -16,8 +16,8 @@
         "hero-video_heading": "100% NZ Wool Products",
         "hero-video_button-text": "Discover more",
         "hero-video_button-url": "shopify://pages/why-choose-wool-life",
-        "hero-video_video": "shopify://files/videos/WLF_Website vid_V1.4.mp4",
-        "hero-video_subheading_color": "#E9DDC680",
+        "hero-video_video": "shopify://files/videos/HomepagePromoVideo.mp4",
+        "hero-video_subheading_color": "#15473480",
         "hero-video_heading_color": "#E9DDC6",
         "hero-video_background_color": "#154734"
       }
@@ -73,7 +73,7 @@
       "type": "image-box-v2",
       "name": "Image Box V2",
       "settings": {
-        "image-box_image_picker": "shopify://shop_images/Pet_feature_Image.jpg",
+        "image-box_image_picker": "shopify://shop_images/Pet_feature_Image-small.jpg",
         "image-box_heading": "New Zealand's ONLY  Fully Circular Dog Bed",
         "image-box_subheading": " Recycled, Recyclable, and Built to Last",
         "image-box_description": "Your dog deserves the natural comfort of wool, just like your home. Our pet bed combines comfort with sustainability, crafted with the same care as our home and garden products.",
