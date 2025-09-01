@@ -107,7 +107,7 @@
           </div>
         {%- endif -%}
         <div class="card__content">
-          <div class="card__information">
+          {% comment %} <div class="card__information">
             <h3
               class="card__heading nzd1"
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
@@ -123,7 +123,7 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
-          </div>
+          </div> {% endcomment %}
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
