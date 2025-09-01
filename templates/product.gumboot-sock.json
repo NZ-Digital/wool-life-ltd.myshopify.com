@@ -1,1 +1,175 @@
-{"sections":{"custom_liquid_7DLRrh":{"type":"custom-liquid","custom_css":["{background: #fff5e5;}",".gradient {background: inherit; max-width: 1280px; margin: auto;}",".wl_product_breadcrumbs a {text-decoration: underline;}"],"settings":{"custom_liquid":"<div class=\"wl_product_breadcrumbs\">\n<p>Shop \/ products \/ <a href=\"\/collections\/home\">Home<\/a><\/p>\n<\/div>","color_scheme":"","padding_top":96,"padding_bottom":0}},"main":{"type":"main-product","blocks":{"custom_liquid_eKkNei":{"type":"custom_liquid","settings":{"custom_liquid":"<p class=\"wl_product-cat\">Home<\/p>"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"custom_liquid_WKqtAi":{"type":"custom_liquid","settings":{"custom_liquid":"<svg width=\"158\" height=\"32\" viewBox=\"0 0 158 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_315_15)\">\n<path d=\"M36.9516 14.9707H33.0846L35.1915 13.1779L33.7966 11.6298L29.8707 14.9707H27.2866L31.8226 11.1107L30.4277 9.56267L24.0721 14.9707H22.4234C22.2386 14.3145 21.8841 13.7253 21.405 13.2548L22.2291 11.8685L30.2264 9.22378L29.5441 7.27594L23.8366 9.16351L25.1284 6.98872L30.0682 5.35517L29.3865 3.40733L26.7353 4.28377L28.6688 1.02896L26.8347 0L24.9012 3.2548L24.3569 0.58552L22.2797 0.985297L23.2936 5.95975L22.0019 8.13454L20.8304 2.38698L18.7532 2.78675L20.3949 10.8395L19.5703 12.2276C19.2443 12.1446 18.9038 12.0954 18.5519 12.0954C18.2 12.0954 17.8595 12.144 17.5336 12.2276L16.7089 10.8395L18.3507 2.78675L16.2735 2.38698L15.102 8.13454L13.8102 5.95975L14.8241 0.985297L12.747 0.58552L12.2027 3.2548L10.2685 0L8.43437 1.02896L10.3679 4.28377L7.71667 3.40733L7.03503 5.35517L11.9748 6.98872L13.2666 9.16351L7.55907 7.27594L6.87681 9.22378L14.8741 11.8685L15.6982 13.2548C15.2191 13.7253 14.8653 14.3145 14.6798 14.9707H13.0311L6.67555 9.56267L5.28063 11.1107L9.81663 14.9707H7.2325L3.30662 11.6298L1.91171 13.1779L4.01863 14.9707H0.151611V17.0287H4.01863L1.91171 18.8215L3.30662 20.3696L7.2325 17.0287H9.81663L5.28063 20.8887L6.67555 22.4367L13.0311 17.0287H14.6798C14.8646 17.6849 15.2184 18.2741 15.6982 18.7446L14.8741 20.1309L6.87681 22.7756L7.55907 24.7234L13.2666 22.8359L11.9748 25.0107L7.0344 26.6448L7.71667 28.5927L10.3673 27.7162L8.43374 30.971L10.2679 32L12.2014 28.7452L12.7457 31.4145L14.8229 31.0147L13.809 26.0396L15.1007 23.8648L16.2722 29.613L18.3494 29.2126L16.7076 21.1599L17.5323 19.7717C17.8583 19.8548 18.1981 19.904 18.5506 19.904C18.9032 19.904 19.243 19.8554 19.569 19.7717L20.3937 21.1599L18.7519 29.2126L20.8291 29.613L22.0006 23.8648L23.2923 26.0396L22.2784 31.0147L24.3556 31.4145L24.8999 28.7452L26.8334 32L28.6676 30.971L26.734 27.7162L29.3846 28.5927L30.0669 26.6448L25.1265 25.0107L23.8347 22.8359L29.5422 24.7234L30.2245 22.7756L22.2272 20.1309L21.4031 18.7446C21.8822 18.2741 22.236 17.6849 22.4215 17.0287H24.0702L30.4258 22.4367L31.8207 20.8887L27.2847 17.0287H29.8682L33.7941 20.3696L35.189 18.8215L33.082 17.0287H36.9491V14.9707H36.9516ZM18.5513 17.846C17.5032 17.846 16.6507 17.0176 16.6507 15.9991C16.6507 14.9806 17.5032 14.1527 18.5513 14.1527C19.5994 14.1527 20.4519 14.9812 20.4519 15.9991C20.4519 17.017 19.5994 17.846 18.5513 17.846Z\" fill=\"black\"\/>\n<path d=\"M63.2373 8V8.98353L61.2299 9.69843V23.6419H58.531L48.9854 12.5589V21.9444L51.4161 22.6593V23.6428H45.4849V22.6593L47.4922 21.9444V11.107L45.5069 8.78206V8H49.99L59.7358 19.2845V9.69843L57.3051 8.98353V8H63.2373Z\" fill=\"black\"\/>\n<path d=\"M74.5212 17.7644C74.5212 21.5183 72.0675 23.8874 68.477 23.8874C64.7074 23.8874 62.5669 21.2956 62.5669 17.8095C62.5669 14.0556 65.0206 11.6865 68.6111 11.6865C72.3806 11.6865 74.5212 14.2783 74.5212 17.7644ZM66.4476 16.871C66.4476 19.6422 67.1832 22.7925 68.9012 22.7925C70.1501 22.7925 70.6405 20.8705 70.6405 18.7038C70.6405 15.9326 69.9049 12.7823 68.2098 12.7823C66.9388 12.7823 66.4476 14.7034 66.4476 16.871Z\" fill=\"black\"\/>\n<path d=\"M74.7852 12.9378L80.316 11.6865V14.8377C80.6953 12.8265 81.7431 11.7316 83.2151 11.7316C83.7055 11.7316 84.2188 11.8429 84.7762 12.0895L83.9736 15.2848H83.238C82.8808 14.9941 82.4795 14.8607 82.1003 14.8607C81.4308 14.8607 80.8064 15.2627 80.428 15.9776V22.0114L82.9478 22.7262V23.6426H75.0083V22.7262L76.8596 22.0114V14.6601L74.7852 13.833V12.9396V12.9378Z\" fill=\"black\"\/>\n<path d=\"M92.6274 15.5294L90.1517 12.6469C89.148 12.6469 88.4345 13.2275 88.4345 14.1659C88.4345 15.1044 89.3932 15.5736 90.5309 16.0429L91.8248 16.5792C92.9396 17.0485 94.7688 17.8756 94.7688 20.0874C94.7688 22.2993 92.8955 23.8863 90.1526 23.8863C88.3683 23.8863 86.6061 23.372 85.1121 22.2109L87.1194 19.7976L90.1305 22.9258C91.0892 22.8586 92.0038 22.4345 92.0038 21.473C92.0038 20.2889 90.7549 19.7304 89.9294 19.3946L88.7026 18.8803C87.0524 18.1875 85.3572 17.3162 85.3572 15.2157C85.3572 12.8245 87.4758 11.6855 89.8844 11.6855C91.4676 11.6855 93.1627 12.244 94.5236 13.2275L92.6274 15.5294Z\" fill=\"black\"\/>\n<path d=\"M106.119 19.6192C105.294 22.4567 103.42 23.8874 100.99 23.8874C97.9566 23.8874 95.4368 21.6305 95.4368 17.9208C95.4368 14.7034 97.3101 11.6865 101.035 11.6865C103.845 11.6865 105.83 13.4291 105.83 17.1838H98.1577C98.3808 19.0608 99.6076 20.8034 102.284 20.8034C103.443 20.8034 104.58 20.4685 105.607 19.2835L106.12 19.6184L106.119 19.6192ZM98.1347 16.0439H102.127C102.172 15.686 102.194 15.3511 102.194 15.0383C102.194 13.7419 101.792 12.7814 100.677 12.7814C99.2496 12.7814 98.2908 14.3234 98.1347 16.0439Z\" fill=\"black\"\/>\n<path d=\"M124.53 11.8869V12.5577L119.422 23.8863H118.508L115.497 17.272L112.531 23.8863H111.616L107.49 14.5017L105.728 13.7868V12.8926L110.3 11.6855L113.288 19.2161L114.76 15.5966L113.534 12.7812V11.8878H118.217V12.7812L117.883 13.6304L120.157 19.3955L122.432 13.9653L119.756 12.7812V11.8878H124.528L124.53 11.8869Z\" fill=\"black\"\/>\n<path d=\"M134.99 19.6192C134.164 22.4567 132.291 23.8874 129.86 23.8874C126.827 23.8874 124.307 21.6305 124.307 17.9208C124.307 14.7034 126.18 11.6865 129.905 11.6865C132.715 11.6865 134.7 13.4291 134.7 17.1838H127.028C127.251 19.0608 128.478 20.8034 131.154 20.8034C132.314 20.8034 133.451 20.4685 134.477 19.2835L134.991 19.6184L134.99 19.6192ZM127.005 16.0439H130.997C131.042 15.686 131.064 15.3511 131.064 15.0383C131.064 13.7419 130.663 12.7814 129.547 12.7814C128.12 12.7814 127.161 14.3234 127.005 16.0439Z\" fill=\"black\"\/>\n<path d=\"M137.842 15.8875L135.701 13.4742C137.173 12.268 139.091 11.6865 141.009 11.6865C143.774 11.6865 145.871 12.8707 145.871 15.3962V21.0049L147.945 21.832V22.7484L142.414 23.9996V21.9212C141.545 23.2618 140.229 23.8874 139.002 23.8874C137.24 23.8874 135.657 22.6812 135.657 20.5577C135.657 18.2116 137.753 17.0275 142.303 16.4911V15.4183C142.303 13.8321 141.768 12.8707 140.876 12.6701L137.843 15.8875H137.842ZM142.302 17.3624C140.028 17.8988 139.358 18.9265 139.358 19.9321C139.358 21.027 140.072 21.6084 140.942 21.6084C141.365 21.6084 141.856 21.452 142.302 21.1171V17.3624Z\" fill=\"black\"\/>\n<path d=\"M147.857 12.9378L153.388 11.6865V14.8377C153.768 12.8265 154.815 11.7316 156.287 11.7316C156.778 11.7316 157.291 11.8429 157.848 12.0895L157.046 15.2848H156.31C155.953 14.9941 155.552 14.8607 155.173 14.8607C154.503 14.8607 153.879 15.2627 153.5 15.9776V22.0114L156.02 22.7262V23.6426H148.081V22.7262L149.932 22.0114V14.6601L147.857 13.833V12.9396V12.9378Z\" fill=\"black\"\/>\n<\/g>\n<defs>\n<clipPath id=\"clip0_315_15\">\n<rect width=\"158\" height=\"32\" fill=\"white\"\/>\n<\/clipPath>\n<\/defs>\n<\/svg>"}},"text_X3gXdw":{"type":"text","settings":{"text":"The ultimate all season gumboot sock.","text_style":"body"}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"dropdown","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_gift_card_recipient":false}}},"block_order":["custom_liquid_eKkNei","title","price","custom_liquid_WKqtAi","text_X3gXdw","variant_picker","quantity_selector","buy_buttons"],"custom_css":[".product__text {margin-top: 24px;}"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":40,"padding_bottom":96}},"product_description_YWHVBE":{"type":"product-description","custom_css":[".wl_product-description_box {display: none;}"],"settings":{"product-description_heading":"Product Description","product-description_text":"<p>While it doesn’t fall down and bunch in your gumboots, the Merino delivers warmth, breathability and moisture management. The cushioning and reinforcing offers a close snug fit, perfectly balancing comfort and durability when you are on the job.<\/p>","product-description_background_color":"#E9DDC6"}},"related-products":{"type":"related-products","disabled":true,"settings":{"heading":"You may also like","heading_size":"h2","products_to_show":3,"columns_desktop":3,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":28}},"product_related_products_RF49cV":{"type":"product-related-products","custom_css":[".card-information {display: none;}",".related-products-collection {padding-top: 128px;}","@media only screen and (max-width: 767px) {.related-products-collection {padding-top: 60px; }}"],"settings":{"title":"Related Products","heading_size":"h1","description":"","show_description":false,"description_style":"body","collection":"gumboot-sock","products_to_show":3,"columns_desktop":3,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":0,"padding_bottom":96}}},"order":["custom_liquid_7DLRrh","main","product_description_YWHVBE","related-products","product_related_products_RF49cV"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_7DLRrh": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "{background: #fff5e5;}",
+        ".gradient {background: inherit; max-width: 1280px; margin: auto;}",
+        ".wl_product_breadcrumbs a {text-decoration: underline;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"wl_product_breadcrumbs\">\n<p>Shop / products / <a href=\"/collections/home\">Home</a></p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 96,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_eKkNei": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"wl_product-cat\">Home</p>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_WKqtAi": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<svg width=\"158\" height=\"32\" viewBox=\"0 0 158 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_315_15)\">\n<path d=\"M36.9516 14.9707H33.0846L35.1915 13.1779L33.7966 11.6298L29.8707 14.9707H27.2866L31.8226 11.1107L30.4277 9.56267L24.0721 14.9707H22.4234C22.2386 14.3145 21.8841 13.7253 21.405 13.2548L22.2291 11.8685L30.2264 9.22378L29.5441 7.27594L23.8366 9.16351L25.1284 6.98872L30.0682 5.35517L29.3865 3.40733L26.7353 4.28377L28.6688 1.02896L26.8347 0L24.9012 3.2548L24.3569 0.58552L22.2797 0.985297L23.2936 5.95975L22.0019 8.13454L20.8304 2.38698L18.7532 2.78675L20.3949 10.8395L19.5703 12.2276C19.2443 12.1446 18.9038 12.0954 18.5519 12.0954C18.2 12.0954 17.8595 12.144 17.5336 12.2276L16.7089 10.8395L18.3507 2.78675L16.2735 2.38698L15.102 8.13454L13.8102 5.95975L14.8241 0.985297L12.747 0.58552L12.2027 3.2548L10.2685 0L8.43437 1.02896L10.3679 4.28377L7.71667 3.40733L7.03503 5.35517L11.9748 6.98872L13.2666 9.16351L7.55907 7.27594L6.87681 9.22378L14.8741 11.8685L15.6982 13.2548C15.2191 13.7253 14.8653 14.3145 14.6798 14.9707H13.0311L6.67555 9.56267L5.28063 11.1107L9.81663 14.9707H7.2325L3.30662 11.6298L1.91171 13.1779L4.01863 14.9707H0.151611V17.0287H4.01863L1.91171 18.8215L3.30662 20.3696L7.2325 17.0287H9.81663L5.28063 20.8887L6.67555 22.4367L13.0311 17.0287H14.6798C14.8646 17.6849 15.2184 18.2741 15.6982 18.7446L14.8741 20.1309L6.87681 22.7756L7.55907 24.7234L13.2666 22.8359L11.9748 25.0107L7.0344 26.6448L7.71667 28.5927L10.3673 27.7162L8.43374 30.971L10.2679 32L12.2014 28.7452L12.7457 31.4145L14.8229 31.0147L13.809 26.0396L15.1007 23.8648L16.2722 29.613L18.3494 29.2126L16.7076 21.1599L17.5323 19.7717C17.8583 19.8548 18.1981 19.904 18.5506 19.904C18.9032 19.904 19.243 19.8554 19.569 19.7717L20.3937 21.1599L18.7519 29.2126L20.8291 29.613L22.0006 23.8648L23.2923 26.0396L22.2784 31.0147L24.3556 31.4145L24.8999 28.7452L26.8334 32L28.6676 30.971L26.734 27.7162L29.3846 28.5927L30.0669 26.6448L25.1265 25.0107L23.8347 22.8359L29.5422 24.7234L30.2245 22.7756L22.2272 20.1309L21.4031 18.7446C21.8822 18.2741 22.236 17.6849 22.4215 17.0287H24.0702L30.4258 22.4367L31.8207 20.8887L27.2847 17.0287H29.8682L33.7941 20.3696L35.189 18.8215L33.082 17.0287H36.9491V14.9707H36.9516ZM18.5513 17.846C17.5032 17.846 16.6507 17.0176 16.6507 15.9991C16.6507 14.9806 17.5032 14.1527 18.5513 14.1527C19.5994 14.1527 20.4519 14.9812 20.4519 15.9991C20.4519 17.017 19.5994 17.846 18.5513 17.846Z\" fill=\"black\"/>\n<path d=\"M63.2373 8V8.98353L61.2299 9.69843V23.6419H58.531L48.9854 12.5589V21.9444L51.4161 22.6593V23.6428H45.4849V22.6593L47.4922 21.9444V11.107L45.5069 8.78206V8H49.99L59.7358 19.2845V9.69843L57.3051 8.98353V8H63.2373Z\" fill=\"black\"/>\n<path d=\"M74.5212 17.7644C74.5212 21.5183 72.0675 23.8874 68.477 23.8874C64.7074 23.8874 62.5669 21.2956 62.5669 17.8095C62.5669 14.0556 65.0206 11.6865 68.6111 11.6865C72.3806 11.6865 74.5212 14.2783 74.5212 17.7644ZM66.4476 16.871C66.4476 19.6422 67.1832 22.7925 68.9012 22.7925C70.1501 22.7925 70.6405 20.8705 70.6405 18.7038C70.6405 15.9326 69.9049 12.7823 68.2098 12.7823C66.9388 12.7823 66.4476 14.7034 66.4476 16.871Z\" fill=\"black\"/>\n<path d=\"M74.7852 12.9378L80.316 11.6865V14.8377C80.6953 12.8265 81.7431 11.7316 83.2151 11.7316C83.7055 11.7316 84.2188 11.8429 84.7762 12.0895L83.9736 15.2848H83.238C82.8808 14.9941 82.4795 14.8607 82.1003 14.8607C81.4308 14.8607 80.8064 15.2627 80.428 15.9776V22.0114L82.9478 22.7262V23.6426H75.0083V22.7262L76.8596 22.0114V14.6601L74.7852 13.833V12.9396V12.9378Z\" fill=\"black\"/>\n<path d=\"M92.6274 15.5294L90.1517 12.6469C89.148 12.6469 88.4345 13.2275 88.4345 14.1659C88.4345 15.1044 89.3932 15.5736 90.5309 16.0429L91.8248 16.5792C92.9396 17.0485 94.7688 17.8756 94.7688 20.0874C94.7688 22.2993 92.8955 23.8863 90.1526 23.8863C88.3683 23.8863 86.6061 23.372 85.1121 22.2109L87.1194 19.7976L90.1305 22.9258C91.0892 22.8586 92.0038 22.4345 92.0038 21.473C92.0038 20.2889 90.7549 19.7304 89.9294 19.3946L88.7026 18.8803C87.0524 18.1875 85.3572 17.3162 85.3572 15.2157C85.3572 12.8245 87.4758 11.6855 89.8844 11.6855C91.4676 11.6855 93.1627 12.244 94.5236 13.2275L92.6274 15.5294Z\" fill=\"black\"/>\n<path d=\"M106.119 19.6192C105.294 22.4567 103.42 23.8874 100.99 23.8874C97.9566 23.8874 95.4368 21.6305 95.4368 17.9208C95.4368 14.7034 97.3101 11.6865 101.035 11.6865C103.845 11.6865 105.83 13.4291 105.83 17.1838H98.1577C98.3808 19.0608 99.6076 20.8034 102.284 20.8034C103.443 20.8034 104.58 20.4685 105.607 19.2835L106.12 19.6184L106.119 19.6192ZM98.1347 16.0439H102.127C102.172 15.686 102.194 15.3511 102.194 15.0383C102.194 13.7419 101.792 12.7814 100.677 12.7814C99.2496 12.7814 98.2908 14.3234 98.1347 16.0439Z\" fill=\"black\"/>\n<path d=\"M124.53 11.8869V12.5577L119.422 23.8863H118.508L115.497 17.272L112.531 23.8863H111.616L107.49 14.5017L105.728 13.7868V12.8926L110.3 11.6855L113.288 19.2161L114.76 15.5966L113.534 12.7812V11.8878H118.217V12.7812L117.883 13.6304L120.157 19.3955L122.432 13.9653L119.756 12.7812V11.8878H124.528L124.53 11.8869Z\" fill=\"black\"/>\n<path d=\"M134.99 19.6192C134.164 22.4567 132.291 23.8874 129.86 23.8874C126.827 23.8874 124.307 21.6305 124.307 17.9208C124.307 14.7034 126.18 11.6865 129.905 11.6865C132.715 11.6865 134.7 13.4291 134.7 17.1838H127.028C127.251 19.0608 128.478 20.8034 131.154 20.8034C132.314 20.8034 133.451 20.4685 134.477 19.2835L134.991 19.6184L134.99 19.6192ZM127.005 16.0439H130.997C131.042 15.686 131.064 15.3511 131.064 15.0383C131.064 13.7419 130.663 12.7814 129.547 12.7814C128.12 12.7814 127.161 14.3234 127.005 16.0439Z\" fill=\"black\"/>\n<path d=\"M137.842 15.8875L135.701 13.4742C137.173 12.268 139.091 11.6865 141.009 11.6865C143.774 11.6865 145.871 12.8707 145.871 15.3962V21.0049L147.945 21.832V22.7484L142.414 23.9996V21.9212C141.545 23.2618 140.229 23.8874 139.002 23.8874C137.24 23.8874 135.657 22.6812 135.657 20.5577C135.657 18.2116 137.753 17.0275 142.303 16.4911V15.4183C142.303 13.8321 141.768 12.8707 140.876 12.6701L137.843 15.8875H137.842ZM142.302 17.3624C140.028 17.8988 139.358 18.9265 139.358 19.9321C139.358 21.027 140.072 21.6084 140.942 21.6084C141.365 21.6084 141.856 21.452 142.302 21.1171V17.3624Z\" fill=\"black\"/>\n<path d=\"M147.857 12.9378L153.388 11.6865V14.8377C153.768 12.8265 154.815 11.7316 156.287 11.7316C156.778 11.7316 157.291 11.8429 157.848 12.0895L157.046 15.2848H156.31C155.953 14.9941 155.552 14.8607 155.173 14.8607C154.503 14.8607 153.879 15.2627 153.5 15.9776V22.0114L156.02 22.7262V23.6426H148.081V22.7262L149.932 22.0114V14.6601L147.857 13.833V12.9396V12.9378Z\" fill=\"black\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_315_15\">\n<rect width=\"158\" height=\"32\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>"
+          }
+        },
+        "text_X3gXdw": {
+          "type": "text",
+          "settings": {
+            "text": "The ultimate all season gumboot sock.",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_eKkNei",
+        "title",
+        "price",
+        "custom_liquid_WKqtAi",
+        "text_X3gXdw",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "custom_css": [
+        ".product__text {margin-top: 24px;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 40,
+        "padding_bottom": 96
+      }
+    },
+    "product_description_YWHVBE": {
+      "type": "product-description",
+      "custom_css": [
+        ".wl_product-description_box {display: none;}"
+      ],
+      "settings": {
+        "product-description_heading": "Product Description",
+        "product-description_text": "<p>While it doesn’t fall down and bunch in your gumboots, the Merino delivers warmth, breathability and moisture management. The cushioning and reinforcing offers a close snug fit, perfectly balancing comfort and durability when you are on the job.</p>",
+        "product-description_background_color": "#E9DDC6"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "product_related_products_RF49cV": {
+      "type": "product-related-products",
+      "custom_css": [
+        ".card-information {display: none;}",
+        ".related-products-collection {padding-top: 128px;}",
+        "@media only screen and (max-width: 767px) {.related-products-collection {padding-top: 60px; }}"
+      ],
+      "settings": {
+        "title": "Related Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "gumboot-sock",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 96
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_7DLRrh",
+    "main",
+    "product_description_YWHVBE",
+    "related-products",
+    "product_related_products_RF49cV"
+  ]
+}

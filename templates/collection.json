@@ -1,1 +1,63 @@
-{"sections":{"banner":{"type":"main-collection-banner","settings":{"show_collection_description":true,"show_collection_image":false,"color_scheme":"scheme-1"}},"product-grid":{"type":"main-collection-product-grid","settings":{"products_per_page":16,"columns_desktop":4,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","enable_filtering":true,"filter_type":"horizontal","enable_sorting":true,"columns_mobile":"2","padding_top":36,"padding_bottom":36}}},"order":["banner","product-grid"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_content_JULkYe": {
+      "type": "image-with-content",
+      "name": "Image with Content",
+      "settings": {
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_image_picker": "shopify://shop_images/Wool.Life-Pure-Wool-Pillow.jpg",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "Pillow",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "Pillow info",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "image_with_content_JULkYe"
+  ]
+}
