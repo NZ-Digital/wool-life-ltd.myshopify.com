@@ -210,7 +210,12 @@
       {% endif %}
       <h2 class="wl_image-with-content_heading">{{ section.settings.image-with-content_heading }}</h2>
     </div>
+    {% if section.settings.image-with-content_text %}
     <p class="wl_image-with-content_content">{{ section.settings.image-with-content_text }}</p>
+    {% endif %}
+    {% if section.settings.image-with-content_text_richtext %}
+    <p class="wl_image-with-content_content">{{ section.settings.image-with-content_text_richtext }}</p>
+    {% endif %}
     {% if section.settings.image-with-content_button_link %}
       <a href="{{ section.settings.image-with-content_button_link }}" class="wl_button btn-1 {{ section.settings.image-with-content_button_style }}">{{ section.settings.image-with-content_button_name }}</a>
     {% endif %}
@@ -272,7 +277,7 @@
       "type": "text",
       "id": "image-with-content_heading",
       "label": "Heading"
-    },
+    },    
     {
       "type": "select",
       "id": "image-with-content_heading_color",
@@ -293,6 +298,11 @@
       "type": "textarea",
       "id": "image-with-content_text",
       "label": "Text"
+    },
+    {
+      "type": "richtext",
+      "id": "image-with-content_text_richtext",
+      "label": "Text (Richtext)"
     },
     {
       "type": "select",
