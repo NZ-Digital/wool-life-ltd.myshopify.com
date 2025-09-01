@@ -1,1 +1,256 @@
-{"sections":{"custom_liquid_7DLRrh":{"type":"custom-liquid","custom_css":["{background: #fff5e5;}",".gradient {background: inherit; max-width: 1280px; margin: auto;}",".wl_product_breadcrumbs a {text-decoration: underline;}"],"settings":{"custom_liquid":"<div class=\"wl_product_breadcrumbs\">\n<p>Shop \/ products \/ <a href=\"\/collections\/garden\">Garden<\/a><\/p>\n<\/div>","color_scheme":"","padding_top":96,"padding_bottom":0}},"main":{"type":"main-product","blocks":{"custom_liquid_eKkNei":{"type":"custom_liquid","settings":{"custom_liquid":"<p class=\"wl_product-cat\">Garden<\/p>"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"text_X3gXdw":{"type":"text","settings":{"text":"EmGuard™ are the original environmentally friendly, bio-degradable, cardboard plant guards.","text_style":"body"}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"dropdown","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_gift_card_recipient":false}}},"block_order":["custom_liquid_eKkNei","title","price","text_X3gXdw","variant_picker","quantity_selector","buy_buttons"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":40,"padding_bottom":96}},"product_description_YWHVBE":{"type":"product-description","custom_css":[".wl_product-description_box {display: none;}"],"settings":{"product-description_heading":"Product Description","product-description_text":"<p>EmGuard™ are the original environmentally friendly, bio-degradable, cardboard plant guards developed by our parters, FuturEcology, as a solution to plastic debris entering waterways.<\/p>\n<p>Plant guards have been shown to greatly improve the chances of survival and promote growth in plants.<\/p>","product-description_background_color":"#E9DDC6"}},"related-products":{"type":"related-products","disabled":true,"settings":{"heading":"You may also like","heading_size":"h2","products_to_show":3,"columns_desktop":3,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":28}},"3_columns_heading_icons_4ed3yN":{"type":"3-columns-heading-icons","blocks":{"grid_item_nUnVBn":{"type":"grid-item","settings":{"grid-item_heading":"How EmGuard™ Plant Protectors Work","grid-item_paragraph":"<p>EmGuard™ Plant Protectors reduce ongoing plant maintenance time and costs, protect plants from predators such as hares and pukeko, help in identifying where plants are in a planted area, reduce water loss and provide a microclimate favourable to growth.<br\/><br\/>They are particularly valuable in the first year of establishment especially where root trainer or small grade plants are used.<\/p>","grid-item_btn-label":"","grid-item_btn-link":""}},"grid_item_9jHmjM":{"type":"grid-item","settings":{"grid-item_heading":"EmGuard™ Plant Protectors are:","grid-item_paragraph":"<p>Designed and manufactured in NZ, using a majority of recycled pulp. Specifically designed to cope with our tough Kiwi conditions. Have a perforated logo which will protect the plant from pesticides if left intact, and allows greater airflow and light exposure if removed Fully recyclable and biodegradable Coated with a food safe and FDA compliant moisture barrier PH of 7.00-8.00. Have a high bursting strength, and will withstand some inundation over a period of time Will last for over a year in the field, under normal riparian conditions<br\/>A key value of the EmGuard™ is that, like Wool.Life mulch and weed matting, it does not need to be removed once plant establishment has occurred as will naturally break down and biodegrade over time.<\/p>","grid-item_btn-label":"","grid-item_btn-link":""}},"grid_item_dygcrw":{"type":"grid-item","settings":{"grid-item_heading":"EmGuard™ Specifications:","grid-item_paragraph":"<p>EmGuard™ Plant Protectors are 350mm high. Come with a perforated logo that can be removed to allow more light and airflow EmGuard™ Plant Protectors, when folded, form a triangle with three sides of 200mmx350mm.<br\/>They are quick and easy to install, requiring only one 900mmx10-12mm stake<br\/>Requiring only one stake gives EmGuard™ huge advantage in terms of efficiency, even allowing the EmGuard™ to be used on difficult terrain. The folding method ensures the guard grips the stake, so they don’t blow off in the wind.<\/p>","grid-item_btn-label":"","grid-item_btn-link":""}},"grid_item_3FE4cr":{"type":"grid-item","settings":{"grid-item_heading":"Bamboo stakes","grid-item_paragraph":"<p>EmGuard™ Plant Protectors can be purchased with or without accompanying bamboo stakes.<\/p>","grid-item_btn-label":"","grid-item_btn-link":""}},"grid_item_9CA6R4":{"type":"grid-item","settings":{"grid-item_heading":"Wool.Life and EmGuard™ a Match Made in Godzone","grid-item_paragraph":"<p>Wool.Life mulch and weed matting used together with the EmGuard™ provide establishing plants with the best in soil heat and moisture retention, weed suppression, environmental protection and, ultimately, further nutrients as both products biodegrade.<br\/><br\/>Wool.Life and EmGuard™ will give your plants the very best start in growth.<\/p>","grid-item_btn-label":"","grid-item_btn-link":""}},"grid_item_6JyWtN":{"type":"grid-item","settings":{"grid-item_heading":"Download Emguard™ folding instructions","grid-item_paragraph":"","grid-item_btn-label":"Download","grid-item_btn-link":"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/3323\/3469\/files\/Wool.Life_-_EmGuard_Plant_Protectors_-_How_to_Fold_Guide.pdf?v=1718864972"}}},"block_order":["grid_item_nUnVBn","grid_item_9jHmjM","grid_item_dygcrw","grid_item_3FE4cr","grid_item_9CA6R4","grid_item_6JyWtN"],"custom_css":["{background-color: #154734;}",".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",".wl_three-cols-heading-icon_grid-item_heading {color: #e9ddc6;}",".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}"],"settings":{"three-cols-heading-icon_heading":"Key Benefits"}},"product_related_products_RF49cV":{"type":"product-related-products","custom_css":[".card-information {display: none;}"],"settings":{"title":"Related Products","heading_size":"h1","description":"","show_description":false,"description_style":"body","collection":"weed-mulch-mat-rolls","products_to_show":3,"columns_desktop":3,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":0,"padding_bottom":96}},"1738729467f6164255":{"type":"apps","blocks":{"upsell_product_add_ons_sg_app_block_T7k6CG":{"type":"shopify:\/\/apps\/upsell-product-add-ons-sg\/blocks\/app-block\/b5caaaa1-43aa-4d84-9497-26284c984153","settings":{}}},"block_order":["upsell_product_add_ons_sg_app_block_T7k6CG"],"settings":{"include_margins":true}}},"order":["custom_liquid_7DLRrh","main","product_description_YWHVBE","related-products","3_columns_heading_icons_4ed3yN","product_related_products_RF49cV","1738729467f6164255"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_7DLRrh": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "{background: #fff5e5;}",
+        ".gradient {background: inherit; max-width: 1280px; margin: auto;}",
+        ".wl_product_breadcrumbs a {text-decoration: underline;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"wl_product_breadcrumbs\">\n<p>Shop / products / <a href=\"/collections/garden\">Garden</a></p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 96,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_eKkNei": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"wl_product-cat\">Garden</p>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_X3gXdw": {
+          "type": "text",
+          "settings": {
+            "text": "EmGuard™ are the original environmentally friendly, bio-degradable, cardboard plant guards.",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_eKkNei",
+        "title",
+        "price",
+        "text_X3gXdw",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 40,
+        "padding_bottom": 96
+      }
+    },
+    "product_description_YWHVBE": {
+      "type": "product-description",
+      "custom_css": [
+        ".wl_product-description_box {display: none;}"
+      ],
+      "settings": {
+        "product-description_heading": "Product Description",
+        "product-description_text": "<p>EmGuard™ are the original environmentally friendly, bio-degradable, cardboard plant guards developed by our parters, FuturEcology, as a solution to plastic debris entering waterways.</p>\n<p>Plant guards have been shown to greatly improve the chances of survival and promote growth in plants.</p>",
+        "product-description_background_color": "#E9DDC6"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "3_columns_heading_icons_4ed3yN": {
+      "type": "3-columns-heading-icons",
+      "blocks": {
+        "grid_item_nUnVBn": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "How EmGuard™ Plant Protectors Work",
+            "grid-item_paragraph": "<p>EmGuard™ Plant Protectors reduce ongoing plant maintenance time and costs, protect plants from predators such as hares and pukeko, help in identifying where plants are in a planted area, reduce water loss and provide a microclimate favourable to growth.<br/><br/>They are particularly valuable in the first year of establishment especially where root trainer or small grade plants are used.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_9jHmjM": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "EmGuard™ Plant Protectors are:",
+            "grid-item_paragraph": "<p>Designed and manufactured in NZ, using a majority of recycled pulp. Specifically designed to cope with our tough Kiwi conditions. Have a perforated logo which will protect the plant from pesticides if left intact, and allows greater airflow and light exposure if removed Fully recyclable and biodegradable Coated with a food safe and FDA compliant moisture barrier PH of 7.00-8.00. Have a high bursting strength, and will withstand some inundation over a period of time Will last for over a year in the field, under normal riparian conditions<br/>A key value of the EmGuard™ is that, like Wool.Life mulch and weed matting, it does not need to be removed once plant establishment has occurred as will naturally break down and biodegrade over time.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_dygcrw": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "EmGuard™ Specifications:",
+            "grid-item_paragraph": "<p>EmGuard™ Plant Protectors are 350mm high. Come with a perforated logo that can be removed to allow more light and airflow EmGuard™ Plant Protectors, when folded, form a triangle with three sides of 200mmx350mm.<br/>They are quick and easy to install, requiring only one 900mmx10-12mm stake<br/>Requiring only one stake gives EmGuard™ huge advantage in terms of efficiency, even allowing the EmGuard™ to be used on difficult terrain. The folding method ensures the guard grips the stake, so they don’t blow off in the wind.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_3FE4cr": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "Bamboo stakes",
+            "grid-item_paragraph": "<p>EmGuard™ Plant Protectors can be purchased with or without accompanying bamboo stakes.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_9CA6R4": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "Wool.Life and EmGuard™ a Match Made in Godzone",
+            "grid-item_paragraph": "<p>Wool.Life mulch and weed matting used together with the EmGuard™ provide establishing plants with the best in soil heat and moisture retention, weed suppression, environmental protection and, ultimately, further nutrients as both products biodegrade.<br/><br/>Wool.Life and EmGuard™ will give your plants the very best start in growth.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_6JyWtN": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "Download Emguard™ folding instructions",
+            "grid-item_paragraph": "",
+            "grid-item_btn-label": "Download",
+            "grid-item_btn-link": "https://cdn.shopify.com/s/files/1/0550/3323/3469/files/Wool.Life_-_EmGuard_Plant_Protectors_-_How_to_Fold_Guide.pdf?v=1718864972"
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_nUnVBn",
+        "grid_item_9jHmjM",
+        "grid_item_dygcrw",
+        "grid_item_3FE4cr",
+        "grid_item_9CA6R4",
+        "grid_item_6JyWtN"
+      ],
+      "custom_css": [
+        "{background-color: #154734;}",
+        ".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",
+        ".wl_three-cols-heading-icon_grid-item_heading {color: #e9ddc6;}",
+        ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}"
+      ],
+      "settings": {
+        "three-cols-heading-icon_heading": "Key Benefits"
+      }
+    },
+    "product_related_products_RF49cV": {
+      "type": "product-related-products",
+      "custom_css": [
+        ".card-information {display: none;}"
+      ],
+      "settings": {
+        "title": "Related Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "weed-mulch-mat-rolls",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 96
+      }
+    },
+    "1738729467f6164255": {
+      "type": "apps",
+      "blocks": {
+        "upsell_product_add_ons_sg_app_block_T7k6CG": {
+          "type": "shopify://apps/upsell-product-add-ons-sg/blocks/app-block/b5caaaa1-43aa-4d84-9497-26284c984153",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "upsell_product_add_ons_sg_app_block_T7k6CG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_7DLRrh",
+    "main",
+    "product_description_YWHVBE",
+    "related-products",
+    "3_columns_heading_icons_4ed3yN",
+    "product_related_products_RF49cV",
+    "1738729467f6164255"
+  ]
+}
