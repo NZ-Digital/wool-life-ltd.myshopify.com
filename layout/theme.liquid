@@ -22,7 +22,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="{{ canonical_url }}">
+    {%- comment -%} Custom canonical overrides {%- endcomment -%}
+    {%- assign canonical_override = '' -%}
+    {%- case request.path -%}
+      {%- when '/collections/frontpage' -%}
+        {%- assign canonical_override = 'https://woollife.co.nz/collections/all' -%}
+      {%- when '/collections/biodegradable-pegs' -%}
+        {%- assign canonical_override = 'https://woollife.co.nz/collections/garden' -%}
+      {%- when '/collections/emguard-plant-protectors' -%}
+        {%- assign canonical_override = 'https://woollife.co.nz/collections/garden' -%}
+      {%- when '/collections/weed-and-mulch-mats' -%}
+        {%- assign canonical_override = 'https://woollife.co.nz/collections/garden' -%}
+      {%- when '/collections/weed-mulch-mat-rolls' -%}
+        {%- assign canonical_override = 'https://woollife.co.nz/collections/garden' -%}
+      {%- when '/collections/case-study-gb-morris' -%}
+        {%- assign canonical_override = 'https://woollife.co.nz/blogs/case-studies' -%}
+      {%- when '/collections/case-study-the-yard-crew' -%}
+        {%- assign canonical_override = 'https://woollife.co.nz/blogs/case-studies' -%}
+    {%- endcase -%}
+    <link rel="canonical" href="{{ canonical_override | default: canonical_url }}">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
