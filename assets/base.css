@@ -3638,7 +3638,7 @@ details-disclosure > details {
   max-width: 1280px;
   background: #fff5e5;
 }
-.wl_product_breadcrumbs h6 {
+.wl_product_breadcrumbs h6, .wl_product_breadcrumbs p {
   color: rgba(21, 71, 52, 0.8);
   font-family: Sora;
   font-size: 12px;
@@ -3650,7 +3650,7 @@ details-disclosure > details {
   text-decoration: none;
   margin: 0;
 }
-.wl_product_breadcrumbs h6 a {
+.wl_product_breadcrumbs h6 a, .wl_product_breadcrumbs p a {
   color: rgba(21, 71, 52, 0.8);
   font-family: Sora;
   font-size: 12px;
