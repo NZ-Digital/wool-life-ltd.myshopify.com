@@ -200,7 +200,7 @@
 {%- endstyle -%}
 
 
-{% if section.settings.image-with-content_image_picker %}
+{% if section.settings.image-with-content_image_picker and section.settings.image-with-content_image_picker != '' %}
 <div class="wl_image-with-content {{ section.settings.image-with-content_layout }}" id="{{ section.settings.image-with-content_id }}">
   <div class="wl_image-with-content_img-col" style="background-image: url('{{ section.settings.image-with-content_image_picker | image_url }}');">
   </div>
