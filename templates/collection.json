@@ -39,7 +39,6 @@
     },
     "image_with_content_JULkYe": {
       "type": "image-with-content",
-      "disabled": true,
       "name": "Image with Content",
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
