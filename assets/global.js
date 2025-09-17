@@ -1267,3 +1267,51 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const loadMoreBtn = document.getElementById('wl-load-more');
+  if (!loadMoreBtn) return;
+
+  const listing = document.querySelector('.wl_growers-tips-archive_listing');
+  if (!listing) return;
+
+  async function loadMore(url) {
+    loadMoreBtn.disabled = true;
+    const originalText = loadMoreBtn.textContent;
+    loadMoreBtn.textContent = 'Loading…';
+
+    try {
+      const res = await fetch(url, { credentials: 'same-origin' });
+      if (!res.ok) throw new Error('Network error');
+      const html = await res.text();
+
+      // Parse the returned page
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+
+      // 1) Grab the next page’s items and append
+      const nextItems = doc.querySelectorAll('.wl_growers-tips-archive_listing .wl_growers-tips-archive_item');
+      nextItems.forEach(el => listing.appendChild(el));
+
+      // 2) Find the next "Load more" button on that page to get its next URL
+      const nextBtn = doc.getElementById('wl-load-more');
+      if (nextBtn && nextBtn.dataset.nextUrl) {
+        loadMoreBtn.dataset.nextUrl = nextBtn.dataset.nextUrl;
+        loadMoreBtn.disabled = false;
+        loadMoreBtn.textContent = originalText;
+      } else {
+        // No more pages
+        loadMoreBtn.remove();
+      }
+    } catch (e) {
+      console.error(e);
+      loadMoreBtn.disabled = false;
+      loadMoreBtn.textContent = originalText;
+    }
+  }
+
+  loadMoreBtn.addEventListener('click', function () {
+    const url = loadMoreBtn.dataset.nextUrl;
+    if (url) loadMore(url);
+  });
+});
