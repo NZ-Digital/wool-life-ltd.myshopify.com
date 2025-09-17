@@ -249,6 +249,10 @@
     text-decoration: none;
     margin-top: 32px;
   }
+  .wl-load-more-btn {
+    display: flex;
+    padding-bottom: 50px;
+  }
   .wl-load-more {
     background: #154734;
     color: #e9ddc6;
@@ -292,9 +296,10 @@ ease;
 
   </div>
      {%- if paginate.pages > 1 -%}
-      <div class="wl-load-more">
+      <div class="wl-load-more-btn">
         <a
           id="wl-load-more"
+          class="wl-load-more"
           data-next-url="{{ paginate.next.url }}"
           aria-label="Load more articles"
         >
