@@ -254,27 +254,51 @@
 
 {%- paginate blog.articles by 6 -%}
   <div class="wl_growers-tips-archive">
-
     <div class="wl_growers-tips-archive_listing">
       {%- for article in blog.articles -%}
         <div class="wl_growers-tips-archive_item">
-        <div class="wl_growers-tips-archive_img-cont">
+          <div class="wl_growers-tips-archive_img-cont">
             {% if article.image.src %}
               <img class="wl_growers-tips-archive_img-cont_img" src="{{ article.image.src | img_url: '488x488' }}" alt="{{ article.image.alt }}">
             {% endif %}
-        </div>
-        <div class="wl_growers-tips-archive_item_content">
-          <a class="wl_growers-tips-archive_item_title-a" href="{{ article.url }}">
-            <h3 class="wl_growers-tips-archive_item_title">{{ article.title }}</h3>
-          </a>
-          <div class="wl_growers-tips-archive_item_content_excerpt">{{ article.excerpt }}</div>
-          <a class="wl_growers-tips-archive_item_link" href="{{ article.url }}">Read more</a>
-        </div>
+          </div>
+          <div class="wl_growers-tips-archive_item_content">
+            <a class="wl_growers-tips-archive_item_title-a" href="{{ article.url }}">
+              <h3 class="wl_growers-tips-archive_item_title">{{ article.title }}</h3>
+            </a>
+            <div class="wl_growers-tips-archive_item_content_excerpt">{{ article.excerpt }}</div>
+            <a class="wl_growers-tips-archive_item_link" href="{{ article.url }}">Read more</a>
+          </div>
         </div>
       {%- endfor -%}
     </div>
+
+    {# --- Add pagination navigation here --- #}
+    {%- if paginate.pages > 1 -%}
+      <nav class="wl_growers-tips-pagination">
+        {%- if paginate.previous -%}
+          <a class="prev" href="{{ paginate.previous.url }}">&larr; Previous</a>
+        {%- endif -%}
+
+        {%- for part in paginate.parts -%}
+          {%- if part.is_link -%}
+            <a href="{{ part.url }}">{{ part.title }}</a>
+          {%- else -%}
+            <span class="{% if part.title == paginate.current_page %}active{% endif %}">
+              {{ part.title }}
+            </span>
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if paginate.next -%}
+          <a class="next" href="{{ paginate.next.url }}">Next &rarr;</a>
+        {%- endif -%}
+      </nav>
+    {%- endif -%}
+
   </div>
 {%- endpaginate -%}
+
 
 {% schema %}
 {
