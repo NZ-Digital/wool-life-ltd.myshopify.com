@@ -274,7 +274,7 @@
     </div>
 
     {%- if paginate.pages > 1 -%}
-      <div class="wl_growers-tips-archive_controls" aria-live="polite">
+      <div>
         <button
           id="wl-load-more"
           class="wl-btn wl-btn--secondary"
@@ -285,18 +285,25 @@
         </button>
         <noscript>
           <nav class="wl_growers-tips-pagination">
-            {%- if paginate.previous -%}<a href="{{ paginate.previous.url }}">&larr; Previous</a>{%- endif -%}
+            {%- if paginate.previous -%}
+              <a href="{{ paginate.previous.url }}">&larr; Previous</a>
+            {%- endif -%}
             {%- for part in paginate.parts -%}
-              {%- if part.is_link -%}<a href="{{ part.url }}">{{ part.title }}</a>{%- else -%}<span>{{ part.title }}</span>{%- endif -%}
+              {%- if part.is_link -%}
+                <a href="{{ part.url }}">{{ part.title }}</a>
+              {%- else -%}
+                <span>{{ part.title }}</span>
+              {%- endif -%}
             {%- endfor -%}
-            {%- if paginate.next -%}<a href="{{ paginate.next.url }}">Next &rarr;</a>{%- endif -%}
+            {%- if paginate.next -%}
+              <a href="{{ paginate.next.url }}">Next &rarr;</a>
+            {%- endif -%}
           </nav>
         </noscript>
       </div>
     {%- endif -%}
   </div>
 {%- endpaginate -%}
-
 
 
 {% schema %}
