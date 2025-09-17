@@ -273,8 +273,10 @@
       {%- endfor -%}
     </div>
 
-    {%- if paginate.pages > 1 -%}
-      <div>
+
+  </div>
+     {%- if paginate.pages > 1 -%}
+      <div class="wl-load-more">
         <button
           id="wl-load-more"
           class="wl-btn wl-btn--secondary"
@@ -302,7 +304,6 @@
         </noscript>
       </div>
     {%- endif -%}
-  </div>
 {%- endpaginate -%}
 
 
