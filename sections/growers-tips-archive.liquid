@@ -277,15 +277,15 @@
   </div>
      {%- if paginate.pages > 1 -%}
       <div class="wl-load-more">
-        <button
+        <a
           type="button"
           id="wl-load-more"
-          class="wl-btn full-unstyled-link"
+          class="wl_image-box_button"
           data-next-url="{{ paginate.next.url }}"
           aria-label="Load more articles"
         >
           Load more
-        </button>
+        </a>
         <noscript>
           <nav class="wl_growers-tips-pagination">
             {%- if paginate.previous -%}
