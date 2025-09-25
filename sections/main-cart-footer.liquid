@@ -128,9 +128,9 @@
 >
   <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
-      <div class="cart-footer-grid" style="display: none;">
+      <div class="cart-footer-grid" >
         {% unless pillow_in_cart or pillow_variant_id == '' %}
-          <aside id="pillow-upsell-{{ section.id }}" class="pillow-upsell">
+          <aside id="pillow-upsell-{{ section.id }}" class="pillow-upsell" style="display: none;">
             <div class="pillow-upsell__inner">
               <div class="pillow-upsell__image">
                 <img src="https://cdn.shopify.com/s/files/1/0550/3323/3469/files/pillowlargepromo_e7b41f49-2588-4bbb-86d9-139831592723.jpg?v=1758759877" alt="Wool.Life Pillow" loading="lazy">
