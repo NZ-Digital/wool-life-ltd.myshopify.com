@@ -91,7 +91,21 @@
             if (!id) { window.location.href = add.getAttribute('href'); return; }
             fetch('/cart/add.js', { method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify({ id: Number(id), quantity: 1 }) })
               .then(function(r){ return r.json(); })
-              .then(function(){ try { window.dispatchEvent(new CustomEvent('cart:refresh', { bubbles:true })); } catch(e) {} })
+              .then(function(){
+                try { var promo = document.querySelector('.cart-pillow-promo'); if (promo) { promo.style.display = 'none'; } } catch(e) {}
+                return fetch('/?sections=cart-notification-product', { headers: { 'Accept': 'application/json' } });
+              })
+              .then(function(r){ return r && r.json ? r.json() : null; })
+              .then(function(data){
+                if (data) {
+                  var html = data['cart-notification-product'] || '';
+                  var container = document.getElementById('cart-notification-product');
+                  if (container) { container.innerHTML = html; }
+                }
+                var notif = document.getElementById('cart-notification');
+                if (notif) { notif.style.display = 'block'; }
+                try { window.dispatchEvent(new CustomEvent('cart:refresh', { bubbles:true })); } catch(e) {}
+              })
               .catch(function(){ window.location.href = add.getAttribute('href'); });
           });
         })();

@@ -15,7 +15,111 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* Cart footer two-column layout: left promo, right summary */
+  .section-{{ section.id }}-padding .cart-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 990px) {
+    .section-{{ section.id }}-padding .cart-footer-grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+  }
+
+  /* Pillow upsell component (scoped) */
+  #pillow-upsell-{{ section.id }} {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #F7F4EE;
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 750px) {
+    #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__content {
+    background: #154733;
+    color: #FFF5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__heading {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0 0 12px 0;
+    color: #FFF5E5;
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__text {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin: 0 0 18px 0;
+    color: #FFF5E5;
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__btn {
+    appearance: none;
+    border: 0;
+    background: #FFF5E5;
+    color: #154733;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    padding: 14px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 {%- endstyle -%}
+
+{% liquid
+  assign pillow_handle = 'wool-life-pillows'
+  assign pillow_product = all_products[pillow_handle]
+  assign pillow_variant_id = ''
+  if pillow_product and pillow_product.variants.size > 0
+    assign pillow_variant_id = pillow_product.selected_or_first_available_variant.id
+  endif
+  assign pillow_in_cart = false
+  for line_item in cart.items
+    if line_item.product.handle == pillow_handle
+      assign pillow_in_cart = true
+      break
+    endif
+  endfor
+%}
 
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
@@ -24,110 +128,135 @@
 >
   <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
-      {%- if settings.show_cart_note -%}
-        <cart-note class="cart__note field">
-          <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
-          <textarea
-            class="text-area field__input"
-            name="note"
-            form="cart"
-            id="Cart-note"
-            placeholder="{{ 'sections.cart.note' | t }}"
-          >{{ cart.note }}</textarea>
-        </cart-note>
-      {%- endif -%}
-
-      <div class="cart__blocks">
-        {% for block in section.blocks %}
-          {%- case block.type -%}
-            {%- when '@app' -%}
-              {% render block %}
-            {%- when 'subtotal' -%}
-              <div class="js-contents" {{ block.shopify_attributes }}>
-                <div>
-                  {%- if cart.cart_level_discount_applications.size > 0 -%}
-                    <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
-                      {%- for discount in cart.cart_level_discount_applications -%}
-                        <li class="discounts__discount discounts__discount--position">
-                          {{- 'icon-discount.svg' | inline_asset_content -}}
-                          {{ discount.title | escape }}
-                          (-{{ discount.total_allocated_amount | money }})
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
-                </div>
-
-                <div class="totals">
-                  <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-                  <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
-                </div>
-
-                <small class="tax-note caption-large rte">
-                  {%- if cart.duties_included and cart.taxes_included -%}
-                    {%- if shop.shipping_policy.body == blank -%}
-                      {{ 'sections.cart.duties_and_taxes_included_shipping_at_checkout_without_policy' | t }}
-                    {%- else -%}
-                      {{
-                        'sections.cart.duties_and_taxes_included_shipping_at_checkout_with_policy_html'
-                        | t: link: shop.shipping_policy.url
-                      }}
-                    {%- endif -%}
-                  {%- elsif cart.duties_included == false and cart.taxes_included -%}
-                    {%- if shop.shipping_policy.body == blank -%}
-                      {{ 'sections.cart.taxes_included_shipping_at_checkout_without_policy' | t }}
-                    {%- else -%}
-                      {{
-                        'sections.cart.taxes_included_shipping_at_checkout_with_policy_html'
-                        | t: link: shop.shipping_policy.url
-                      }}
-                    {%- endif -%}
-                  {%- elsif cart.duties_included and cart.taxes_included == false -%}
-                    {%- if shop.shipping_policy.body == blank -%}
-                      {{ 'sections.cart.duties_included_taxes_at_checkout_shipping_at_checkout_without_policy' | t }}
-                    {%- else -%}
-                      {{
-                        'sections.cart.duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html'
-                        | t: link: shop.shipping_policy.url
-                      }}
-                    {%- endif -%}
-                  {%- elsif cart.duties_included == false and cart.taxes_included == false -%}
-                    {%- if shop.shipping_policy.body == blank -%}
-                      {{ 'sections.cart.taxes_at_checkout_shipping_at_checkout_without_policy' | t }}
-                    {%- else -%}
-                      {{
-                        'sections.cart.taxes_at_checkout_shipping_at_checkout_with_policy_html'
-                        | t: link: shop.shipping_policy.url
-                      }}
-                    {%- endif -%}
-                  {%- endif -%}
-                </small>
+      <div class="cart-footer-grid" style="display: none;">
+        {% unless pillow_in_cart or pillow_variant_id == '' %}
+          <aside id="pillow-upsell-{{ section.id }}" class="pillow-upsell">
+            <div class="pillow-upsell__inner">
+              <div class="pillow-upsell__image">
+                <img src="https://cdn.shopify.com/s/files/1/0550/3323/3469/files/pillowlargepromo_e7b41f49-2588-4bbb-86d9-139831592723.jpg?v=1758759877" alt="Wool.Life Pillow" loading="lazy">
               </div>
-            {%- else -%}
-              <div class="cart__ctas" {{ block.shopify_attributes }}>
-                <button
-                  type="submit"
-                  id="checkout"
-                  class="cart__checkout-button button"
-                  name="checkout"
-                  {% if cart == empty %}
-                    disabled
-                  {% endif %}
-                  form="cart"
-                >
-                  {{ 'sections.cart.checkout' | t }}
-                </button>
-              </div>
-
-              {%- if additional_checkout_buttons -%}
-                <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
-                  {{ content_for_additional_checkout_buttons }}
+              <div class="pillow-upsell__content">
+                <h3 class="pillow-upsell__heading">Add Better Sleep to Your Order</h3>
+                <div class="pillow-upsell__text">
+                  <strong>Introducing&nbsp;Wool.Life Pillows</strong>, crafted from natural New Zealand wool for the ultimate sleep solution. Healthier for you, better for the planet, and <strong>now&nbsp;20% off</strong> when you add one to your order today.
                 </div>
-              {%- endif -%}
-          {%- endcase -%}
-        {% endfor %}
+                <form method="post" action="/cart/add">
+                  <input type="hidden" name="id" value="{{ pillow_variant_id }}">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="pillow-upsell__btn">Add Pillow &amp; Save 20%</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        {% endunless %}
 
-        <div id="cart-errors"></div>
+        <div class="cart__summary">
+          {%- if settings.show_cart_note -%}
+            <cart-note class="cart__note field">
+              <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
+              <textarea
+                class="text-area field__input"
+                name="note"
+                form="cart"
+                id="Cart-note"
+                placeholder="{{ 'sections.cart.note' | t }}"
+              >{{ cart.note }}</textarea>
+            </cart-note>
+          {%- endif -%}
+
+          <div class="cart__blocks">
+            {% for block in section.blocks %}
+              {%- case block.type -%}
+                {%- when '@app' -%}
+                  {% render block %}
+                {%- when 'subtotal' -%}
+                  <div class="js-contents" {{ block.shopify_attributes }}>
+                    <div>
+                      {%- if cart.cart_level_discount_applications.size > 0 -%}
+                        <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                          {%- for discount in cart.cart_level_discount_applications -%}
+                            <li class="discounts__discount discounts__discount--position">
+                              {{- 'icon-discount.svg' | inline_asset_content -}}
+                              {{ discount.title | escape }}
+                              (-{{ discount.total_allocated_amount | money }})
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </div>
+
+                    <div class="totals">
+                      <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
+                      <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+                    </div>
+
+                    <small class="tax-note caption-large rte">
+                      {%- if cart.duties_included and cart.taxes_included -%}
+                        {%- if shop.shipping_policy.body == blank -%}
+                          {{ 'sections.cart.duties_and_taxes_included_shipping_at_checkout_without_policy' | t }}
+                        {%- else -%}
+                          {{
+                            'sections.cart.duties_and_taxes_included_shipping_at_checkout_with_policy_html'
+                            | t: link: shop.shipping_policy.url
+                          }}
+                        {%- endif -%}
+                      {%- elsif cart.duties_included == false and cart.taxes_included -%}
+                        {%- if shop.shipping_policy.body == blank -%}
+                          {{ 'sections.cart.taxes_included_shipping_at_checkout_without_policy' | t }}
+                        {%- else -%}
+                          {{
+                            'sections.cart.taxes_included_shipping_at_checkout_with_policy_html'
+                            | t: link: shop.shipping_policy.url
+                          }}
+                        {%- endif -%}
+                      {%- elsif cart.duties_included and cart.taxes_included == false -%}
+                        {%- if shop.shipping_policy.body == blank -%}
+                          {{ 'sections.cart.duties_included_taxes_at_checkout_shipping_at_checkout_without_policy' | t }}
+                        {%- else -%}
+                          {{
+                            'sections.cart.duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html'
+                            | t: link: shop.shipping_policy.url
+                          }}
+                        {%- endif -%}
+                      {%- elsif cart.duties_included == false and cart.taxes_included == false -%}
+                        {%- if shop.shipping_policy.body == blank -%}
+                          {{ 'sections.cart.taxes_at_checkout_shipping_at_checkout_without_policy' | t }}
+                        {%- else -%}
+                          {{
+                            'sections.cart.taxes_at_checkout_shipping_at_checkout_with_policy_html'
+                            | t: link: shop.shipping_policy.url
+                          }}
+                        {%- endif -%}
+                      {%- endif -%}
+                    </small>
+                  </div>
+                {%- else -%}
+                  <div class="cart__ctas" {{ block.shopify_attributes }}>
+                    <button
+                      type="submit"
+                      id="checkout"
+                      class="cart__checkout-button button"
+                      name="checkout"
+                      {% if cart == empty %}
+                        disabled
+                      {% endif %}
+                      form="cart"
+                    >
+                      {{ 'sections.cart.checkout' | t }}
+                    </button>
+                  </div>
+
+                  {%- if additional_checkout_buttons -%}
+                    <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+                      {{ content_for_additional_checkout_buttons }}
+                    </div>
+                  {%- endif -%}
+              {%- endcase -%}
+            {% endfor %}
+
+            <div id="cart-errors"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
