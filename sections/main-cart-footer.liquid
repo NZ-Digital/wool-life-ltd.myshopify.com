@@ -15,7 +15,105 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* Layout: keep cart__blocks structure, place promo left via grid */
+  .cart__footer.isolate.section-{{ section.id }}-padding {
+    display: block;
+  }
+  @media screen and (min-width: 990px) {
+    .cart__footer.isolate.section-{{ section.id }}-padding {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .cart__footer.isolate.section-{{ section.id }}-padding > .cart__note {
+      grid-column: 1 / -1; /* Note spans full width on top */
+    }
+  }
+
+  /* Pillow upsell component (scoped) */
+  #pillow-upsell-{{ section.id }} {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #F7F4EE;
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  @media screen and (min-width: 750px) {
+    #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
+      grid-template-columns: 1fr 1fr; /* image | content */
+    }
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__content {
+    background: #154733;
+    color: #FFF5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__heading {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0 0 12px 0;
+    color: #FFF5E5;
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__text {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin: 0 0 18px 0;
+    color: #FFF5E5;
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__btn {
+    appearance: none;
+    border: 0;
+    background: #FFF5E5;
+    color: #154733;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    padding: 14px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 {%- endstyle -%}
+
+{% liquid
+  assign pillow_handle = 'wool-life-pillows'
+  assign pillow_product = all_products[pillow_handle]
+  assign pillow_variant_id = ''
+  if pillow_product and pillow_product.variants.size > 0
+    assign pillow_variant_id = pillow_product.selected_or_first_available_variant.id
+  endif
+  assign pillow_in_cart = false
+  for line_item in cart.items
+    if line_item.product.handle == pillow_handle
+      assign pillow_in_cart = true
+      break
+    endif
+  endfor
+%}
 
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
@@ -36,6 +134,27 @@
           >{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
+
+      {% unless pillow_in_cart or pillow_variant_id == '' %}
+        <aside id="pillow-upsell-{{ section.id }}" class="pillow-upsell" style="display: none;">
+          <div class="pillow-upsell__inner">
+            <div class="pillow-upsell__image">
+              <img src="https://cdn.shopify.com/s/files/1/0550/3323/3469/files/pillowlargepromo_e7b41f49-2588-4bbb-86d9-139831592723.jpg?v=1758759877" alt="Wool.Life Pillow" loading="lazy">
+            </div>
+            <div class="pillow-upsell__content">
+              <h3 class="pillow-upsell__heading">Add Better Sleep to Your Order</h3>
+              <div class="pillow-upsell__text">
+                <strong>Introducing&nbsp;Wool.Life Pillows</strong>, crafted from natural New Zealand wool for the ultimate sleep solution. Healthier for you, better for the planet, and <strong>now&nbsp;20% off</strong> when you add one to your order today.
+              </div>
+              <form method="post" action="/cart/add">
+                <input type="hidden" name="id" value="{{ pillow_variant_id }}">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="pillow-upsell__btn">Add Pillow &amp; Save 20%</button>
+              </form>
+            </div>
+          </div>
+        </aside>
+      {% endunless %}
 
       <div class="cart__blocks">
         {% for block in section.blocks %}
