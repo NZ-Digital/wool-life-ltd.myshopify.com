@@ -36,6 +36,7 @@
     }
     .cart__footer.isolate.section-{{ section.id }}-padding > .cart__blocks {
       grid-column: 2;
+      margin-left: auto;
     }
   }
 
@@ -52,7 +53,7 @@
   }
   @media screen and (min-width: 750px) {
     #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
-      grid-template-columns: minmax(0, 250px) 1fr; /* image (max 250px) | content */
+      grid-template-columns: minmax(100px, 200px) 1fr; /* image (max 250px) | content */
     }
   }
 
