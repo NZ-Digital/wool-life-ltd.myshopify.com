@@ -1,0 +1,215 @@
+{% comment %}
+  Pillow Promo Section
+  - Left: Image
+  - Right: CTA box with heading and two underlined links (Add to Cart, View Product)
+  - Colors, fonts, sizes per spec
+{% endcomment %}
+
+{% liquid
+  assign selected_product = all_products[section.settings.product]
+  assign has_product = false
+  if selected_product
+    assign has_product = true
+  endif
+  if has_product and selected_product.variants.size > 0
+    assign first_variant_id = selected_product.variants.first.id
+    assign product_url = selected_product.url
+  else
+    assign first_variant_id = ''
+    assign product_url = 'https://woollife.co.nz/products/wool-life-pillows'
+  endif
+%}
+
+<section class="pillow-promo-section" id="pillow-promo-{{ section.id }}">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Sora:wght@600&display=swap');
+
+    #pillow-promo-{{ section.id }} .pillow-promo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      width: 100%;
+      gap: 0;
+    }
+
+    #pillow-promo-{{ section.id }} .pillow-promo__image-wrapper {
+      width: 100%;
+    }
+
+    #pillow-promo-{{ section.id }} .pillow-promo__image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    #pillow-promo-{{ section.id }} .pillow-promo__cta {
+      background-color: #154733;
+      color: #FEF5E7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    #pillow-promo-{{ section.id }} .pillow-promo__title {
+      font-family: 'Sora', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1;
+      letter-spacing: 0;
+      color: #FEF5E7;
+      margin: 0 0 16px 0;
+      text-align: center;
+    }
+
+    #pillow-promo-{{ section.id }} .pillow-promo__links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    #pillow-promo-{{ section.id }} .pillow-promo__link {
+      font-family: 'Assistant', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1;
+      letter-spacing: 0;
+      color: #FEF5E7;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: from-font;
+      text-underline-offset: 0;
+      text-decoration-skip-ink: auto;
+    }
+
+    #pillow-promo-{{ section.id }} .pillow-promo__link:hover,
+    #pillow-promo-{{ section.id }} .pillow-promo__link:focus {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 749px) {
+      #pillow-promo-{{ section.id }} .pillow-promo {
+        grid-template-columns: 1fr;
+      }
+      #pillow-promo-{{ section.id }} .pillow-promo__cta {
+        padding: 20px;
+      }
+      #pillow-promo-{{ section.id }} .pillow-promo__links {
+        gap: 16px;
+      }
+    }
+  </style>
+
+  <div class="pillow-promo">
+    <div class="pillow-promo__image-wrapper">
+      {% if section.settings.image != blank %}
+        {{ section.settings.image | image_url: width: 1600 | image_tag: class: 'pillow-promo__image', alt: section.settings.image.alt | escape }}
+      {% else %}
+        <img
+          class="pillow-promo__image"
+          src="https://cdn.shopify.com/s/files/1/0550/3323/3469/files/pillowsmallpromo.jpg?v=1758758783"
+          alt="Wool.Life pillow promotional image"
+          loading="lazy"
+          width="1600"
+          height="900"
+        >
+      {% endif %}
+    </div>
+
+    <div class="pillow-promo__cta">
+      <h3 class="pillow-promo__title">{{ section.settings.title | default: 'Add Pillow & Save 20%' }}</h3>
+      <div class="pillow-promo__links">
+        {% if first_variant_id != '' %}
+          <a
+            href="/cart/add?id={{ first_variant_id }}&quantity=1"
+            class="pillow-promo__link pillow-promo__add-to-cart"
+            data-variant-id="{{ first_variant_id }}"
+            >Add to Cart</a>
+        {% else %}
+          <a href="{{ product_url }}" class="pillow-promo__link">Add to Cart</a>
+        {% endif %}
+        <a href="{{ product_url }}" class="pillow-promo__link" rel="nofollow">View Product</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var section = document.getElementById('pillow-promo-{{ section.id }}');
+      if (!section) return;
+      var addLink = section.querySelector('.pillow-promo__add-to-cart');
+      if (!addLink) return;
+      addLink.addEventListener('click', function(e) {
+        if (!window.fetch) return;
+        e.preventDefault();
+        var variantId = addLink.getAttribute('data-variant-id');
+        if (!variantId) { window.location.href = addLink.getAttribute('href'); return; }
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ id: Number(variantId), quantity: 1 })
+        })
+        .then(function(r) { return r.json(); })
+        .then(function() {
+          var evt;
+          try {
+            evt = new CustomEvent('cart:refresh', { bubbles: true });
+            window.dispatchEvent(evt);
+          } catch (err) {}
+          if (!document.body.querySelector('[data-cart-notification]')) {
+            var note = document.createElement('div');
+            note.textContent = 'Added to cart';
+            note.style.position = 'fixed';
+            note.style.bottom = '16px';
+            note.style.right = '16px';
+            note.style.background = '#154733';
+            note.style.color = '#FEF5E7';
+            note.style.padding = '10px 12px';
+            note.style.borderRadius = '6px';
+            note.style.zIndex = '9999';
+            document.body.appendChild(note);
+            setTimeout(function(){ note.parentNode && note.parentNode.removeChild(note); }, 1600);
+          }
+        })
+        .catch(function() {
+          window.location.href = addLink.getAttribute('href');
+        });
+      });
+    })();
+  </script>
+
+  {% schema %}
+  {
+    "name": "Pillow promo",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Left image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Add Pillow & Save 20%"
+      },
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product",
+        "default": "wool-life-pillows"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Pillow promo",
+        "category": "Promotional"
+      }
+    ]
+  }
+  {% endschema %}
+</section>

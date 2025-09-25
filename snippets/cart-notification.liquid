@@ -35,6 +35,67 @@
         </button>
       </div>
       <div id="cart-notification-product" class="cart-notification-product"></div>
+      
+      {% liquid
+        assign pillow_product = all_products['wool-life-pillows']
+        if pillow_product and pillow_product.variants.size > 0
+          assign pillow_first_variant_id = pillow_product.variants.first.id
+          assign pillow_product_url = pillow_product.url
+        else
+          assign pillow_first_variant_id = ''
+          assign pillow_product_url = 'https://woollife.co.nz/products/wool-life-pillows'
+        endif
+      %}
+      <div class="cart-pillow-promo" style="display: none;">
+        <div class="cart-pillow-promo__image-wrapper">
+          <img class="cart-pillow-promo__image" src="https://cdn.shopify.com/s/files/1/0550/3323/3469/files/pillowsmallpromo.jpg?v=1758758783" alt="Wool.Life pillow promotional image" loading="lazy">
+        </div>
+        <div class="cart-pillow-promo__cta">
+          <div class="cart-pillow-promo__title">Add Pillow & Save 20%</div>
+          <div class="cart-pillow-promo__links">
+            {% if pillow_first_variant_id != '' %}
+              <a href="/cart/add?id={{ pillow_first_variant_id }}&quantity=1" class="cart-pillow-promo__link cart-pillow-promo__add" data-variant-id="{{ pillow_first_variant_id }}">Add to Cart</a>
+            {% else %}
+              <a href="{{ pillow_product_url }}" class="cart-pillow-promo__link">Add to Cart</a>
+            {% endif %}
+            <a href="{{ pillow_product_url }}" class="cart-pillow-promo__link" rel="nofollow">View Product</a>
+          </div>
+        </div>
+      </div>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Sora:wght@600&display=swap');
+        .cart-pillow-promo { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 0; margin: 12px 0 20px; }
+        .cart-pillow-promo__image { display: block; width: 100%; height: auto; }
+        .cart-pillow-promo__cta { background: #154733; color: #FEF5E7; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 16px; }
+        .cart-pillow-promo__title { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 15px; line-height: 1; letter-spacing: 0; color: #FEF5E7; margin: 0 0 12px; }
+        .cart-pillow-promo__links { display: flex; gap: 16px; align-items: center; justify-content: center; flex-wrap: wrap; }
+        .cart-pillow-promo__link { font-family: 'Assistant', sans-serif; font-weight: 600; font-size: 15px; line-height: 1; letter-spacing: 0; color: #FEF5E7; text-decoration-line: underline; text-decoration-style: solid; text-underline-offset: 0; text-decoration-thickness: from-font; text-decoration-skip-ink: auto; }
+        .cart-pillow-promo__link:hover, .cart-pillow-promo__link:focus { opacity: .9; }
+        @media (max-width: 480px) { .cart-pillow-promo { grid-template-columns: 1fr; } }
+      </style>
+      <script>
+        (function() {
+          var scripts = document.getElementsByTagName('script');
+          var current = scripts[scripts.length - 1];
+          var root = current && current.previousElementSibling && current.previousElementSibling.previousElementSibling;
+          if (!root || !root.classList || !root.classList.contains('cart-pillow-promo')) {
+            root = document.querySelector('.cart-pillow-promo');
+          }
+          if (!root) return;
+          var add = root.querySelector('.cart-pillow-promo__add');
+          if (!add) return;
+          add.addEventListener('click', function(e) {
+            if (!window.fetch) return;
+            e.preventDefault();
+            var id = add.getAttribute('data-variant-id');
+            if (!id) { window.location.href = add.getAttribute('href'); return; }
+            fetch('/cart/add.js', { method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify({ id: Number(id), quantity: 1 }) })
+              .then(function(r){ return r.json(); })
+              .then(function(){ try { window.dispatchEvent(new CustomEvent('cart:refresh', { bubbles:true })); } catch(e) {} })
+              .catch(function(){ window.location.href = add.getAttribute('href'); });
+          });
+        })();
+      </script>
       <div class="cart-notification__links">
         <a
           href="{{ routes.cart_url }}"
