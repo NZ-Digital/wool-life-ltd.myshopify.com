@@ -50,12 +50,7 @@
   }
   #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
     display: grid;
-    grid-template-columns: 1fr;
-  }
-  @media screen and (min-width: 750px) {
-    #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
-      grid-template-columns: minmax(100px, 180px) 1fr; /* image (max 250px) | content */
-    }
+    grid-template-columns: minmax(100px, 180px) 1fr; /* image (max 250px) | content */
   }
 
   #pillow-upsell-{{ section.id }} .pillow-upsell__image {
@@ -75,7 +70,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 24px;
+    padding: 24px 30px 24px 24px;
   }
   #pillow-upsell-{{ section.id }} .pillow-upsell__heading {
     font-family: 'Sora', sans-serif;
@@ -89,7 +84,7 @@
   #pillow-upsell-{{ section.id }} .pillow-upsell__text {
     font-family: 'Sora', sans-serif;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 20px;
     letter-spacing: 0;
     margin: 0 0 18px 0;
