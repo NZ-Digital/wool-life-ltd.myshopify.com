@@ -416,5 +416,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script>
+      (function() {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          if (!params.has('dev')) return;
+          function reveal(el) {
+            try { el.style.removeProperty('display'); } catch(e) { el.style.display = ''; }
+          }
+          function run() {
+            var nodes = document.querySelectorAll('.pillow-upsell, .cart-pillow-promo');
+            for (var i = 0; i < nodes.length; i++) { reveal(nodes[i]); }
+          }
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', run);
+          } else {
+            run();
+          }
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>

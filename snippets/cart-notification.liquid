@@ -45,7 +45,17 @@
           assign pillow_first_variant_id = ''
           assign pillow_product_url = 'https://woollife.co.nz/products/wool-life-pillows'
         endif
+        assign show_pillow_promo = true
+        if cart != empty
+          for item in cart.items
+            if item.product.handle == 'wool-life-pillows'
+              assign show_pillow_promo = false
+              break
+            endif
+          endfor
+        endif
       %}
+      {% if show_pillow_promo %}
       <div class="cart-pillow-promo" style="display: none;">
         <div class="cart-pillow-promo__image-wrapper">
           <img class="cart-pillow-promo__image" src="https://cdn.shopify.com/s/files/1/0550/3323/3469/files/pillowsmallpromo.jpg?v=1758758783" alt="Wool.Life pillow promotional image" loading="lazy">
@@ -62,6 +72,7 @@
           </div>
         </div>
       </div>
+      {% endif %}
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Sora:wght@600&display=swap');
         .cart-pillow-promo {background: #154733; display: flex; gap: 0; margin: 12px 0 20px; }
