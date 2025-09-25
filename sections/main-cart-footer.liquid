@@ -41,7 +41,8 @@
 
   /* Pillow upsell component (scoped) */
   #pillow-upsell-{{ section.id }} {
-    border-radius: 8px;
+    width: 100%;
+    border-radius: 0;
     overflow: hidden;
     background: #F7F4EE;
   }
@@ -51,8 +52,13 @@
   }
   @media screen and (min-width: 750px) {
     #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
-      grid-template-columns: minmax(0, 280px) 1fr; /* image (max 280px) | content */
+      grid-template-columns: minmax(0, 250px) 1fr; /* image (max 250px) | content */
     }
+  }
+
+  #pillow-upsell-{{ section.id }} .pillow-upsell__image {
+    max-width: 250px;
+    width: 100%;
   }
   #pillow-upsell-{{ section.id }} .pillow-upsell__image img {
     width: 100%;
@@ -80,12 +86,15 @@
   }
   #pillow-upsell-{{ section.id }} .pillow-upsell__text {
     font-family: 'Sora', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0;
     margin: 0 0 18px 0;
     color: #FFF5E5;
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__text strong {
+    font-weight: 600;
   }
   #pillow-upsell-{{ section.id }} .pillow-upsell__btn {
     appearance: none;
