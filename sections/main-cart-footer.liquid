@@ -50,7 +50,15 @@
   }
   #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
     display: grid;
-    grid-template-columns: minmax(100px, 180px) 1fr; /* image (max 250px) | content */
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+  @media screen and (min-width: 750px) {
+    #pillow-upsell-{{ section.id }} .pillow-upsell__inner {
+      grid-template-columns: minmax(100px, 180px) 1fr; /* image (max 250px) | content */
+    }
+  }
+  #pillow-upsell-{{ section.id }} .pillow-upsell__image {
+    width: 100%; /* Allow image to be 100% */
   }
 
   #pillow-upsell-{{ section.id }} .pillow-upsell__image {
