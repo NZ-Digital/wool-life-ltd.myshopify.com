@@ -16,6 +16,11 @@
     }
   }
 
+  /* Hide section entirely when cart is empty */
+  #main-cart-footer.is-empty {
+    display: none;
+  }
+
   /* Layout: keep cart__blocks structure, place promo left via grid */
   .cart__footer.isolate.section-{{ section.id }}-padding {
     display: block;
