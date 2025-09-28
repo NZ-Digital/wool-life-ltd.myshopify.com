@@ -64,11 +64,11 @@
           <div class="cart-pillow-promo__title">Add Pillow & Save 20%</div>
           <div class="cart-pillow-promo__links">
             {% if pillow_first_variant_id != '' %}
-              <a href="/cart/add?id={{ pillow_first_variant_id }}&quantity=1" class="cart-pillow-promo__link cart-pillow-promo__add" data-variant-id="{{ pillow_first_variant_id }}">Add to Cart</a>
+              <a href="/cart/add?id={{ pillow_first_variant_id }}&quantity=1&return_to={{ '/discount/pillow?redirect=/cart' | url_encode }}" class="cart-pillow-promo__link cart-pillow-promo__add" data-variant-id="{{ pillow_first_variant_id }}">Add to Cart</a>
             {% else %}
-              <a href="{{ pillow_product_url }}" class="cart-pillow-promo__link">Add to Cart</a>
+              <a href="/discount/pillow?redirect={{ pillow_product_url | url_encode }}" class="cart-pillow-promo__link">Add to Cart</a>
             {% endif %}
-            <a href="{{ pillow_product_url }}" class="cart-pillow-promo__link" rel="nofollow">View Product</a>
+            <a href="/discount/pillow?redirect={{ pillow_product_url | url_encode }}" class="cart-pillow-promo__link" rel="nofollow">View Product</a>
           </div>
         </div>
       </div>
@@ -112,6 +112,7 @@
                 var notif = document.getElementById('cart-notification');
                 if (notif) { notif.style.display = 'block'; }
                 try { window.dispatchEvent(new CustomEvent('cart:refresh', { bubbles:true })); } catch(e) {}
+                window.location.href = '/discount/pillow?redirect=/cart';
               })
               .catch(function(){ window.location.href = add.getAttribute('href'); });
           });

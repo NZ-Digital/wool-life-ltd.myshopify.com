@@ -125,14 +125,14 @@
       <div class="pillow-promo__links">
         {% if first_variant_id != '' %}
           <a
-            href="/cart/add?id={{ first_variant_id }}&quantity=1"
+            href="/cart/add?id={{ first_variant_id }}&quantity=1&return_to={{ '/discount/pillow?redirect=/cart' | url_encode }}"
             class="pillow-promo__link pillow-promo__add-to-cart"
             data-variant-id="{{ first_variant_id }}"
             >Add to Cart</a>
         {% else %}
-          <a href="{{ product_url }}" class="pillow-promo__link">Add to Cart</a>
+          <a href="/discount/pillow?redirect={{ product_url | url_encode }}" class="pillow-promo__link">Add to Cart</a>
         {% endif %}
-        <a href="{{ product_url }}" class="pillow-promo__link" rel="nofollow">View Product</a>
+        <a href="/discount/pillow?redirect={{ product_url | url_encode }}" class="pillow-promo__link" rel="nofollow">View Product</a>
       </div>
     </div>
   </div>
@@ -155,25 +155,11 @@
         })
         .then(function(r) { return r.json(); })
         .then(function() {
-          var evt;
           try {
-            evt = new CustomEvent('cart:refresh', { bubbles: true });
+            var evt = new CustomEvent('cart:refresh', { bubbles: true });
             window.dispatchEvent(evt);
           } catch (err) {}
-          if (!document.body.querySelector('[data-cart-notification]')) {
-            var note = document.createElement('div');
-            note.textContent = 'Added to cart';
-            note.style.position = 'fixed';
-            note.style.bottom = '16px';
-            note.style.right = '16px';
-            note.style.background = '#154733';
-            note.style.color = '#FEF5E7';
-            note.style.padding = '10px 12px';
-            note.style.borderRadius = '6px';
-            note.style.zIndex = '9999';
-            document.body.appendChild(note);
-            setTimeout(function(){ note.parentNode && note.parentNode.removeChild(note); }, 1600);
-          }
+          window.location.href = '/discount/pillow?redirect=/cart';
         })
         .catch(function() {
           window.location.href = addLink.getAttribute('href');
