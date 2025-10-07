@@ -465,7 +465,7 @@
 {% endjavascript %}
 
 {%- if request.page_type == 'index' -%}
-  <script type="application/ld+json" id="ld-home-index">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -511,68 +511,6 @@
   ]
 }
  </script>
-  <script>
-    (function() {
-      var ours = document.getElementById('ld-home-index');
-      if (!ours) return;
-
-      function isWebSiteNode(node) {
-        if (!node) return false;
-        if (node['@type'] === 'WebSite') return true;
-        if (Array.isArray(node['@type'])) return node['@type'].indexOf('WebSite') > -1;
-        return false;
-      }
-
-      function containsWebSite(json) {
-        if (!json) return false;
-        if (isWebSiteNode(json)) return true;
-        if (Array.isArray(json['@graph'])) {
-          return json['@graph'].some(isWebSiteNode);
-        }
-        return false;
-      }
-
-      function purgeWebSiteSchemas() {
-        var scripts = Array.prototype.slice.call(document.querySelectorAll('script[type="application/ld+json"]'));
-        scripts.forEach(function(s) {
-          if (s === ours) return;
-          try {
-            var text = s.textContent || s.innerText || '';
-            if (!text) return;
-            var json = JSON.parse(text);
-            if (containsWebSite(json) && s.parentNode) {
-              s.parentNode.removeChild(s);
-            }
-          } catch (e) { /* ignore parse errors */ }
-        });
-      }
-
-      // Run immediately, after DOM load, and observe for late-inserted scripts
-      purgeWebSiteSchemas();
-      document.addEventListener('DOMContentLoaded', purgeWebSiteSchemas);
-      try {
-        var observer = new MutationObserver(function(mutations) {
-          for (var i = 0; i < mutations.length; i++) {
-            var added = mutations[i].addedNodes;
-            for (var j = 0; j < added.length; j++) {
-              var node = added[j];
-              if (node.tagName === 'SCRIPT' && node.type === 'application/ld+json' && node !== ours) {
-                try {
-                  var text = node.textContent || node.innerText || '';
-                  if (!text) continue;
-                  var json = JSON.parse(text);
-                  if (containsWebSite(json) && node.parentNode) {
-                    node.parentNode.removeChild(node);
-                  }
-                } catch (e) { /* ignore */ }
-              }
-            }
-          }
-        });
-        observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
-      } catch (e) { /* ignore */ }
-    })();
-  </script>
 {%- else -%}
 <script type="application/ld+json">
   {
