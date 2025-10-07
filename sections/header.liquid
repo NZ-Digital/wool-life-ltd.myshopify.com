@@ -464,6 +464,54 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+{%- if request.page_type == 'index' -%}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Wool.Life",
+      "url": "https://woollife.co.nz/",
+      "logo": "https://woollife.co.nz/cdn/shop/files/woollife-logo.svg?v=1738710063&width=130",
+      "sameAs": [
+        "https://www.facebook.com/wool.life.nz/",
+        "https://www.instagram.com/woollifenz/",
+        "https://www.linkedin.com/company/wool-life/"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+64 22 471 0010",
+          "email": "mailto:contact@woollife.co.nz"
+        }
+      ],
+      "description": "Wool.Life creates 100% New Zealand wool products for sustainable living. We offer home, garden, pet, and commercial wool products that are safe, eco-friendly, and built to last."
+    },
+    {
+      "@type": "WebSite",
+      "name": "Wool.Life",
+      "url": "https://woollife.co.nz/",
+      "description": "Innovative 100% NZ wool products for a sustainable world, including garden mats, pet beds, home and commercial solutions.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Wool.Life",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://woollife.co.nz/cdn/shop/files/woollife-logo.svg?v=1738710063&width=130"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://woollife.co.nz/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+ </script>
+{%- else -%}
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -486,22 +534,6 @@
     "url": {{ request.origin | append: page.url | json }}
   }
 </script>
-
-{%- if request.page_type == 'index' -%}
-  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": {{ shop.name | json }},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {{ potential_action_target | json }},
-        "query-input": "required name=search_term_string"
-      },
-      "url": {{ request.origin | append: page.url | json }}
-    }
-  </script>
 {%- endif -%}
 
 {% schema %}
