@@ -243,7 +243,7 @@
         "grid_item_7Dtr8n": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-16.png",
+            "grid-item_image": "shopify://shop_images/water-icon-drop.svg",
             "grid-item_heading": "Step two",
             "grid-item_paragraph": "<p>The pod can be connected to a water source in a number of ways:</p>",
             "grid-item_btn-label": "",
@@ -253,7 +253,7 @@
         "grid_item_H3hDGQ": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-13.png",
+            "grid-item_image": "shopify://shop_images/Hose-Iconn.png",
             "grid-item_heading": "Manual Hose Fill",
             "grid-item_paragraph": "<p>Replace the 4mm barbed connection on the pod's cap with the supplied hose adapter. You can then fill the pod manually with a garden hose. A single fill provides up to 48 hours of water to the plant.</p>",
             "grid-item_btn-label": "",
@@ -273,7 +273,7 @@
         "grid_item_L4KaaH": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-14.png",
+            "grid-item_image": "shopify://shop_images/tap-2.png",
             "grid-item_heading": "Direct to Tap",
             "grid-item_paragraph": "<p>You can run micro tubing directly from a garden tap, but you may need a pressure regulator</p>",
             "grid-item_btn-label": "",
@@ -283,7 +283,7 @@
         "grid_item_ajQC9y": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-15.png",
+            "grid-item_image": "shopify://shop_images/water-tank.png",
             "grid-item_heading": "Water Tanks",
             "grid-item_paragraph": "<p>The pods can operate from low-pressure supplies like rain barrels. The water<br/>tank must be above<br/>the pod's height to operate correctly.</p>",
             "grid-item_btn-label": "",
@@ -303,7 +303,7 @@
         "grid_item_4NJnJV": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-13.png",
+            "grid-item_image": "shopify://shop_images/Brand_Icons-15.png",
             "grid-item_heading": "Fertiliser use",
             "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix the fertiliser in water<br/>before adding it to the pod, and then refill the pod with clean water after application to prevent clogs and salt buildup. Do not use non-water-soluble fertilisers.</p>",
             "grid-item_btn-label": "",
