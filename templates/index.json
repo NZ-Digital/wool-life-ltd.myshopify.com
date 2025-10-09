@@ -96,6 +96,7 @@
         "image-with-content_heading": "Commercial Products",
         "image-with-content_heading_color": "#E9DDC6",
         "image-with-content_text": "Wool.Life provides a variety of commercial solutions designed to support sustainability across different industries. \n\nOur products, made from 100% New Zealand wool, are eco-friendly alternatives that cater to the needs of sectors such as landscaping, agriculture, packaging, and insulation. We help businesses reduce their environmental impact while offering effective, natural solutions that promote long-term sustainability and growth.\n<a href=\"/pages/contact\">Contact us</a>",
+        "image-with-content_text_richtext": "",
         "image-with-content_text_color": "rgba(233, 221, 198, 0.80)",
         "image-with-content_background_color": "#154734",
         "image-with-content_id": "",
@@ -190,13 +191,37 @@
             "review_title": "“Perfect for picky pups”",
             "review_description": "“Our Frenchie, Louie, is super fussy and usually ends up on the couch (or our bed). But since we got him the Wool.Life bed, he actually chooses it. It’s cosy, firm enough to support him properly, and doesn’t overheat like some of the fluffy ones. Plus, it looks great in our space.”"
           }
+        },
+        "review_yzPmrF": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Christine",
+            "tag": "Verified Buyer",
+            "date": "30 July 2025",
+            "number_of_stars": "5",
+            "review_title": "🐑  “Heavenly wool the plants love it”",
+            "review_description": "Had the wool around my strawberry s last season and I have just ordered some more to tidy them up for this season.would recommend for people to use in there garden."
+          }
+        },
+        "review_LKmTEU": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Lesley Blackmore",
+            "tag": "Verified Buyer",
+            "date": "30 September 2025",
+            "number_of_stars": "5",
+            "review_title": "“keeps weeds at bay”",
+            "review_description": "Wool.Life NZ went above and beyond! Their wool garden matting is absolutely brilliant, strong, natural, and keeps weeds at bay. It’s a relief to find something that truly works and is proudly made in New Zealand. A business that cares deeply about quality and customers. Highly recommend!"
+          }
         }
       },
       "block_order": [
         "review_NECajM",
         "review_pkdE3c",
         "review_CWDja7",
-        "review_DhwdLV"
+        "review_DhwdLV",
+        "review_yzPmrF",
+        "review_LKmTEU"
       ],
       "name": "Product Reviews",
       "settings": {}
