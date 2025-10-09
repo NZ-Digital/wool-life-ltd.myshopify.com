@@ -34,7 +34,10 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "title_size": "h1",
+            "title_weight": "400"
+          }
         },
         "price": {
           "type": "price",
@@ -43,7 +46,7 @@
         "text_X3gXdw": {
           "type": "text",
           "settings": {
-            "text": "Our 100% NZ recycled Wool Mats are made from wool saved from being discarded meaning our mats aren’t just eco-friendly they’re a gardens best friend.",
+            "text": "The H₂ Ortigator Pod is a complete life support system for your new fruit trees, natives, andornamentals. It takes care of a number of tasks for you, including watering, weed control, andprotecting your plant from pests and damage.",
             "text_style": "body"
           }
         },
@@ -76,6 +79,7 @@
         "buy_buttons"
       ],
       "settings": {
+        "design_style": "current",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "large",
@@ -98,7 +102,7 @@
       ],
       "settings": {
         "product-description_heading": "Product Description",
-        "product-description_text": "<p>Our 100% Recycled Wool Mulch & Weed Mats are the natural choice for commercial landscapers and home gardeners looking for a sustainable, biodegradable product that retains moisture in the soil, fertilisers the soil as it biodegrades, repels pests and suppresses weeds. Our wool mulch mats are from wool that has been saved from disposal and these mats are not only a tribute to sustainability but also a boon to every tree lover.</p>\n\n<p>Since wool is a natural material, it might undergo slight changes after manufacture, leading to minor variations in the actual product dimensions. Rest assured, this natural transformation only adds to its unique charm.</p>",
+        "product-description_text": "<p>The H₂ Ortigator Pod is the ultimate \"set and forget\" watering and plant protection system for anyone establishing new trees or vines. It's designed to provide a continuous, deep water supply directly to the root zone, while also protecting your young plant from weeds, pests, and the elements.</p>\n\n<p>Made in New Zealand from durable, UV-resistant plastic, the H₂ Ortigator works perfectly alongside Wool Life's Wool Mulch & Weed Mats to create the ideal growing environment. Check out www.h2ortigator.co.nz to see how you can use the H₂ Ortigator throughout your property.</p>",
         "product-description_background_color": "#E9DDC6"
       }
     },
@@ -123,6 +127,7 @@
     },
     "case_studies_listing_3bFiYk": {
       "type": "case-studies-listing",
+      "disabled": true,
       "custom_css": [
         ".wl_case-studies-listing {padding-top: 32px;}",
         ".wl_case-studies-listing_btn {display: none;}",
@@ -146,9 +151,9 @@
         "grid_item_GNQTNj": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/100_NZ_wool_1.png",
-            "grid-item_heading": "Guaranteed 100% Pure New Zealand Wool",
-            "grid-item_paragraph": "<p>We make our Wool Mulch & Weed Mats from 100% New Zealand wool. This creates a completely natural, renewable product, which is safe to install, safe to live with and safe for the environment.</p>",
+            "grid-item_image": "shopify://shop_images/Life-Support-Icon_f5d8f02f-d29c-4a77-b02b-5e03a03e5de9.png",
+            "grid-item_heading": "A Complete Life Support System",
+            "grid-item_paragraph": "<p>The H₂ Ortigator Pod is a complete life support system for your new fruit trees, natives, and ornamentals. It takes care of a number of tasks for you, including watering, weed control, and protecting your plant from pests and damage.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -156,9 +161,9 @@
         "grid_item_CaBzRm": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Easy_to_use_beige_1.png",
-            "grid-item_heading": "Convenient & Easy to Use",
-            "grid-item_paragraph": "<p>Our Wool Mulch & Weed Mats are simple to use, providing all the advantages of a layer of mulch, while also reducing weed growth. Our<br/>mats are flexible, protect against erosion, and are available in sizes to suit<br/>every project.</p>",
+            "grid-item_image": "shopify://shop_images/Water-temp_beige_1.png",
+            "grid-item_heading": "Smarter Watering System",
+            "grid-item_paragraph": "<p>The H₂Ortigator Pod’s patented design delivers water slowly and directly to the roots eliminating waste, preventing over-irrigation, and ensuring steady hydration for stronger roots and less transplant shock. The most efficient way to keep trees and vines perfectly hydrated.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -166,9 +171,9 @@
         "grid_item_7CxwAJ": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Promotes-plant-growth_beige_1.png",
-            "grid-item_heading": "Promotes Plant Growth",
-            "grid-item_paragraph": "<p>New Zealand wool is full of essential nutrients that promote plant growth, including nitrogen, phosphorus and potassium. Our Wool Mulch & Weed Mats slowly break down over time, releasing nutrients into the soil and acting as a fertiliser.</p>",
+            "grid-item_image": "shopify://shop_images/Easy_to_use_beige_1.png",
+            "grid-item_heading": "Convenient & Easy to Use",
+            "grid-item_paragraph": "<p>Forget timers, weeding, and guessing water volumes. This all-in-one system saves you time and effort. Simply connect it to your existing irrigation, a garden hose, or a rainwater tank. The pod refills in under two minutes, and a single fill can last up to two days.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -176,9 +181,9 @@
         "grid_item_ABhiqB": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Water-temp_beige_1.png",
-            "grid-item_heading": "Water & Temperature Regulating",
-            "grid-item_paragraph": "<p>Wool stores up to 33% of its weight in water, and slowly releases water once the surrounding environment drops below 65% relative humidity. This means our mats act as a water buffer, keeping plants at the right moisture level. As wool absorbs water, it releases a small amount of heat, helping to regulate the soil temperature and provide ideal growing conditions.</p>",
+            "grid-item_image": "shopify://shop_images/Promotes-plant-growth_beige_1.png",
+            "grid-item_heading": "Promotes Thriving Plant Growth",
+            "grid-item_paragraph": "<p>The H₂ Ortigator's unique \"little and often\" watering approach ensures consistent soil moisture, which encourages roots to grow downwards, creating a more resilient, well-established plant. The unit also shields the root zone from extreme weather, creating a stable microclimate for optimal growth.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -186,9 +191,9 @@
         "grid_item_e3zKkG": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Biodegradable_beige_1.png",
-            "grid-item_heading": "Fully Biodegradable",
-            "grid-item_paragraph": "<p>Our Wool Mulch & Weed Mats are strong enough to do the job without any need for synthetic glues or strengthening materials. Once your wool mat has biodegraded, the only thing left behind is healthy plants and enriched soil. For ultimate sustainability, secure your Wool Mulch & Weed Mat with our fully biodegradable pegs.</p>",
+            "grid-item_image": "shopify://shop_images/nz_icon_41a70ff8-5127-490c-8adf-1d97452a6729.png",
+            "grid-item_heading": "A Sustainable Kiwi Investment",
+            "grid-item_paragraph": "<p>Designed and manufactured in New Zealand, the pod is built for durability and endless reusability. Made from 25% recycled plastic, it is an efficient way to conserve water, with trials showing water savings of up to 60% per plant. This is a long-term investment in your garden's health and a more sustainable way to grow.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -196,9 +201,9 @@
         "grid_item_rXUdNA": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Pest_resistant_beige_1.png",
-            "grid-item_heading": "Naturally Pest Resistant",
-            "grid-item_paragraph": "<p>Wool might feel soft to the touch, but wool fibres have very fine scales, and tiny barbs - which means that slugs and snails go out of their way to avoid them! The composition of our mats also means that birds can’t scrape the mat away from your garden.</p>",
+            "grid-item_image": "shopify://shop_images/award.png",
+            "grid-item_heading": "Award-Winning Innovation",
+            "grid-item_paragraph": "<p>This innovative NZ designed product has been recognised with the 2022 Innovation in Irrigation. Award from Irrigation NZ, the 2022 Fourneau Trophy for Innovation in Fruit Growing from the Fruit Growers Trust, and Best Emerging Business at the 2024 Pan Pac Hawke's Bay Business Awards</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -229,8 +234,18 @@
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/Brand_Icons-16.png",
-            "grid-item_heading": "Step one:",
-            "grid-item_paragraph": "<p>Clear the area you plan to plant in by removing any existing weeds.</p>",
+            "grid-item_heading": "Step one",
+            "grid-item_paragraph": "<p>Place your pod around the plant's base, then push it firmly into the soil until it is level<br/>and stable.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_7Dtr8n": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Brand_Icons-16.png",
+            "grid-item_heading": "Step two",
+            "grid-item_paragraph": "<p>The pod can be connected to a water source in a number of ways:</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -239,8 +254,18 @@
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/Brand_Icons-13.png",
-            "grid-item_heading": "Step two: (optional, rolls only)",
-            "grid-item_paragraph": "<p>If you are using one of our Mulch & Weed Rolls cut your roll to size using sharp scissors or a knife. Then cut a hole where you would like your plant positioned.</p>",
+            "grid-item_heading": "Manual Hose Fill",
+            "grid-item_paragraph": "<p>Replace the 4mm barbed connection on the pod's cap with the supplied hose adapter. You can then fill the pod manually with a garden hose. A single fill provides up to 48 hours of water to the plant.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_xC4yEj": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Brand_Icons-13.png",
+            "grid-item_heading": "Existing Irrigation System",
+            "grid-item_paragraph": "<p>Use the supplied line punch to create a hole in your irrigation line. Insert the barbed connector and micro tubing, then connect the other end of the tubing to the pod's 4mm barb. The pod fills automatically when you run your irrigation system.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -249,8 +274,8 @@
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/Brand_Icons-14.png",
-            "grid-item_heading": "Step three:",
-            "grid-item_paragraph": "<p>If you are using a roll place your plants inside the cut holes. If you are using one of our Mulch & Weed Mats position the slit around the stem of the planting, then secure the mats or rolls with pegs.</p>",
+            "grid-item_heading": "Direct to Tap",
+            "grid-item_paragraph": "<p>You can run micro tubing directly from a garden tap, but you may need a pressure regulator</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -259,8 +284,28 @@
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/Brand_Icons-15.png",
-            "grid-item_heading": "Step four:",
-            "grid-item_paragraph": "<p>Water your plants and watch them grow confident that your Mulch and weed matting will provide pest resistance, frost protection, moisture retention and suppress weeds from growing and will mulch down to provide valuable nutrients for plant growth.</p>",
+            "grid-item_heading": "Water Tanks",
+            "grid-item_paragraph": "<p>The pods can operate from low-pressure supplies like rain barrels. The water<br/>tank must be above<br/>the pod's height to operate correctly.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_Jk7HcQ": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Brand_Icons-13.png",
+            "grid-item_heading": "Step three",
+            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let your H₂ Ortigator take care of the<br/>rest! The pod has an automatic valve that shuts off the water supply when it is full. It can refill in under two minutes once the water source is pressurised.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_4NJnJV": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Brand_Icons-13.png",
+            "grid-item_heading": "Fertiliser use",
+            "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix the fertiliser in water<br/>before adding it to the pod, and then refill the pod with clean water after application to prevent clogs and salt buildup. Do not use non-water-soluble fertilisers.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -268,16 +313,20 @@
       },
       "block_order": [
         "grid_item_yPh49T",
+        "grid_item_7Dtr8n",
         "grid_item_H3hDGQ",
+        "grid_item_xC4yEj",
         "grid_item_L4KaaH",
-        "grid_item_ajQC9y"
+        "grid_item_ajQC9y",
+        "grid_item_Jk7HcQ",
+        "grid_item_4NJnJV"
       ],
       "custom_css": [
         ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
         ".wl_three-cols-heading-icon_grid-item {max-width: 208px;}"
       ],
       "settings": {
-        "three-cols-heading-icon_heading": "How to use your Wool.Life products"
+        "three-cols-heading-icon_heading": "How to use your H₂ Ortigator Pod"
       }
     },
     "product_related_products_RF49cV": {
