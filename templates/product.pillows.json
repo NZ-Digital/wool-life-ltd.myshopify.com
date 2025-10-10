@@ -134,7 +134,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/sheep-icon.png",
             "grid-item_heading": "",
-            "grid-item_paragraph": "<p>100% NZ sourced<br/>wool, renewable<br/>and sustainable.</p>",
+            "grid-item_paragraph": "<p>Made from 100% NZ-sourced wool, fully renewable, sustainable, and high quality.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -144,7 +144,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/Pest_resistant_beige_1.png",
             "grid-item_heading": "",
-            "grid-item_paragraph": "<p>Naturally resistant to dust mites, mould, and odour.</p>",
+            "grid-item_paragraph": "<p>Naturally resistant to dust mites, mould, and odour, keeping your bedding fresh and healthy.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -154,7 +154,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/nz_icon_41a70ff8-5127-490c-8adf-1d97452a6729.png",
             "grid-item_heading": "",
-            "grid-item_paragraph": "<p>Hand crafted and fully manufactured in NZ.</p>",
+            "grid-item_paragraph": "<p>Handcrafted and fully manufactured in New Zealand with attention to detail in every product.</p><p></p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -184,7 +184,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/long-lasting-comfort.png",
             "grid-item_heading": "",
-            "grid-item_paragraph": "<p>Designed for long-lasting comfort.</p>",
+            "grid-item_paragraph": "<p>Designed for consistent, long-lasting comfort, making it perfect for daily use and restful sleep.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -202,10 +202,8 @@
       ],
       "custom_css": [
         "{background-color: #154734;}",
-        ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
-        ".wl_three-cols-heading-icon_grid-item {max-width: 208px;}",
+        ".wl_three-cols-heading-icon_grid-item {max-width: 210px;}",
         ".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",
-        ".wl_three-cols-heading-icon_grid-item_heading {color: #e9ddc6;}",
         ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}",
         ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 32px; height: 52px; width: auto;}"
       ],
