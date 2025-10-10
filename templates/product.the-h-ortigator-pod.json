@@ -293,7 +293,7 @@
         "grid_item_Jk7HcQ": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/step_3.png",
+            "grid-item_image": "shopify://shop_images/centered-step-3.png",
             "grid-item_heading": "Step three",
             "grid-item_paragraph": "<p>Once connected, turn on the water supply and let your H₂ Ortigator take care of the<br/>rest! The pod has an automatic valve that shuts off the water supply when it is full. It can refill in under two minutes once the water source is pressurised.</p>",
             "grid-item_btn-label": "",
@@ -303,7 +303,7 @@
         "grid_item_4NJnJV": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-15.png",
+            "grid-item_image": "shopify://shop_images/fertilizer.png",
             "grid-item_heading": "Fertiliser use",
             "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix the fertiliser in water<br/>before adding it to the pod, and then refill the pod with clean water after application to prevent clogs and salt buildup. Do not use non-water-soluble fertilisers.</p>",
             "grid-item_btn-label": "",
