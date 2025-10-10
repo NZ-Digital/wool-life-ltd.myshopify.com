@@ -235,7 +235,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/Brand_Icons-16.png",
             "grid-item_heading": "Step one",
-            "grid-item_paragraph": "<p>Place your pod around the plant's base, then push it firmly into the soil until it is level<br/>and stable.</p>",
+            "grid-item_paragraph": "<p>Place your pod at the plant’s base and press it firmly into the soil until it sits level and stable, ensuring it stays in place while delivering water efficiently.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -245,7 +245,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/water-icon-drop.svg",
             "grid-item_heading": "Step two",
-            "grid-item_paragraph": "<p>The pod can be connected to a water source in a number of ways:</p>",
+            "grid-item_paragraph": "<p>The pod can connect to a water source in several ways, giving you flexibility depending on your setup. Each method ensures your plant receives consistent hydration without wasting water.</p><p></p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -255,7 +255,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/Hose-Iconn.png",
             "grid-item_heading": "Manual Hose Fill",
-            "grid-item_paragraph": "<p>Replace the 4mm barbed connection on the pod's cap with the supplied hose adapter. You can then fill the pod manually with a garden hose. A single fill provides up to 48 hours of water to the plant.</p>",
+            "grid-item_paragraph": "<p>To fill the pod manually, replace the 4mm barbed connection with the supplied hose adapter and connect a garden hose. A single fill provides up to 48 hours of watering, keeping your plant hydrated even when you’re away.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -265,7 +265,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/Irrigation_3df2efc0-0919-4dea-a99e-cb3043a4262f.png",
             "grid-item_heading": "Existing Irrigation System",
-            "grid-item_paragraph": "<p>Use the supplied line punch to create a hole in your irrigation line. Insert the barbed connector and micro tubing, then connect the other end of the tubing to the pod's 4mm barb. The pod fills automatically when you run your irrigation system.</p>",
+            "grid-item_paragraph": "<p>For irrigation lines, use the supplied line punch to make a hole, insert the barbed connector and micro tubing, and connect it to the pod’s 4mm barb. The pod then refills whenever you run your irrigation system.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -275,7 +275,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/tap-2.png",
             "grid-item_heading": "Direct to Tap",
-            "grid-item_paragraph": "<p>You can run micro tubing directly from a garden tap, but you may need a pressure regulator</p>",
+            "grid-item_paragraph": "<p>You can also run micro tubing directly from a garden tap, though a pressure regulator may be needed to maintain steady flow. This works well for smaller setups without a full irrigation system.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -285,7 +285,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/water-tank.png",
             "grid-item_heading": "Water Tanks",
-            "grid-item_paragraph": "<p>The pods can operate from low-pressure supplies like rain barrels. The water<br/>tank must be above<br/>the pod's height to operate correctly.</p>",
+            "grid-item_paragraph": "<p>Pods can operate from low-pressure sources like rain barrels. Ensure the tank is positioned above the pod so water flows by gravity for proper operation.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -295,7 +295,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/centered-step-3.png",
             "grid-item_heading": "Step three",
-            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let your H₂ Ortigator take care of the<br/>rest! The pod has an automatic valve that shuts off the water supply when it is full. It can refill in under two minutes once the water source is pressurised.</p>",
+            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let the pod do the rest. Its automatic valve shuts off when full and allows refilling in under two minutes once pressure is restored.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -305,7 +305,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/fertilizer.png",
             "grid-item_heading": "Fertiliser use",
-            "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix the fertiliser in water<br/>before adding it to the pod, and then refill the pod with clean water after application to prevent clogs and salt buildup. Do not use non-water-soluble fertilisers.</p>",
+            "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix it in water, then flush with clean water after use to prevent clogs. Avoid non-water-soluble fertilisers, as they can block the system.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
