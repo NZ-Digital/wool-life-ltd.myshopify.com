@@ -119,14 +119,40 @@
   }
 
   function removeDiscount() {
-    // Apply a guaranteed-nonexistent code to clear current code, redirect only on cart
-    var redirect = '/cart';
-    var url = '/discount/' + encodeURIComponent('CLEAR') + '?redirect=' + encodeURIComponent(redirect);
+    // Prefer cookie clearing on cart page to avoid redirect loops and 404s
     if (!isOnCartPage()) {
       scheduleRemoveOnNextCartView();
       return;
     }
-    try { window.location.href = url; } catch (e) { try { window.location.assign(url); } catch (e2) {} }
+    try {
+      // Clear common discount cookies; Shopify typically reads these to prefill discounts
+      var cookieNames = ['discount_code', 'discount', 'checkout_discount', 'discount_code_id'];
+      var cookies = document.cookie ? document.cookie.split(';') : [];
+      for (var i = 0; i < cookies.length; i++) {
+        var c = cookies[i].trim();
+        var eqIdx = c.indexOf('=');
+        var name = eqIdx > -1 ? c.substring(0, eqIdx) : c;
+        var value = eqIdx > -1 ? c.substring(eqIdx + 1) : '';
+        var nameLc = name.toLowerCase();
+        var valueLc = decodeURIComponent(value || '').toLowerCase();
+        var shouldClear = cookieNames.indexOf(name) !== -1 || nameLc.indexOf('discount') !== -1 || valueLc.indexOf(String(DISCOUNT_CODE).toLowerCase()) !== -1;
+        if (shouldClear) {
+          // Clear for current path
+          document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+          // Attempt to clear for shop domain as well
+          try {
+            var host = location.hostname;
+            var parts = host.split('.');
+            if (parts.length > 2) {
+              var apex = parts.slice(parts.length - 2).join('.');
+              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.' + apex;
+            }
+            document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + host;
+          } catch (e2) {}
+        }
+      }
+    } catch (e) {}
+    try { window.location.replace('/cart'); } catch (e3) { try { window.location.href = '/cart'; } catch (e4) {} }
   }
 
   function checkAndApply() {
