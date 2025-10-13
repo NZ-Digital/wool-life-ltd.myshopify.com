@@ -70,6 +70,26 @@
     return false;
   }
 
+  function getRemovalAttempts() {
+    try {
+      return JSON.parse(sessionStorage.getItem('wl_remove_attempted_by_token') || '{}');
+    } catch (e) {
+      return {};
+    }
+  }
+  function markRemovalAttemptForToken(token) {
+    try {
+      var map = getRemovalAttempts();
+      map[token] = true;
+      sessionStorage.setItem('wl_remove_attempted_by_token', JSON.stringify(map));
+    } catch (e) {}
+  }
+  function alreadyAttemptedRemovalForToken(token) {
+    if (!token) return false;
+    var map = getRemovalAttempts();
+    return !!map[token];
+  }
+
   function getAppliedTokens() {
     try {
       return JSON.parse(sessionStorage.getItem('wl_discount_applied_tokens') || '{}');
@@ -116,6 +136,8 @@
         var eligible = hasEligibleItem(cart);
         if (!eligible) {
           if (hasOurDiscount(cart)) {
+            if (alreadyAttemptedRemovalForToken(cart.token)) return;
+            markRemovalAttemptForToken(cart.token);
             removeDiscount();
           }
           return;
@@ -134,7 +156,12 @@
     if (!consumeScheduledRemoveFlag()) return;
     fetchCart()
       .then(function (cart) {
-        if (hasOurDiscount(cart)) removeDiscount();
+        if (!cart || !cart.token) return;
+        if (hasOurDiscount(cart)) {
+          if (alreadyAttemptedRemovalForToken(cart.token)) return;
+          markRemovalAttemptForToken(cart.token);
+          removeDiscount();
+        }
       })
       .catch(function () {});
   }
