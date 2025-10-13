@@ -20,6 +20,56 @@
     });
   }
 
+  function hasAnyDiscount(cart) {
+    if (!cart) return false;
+    if (Array.isArray(cart.discount_codes) && cart.discount_codes.length > 0) return true;
+    if (Array.isArray(cart.cart_level_discount_applications) && cart.cart_level_discount_applications.length > 0) return true;
+    if (Array.isArray(cart.items)) {
+      for (var i = 0; i < cart.items.length; i++) {
+        var it = cart.items[i];
+        if (Array.isArray(it.discount_allocations) && it.discount_allocations.length > 0) return true;
+        if (Array.isArray(it.discounts) && it.discounts.length > 0) return true;
+      }
+    }
+    return false;
+  }
+
+  function hasOurDiscount(cart) {
+    try {
+      if (Array.isArray(cart.discount_codes)) {
+        return cart.discount_codes.some(function (d) {
+          var code = (d && (d.code || d)) || '';
+          return String(code).toUpperCase() === String(DISCOUNT_CODE).toUpperCase();
+        });
+      }
+      if (Array.isArray(cart.cart_level_discount_applications)) {
+        return cart.cart_level_discount_applications.some(function (d) {
+          var code = (d && (d.code || d.title)) || '';
+          return String(code).toUpperCase() === String(DISCOUNT_CODE).toUpperCase();
+        });
+      }
+    } catch (e) {}
+    return false;
+  }
+
+  function isOnCartPage() {
+    try { return window.location && typeof window.location.pathname === 'string' && window.location.pathname.indexOf('/cart') === 0; } catch (e) { return false; }
+  }
+
+  var PENDING_REMOVE_KEY = 'wl_remove_discount_on_cart';
+  function scheduleRemoveOnNextCartView() {
+    try { sessionStorage.setItem(PENDING_REMOVE_KEY, '1'); } catch (e) {}
+  }
+  function consumeScheduledRemoveFlag() {
+    try {
+      if (sessionStorage.getItem(PENDING_REMOVE_KEY) === '1') {
+        sessionStorage.removeItem(PENDING_REMOVE_KEY);
+        return true;
+      }
+    } catch (e) {}
+    return false;
+  }
+
   function getAppliedTokens() {
     try {
       return JSON.parse(sessionStorage.getItem('wl_discount_applied_tokens') || '{}');
@@ -48,14 +98,43 @@
     window.location.href = url;
   }
 
+  function removeDiscount() {
+    // Apply a guaranteed-nonexistent code to clear current code, redirect only on cart
+    var redirect = '/cart';
+    var url = '/discount/' + encodeURIComponent('CLEAR') + '?redirect=' + encodeURIComponent(redirect);
+    if (!isOnCartPage()) {
+      scheduleRemoveOnNextCartView();
+      return;
+    }
+    try { window.location.href = url; } catch (e) { try { window.location.assign(url); } catch (e2) {} }
+  }
+
   function checkAndApply() {
     fetchCart()
       .then(function (cart) {
         if (!cart || !cart.token) return;
-        if (!hasEligibleItem(cart)) return;
+        var eligible = hasEligibleItem(cart);
+        if (!eligible) {
+          if (hasOurDiscount(cart)) {
+            removeDiscount();
+          }
+          return;
+        }
+        // If any coupon/discount exists, do not auto-apply FREESHIP
+        if (hasAnyDiscount(cart)) return;
         if (alreadyAppliedForToken(cart.token)) return;
         setAppliedForToken(cart.token);
         applyDiscount();
+      })
+      .catch(function () {});
+  }
+
+  function processScheduledRemovalIfNeeded() {
+    if (!isOnCartPage()) return;
+    if (!consumeScheduledRemoveFlag()) return;
+    fetchCart()
+      .then(function (cart) {
+        if (hasOurDiscount(cart)) removeDiscount();
       })
       .catch(function () {});
   }
@@ -65,6 +144,7 @@
     if (typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined' && PUB_SUB_EVENTS.cartUpdate) {
       subscribe(PUB_SUB_EVENTS.cartUpdate, function () {
         checkAndApply();
+        processScheduledRemovalIfNeeded();
       });
     }
   } catch (e) {}
@@ -73,9 +153,13 @@
   try {
     window.addEventListener('pageshow', function () {
       checkAndApply();
+      processScheduledRemovalIfNeeded();
     });
     document.addEventListener('visibilitychange', function () {
-      if (document.visibilityState === 'visible') checkAndApply();
+      if (document.visibilityState === 'visible') {
+        checkAndApply();
+        processScheduledRemovalIfNeeded();
+      }
     });
   } catch (e) {}
 })();
