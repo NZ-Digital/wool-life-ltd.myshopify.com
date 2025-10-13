@@ -12,11 +12,8 @@
   function hasEligibleItem(cart) {
     if (!cart || !Array.isArray(cart.items)) return false;
     return cart.items.some(function (item) {
-      if (item.product_id !== TARGET_PRODUCT_ID) return false;
-      if (!item.variant_title) return false;
-      var vt = String(item.variant_title).trim().toLowerCase();
-      // match if exact or part of a multi-option title like "Large / Grey"
-      return ELIGIBLE_VARIANTS.some(function (v) { return vt.indexOf(v) !== -1; });
+      // Any variant of the target product qualifies
+      return item.product_id === TARGET_PRODUCT_ID;
     });
   }
 
@@ -119,40 +116,14 @@
   }
 
   function removeDiscount() {
-    // Prefer cookie clearing on cart page to avoid redirect loops and 404s
+    // Clear via applying a guaranteed-nonexistent code once, only on cart page
     if (!isOnCartPage()) {
       scheduleRemoveOnNextCartView();
       return;
     }
-    try {
-      // Clear common discount cookies; Shopify typically reads these to prefill discounts
-      var cookieNames = ['discount_code', 'discount', 'checkout_discount', 'discount_code_id'];
-      var cookies = document.cookie ? document.cookie.split(';') : [];
-      for (var i = 0; i < cookies.length; i++) {
-        var c = cookies[i].trim();
-        var eqIdx = c.indexOf('=');
-        var name = eqIdx > -1 ? c.substring(0, eqIdx) : c;
-        var value = eqIdx > -1 ? c.substring(eqIdx + 1) : '';
-        var nameLc = name.toLowerCase();
-        var valueLc = decodeURIComponent(value || '').toLowerCase();
-        var shouldClear = cookieNames.indexOf(name) !== -1 || nameLc.indexOf('discount') !== -1 || valueLc.indexOf(String(DISCOUNT_CODE).toLowerCase()) !== -1;
-        if (shouldClear) {
-          // Clear for current path
-          document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
-          // Attempt to clear for shop domain as well
-          try {
-            var host = location.hostname;
-            var parts = host.split('.');
-            if (parts.length > 2) {
-              var apex = parts.slice(parts.length - 2).join('.');
-              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.' + apex;
-            }
-            document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + host;
-          } catch (e2) {}
-        }
-      }
-    } catch (e) {}
-    try { window.location.replace('/cart'); } catch (e3) { try { window.location.href = '/cart'; } catch (e4) {} }
+    var redirect = '/cart';
+    var url = '/discount/' + encodeURIComponent('CLEAR') + '?redirect=' + encodeURIComponent(redirect);
+    try { window.location.replace(url); } catch (e) { try { window.location.href = url; } catch (e2) {} }
   }
 
   function checkAndApply() {
