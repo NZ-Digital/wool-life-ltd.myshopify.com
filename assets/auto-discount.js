@@ -20,38 +20,6 @@
     });
   }
 
-  function hasAnyDiscount(cart) {
-    if (!cart) return false;
-    if (Array.isArray(cart.discount_codes) && cart.discount_codes.length > 0) return true;
-    if (Array.isArray(cart.cart_level_discount_applications) && cart.cart_level_discount_applications.length > 0) return true;
-    if (Array.isArray(cart.items)) {
-      for (var i = 0; i < cart.items.length; i++) {
-        var it = cart.items[i];
-        if (Array.isArray(it.discount_allocations) && it.discount_allocations.length > 0) return true;
-        if (Array.isArray(it.discounts) && it.discounts.length > 0) return true;
-      }
-    }
-    return false;
-  }
-
-  function hasOurDiscount(cart) {
-    try {
-      if (Array.isArray(cart.discount_codes)) {
-        return cart.discount_codes.some(function (d) {
-          var code = (d && (d.code || d)) || '';
-          return String(code).toUpperCase() === String(DISCOUNT_CODE).toUpperCase();
-        });
-      }
-      if (Array.isArray(cart.cart_level_discount_applications)) {
-        return cart.cart_level_discount_applications.some(function (d) {
-          var code = (d && (d.code || d.title)) || '';
-          return String(code).toUpperCase() === String(DISCOUNT_CODE).toUpperCase();
-        });
-      }
-    } catch (e) {}
-    return false;
-  }
-
   function getAppliedTokens() {
     try {
       return JSON.parse(sessionStorage.getItem('wl_discount_applied_tokens') || '{}');
@@ -80,29 +48,11 @@
     window.location.href = url;
   }
 
-  function removeDiscount() {
-    var redirect = '/cart';
-    var url = '/discount/' + '?redirect=' + encodeURIComponent(redirect);
-    try {
-      window.location.href = url;
-    } catch (e) {
-      try { window.location.assign(url); } catch (e2) {}
-    }
-  }
-
   function checkAndApply() {
     fetchCart()
       .then(function (cart) {
         if (!cart || !cart.token) return;
-        // If the eligible item is NOT in the cart, ensure our discount is removed
-        if (!hasEligibleItem(cart)) {
-          if (hasOurDiscount(cart)) {
-            removeDiscount();
-          }
-          return;
-        }
-        // Do not auto-apply if any coupon/discount already exists in the cart
-        if (hasAnyDiscount(cart)) return;
+        if (!hasEligibleItem(cart)) return;
         if (alreadyAppliedForToken(cart.token)) return;
         setAppliedForToken(cart.token);
         applyDiscount();
