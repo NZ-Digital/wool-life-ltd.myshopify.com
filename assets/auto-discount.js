@@ -55,6 +55,19 @@
     return getAppliedDiscountCodes().indexOf(lc) !== -1;
   }
 
+  function isOurDiscountInCartObject(cart) {
+    try {
+      var lc = String(DISCOUNT_CODE).toLowerCase();
+      var apps = (cart && cart.cart_level_discount_applications) || [];
+      return apps.some(function (a) {
+        var title = (a && (a.title || a.code || a.description)) || '';
+        return String(title).trim().toLowerCase() === lc;
+      });
+    } catch (e) {
+      return false;
+    }
+  }
+
   function removeOurDiscount() {
     try {
       var codes = getAppliedDiscountCodes();
@@ -139,8 +152,14 @@
         if (!eligible) {
           // Not eligible: clear our discount (only if ours) and our token flag
           clearAppliedForToken(cart.token);
-          if (isOurDiscountApplied()) {
+          if (isOurDiscountApplied() || isOurDiscountInCartObject(cart)) {
             removeOurDiscount();
+            // Refresh cart view so the discount state reflects removal
+            try {
+              if (location.pathname.indexOf('/cart') === 0) {
+                setTimeout(function () { location.reload(); }, 50);
+              }
+            } catch (e) {}
           }
           return;
         }
@@ -171,6 +190,29 @@
     document.addEventListener('visibilitychange', function () {
       if (document.visibilityState === 'visible') checkAndApply();
     });
+    // Listen for common cart events across themes/apps
+    ['cart:updated', 'cart:update', 'cart:change', 'cart-updated'].forEach(function (evt) {
+      try { document.addEventListener(evt, checkAndApply); } catch (e) {}
+    });
+    // Fallback: after any click inside cart/drawer, re-check shortly
+    document.addEventListener('click', function (e) {
+      try {
+        var el = e.target;
+        if (!el) return;
+        var withinCartForm = !!(el.closest && (el.closest('form[action="/cart"]') || el.closest('#CartDrawer') || el.closest('[data-cart]')));
+        if (withinCartForm) {
+          setTimeout(checkAndApply, 300);
+        }
+      } catch (e2) {}
+    });
+    // Short-lived periodic check after load as a safety net
+    try {
+      var start = Date.now();
+      var interval = setInterval(function () {
+        if (Date.now() - start > 30000) { clearInterval(interval); return; }
+        checkAndApply();
+      }, 5000);
+    } catch (e) {}
   } catch (e) {}
 })();
 
