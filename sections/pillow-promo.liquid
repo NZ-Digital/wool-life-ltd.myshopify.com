@@ -6,7 +6,7 @@
 {% endcomment %}
 
 {% liquid
-  assign selected_product = all_products[section.settings.product]
+  assign selected_product = section.settings.product
   assign has_product = false
   if selected_product
     assign has_product = true
@@ -186,8 +186,7 @@
       {
         "type": "product",
         "id": "product",
-        "label": "Product",
-        "default": "wool-life-pillows"
+        "label": "Product"
       }
     ],
     "presets": [
