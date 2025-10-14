@@ -27,6 +27,22 @@
 
   function deleteCookie(name) {
     try {
+      // Attempt deletion across likely domain scopes
+      var domains = [location.hostname];
+      try {
+        var parts = location.hostname.split('.');
+        if (parts.length > 2) domains.push(parts.slice(-2).join('.'));
+        if (parts.length > 1) domains.push(parts.slice(-2).join('.'));
+      } catch (e) {}
+      // Ensure uniqueness
+      var seen = {};
+      domains.forEach(function (d) { if (d && !seen[d]) seen[d] = true; });
+      Object.keys(seen).forEach(function (domain) {
+        try {
+          document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + domain;
+        } catch (e) {}
+      });
+      // Fallback: no domain attribute
       document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
     } catch (e) {}
   }
@@ -154,12 +170,8 @@
           clearAppliedForToken(cart.token);
           if (isOurDiscountApplied() || isOurDiscountInCartObject(cart)) {
             removeOurDiscount();
-            // Refresh cart view so the discount state reflects removal
-            try {
-              if (location.pathname.indexOf('/cart') === 0) {
-                setTimeout(function () { location.reload(); }, 50);
-              }
-            } catch (e) {}
+            // Refresh page so the discount state reflects removal in all contexts
+            try { setTimeout(function () { location.reload(); }, 80); } catch (e) {}
           }
           return;
         }
