@@ -2,6 +2,18 @@
   var DISCOUNT_CODE = 'FREESHIP';
   var TARGET_PRODUCT_ID = 7620001464381; // dog bed product id
   var ELIGIBLE_VARIANTS = ['large', 'medium'];
+  var WL_DISCOUNT_VERSION = 'wl-auto-discount v2025-10-14';
+
+  function log() {
+    try {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift('[WL-Discount]');
+      // eslint-disable-next-line no-console
+      console.log.apply(console, args);
+    } catch (e) {}
+  }
+
+  log('init', WL_DISCOUNT_VERSION);
 
   // --- Discount helpers (non-overwrite + removal) ---
   function getCookie(name) {
@@ -92,6 +104,7 @@
       if (codes.indexOf(lc) === -1) return; // our code not present
 
       var remaining = codes.filter(function (c) { return c !== lc; });
+      log('removeOurDiscount: current=', codes, 'remaining=', remaining);
       if (remaining.length === 0) {
         // No other codes remain, clear cookies entirely
         deleteCookie('discount_code');
@@ -112,6 +125,7 @@
       var bogus = '__clear__' + Date.now();
       // Replace any server-side applied code by routing through a bogus discount
       var url = '/discount/' + encodeURIComponent(bogus) + '?redirect=' + encodeURIComponent(back);
+      log('forceClearDiscountViaRedirect ->', url);
       window.location.href = url;
     } catch (e) {}
   }
@@ -169,19 +183,24 @@
   function applyDiscount() {
     var redirect = '/cart';
     var url = '/discount/' + encodeURIComponent(DISCOUNT_CODE) + '?redirect=' + encodeURIComponent(redirect);
+    log('applyDiscount ->', DISCOUNT_CODE, 'redirect=', url);
     window.location.href = url;
   }
 
   function checkAndApply() {
+    log('checkAndApply: start');
     fetchCart()
       .then(function (cart) {
         if (!cart || !cart.token) return;
 
         var eligible = hasEligibleItem(cart);
+        log('checkAndApply: eligible?', eligible, 'cartToken=', cart.token);
         if (!eligible) {
           // Not eligible: clear our discount (only if ours) and our token flag
           clearAppliedForToken(cart.token);
-          if (isOurDiscountApplied() || isOurDiscountInCartObject(cart)) {
+          var oursApplied = isOurDiscountApplied() || isOurDiscountInCartObject(cart);
+          log('checkAndApply: oursApplied?', oursApplied);
+          if (oursApplied) {
             removeOurDiscount();
             // Server-side fallback: force replace discount via bogus redirect
             forceClearDiscountViaRedirect(cart.token);
@@ -190,9 +209,17 @@
         }
 
         // Eligible: do not overwrite any existing discount
-        if (hasAnyDiscountApplied()) return;
-        if (alreadyAppliedForToken(cart.token)) return;
+        var anyApplied = hasAnyDiscountApplied();
+        if (anyApplied) {
+          log('checkAndApply: skip apply, some discount already applied');
+          return;
+        }
+        if (alreadyAppliedForToken(cart.token)) {
+          log('checkAndApply: skip apply, token already applied');
+          return;
+        }
         setAppliedForToken(cart.token);
+        log('checkAndApply: applying now');
         applyDiscount();
       })
       .catch(function () {});
@@ -202,6 +229,7 @@
   try {
     if (typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined' && PUB_SUB_EVENTS.cartUpdate) {
       subscribe(PUB_SUB_EVENTS.cartUpdate, function () {
+        log('event: PUB_SUB cartUpdate');
         checkAndApply();
       });
     }
@@ -210,14 +238,23 @@
   // Also run when page becomes visible or on load, to catch existing carts
   try {
     window.addEventListener('pageshow', function () {
+      log('event: pageshow');
       checkAndApply();
     });
     document.addEventListener('visibilitychange', function () {
-      if (document.visibilityState === 'visible') checkAndApply();
+      if (document.visibilityState === 'visible') {
+        log('event: visibilitychange -> visible');
+        checkAndApply();
+      }
     });
     // Listen for common cart events across themes/apps
     ['cart:updated', 'cart:update', 'cart:change', 'cart-updated'].forEach(function (evt) {
-      try { document.addEventListener(evt, checkAndApply); } catch (e) {}
+      try {
+        document.addEventListener(evt, function () {
+          log('event:', evt);
+          checkAndApply();
+        });
+      } catch (e) {}
     });
     // Fallback: after any click inside cart/drawer, re-check shortly
     document.addEventListener('click', function (e) {
@@ -226,6 +263,7 @@
         if (!el) return;
         var withinCartForm = !!(el.closest && (el.closest('form[action="/cart"]') || el.closest('#CartDrawer') || el.closest('[data-cart]')));
         if (withinCartForm) {
+          log('event: click within cart UI');
           setTimeout(checkAndApply, 300);
         }
       } catch (e2) {}
@@ -235,6 +273,7 @@
       var start = Date.now();
       var interval = setInterval(function () {
         if (Date.now() - start > 30000) { clearInterval(interval); return; }
+        log('interval: periodic check');
         checkAndApply();
       }, 5000);
     } catch (e) {}
