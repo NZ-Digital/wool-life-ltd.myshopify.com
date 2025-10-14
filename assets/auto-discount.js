@@ -103,6 +103,19 @@
     } catch (e) {}
   }
 
+  function forceClearDiscountViaRedirect(cartToken) {
+    try {
+      var guardKey = 'wl_discount_force_clear_' + String(cartToken || 'noct');
+      if (sessionStorage.getItem(guardKey)) return;
+      sessionStorage.setItem(guardKey, '1');
+      var back = (location.pathname + location.search + location.hash) || '/cart';
+      var bogus = '__clear__' + Date.now();
+      // Replace any server-side applied code by routing through a bogus discount
+      var url = '/discount/' + encodeURIComponent(bogus) + '?redirect=' + encodeURIComponent(back);
+      window.location.href = url;
+    } catch (e) {}
+  }
+
   function fetchCart() {
     return fetch('/cart.js', { credentials: 'same-origin' }).then(function (r) {
       return r.json();
@@ -170,8 +183,8 @@
           clearAppliedForToken(cart.token);
           if (isOurDiscountApplied() || isOurDiscountInCartObject(cart)) {
             removeOurDiscount();
-            // Refresh page so the discount state reflects removal in all contexts
-            try { setTimeout(function () { location.reload(); }, 80); } catch (e) {}
+            // Server-side fallback: force replace discount via bogus redirect
+            forceClearDiscountViaRedirect(cart.token);
           }
           return;
         }
