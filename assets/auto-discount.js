@@ -15,6 +15,41 @@
 
   log('init', WL_DISCOUNT_VERSION);
 
+  function logCartSummary(cart) {
+    try {
+      if (!cart) { log('cart summary: <no cart>'); return; }
+      var items = Array.isArray(cart.items) ? cart.items.map(function (it) {
+        return {
+          product_id: it.product_id,
+          variant_id: it.id,
+          title: it.title,
+          variant_title: it.variant_title,
+          quantity: it.quantity
+        };
+      }) : [];
+      log('cart summary:', { token: cart.token, itemCount: items.length, items: items });
+    } catch (e) {}
+  }
+
+  function logDiscountApps(cart) {
+    try {
+      var apps = (cart && cart.cart_level_discount_applications) || [];
+      log('cart discount apps:', apps);
+    } catch (e) {}
+  }
+
+  function describeElement(el) {
+    try {
+      if (!el) return '<no element>';
+      var name = el.tagName || 'node';
+      var id = el.id ? ('#' + el.id) : '';
+      var cls = el.className ? ('.' + String(el.className).split(/\s+/).join('.')) : '';
+      var href = el.getAttribute && el.getAttribute('href');
+      var nameAttr = el.getAttribute && el.getAttribute('name');
+      return name + id + cls + (href ? (' href=' + href) : '') + (nameAttr ? (' name=' + nameAttr) : '');
+    } catch (e) { return '<element>'; }
+  }
+
   // --- Discount helpers (non-overwrite + removal) ---
   function getCookie(name) {
     try {
@@ -49,6 +84,7 @@
       // Ensure uniqueness
       var seen = {};
       domains.forEach(function (d) { if (d && !seen[d]) seen[d] = true; });
+      log('deleteCookie domains for', name, Object.keys(seen));
       Object.keys(seen).forEach(function (domain) {
         try {
           document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + domain;
@@ -66,11 +102,13 @@
     var primary = String(getCookie('discount_code') || '').trim();
     var secondary = String(getCookie('discount') || '').trim();
     var raw = primary || secondary;
+    log('discount cookies: primary=', primary, 'secondary=', secondary);
     if (!raw) return codes;
     raw.split(',').forEach(function (c) {
       var code = String(c || '').trim();
       if (code) codes.push(code.toLowerCase());
     });
+    log('computed discount codes=', codes);
     return codes;
   }
 
@@ -166,6 +204,7 @@
       var map = getAppliedTokens();
       map[token] = true;
       sessionStorage.setItem('wl_discount_applied_tokens', JSON.stringify(map));
+      log('setAppliedForToken:', token, map);
     } catch (e) {}
   }
 
@@ -182,6 +221,7 @@
       if (map && map[token]) {
         delete map[token];
         sessionStorage.setItem('wl_discount_applied_tokens', JSON.stringify(map));
+        log('clearAppliedForToken:', token, map);
       }
     } catch (e) {}
   }
@@ -201,6 +241,24 @@
 
         var eligible = hasEligibleItem(cart);
         log('checkAndApply: eligible?', eligible, 'cartToken=', cart.token);
+        logCartSummary(cart);
+        logDiscountApps(cart);
+        try { log('checkAndApply: cookie codes=', getAppliedDiscountCodes()); } catch (e) {}
+        if (eligible) {
+          try {
+            var matched = null;
+            if (Array.isArray(cart.items)) {
+              for (var i = 0; i < cart.items.length; i++) {
+                var it = cart.items[i];
+                if (it.product_id === TARGET_PRODUCT_ID && it.variant_title) {
+                  var vt = String(it.variant_title).trim().toLowerCase();
+                  if (ELIGIBLE_VARIANTS.some(function (v) { return vt.indexOf(v) !== -1; })) { matched = it; break; }
+                }
+              }
+            }
+            if (matched) log('eligible matched item:', { product_id: matched.product_id, variant_title: matched.variant_title, quantity: matched.quantity });
+          } catch (e) {}
+        }
         if (!eligible) {
           // Not eligible: clear our discount (only if ours) and our token flag
           clearAppliedForToken(cart.token);
@@ -228,7 +286,7 @@
         log('checkAndApply: applying now');
         applyDiscount();
       })
-      .catch(function () {});
+      .catch(function (err) { try { log('checkAndApply: fetchCart error', err && (err.message || err)); } catch (e) {} });
   }
 
   // Run on cart updates via theme pub/sub if available
@@ -284,7 +342,7 @@
         // Intercept explicit checkout clicks
         var isCheckoutTrigger = !!(el.closest && (el.closest('button[name="checkout"]') || el.closest('input[name="checkout"]') || el.closest('a[href*="/checkout"]')));
         if (isCheckoutTrigger) {
-          log('event: checkout trigger click');
+          log('event: checkout trigger click on', describeElement(el));
           try {
             e.preventDefault();
           } catch (e1) {}
@@ -308,7 +366,7 @@
               }
             }
             window.location.href = '/checkout';
-          }).catch(function () { window.location.href = '/checkout'; });
+          }).catch(function (err) { try { log('checkout intercept: fetchCart error', err && (err.message || err)); } catch (e) {} window.location.href = '/checkout'; });
         }
       } catch (e2) {}
     });
