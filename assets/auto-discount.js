@@ -130,6 +130,12 @@
     } catch (e) {}
   }
 
+  function scheduleGotoCheckoutNoDiscount() {
+    try {
+      sessionStorage.setItem('wl_go_checkout_no_discount', '1');
+    } catch (e) {}
+  }
+
   function fetchCart() {
     return fetch('/cart.js', { credentials: 'same-origin' }).then(function (r) {
       return r.json();
@@ -239,6 +245,14 @@
   try {
     window.addEventListener('pageshow', function () {
       log('event: pageshow');
+      try {
+        if (sessionStorage.getItem('wl_go_checkout_no_discount') === '1') {
+          sessionStorage.removeItem('wl_go_checkout_no_discount');
+          log('pageshow: go to checkout without discount');
+          window.location.href = '/checkout?discount=';
+          return;
+        }
+      } catch (e) {}
       checkAndApply();
     });
     document.addEventListener('visibilitychange', function () {
@@ -265,6 +279,29 @@
         if (withinCartForm) {
           log('event: click within cart UI');
           setTimeout(checkAndApply, 300);
+        }
+
+        // Intercept explicit checkout clicks
+        var isCheckoutTrigger = !!(el.closest && (el.closest('button[name="checkout"]') || el.closest('input[name="checkout"]') || el.closest('a[href*="/checkout"]')));
+        if (isCheckoutTrigger) {
+          log('event: checkout trigger click');
+          try {
+            e.preventDefault();
+          } catch (e1) {}
+          fetchCart().then(function (cart) {
+            if (!cart || !cart.token) { window.location.href = '/checkout'; return; }
+            var eligible = hasEligibleItem(cart);
+            var oursApplied = isOurDiscountApplied() || isOurDiscountInCartObject(cart);
+            log('checkout intercept: eligible?', eligible, 'oursApplied?', oursApplied);
+            if (!eligible && oursApplied) {
+              clearAppliedForToken(cart.token);
+              removeOurDiscount();
+              scheduleGotoCheckoutNoDiscount();
+              forceClearDiscountViaRedirect(cart.token);
+              return;
+            }
+            window.location.href = '/checkout';
+          }).catch(function () { window.location.href = '/checkout'; });
         }
       } catch (e2) {}
     });
