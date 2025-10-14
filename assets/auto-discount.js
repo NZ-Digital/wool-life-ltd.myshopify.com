@@ -4,14 +4,7 @@
   var ELIGIBLE_VARIANTS = ['large', 'medium'];
   var WL_DISCOUNT_VERSION = 'wl-auto-discount v2025-10-14';
 
-  function log() {
-    try {
-      var args = Array.prototype.slice.call(arguments);
-      args.unshift('[WL-Discount]');
-      // eslint-disable-next-line no-console
-      console.log.apply(console, args);
-    } catch (e) {}
-  }
+  function log() {}
 
   log('init', WL_DISCOUNT_VERSION);
 
