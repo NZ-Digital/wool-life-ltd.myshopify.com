@@ -292,13 +292,20 @@
             if (!cart || !cart.token) { window.location.href = '/checkout'; return; }
             var eligible = hasEligibleItem(cart);
             var oursApplied = isOurDiscountApplied() || isOurDiscountInCartObject(cart);
-            log('checkout intercept: eligible?', eligible, 'oursApplied?', oursApplied);
-            if (!eligible && oursApplied) {
-              clearAppliedForToken(cart.token);
-              removeOurDiscount();
-              scheduleGotoCheckoutNoDiscount();
-              forceClearDiscountViaRedirect(cart.token);
-              return;
+            var codes = getAppliedDiscountCodes();
+            var codesLower = codes.slice();
+            var hasOtherNonFreeship = codesLower.some(function (c) { return c !== String(DISCOUNT_CODE).toLowerCase(); });
+            log('checkout intercept: eligible?', eligible, 'oursApplied?', oursApplied, 'codes=', codesLower);
+            if (!eligible) {
+              // If ineligible, ensure FREESHIP is not carried into checkout.
+              // Only preserve if another non-FREESHIP code is clearly present in cookies.
+              if (!hasOtherNonFreeship) {
+                clearAppliedForToken(cart.token);
+                removeOurDiscount();
+                scheduleGotoCheckoutNoDiscount();
+                forceClearDiscountViaRedirect(cart.token);
+                return;
+              }
             }
             window.location.href = '/checkout';
           }).catch(function () { window.location.href = '/checkout'; });
