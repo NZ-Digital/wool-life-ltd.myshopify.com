@@ -290,22 +290,22 @@
             "grid-item_btn-link": ""
           }
         },
-        "grid_item_Jk7HcQ": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/centered-step-3.png",
-            "grid-item_heading": "Step three",
-            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let the pod do the rest. Its automatic valve shuts off when full and allows refilling in under two minutes once pressure is restored.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
         "grid_item_4NJnJV": {
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/fertilizer.png",
             "grid-item_heading": "Fertiliser use",
             "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix it in water, then flush with clean water after use to prevent clogs. Avoid non-water-soluble fertilisers, as they can block the system.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_Jk7HcQ": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/centered-step-3.png",
+            "grid-item_heading": "Step three",
+            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let the pod do the rest. Its automatic valve shuts off when full and allows refilling in under two minutes once pressure is restored.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -318,8 +318,8 @@
         "grid_item_xC4yEj",
         "grid_item_L4KaaH",
         "grid_item_ajQC9y",
-        "grid_item_Jk7HcQ",
-        "grid_item_4NJnJV"
+        "grid_item_4NJnJV",
+        "grid_item_Jk7HcQ"
       ],
       "custom_css": [
         ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
