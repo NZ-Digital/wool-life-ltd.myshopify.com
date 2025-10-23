@@ -13,7 +13,7 @@
     align-items: end;
     justify-items: start;
     width: 100%;
-    padding: 80px 20px 128px 20px;
+    padding: 80px 20px 80px 20px !important;
     max-width: 1280px;
   }
   #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
@@ -30,7 +30,7 @@
   }
   #shopify-section-{{ section.id }} .wl_faqs_accordions-container {
     margin-top: 40px;
-    grid-column: 3 / 10;
+    grid-column: 1 / -1;
     width: 100%;
   }
   #shopify-section-{{ section.id }} .wl_faqs_accordion {
@@ -42,14 +42,14 @@
   }
   #shopify-section-{{ section.id }} .wl_faqs_accordion-title {
     color: #154734;
-    font-family: Sora;
-    font-size: 20px;
+    font-family: "Sora";
+    font-size: 18px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 100%;
   }
   #shopify-section-{{ section.id }} .wl_faqs_detail {
-    padding: 20px 22px;
+    padding: 16px 22px;
   }
   #shopify-section-{{ section.id }} .wl_faqs_accordion-content {
       word-break: break-word;
@@ -98,7 +98,7 @@
       margin: 0 0 8px 0;
   }
   #shopify-section-{{ section.id }} .wl_faqs_cta {
-      grid-column: 3 / 10;
+      grid-column: 1 / -1;
       width: 100%;
       margin-top: 16px;
   }
@@ -113,7 +113,9 @@
       text-decoration: none;
   }
   #shopify-section-{{ section.id }} .wl_faqs_text_title h3 {
-      font-size: 20px;
+    font-size: 20px;
+    font-weight: 200 !important;
+    font-family: 'Sora';
   }
   #shopify-section-{{ section.id }} .wl_faqs_text_title {
       padding-top: 32px;
@@ -188,7 +190,7 @@
                     </details>
                   </div>
                 {%- when 'title_text' -%}
-                  <div class="wl_faqs_text_title" style="grid-column: 3 / 10; width: 100%; margin: 24px 0 8px 0;">
+                  <div class="wl_faqs_text_title" style="grid-column: 1 / -1; width: 100%; margin: 24px 0 8px 0;">
                     <h3 class="inline-richtext h4" style="color:#154734;">{{ block.settings.title_text }}</h3>
                   </div>
               {%- endcase -%}
