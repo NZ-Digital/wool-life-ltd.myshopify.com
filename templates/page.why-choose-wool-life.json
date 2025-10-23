@@ -347,7 +347,7 @@
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
-        "open_first_collapsible_row": true
+        "open_first_collapsible_row": false
       }
     },
     "call_to_action_N4yGAQ": {
