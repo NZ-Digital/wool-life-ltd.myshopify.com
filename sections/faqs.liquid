@@ -54,8 +54,11 @@
   #shopify-section-{{ section.id }} .wl_faqs_accordion-content {
       word-break: break-word;
       overflow-x: auto;
+      overflow-y: hidden;
       padding: 0;
-      padding-top: 12px;
+      padding-top: 0;
+      max-height: 0;
+      transition: max-height 300ms ease;
   }
   #shopify-section-{{ section.id }} .wl_faqs_accordion-content p {
       color: rgba(21, 71, 52, .80);
@@ -71,6 +74,16 @@
   }
   #shopify-section-{{ section.id }} .wl_faqs_summary .icon-caret {
       right: 0;
+      transition: transform 300ms ease;
+  }
+  #shopify-section-{{ section.id }} details[open] .wl_faqs_summary .icon-caret {
+      transform: rotate(180deg);
+  }
+  #shopify-section-{{ section.id }} details[open] .wl_faqs_accordion-content {
+      padding-top: 12px;
+  }
+  #shopify-section-{{ section.id }} .no-transition {
+      transition: none !important;
   }
   #shopify-section-{{ section.id }} .wl_faqs {
       padding-top: 0px;
@@ -184,6 +197,51 @@
         </div>
 
 </div>
+
+<script>
+  (function() {
+    const section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+    const detailsElements = section.querySelectorAll('.wl_faqs details');
+
+    detailsElements.forEach((details) => {
+      const content = details.querySelector('.wl_faqs_accordion-content');
+      if (!content) return;
+
+      // Set initial max-height for already-open details (e.g., open first row)
+      if (details.hasAttribute('open')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+
+      details.addEventListener('toggle', (e) => {
+        if (details.open) {
+          // Opening
+          content.classList.remove('no-transition');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+          // Closing
+          content.classList.remove('no-transition');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          // Force reflow then set to 0 for transition
+          requestAnimationFrame(() => {
+            content.style.maxHeight = '0px';
+          });
+        }
+      });
+
+      // Recalculate height when content inside changes (images, fonts)
+      const ro = new ResizeObserver(() => {
+        if (details.open) {
+          content.classList.add('no-transition');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          // next frame re-enable transition
+          requestAnimationFrame(() => content.classList.remove('no-transition'));
+        }
+      });
+      ro.observe(content);
+    });
+  })();
+</script>
 
 {% schema %}
 {
