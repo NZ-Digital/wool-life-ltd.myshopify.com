@@ -202,7 +202,77 @@
         "text_title_nT8yzb": {
           "type": "text_title",
           "settings": {
-            "title_text": ""
+            "title_text": "2. About NZ Wool and its Properties"
+          }
+        },
+        "faq_row_LWQAET": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What makes New Zealand wool a sustainable resource?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_CWkRMq": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is NZ wool an eco-friendly and non-toxic material?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_CkVqU6": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How is wool produced in New Zealand?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_geTBqx": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the environmental benefits of wool?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_LdmmyY": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool a natural insulator?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_UfQwtx": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Does wool improve indoor air quality?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_9MXxH8": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How does wool affect temperature and moisture regulation in a home?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
           }
         }
       },
@@ -214,7 +284,14 @@
         "faq_row_7RTY6C",
         "faq_row_EiMyVn",
         "faq_row_bxW73B",
-        "text_title_nT8yzb"
+        "text_title_nT8yzb",
+        "faq_row_LWQAET",
+        "faq_row_CWkRMq",
+        "faq_row_CkVqU6",
+        "faq_row_geTBqx",
+        "faq_row_LdmmyY",
+        "faq_row_UfQwtx",
+        "faq_row_9MXxH8"
       ],
       "disabled": true,
       "name": "FAQs",
