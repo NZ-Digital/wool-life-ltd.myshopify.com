@@ -232,7 +232,7 @@
           "settings": {
             "heading": "Does wool improve indoor air quality?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool can absorb and lock away indoor pollutants like formaldehyde, nitrogen dioxide, and sulphur dioxide. This natural filtering ability helps improve the air you breathe inside your home.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -242,7 +242,7 @@
           "settings": {
             "heading": "How does wool affect temperature and moisture regulation in a home?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool naturally absorbs and releases moisture while maintaining thermal stability. This means it reduces humidity, balances room temperature, and keeps homes more comfortable year-round.</p>",
             "cta_url": "",
             "cta_text": ""
           }
