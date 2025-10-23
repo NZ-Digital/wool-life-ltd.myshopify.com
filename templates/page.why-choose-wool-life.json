@@ -152,7 +152,7 @@
         "faq_row_mz3ewK": {
           "type": "faq_row",
           "settings": {
-            "heading": "",
+            "heading": "What products does Wool.Life sell?",
             "subtitle": "",
             "row_content": "",
             "cta_url": "",
@@ -162,7 +162,7 @@
         "faq_row_ef8NnP": {
           "type": "faq_row",
           "settings": {
-            "heading": "",
+            "heading": "Where can I buy Wool.Life products in New Zealand?",
             "subtitle": "",
             "row_content": "",
             "cta_url": "",
@@ -172,11 +172,37 @@
         "faq_row_7RTY6C": {
           "type": "faq_row",
           "settings": {
-            "heading": "",
+            "heading": "Does Wool.Life have wholesale or commercial solutions?",
             "subtitle": "",
             "row_content": "",
             "cta_url": "",
             "cta_text": ""
+          }
+        },
+        "faq_row_EiMyVn": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What makes Wool.Life's products sustainable?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_bxW73B": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where does Wool.Life source its wool from?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "text_title_nT8yzb": {
+          "type": "text_title",
+          "settings": {
+            "title_text": ""
           }
         }
       },
@@ -185,8 +211,12 @@
         "faq_row_48HJh9",
         "faq_row_mz3ewK",
         "faq_row_ef8NnP",
-        "faq_row_7RTY6C"
+        "faq_row_7RTY6C",
+        "faq_row_EiMyVn",
+        "faq_row_bxW73B",
+        "text_title_nT8yzb"
       ],
+      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
