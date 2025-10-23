@@ -116,7 +116,7 @@
           "settings": {
             "heading": "What is Wool.Life?",
             "subtitle": "",
-            "row_content": "<p>Wool.Life is a New Zealand company creating practical, sustainable solutions from strong Kiwi wool. Our products are designed to make everyday living and gardening easier, while supporting local farmers and the environment.</p>",
+            "row_content": "<p>Wool.Life is a New Zealand company dedicated to turning natural wool and recycled textiles into everyday products that improve lives and reduce waste. From dog beds to garden mats, every item is designed with circular sustainability in mind.</p>",
             "cta_url": "shopify://collections/all",
             "cta_text": "Explore Our Products"
           }
@@ -327,7 +327,6 @@
         "faq_row_y9CDbt",
         "faq_row_EHdhwj"
       ],
-      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
