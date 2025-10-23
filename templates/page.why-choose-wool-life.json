@@ -102,6 +102,23 @@
         "image-with-content_button_link": ""
       }
     },
+    "image_with_content_EPJwVH": {
+      "type": "image-with-content",
+      "settings": {
+        "image-with-content_layout": "image-with-content_text-first",
+        "image-with-content_image_picker": "shopify://shop_images/STR_1791.jpg",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "Feel Good About Your Choice",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "When you choose Wool.Life, you’re doing more than just purchasing a product, you’re taking action to protect the environment and support your local economy. Every product you use is a step toward a more sustainable farming industry, and a cleaner, greener future for New Zealand. Together, we can make a difference by embracing products that are good for the planet, good for our communities, and good for us.",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
+    },
     "faqs_Ncf4GV": {
       "type": "faqs",
       "blocks": {
@@ -333,23 +350,6 @@
         "open_first_collapsible_row": false
       }
     },
-    "image_with_content_EPJwVH": {
-      "type": "image-with-content",
-      "settings": {
-        "image-with-content_layout": "image-with-content_text-first",
-        "image-with-content_image_picker": "shopify://shop_images/STR_1791.jpg",
-        "image-with-content_preimage_location": "col",
-        "image-with-content_heading": "Feel Good About Your Choice",
-        "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "When you choose Wool.Life, you’re doing more than just purchasing a product, you’re taking action to protect the environment and support your local economy. Every product you use is a step toward a more sustainable farming industry, and a cleaner, greener future for New Zealand. Together, we can make a difference by embracing products that are good for the planet, good for our communities, and good for us.",
-        "image-with-content_text_richtext": "",
-        "image-with-content_text_color": "#154734",
-        "image-with-content_background_color": "#FFF5E5",
-        "image-with-content_id": "",
-        "image-with-content_button_name": "",
-        "image-with-content_button_link": ""
-      }
-    },
     "call_to_action_N4yGAQ": {
       "type": "call-to-action",
       "settings": {
@@ -371,8 +371,8 @@
     "image_full_width_6Mxbch",
     "image_with_content_HYHMAi",
     "image_with_content_BD4tqE",
-    "faqs_Ncf4GV",
     "image_with_content_EPJwVH",
+    "faqs_Ncf4GV",
     "call_to_action_N4yGAQ"
   ]
 }
