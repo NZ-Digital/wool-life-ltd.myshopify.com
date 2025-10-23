@@ -181,7 +181,7 @@
           "type": "faq_row",
           "settings": {
             "heading": "What makes New Zealand wool a sustainable resource?",
-            "subtitle": "",
+            "subtitle": "New Zealand wool is sustainable because it is grown annually from sheep, requires no synthetic inputs, and is fully biodegradable. The country’s high farming standards also ensure low-impact, regenerative production.",
             "row_content": "",
             "cta_url": "",
             "cta_text": ""
@@ -192,7 +192,7 @@
           "settings": {
             "heading": "Is NZ wool an eco-friendly and non-toxic material?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Yes, NZ wool is naturally eco-friendly and safe. It contains no harmful chemicals, breaks down harmlessly in soil, and is non-toxic for people, pets, and the environment.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -202,7 +202,7 @@
           "settings": {
             "heading": "How is wool produced in New Zealand?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool is produced by shearing sheep, a humane process that occurs once or twice a year. The fibre is then cleaned, scoured, and processed locally under strict environmental and animal welfare standards.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -212,7 +212,7 @@
           "settings": {
             "heading": "What are the environmental benefits of wool?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool is renewable, biodegradable, and helps reduce plastic use. It also sequesters carbon, enriches soil when it breaks down, and supports natural farming systems in New Zealand.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -222,7 +222,7 @@
           "settings": {
             "heading": "Is wool a natural insulator?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Yes, wool insulates by trapping tiny pockets of air within its fibres. This keeps heat in during cold weather and helps regulate temperature in warmer conditions.</p>",
             "cta_url": "",
             "cta_text": ""
           }
