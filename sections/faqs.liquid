@@ -1,0 +1,252 @@
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background: #E9DDC6;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    padding: 128px 20px 128px 20px;
+    max-width: 1280px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
+      grid-column: 3 / 10;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_heading {
+    color: #154734;
+    font-family: Sora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+    max-width: 506px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordions-container {
+    margin-top: 64px;
+    grid-column: 3 / 10;
+    width: 100%;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion {
+    color: #154734;
+    margin-bottom: 20px;
+    border: 1px solid #15473499;
+    border-radius: 4px;
+    background: transparent;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-title {
+    color: #154734;
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_detail {
+    padding: 20px 22px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-content {
+      word-break: break-word;
+      overflow-x: auto;
+      padding: 0;
+      padding-top: 12px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-content p {
+      color: rgba(21, 71, 52, .80);
+      font-family: Sora;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-content p a {
+      color: #154734;
+      text-decoration: underline;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_summary .icon-caret {
+      right: 0;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs {
+      padding-top: 0px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-subtitle {
+      color: rgba(21, 71, 52, .80);
+      font-family: Sora;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      margin: 0 0 8px 0;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_cta {
+      grid-column: 3 / 10;
+      width: 100%;
+      margin-top: 32px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_cta a {
+      color: #154734;
+  }
+
+  @media screen and (max-width: 1280px) {
+     #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
+        grid-column: 2 / 10;
+    }
+  }
+  @media screen and (max-width: 767px) {
+     #shopify-section-{{ section.id }} .wl_faqs {
+      padding: 0px 20px 60px 20px;
+    }
+     #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
+        grid-column: span 12;
+    }
+    #shopify-section-{{ section.id }} .wl_faqs_accordions-container {
+      grid-column: span 12;
+      margin-top: 32px;
+    }
+    #shopify-section-{{ section.id }} .wl_faqs_heading {
+       font-size: 40px; 
+    }
+    #shopify-section-{{ section.id }} .wl_faqs_cta {
+       grid-column: span 12;
+    }
+  }
+{%- endstyle -%}
+
+<div class="wl_faqs">
+
+        <div class="wl_faqs_header-wrapper">
+            <h2 class="wl_faqs_heading">{{ section.settings.heading }}</h2>
+        </div>
+        
+        <div class="wl_faqs_accordions-container">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'faq_row' -%}
+                  <div class="wl_faqs_accordion">
+                    <details
+                      class="wl_faqs_detail"
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                      {% if section.settings.open_first_collapsible_row and forloop.first %}
+                        open
+                      {% endif %}
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}" class="wl_faqs_summary">
+                        <h3 class="wl_faqs_accordion-title inline-richtext h4">
+                          {{ block.settings.heading | escape }}
+                        </h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="wl_faqs_accordion-content"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {%- if block.settings.subtitle != blank -%}
+                          <p class="wl_faqs_accordion-subtitle">{{ block.settings.subtitle | escape }}</p>
+                        {%- endif -%}
+                        {{ block.settings.row_content }}
+                        {%- if block.settings.cta_url != blank and block.settings.cta_text != blank -%}
+                          <div class="wl_faqs_cta">
+                            <a href="{{ block.settings.cta_url }}" class="link underlined-link">{{ block.settings.cta_text }}</a>
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </details>
+                  </div>
+                {%- when 'text_title' -%}
+                  <div class="wl_faqs_text_title" style="grid-column: 3 / 10; width: 100%; margin: 24px 0 8px 0;">
+                    <h3 class="inline-richtext h4" style="color:#154734;">{{ block.settings.title_text }}</h3>
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+        </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "FAQs",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first_collapsible_row",
+      "default": false,
+      "label": "Open first row by default"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_row",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "richtext",
+          "id": "row_content",
+          "label": "Answer"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "Bottom link URL"
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "Bottom link text"
+        }
+      ]
+    },
+    {
+      "type": "text_title",
+      "name": "Text title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_text",
+          "label": "Title text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQs",
+      "blocks": [
+        { "type": "faq_row" },
+        { "type": "faq_row" },
+        { "type": "faq_row" },
+        { "type": "faq_row" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
