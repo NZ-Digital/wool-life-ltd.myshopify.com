@@ -105,8 +105,8 @@
     "faqs_Ncf4GV": {
       "type": "faqs",
       "blocks": {
-        "text_title_Xmgetk": {
-          "type": "text_title",
+        "title_text_QP8ahn": {
+          "type": "title_text",
           "settings": {
             "title_text": "About the Company and its Products..."
           }
@@ -171,10 +171,10 @@
             "cta_text": ""
           }
         },
-        "text_title_nT8yzb": {
-          "type": "text_title",
+        "title_text_TTj9gW": {
+          "type": "title_text",
           "settings": {
-            "title_text": "2. About NZ Wool and its Properties"
+            "title_text": "About NZ Wool and its Properties"
           }
         },
         "faq_row_LWQAET": {
@@ -247,8 +247,8 @@
             "cta_text": ""
           }
         },
-        "text_title_iPVVt9": {
-          "type": "text_title",
+        "title_text_akAHdj": {
+          "type": "title_text",
           "settings": {
             "title_text": "General Industry & Competitor-Related Questions"
           }
@@ -305,14 +305,14 @@
         }
       },
       "block_order": [
-        "text_title_Xmgetk",
+        "title_text_QP8ahn",
         "faq_row_48HJh9",
         "faq_row_mz3ewK",
         "faq_row_ef8NnP",
         "faq_row_7RTY6C",
         "faq_row_EiMyVn",
         "faq_row_bxW73B",
-        "text_title_nT8yzb",
+        "title_text_TTj9gW",
         "faq_row_LWQAET",
         "faq_row_CWkRMq",
         "faq_row_CkVqU6",
@@ -320,7 +320,7 @@
         "faq_row_LdmmyY",
         "faq_row_UfQwtx",
         "faq_row_9MXxH8",
-        "text_title_iPVVt9",
+        "title_text_akAHdj",
         "faq_row_N7NRDp",
         "faq_row_b9cdb6",
         "faq_row_HHfhQ4",
