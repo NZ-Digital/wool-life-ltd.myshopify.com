@@ -116,7 +116,7 @@
           "settings": {
             "heading": "What is Wool.Life?",
             "subtitle": "",
-            "row_content": "<p>Wool.Life is a New Zealand company creating practical, sustainable solutions from strong Kiwi wool. Our products are designed to make everyday living and gardening easier, while supporting local farmers and the environment.</p>",
+            "row_content": "<p>Wool.Life is a New Zealand company dedicated to turning natural wool and recycled textiles into everyday products that improve lives and reduce waste. From dog beds to garden mats, every item is designed with circular sustainability in mind.</p>",
             "cta_url": "shopify://collections/all",
             "cta_text": "Explore Our Products"
           }
@@ -126,7 +126,7 @@
           "settings": {
             "heading": "What products does Wool.Life sell?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Our range includes premium wool dog beds, mulch and weed mats for gardens, natural pillows and cushions, woollen socks, and other home and lifestyle goods—all made in New Zealand with sustainability at the core.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -136,7 +136,7 @@
           "settings": {
             "heading": "Where can I buy Wool.Life products in New Zealand?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>You can purchase Wool.Life products directly through our online store at woollife.co.nz, with nationwide delivery available. Selected retail and commercial partners also stock our products.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -146,7 +146,7 @@
           "settings": {
             "heading": "Does Wool.Life have wholesale or commercial solutions?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Yes, we supply bulk orders for landscapers, councils, nurseries, and retailers. We also offer tailored commercial solutions for businesses wanting sustainable, NZ-made products.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -156,7 +156,7 @@
           "settings": {
             "heading": "What makes Wool.Life's products sustainable?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Our products combine renewable New Zealand wool with recycled fibres and biodegradable materials, replacing plastics and reducing landfill. We also run recycling and trade-in programmes to keep materials in use for longer.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -166,7 +166,7 @@
           "settings": {
             "heading": "Where does Wool.Life source its wool from?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>We work with New Zealand farmers, textile recyclers, and manufacturers who share our commitment to ethical practices and environmental care. </p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -181,7 +181,7 @@
           "type": "faq_row",
           "settings": {
             "heading": "What makes New Zealand wool a sustainable resource?",
-            "subtitle": "",
+            "subtitle": "New Zealand wool is sustainable because it is grown annually from sheep, requires no synthetic inputs, and is fully biodegradable. The country’s high farming standards also ensure low-impact, regenerative production.",
             "row_content": "",
             "cta_url": "",
             "cta_text": ""
@@ -192,7 +192,7 @@
           "settings": {
             "heading": "Is NZ wool an eco-friendly and non-toxic material?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Yes, NZ wool is naturally eco-friendly and safe. It contains no harmful chemicals, breaks down harmlessly in soil, and is non-toxic for people, pets, and the environment.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -202,7 +202,7 @@
           "settings": {
             "heading": "How is wool produced in New Zealand?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool is produced by shearing sheep, a humane process that occurs once or twice a year. The fibre is then cleaned, scoured, and processed locally under strict environmental and animal welfare standards.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -212,7 +212,7 @@
           "settings": {
             "heading": "What are the environmental benefits of wool?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool is renewable, biodegradable, and helps reduce plastic use. It also sequesters carbon, enriches soil when it breaks down, and supports natural farming systems in New Zealand.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -222,7 +222,7 @@
           "settings": {
             "heading": "Is wool a natural insulator?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Yes, wool insulates by trapping tiny pockets of air within its fibres. This keeps heat in during cold weather and helps regulate temperature in warmer conditions.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -232,7 +232,7 @@
           "settings": {
             "heading": "Does wool improve indoor air quality?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool can absorb and lock away indoor pollutants like formaldehyde, nitrogen dioxide, and sulphur dioxide. This natural filtering ability helps improve the air you breathe inside your home.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -242,7 +242,7 @@
           "settings": {
             "heading": "How does wool affect temperature and moisture regulation in a home?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Wool naturally absorbs and releases moisture while maintaining thermal stability. This means it reduces humidity, balances room temperature, and keeps homes more comfortable year-round.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -258,7 +258,7 @@
           "settings": {
             "heading": "What's the future of the NZ wool industry?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>The future of New Zealand wool lies in innovation and sustainability. While traditional markets like carpets have declined, demand is growing for eco-friendly products such as insulation, garden solutions, and natural bedding. Wool is increasingly positioned as a renewable alternative to plastics and synthetics.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -268,7 +268,7 @@
           "settings": {
             "heading": "How does NZ wool compare to other materials like jute or coconut fibre?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>NZ wool offers superior insulation, moisture regulation, and biodegradability compared to jute or coconut fibre. While those fibres are strong and useful in mats or ropes, wool is softer, naturally fire-resistant, and more versatile across lifestyle, home, and garden products.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -278,7 +278,7 @@
           "settings": {
             "heading": "What are the challenges facing strong NZ wool?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Strong NZ wool faces challenges from synthetic fibres that are cheaper and more widely used. Global market fluctuations, competition from imported fibres, and the need to re-educate consumers about wool’s environmental benefits are also ongoing issues.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -288,7 +288,7 @@
           "settings": {
             "heading": "Is New Zealand wool ethically and responsibly sourced?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Yes, New Zealand has some of the strictest animal welfare and environmental standards in the world. Sheep are shorn at least annually for their health.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -298,7 +298,7 @@
           "settings": {
             "heading": "Where else is NZ wool used (e.g., in carpets, insulation, clothing)?",
             "subtitle": "",
-            "row_content": "",
+            "row_content": "<p>Beyond lifestyle products, NZ wool is widely used in carpets, upholstery, fashion apparel, blankets, thermal insulation, acoustic panels, and even new technologies like compostable packaging and medical textiles.</p>",
             "cta_url": "",
             "cta_text": ""
           }
@@ -327,7 +327,6 @@
         "faq_row_y9CDbt",
         "faq_row_EHdhwj"
       ],
-      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
