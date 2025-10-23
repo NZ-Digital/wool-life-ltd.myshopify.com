@@ -134,11 +134,12 @@
 
 <div class="wl_faqs">
 
-        <div class="wl_faqs_header-wrapper">
-            <h2 class="wl_faqs_heading">{{ section.settings.heading }}</h2>
-        </div>
+
         
         <div class="wl_faqs_accordions-container">
+            <div class="wl_faqs_header-wrapper">
+                <h2 class="wl_faqs_heading">{{ section.settings.heading }}</h2>
+            </div>
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'faq_row' -%}
