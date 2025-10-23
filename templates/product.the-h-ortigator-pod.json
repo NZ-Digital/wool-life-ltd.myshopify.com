@@ -46,7 +46,7 @@
         "text_X3gXdw": {
           "type": "text",
           "settings": {
-            "text": "The H₂ Ortigator Pod is a complete life support system for your new fruit trees, natives, andornamentals. It takes care of a number of tasks for you, including watering, weed control, and protecting your plant from pests and damage.",
+            "text": "The H₂Ortigator Pod is a complete life support system for your new fruit trees, natives, and ornamentals. It takes care of a number of tasks for you, including watering, weed control, and protecting your plant from pests and damage.",
             "text_style": "body"
           }
         },
@@ -102,7 +102,7 @@
       ],
       "settings": {
         "product-description_heading": "Product Description",
-        "product-description_text": "<p>The H₂ Ortigator Pod is the ultimate \"set and forget\" watering and plant protection system for anyone establishing new trees or vines. It's designed to provide a continuous, deep water supply directly to the root zone, while also protecting your young plant from weeds, pests, and the elements.</p>\n\n<p>Made in New Zealand from durable, UV-resistant plastic, the H₂ Ortigator works perfectly alongside Wool Life's Wool Mulch & Weed Mats to create the ideal growing environment. Check out www.h2ortigator.co.nz to see how you can use the H₂ Ortigator throughout your property.</p>",
+        "product-description_text": "<p>The H₂Ortigator Pod is the ultimate \"set and forget\" watering and plant protection system for anyone establishing new fruit trees, natives, ornamentals or vines. It's designed to provide a continuous, deep water supply directly to the root zone, while also protecting your young plant from weeds, pests, and the elements.</p>\n\n<p>Made in New Zealand from durable, UV-resistant plastic, the H₂Ortigator works perfectly alongside Wool.Life's Wool Mulch & Weed Mats to create the ideal growing environment.</p>",
         "product-description_background_color": "#E9DDC6"
       }
     },
@@ -153,7 +153,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/Life-Support-Icon_f5d8f02f-d29c-4a77-b02b-5e03a03e5de9.png",
             "grid-item_heading": "A Complete Life Support System",
-            "grid-item_paragraph": "<p>The H₂ Ortigator Pod is a complete life support system for your new fruit trees, natives, and ornamentals. It takes care of a number of tasks for you, including watering, weed control, and protecting your plant from pests and damage.</p>",
+            "grid-item_paragraph": "<p>The H₂Ortigator Pod is a complete life support system for your new fruit trees, natives, and ornamentals. It takes care of a number of tasks for you, including watering, weed control, and protecting your plant from pests and damage.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -183,7 +183,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/Promotes-plant-growth_beige_1.png",
             "grid-item_heading": "Promotes Thriving Plant Growth",
-            "grid-item_paragraph": "<p>The H₂ Ortigator's unique \"little and often\" watering approach ensures consistent soil moisture, which encourages roots to grow downwards, creating a more resilient, well-established plant. The unit also shields the root zone from extreme weather, creating a stable microclimate for optimal growth.</p>",
+            "grid-item_paragraph": "<p>The H₂Ortigator's unique \"little and often\" watering approach ensures consistent soil moisture, which encourages roots to grow downwards, creating a more resilient, well-established plant. The unit also shields the root zone from extreme weather, creating a stable microclimate for optimal growth.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -203,7 +203,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/award.png",
             "grid-item_heading": "Award-Winning Innovation",
-            "grid-item_paragraph": "<p>This innovative NZ designed product has been recognised with the 2022 Innovation in Irrigation. Award from Irrigation NZ, the 2022 Fourneau Trophy for Innovation in Fruit Growing from the Fruit Growers Trust, and Best Emerging Business at the 2024 Pan Pac Hawke's Bay Business Awards</p>",
+            "grid-item_paragraph": "<p>This innovative NZ designed product has been recognised with the 2022 Innovation in Irrigation Award from Irrigation NZ, the 2022 Fourneau Trophy for Innovation in Fruit Growing from the Fruit Growers Trust, and Best Emerging Business at the 2024 Pan Pac Hawke's Bay Business Awards</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -290,22 +290,22 @@
             "grid-item_btn-link": ""
           }
         },
-        "grid_item_Jk7HcQ": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/centered-step-3.png",
-            "grid-item_heading": "Step three",
-            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let the pod do the rest. Its automatic valve shuts off when full and allows refilling in under two minutes once pressure is restored.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
         "grid_item_4NJnJV": {
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/fertilizer.png",
             "grid-item_heading": "Fertiliser use",
             "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix it in water, then flush with clean water after use to prevent clogs. Avoid non-water-soluble fertilisers, as they can block the system.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_Jk7HcQ": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/centered-step-3.png",
+            "grid-item_heading": "Step three",
+            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let the pod do the rest. Its automatic valve shuts off when full and allows refilling in under two minutes once pressure is restored.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -318,8 +318,8 @@
         "grid_item_xC4yEj",
         "grid_item_L4KaaH",
         "grid_item_ajQC9y",
-        "grid_item_Jk7HcQ",
-        "grid_item_4NJnJV"
+        "grid_item_4NJnJV",
+        "grid_item_Jk7HcQ"
       ],
       "custom_css": [
         ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
