@@ -17,7 +17,11 @@
     max-width: 1280px;
   }
   #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
-      grid-column: 3 / 10;
+      grid-column: 1 / -1;
+      max-width: 1000px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
   }
   #shopify-section-{{ section.id }} .wl_faqs_heading {
     color: #154734;
@@ -26,12 +30,15 @@
     font-style: normal;
     font-weight: 300;
     line-height: 110%;
-    max-width: 506px;
+    max-width: 100%;
   }
   #shopify-section-{{ section.id }} .wl_faqs_accordions-container {
     margin-top: 40px;
     grid-column: 1 / -1;
     width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #shopify-section-{{ section.id }} .wl_faqs_accordion {
     color: #154734;
@@ -113,13 +120,14 @@
       text-decoration: none;
   }
   #shopify-section-{{ section.id }} .wl_faqs_text_title h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200 !important;
     font-family: 'Sora';
+    padding-left: 3px;
   }
   #shopify-section-{{ section.id }} .wl_faqs_text_title {
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: 28px;
+      padding-bottom: 10px;
   }
 
   @media screen and (max-width: 1280px) {
@@ -206,37 +214,48 @@
     const detailsElements = section.querySelectorAll('.wl_faqs details');
 
     detailsElements.forEach((details) => {
+      const summary = details.querySelector('summary');
       const content = details.querySelector('.wl_faqs_accordion-content');
-      if (!content) return;
+      if (!summary || !content) return;
 
       // Set initial max-height for already-open details (e.g., open first row)
       if (details.hasAttribute('open')) {
         content.style.maxHeight = content.scrollHeight + 'px';
       }
 
-      details.addEventListener('toggle', (e) => {
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+        // If closing
         if (details.open) {
-          // Opening
-          content.classList.remove('no-transition');
           content.style.maxHeight = content.scrollHeight + 'px';
-        } else {
-          // Closing
-          content.classList.remove('no-transition');
-          content.style.maxHeight = content.scrollHeight + 'px';
-          // Force reflow then set to 0 for transition
           requestAnimationFrame(() => {
             content.style.maxHeight = '0px';
           });
+          const onCloseEnd = () => {
+            details.open = false;
+            content.style.maxHeight = '';
+            content.removeEventListener('transitionend', onCloseEnd);
+          };
+          content.addEventListener('transitionend', onCloseEnd);
+        } else {
+          // Opening
+          details.open = true;
+          content.style.maxHeight = '0px';
+          requestAnimationFrame(() => {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          });
+          const onOpenEnd = () => {
+            content.style.maxHeight = '';
+            content.removeEventListener('transitionend', onOpenEnd);
+          };
+          content.addEventListener('transitionend', onOpenEnd);
         }
       });
 
       // Recalculate height when content inside changes (images, fonts)
       const ro = new ResizeObserver(() => {
         if (details.open) {
-          content.classList.add('no-transition');
           content.style.maxHeight = content.scrollHeight + 'px';
-          // next frame re-enable transition
-          requestAnimationFrame(() => content.classList.remove('no-transition'));
         }
       });
       ro.observe(content);
