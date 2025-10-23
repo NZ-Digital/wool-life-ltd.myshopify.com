@@ -274,6 +274,62 @@
             "cta_url": "",
             "cta_text": ""
           }
+        },
+        "text_title_iPVVt9": {
+          "type": "text_title",
+          "settings": {
+            "title_text": "General Industry & Competitor-Related Questions"
+          }
+        },
+        "faq_row_N7NRDp": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What's the future of the NZ wool industry?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_b9cdb6": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How does NZ wool compare to other materials like jute or coconut fibre?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_HHfhQ4": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the challenges facing strong NZ wool?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_y9CDbt": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is New Zealand wool ethically and responsibly sourced?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_EHdhwj": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where else is NZ wool used (e.g., in carpets, insulation, clothing)?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
         }
       },
       "block_order": [
@@ -291,9 +347,14 @@
         "faq_row_geTBqx",
         "faq_row_LdmmyY",
         "faq_row_UfQwtx",
-        "faq_row_9MXxH8"
+        "faq_row_9MXxH8",
+        "text_title_iPVVt9",
+        "faq_row_N7NRDp",
+        "faq_row_b9cdb6",
+        "faq_row_HHfhQ4",
+        "faq_row_y9CDbt",
+        "faq_row_EHdhwj"
       ],
-      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
