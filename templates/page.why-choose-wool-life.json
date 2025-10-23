@@ -355,6 +355,7 @@
         "faq_row_y9CDbt",
         "faq_row_EHdhwj"
       ],
+      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
