@@ -225,16 +225,6 @@
       ],
       "name": "Product Reviews",
       "settings": {}
-    },
-    "custom_liquid_rCVh6X": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Organization\",\n      \"@id\": \"https://woollife.co.nz/#organization\",\n      \"name\": \"Wool.Life\",\n      \"url\": \"https://woollife.co.nz/\",\n      \"logo\": \"https://woollife.co.nz/cdn/shop/files/woollife-logo.svg?v=1738710063&width=130\",\n      \"description\": \"Wool.Life creates innovative and sustainable products made from 100% New Zealand wool for home, garden, pets, and commercial applications.\",\n      \"foundingLocation\": {\n        \"@type\": \"Country\",\n        \"name\": \"New Zealand\"\n      },\n      \"sameAs\": [\n        \"https://www.facebook.com/woollifenewzealand\",\n        \"https://www.instagram.com/wool.life\",\n        \"https://www.linkedin.com/company/woollife\"\n      ],\n      \"contactPoint\": {\n        \"@type\": \"ContactPoint\",\n        \"contactType\": \"Customer Service\",\n        \"areaServed\": \"NZ\",\n        \"availableLanguage\": [\"en-NZ\"]\n      }\n    },\n    {\n      \"@type\": \"WebSite\",\n      \"@id\": \"https://woollife.co.nz/#website\",\n      \"url\": \"https://woollife.co.nz/\",\n      \"name\": \"Wool.Life\",\n      \"publisher\": {\n        \"@id\": \"https://woollife.co.nz/#organization\"\n      },\n      \"potentialAction\": {\n        \"@type\": \"SearchAction\",\n        \"target\": \"https://woollife.co.nz/search?q={search_term_string}\",\n        \"query-input\": \"required name=search_term_string\"\n      }\n    },\n    {\n      \"@type\": \"WebPage\",\n      \"@id\": \"https://woollife.co.nz/#webpage\",\n      \"url\": \"https://woollife.co.nz/\",\n      \"name\": \"Wool.Life | 100% NZ Wool Sustainable Products\",\n      \"description\": \"Innovative wool products for home, garden, pets, and commercial use. Made from 100% New Zealand wool — sustainable, safe, and circular.\",\n      \"isPartOf\": {\n        \"@id\": \"https://woollife.co.nz/#website\"\n      },\n      \"about\": {\n        \"@id\": \"https://woollife.co.nz/#organization\"\n      }\n    },\n    {\n      \"@type\": \"Product\",\n      \"@id\": \"https://woollife.co.nz/products/dog-bed\",\n      \"name\": \"Fully Circular Dog Bed\",\n      \"image\": \"https://woollife.co.nz/cdn/shop/files/dog-bed.jpg\",\n      \"description\": \"New Zealand’s only fully circular dog bed made from 100% recycled wool. Recyclable, durable, and designed for comfort.\",\n      \"brand\": {\n        \"@id\": \"https://woollife.co.nz/#organization\"\n      },\n      \"category\": \"Pet Supplies\",\n      \"offers\": {\n        \"@type\": \"Offer\",\n        \"priceCurrency\": \"NZD\",\n        \"price\": \"149.99\",\n        \"availability\": \"https://schema.org/InStock\",\n        \"url\": \"https://woollife.co.nz/products/dog-bed\"\n      },\n      \"aggregateRating\": {\n        \"@type\": \"AggregateRating\",\n        \"ratingValue\": \"5.0\",\n        \"reviewCount\": \"12\"\n      },\n      \"review\": [\n        {\n          \"@type\": \"Review\",\n          \"author\": {\n            \"@type\": \"Person\",\n            \"name\": \"Maddie R, Nelson\"\n          },\n          \"datePublished\": \"2025-04-21\",\n          \"reviewBody\": \"Best bed we’ve ever bought — sturdy, soft, and made from recycled NZ materials. Our border collie loves it!\",\n          \"reviewRating\": {\n            \"@type\": \"Rating\",\n            \"ratingValue\": \"5\"\n          }\n        },\n        {\n          \"@type\": \"Review\",\n          \"author\": {\n            \"@type\": \"Person\",\n            \"name\": \"Jess W, Christchurch\"\n          },\n          \"datePublished\": \"2025-05-04\",\n          \"reviewBody\": \"Comfy, eco, and built to last. Our lab took to it straight away, great value for something so durable.\",\n          \"reviewRating\": {\n            \"@type\": \"Rating\",\n            \"ratingValue\": \"5\"\n          }\n        }\n      ]\n    }\n  ]\n}\n</script>",
-        "color_scheme": "",
-        "padding_top": 4,
-        "padding_bottom": 8
-      }
     }
   },
   "order": [
@@ -247,7 +237,6 @@
     "case_studies_listing_LVm9NT",
     "cta_full_image_6wCFNR",
     "reviews_title_Htrc8w",
-    "product_reviews_jtEnQw",
-    "custom_liquid_rCVh6X"
+    "product_reviews_jtEnQw"
   ]
 }
