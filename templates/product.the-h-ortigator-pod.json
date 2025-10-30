@@ -227,43 +227,6 @@
         "three-cols-heading-icon_heading": "Key Benefits"
       }
     },
-    "3_columns_heading_icons_XBKJUh": {
-      "type": "3-columns-heading-icons",
-      "blocks": {
-        "grid_item_yPh49T": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-16.png",
-            "grid-item_heading": "Step one",
-            "grid-item_paragraph": "<p>Place your pod at the plant’s base and press it firmly into the soil until it sits level and stable, ensuring it stays in place while delivering water efficiently.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_7Dtr8n": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/water-icon-drop.svg",
-            "grid-item_heading": "Step two",
-            "grid-item_paragraph": "<p>The pod can connect to a water source in several ways, giving you flexibility depending on your setup. Each method ensures your plant receives consistent hydration without wasting water.</p><p></p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        }
-      },
-      "block_order": [
-        "grid_item_yPh49T",
-        "grid_item_7Dtr8n"
-      ],
-      "custom_css": [
-        ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
-        ".wl_three-cols-heading-icon_grid-item {max-width: 400px;}",
-        ".wl_three-cols-heading-icon_grid {display: grid; grid-template-columns: repeat(3, auto); gap: 20px; justify-content: center;}"
-      ],
-      "settings": {
-        "three-cols-heading-icon_heading": "How to use your H₂ Ortigator Pod"
-      }
-    },
     "3_columns_heading_icons_3f8xrp": {
       "type": "3-columns-heading-icons",
       "blocks": {
@@ -431,7 +394,6 @@
     "related-products",
     "case_studies_listing_3bFiYk",
     "3_columns_heading_icons_tcnqe4",
-    "3_columns_heading_icons_XBKJUh",
     "3_columns_heading_icons_3f8xrp",
     "product_related_products_RF49cV",
     "17387296613bbc73c3"
