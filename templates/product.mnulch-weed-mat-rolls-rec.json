@@ -109,7 +109,6 @@
     },
     "product_description_H9TRMR": {
       "type": "product-description",
-      "disabled": true,
       "custom_css": [
         ".wl_product-description_box {display: none;}",
         ".wl_product-description {padding-top: 32px;}"
