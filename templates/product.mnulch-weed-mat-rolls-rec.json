@@ -109,7 +109,8 @@
     "product_description_H9TRMR": {
       "type": "product-description",
       "custom_css": [
-        ".wl_product-description_box {display: none;}"
+        ".wl_product-description_box {display: none;}",
+        ".wl_product-description {padding-top: 32px;}"
       ],
       "settings": {
         "product-description_heading": "A Small Change That Makes a Big Difference",
