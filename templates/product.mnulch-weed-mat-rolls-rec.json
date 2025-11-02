@@ -166,7 +166,8 @@
         "column_yAceNY"
       ],
       "custom_css": [
-        "heading {}"
+        "h3,p {color: rgba(21, 71, 52, 0.8);}",
+        ".multicolumn {background-color: #fff5e5;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -179,7 +180,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
