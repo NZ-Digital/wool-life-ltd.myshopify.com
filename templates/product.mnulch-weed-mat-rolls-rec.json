@@ -166,7 +166,8 @@
       ],
       "custom_css": [
         "h3,p {color: rgba(21, 71, 52, 0.8);}",
-        ".multicolumn {background-color: #fff5e5;}"
+        ".multicolumn {background-color: #E9DDc6;}",
+        ".multicolumn-card__info {padding-left: 30px; padding-right: 30px;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
