@@ -109,6 +109,7 @@
     },
     "product_description_H9TRMR": {
       "type": "product-description",
+      "disabled": true,
       "custom_css": [
         ".wl_product-description_box {display: none;}",
         ".wl_product-description {padding-top: 32px;}"
@@ -166,7 +167,7 @@
       ],
       "custom_css": [
         "h3,p {color: rgba(21, 71, 52, 0.8);}",
-        ".multicolumn {background-color: #E9DDc6;}",
+        ".multicolumn {background-color: #e9ddc6;}",
         ".multicolumn-card__info {padding-left: 30px; padding-right: 30px;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
@@ -183,7 +184,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 96,
         "padding_bottom": 36
       }
     },
