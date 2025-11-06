@@ -161,18 +161,9 @@
         "grid_item_CaBzRm": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/roll_icon_2x_c482dc38-d875-4659-9027-55183351d148.png",
+            "grid-item_image": "shopify://shop_images/Temperature_a26152fa-7479-4363-bb6a-47a60472d77e.png",
             "grid-item_heading": "Natural Insulation & Protection",
             "grid-item_paragraph": "<p>Wool cushions and regulates temperature, keeping your wine safe, cool, and stylishly presented.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_RXrkJj": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_heading": "",
-            "grid-item_paragraph": "",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -210,9 +201,9 @@
         "grid_item_rXUdNA": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/award.png",
-            "grid-item_heading": "XXX",
-            "grid-item_paragraph": "<p>XXX</p>",
+            "grid-item_image": "shopify://shop_images/PF_icon_3.svg",
+            "grid-item_heading": "Gift Ready",
+            "grid-item_paragraph": "<p>Thoughtfully designed to elevate any bottle, making sustainable gifting simple, elegant, and waste-free.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -221,7 +212,6 @@
       "block_order": [
         "grid_item_GNQTNj",
         "grid_item_CaBzRm",
-        "grid_item_RXrkJj",
         "grid_item_7CxwAJ",
         "grid_item_ABhiqB",
         "grid_item_e3zKkG",
@@ -243,7 +233,7 @@
         "grid_item_phMUNa": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/water-tank.png",
+            "grid-item_image": "shopify://shop_images/heart_e88afd85-3b51-45d7-acff-da948764e344.png",
             "grid-item_heading": "For Loved Ones",
             "grid-item_paragraph": "<p>Pair a favourite bottle with a story of sustainability. </p>",
             "grid-item_btn-label": "",
@@ -253,7 +243,7 @@
         "grid_item_qYLewE": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/fertilizer.png",
+            "grid-item_image": "shopify://shop_images/gift_f13cc484-5d70-40ba-8bc2-7eac9478f28d.png",
             "grid-item_heading": "For corporate gifting",
             "grid-item_paragraph": "<p>For corporate gifting – impress clients and colleagues with a premium, eco-friendly choice that reflects your values. </p>",
             "grid-item_btn-label": "",
@@ -263,7 +253,7 @@
         "grid_item_Uq9bF6": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/centered-step-3.png",
+            "grid-item_image": "shopify://shop_images/Wine-celebration_00e5965e-7094-4806-a080-cc5083d30a24.png",
             "grid-item_heading": "For every occasion",
             "grid-item_paragraph": "<p>From weddings and birthdays to picnics, BBQs, and dinner parties.</p>",
             "grid-item_btn-label": "",
@@ -289,7 +279,7 @@
       "settings": {
         "product-description_heading": "Premium. Sustainable. Handmade in Hawke’s Bay.",
         "product-description_text": "<p>Every Wool.Life wine carry bag is a reflection of what makes Aotearoa special: our wool, our people, and our responsibility to the environment. When you gift with Wool.Life, you’re sharing more than wine, you’re sharing a piece of New Zealand.</p>",
-        "product-description_background_color": "#FFF5E5"
+        "product-description_background_color": "#E9DDC6"
       }
     },
     "product_related_products_RF49cV": {
