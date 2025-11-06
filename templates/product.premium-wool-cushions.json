@@ -1,0 +1,286 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_7DLRrh": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "{background: #fff5e5;}",
+        ".gradient {background: inherit; max-width: 1280px; margin: auto;}",
+        ".wl_product_breadcrumbs a {text-decoration: underline;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"wl_product_breadcrumbs\">\n<p>Shop / products / <a href=\"/collections/home\">Home</a></p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 96,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_eKkNei": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"wl_product-cat\">Home</p>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title_weight": "400"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_X3gXdw": {
+          "type": "text",
+          "settings": {
+            "text": "Experience the comfort of a truly New Zealand made pillow. Each Wool.Life Pillow is crafted with care right here in Aotearoa, using 100% natural materials with many sourced from our local land and farmers.",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_eKkNei",
+        "title",
+        "price",
+        "text_X3gXdw",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "design_style": "current",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 40,
+        "padding_bottom": 96
+      }
+    },
+    "product_description_YWHVBE": {
+      "type": "product-description",
+      "custom_css": [
+        ".wl_product-description_box {display: none;}"
+      ],
+      "settings": {
+        "product-description_heading": "Product Description",
+        "product-description_text": "<p>Introducing Wool.Life Pillows - the ultimate sleep solution for a healthier and more sustainable future. Our pillows have proven to improve deep sleep, leading to better brain function, memory and overall wellbeing. </p>\n<p>Made with natural ingredients and free from dust mites and harmful chemicals, Wool.Life Pillows provide relief from night sweats while contributing to a healthier, sustainable global future. Experience the comfort and benefits of our pillows and start sleeping your way to a better life.</p>",
+        "product-description_background_color": "#E9DDC6"
+      }
+    },
+    "3_columns_heading_icons_z6hzbL": {
+      "type": "3-columns-heading-icons",
+      "blocks": {
+        "grid_item_MHUKCK": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/PF_icon_2.svg",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>Cover made from 100% cotton outer quilted with pure NZ wool batting for extra loft and natural temperature control.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_M8mgH9": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/100_NZ_wool_1.png",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>Filled with 100% NZ wool knops (JOMA Pearls®) – soft, breathable, and resilient.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_yhdUwM": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/sheep-icon.png",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>Made from 100% NZ-sourced wool, fully renewable, sustainable, and high quality.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_tn79H3": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Pest_resistant_beige_1.png",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>Naturally resistant to dust mites, mould, and odour, keeping your bedding fresh and healthy.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_PtjCRP": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/nz_icon_41a70ff8-5127-490c-8adf-1d97452a6729.png",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>Handcrafted and fully manufactured in New Zealand with attention to detail in every product.</p><p></p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_pxJw4M": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/pillows.png",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>Quilted cover including plush wool batting adds comfort and longevity.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_8WWDEQ": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/sun-icon.png",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>To refresh, simply air in sunlight or gently machine-wash the outer cover (inner wool knops must be removed and aired).</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_zbtxiA": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/long-lasting-comfort.png",
+            "grid-item_heading": "",
+            "grid-item_paragraph": "<p>Designed for consistent, long-lasting comfort, making it perfect for daily use and restful sleep.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_MHUKCK",
+        "grid_item_M8mgH9",
+        "grid_item_yhdUwM",
+        "grid_item_tn79H3",
+        "grid_item_PtjCRP",
+        "grid_item_pxJw4M",
+        "grid_item_8WWDEQ",
+        "grid_item_zbtxiA"
+      ],
+      "custom_css": [
+        "{background-color: #154734;}",
+        ".wl_three-cols-heading-icon_grid-item {max-width: 210px;}",
+        ".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",
+        ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}",
+        ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 32px; height: 52px; width: auto;}"
+      ],
+      "name": "3 Columns Icons",
+      "settings": {
+        "three-cols-heading-icon_heading": ""
+      }
+    },
+    "product_description_qtj3nK": {
+      "type": "product-description",
+      "custom_css": [
+        ".wl_product-description_box {display: none;}"
+      ],
+      "settings": {
+        "product-description_heading": "Sleep the way nature intended",
+        "product-description_text": "<p>Wool is nature’s performance fibre, breathable, moisture-balancing, and naturally hypoallergenic. It helps regulate body temperature, keeping you cool in summer and cosy in winter. Unlike synthetic pillows that flatten and trap heat, Wool.Life pillows stay fresh, dry, and supportive night after night. </p>",
+        "product-description_background_color": "#E9DDC6"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "product_related_products_RF49cV": {
+      "type": "product-related-products",
+      "custom_css": [
+        ".card-information {display: none;}"
+      ],
+      "settings": {
+        "title": "Related Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "weed-mulch-mat-rolls",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_7DLRrh",
+    "main",
+    "product_description_YWHVBE",
+    "3_columns_heading_icons_z6hzbL",
+    "product_description_qtj3nK",
+    "related-products",
+    "product_related_products_RF49cV"
+  ]
+}
