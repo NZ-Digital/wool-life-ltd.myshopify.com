@@ -151,9 +151,9 @@
         "grid_item_GNQTNj": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Life-Support-Icon_f5d8f02f-d29c-4a77-b02b-5e03a03e5de9.png",
-            "grid-item_heading": "A Complete Life Support System",
-            "grid-item_paragraph": "<p>The H₂Ortigator Pod is a complete life support system for your new fruit trees, natives, and ornamentals. It takes care of a number of tasks for you, including watering, weed control, and protecting your plant from pests and damage.</p>",
+            "grid-item_image": "shopify://shop_images/sheep-icon.png",
+            "grid-item_heading": "100% NZ Wool",
+            "grid-item_paragraph": "<p>Made from recycled New Zealand wool, keeping wool out of landfill and giving it a beautiful second life.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -161,9 +161,18 @@
         "grid_item_CaBzRm": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Watering-system_fd2f9ab8-473a-4dc5-b34b-5ef51a5ec4a2.png",
-            "grid-item_heading": "Smarter Watering System",
-            "grid-item_paragraph": "<p>The H₂Ortigator Pod’s patented design delivers water slowly and directly to the roots eliminating waste, preventing over-irrigation, and ensuring steady hydration for stronger roots and less transplant shock. The most efficient way to keep trees and vines perfectly hydrated.</p>",
+            "grid-item_image": "shopify://shop_images/roll_icon_2x_c482dc38-d875-4659-9027-55183351d148.png",
+            "grid-item_heading": "Natural Insulation & Protection",
+            "grid-item_paragraph": "<p>Wool cushions and regulates temperature, keeping your wine safe, cool, and stylishly presented.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_RXrkJj": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "",
+            "grid-item_paragraph": "",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -171,9 +180,9 @@
         "grid_item_7CxwAJ": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Easy_to_use_beige_1.png",
-            "grid-item_heading": "Convenient & Easy to Use",
-            "grid-item_paragraph": "<p>Forget timers, weeding, and guessing water volumes. This all-in-one system saves you time and effort. Simply connect it to your existing irrigation, a garden hose, or a rainwater tank. The pod refills in under two minutes, and a single fill can last up to two days.</p>",
+            "grid-item_image": "shopify://shop_images/nz_icon_41a70ff8-5127-490c-8adf-1d97452a6729.png",
+            "grid-item_heading": "Handmade in Hawke’s Bay",
+            "grid-item_paragraph": "<p>Every bag is carefully crafted by local makers, supporting skilled jobs and regional communities.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -181,9 +190,9 @@
         "grid_item_ABhiqB": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/Promotes-plant-growth_beige_1.png",
-            "grid-item_heading": "Promotes Thriving Plant Growth",
-            "grid-item_paragraph": "<p>The H₂Ortigator's unique \"little and often\" watering approach ensures consistent soil moisture, which encourages roots to grow downwards, creating a more resilient, well-established plant. The unit also shields the root zone from extreme weather, creating a stable microclimate for optimal growth.</p>",
+            "grid-item_image": "shopify://shop_images/PF_icon_4.svg",
+            "grid-item_heading": "Premium & Reusable",
+            "grid-item_paragraph": "<p>A durable alternative to disposable gift bags, made to last for years of gatherings, gifting, and celebrations.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -191,9 +200,9 @@
         "grid_item_e3zKkG": {
           "type": "grid-item",
           "settings": {
-            "grid-item_image": "shopify://shop_images/nz_icon_41a70ff8-5127-490c-8adf-1d97452a6729.png",
-            "grid-item_heading": "A Sustainable Kiwi Investment",
-            "grid-item_paragraph": "<p>Designed and manufactured in New Zealand, the pod is built for durability and endless reusability. Made from 25% recycled plastic, it is an efficient way to conserve water, with trials showing water savings of up to 60% per plant. This is a long-term investment in your garden's health and a more sustainable way to grow.</p>",
+            "grid-item_image": "shopify://shop_images/Biodegradable_beige_1.png",
+            "grid-item_heading": "Circular by Design",
+            "grid-item_paragraph": "<p>Each bag embodies our commitment to closing the loop: locally sourced, locally made, endlessly reusable.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -202,8 +211,8 @@
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/award.png",
-            "grid-item_heading": "Award-Winning Innovation",
-            "grid-item_paragraph": "<p>This innovative NZ designed product has been recognised with the 2022 Innovation in Irrigation Award from Irrigation NZ, the 2022 Fourneau Trophy for Innovation in Fruit Growing from the Fruit Growers Trust, and Best Emerging Business at the 2024 Pan Pac Hawke's Bay Business Awards</p>",
+            "grid-item_heading": "XXX",
+            "grid-item_paragraph": "<p>XXX</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -212,6 +221,7 @@
       "block_order": [
         "grid_item_GNQTNj",
         "grid_item_CaBzRm",
+        "grid_item_RXrkJj",
         "grid_item_7CxwAJ",
         "grid_item_ABhiqB",
         "grid_item_e3zKkG",
@@ -224,78 +234,18 @@
         ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}"
       ],
       "settings": {
-        "three-cols-heading-icon_heading": "Key Benefits"
+        "three-cols-heading-icon_heading": "Why Wool.Life Wine Bags?"
       }
     },
     "3_columns_heading_icons_3f8xrp": {
       "type": "3-columns-heading-icons",
       "blocks": {
-        "grid_item_CQqKh6": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/Brand_Icons-16.png",
-            "grid-item_heading": "Step one",
-            "grid-item_paragraph": "<p>Place your pod at the plant’s base and press it firmly into the soil until it sits level and stable, ensuring it stays in place while delivering water efficiently.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_KTNEz8": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/water-icon-drop.svg",
-            "grid-item_heading": "Step two",
-            "grid-item_paragraph": "<p>The pod can connect to a water source in several ways, giving you flexibility depending on your setup. Each method ensures your plant receives consistent hydration without wasting water.</p><p></p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_eizEj9": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/Screenshot_2025-10-31_at_11.14.57_AM.png",
-            "grid-item_heading": "",
-            "grid-item_paragraph": "",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_QVNyJ8": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/Hose-Iconn.png",
-            "grid-item_heading": "Manual Hose Fill",
-            "grid-item_paragraph": "<p>To fill the pod manually, replace the 4mm barbed connection with the supplied hose adapter and connect a garden hose. A single fill provides up to 48 hours of watering, keeping your plant hydrated even when you’re away.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_D3HzQk": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/Irrigation_3df2efc0-0919-4dea-a99e-cb3043a4262f.png",
-            "grid-item_heading": "Existing Irrigation System",
-            "grid-item_paragraph": "<p>For irrigation lines, use the supplied line punch to make a hole, insert the barbed connector and micro tubing, and connect it to the pod’s 4mm barb. The pod then refills whenever you run your irrigation system.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_zH9XFa": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/tap-2.png",
-            "grid-item_heading": "Direct to Tap",
-            "grid-item_paragraph": "<p>You can also run micro tubing directly from a garden tap, though a pressure regulator may be needed to maintain steady flow. This works well for smaller setups without a full irrigation system.</p>",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
         "grid_item_phMUNa": {
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/water-tank.png",
-            "grid-item_heading": "Water Tanks",
-            "grid-item_paragraph": "<p>Pods can operate from low-pressure sources like rain barrels. Ensure the tank is positioned above the pod so water flows by gravity for proper operation.</p>",
+            "grid-item_heading": "For Loved Ones",
+            "grid-item_paragraph": "<p>Pair a favourite bottle with a story of sustainability. </p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -304,8 +254,8 @@
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/fertilizer.png",
-            "grid-item_heading": "Fertiliser use",
-            "grid-item_paragraph": "<p>You can use fully water-soluble fertiliser with the pod. Premix it in water, then flush with clean water after use to prevent clogs. Avoid non-water-soluble fertilisers, as they can block the system.</p>",
+            "grid-item_heading": "For corporate gifting",
+            "grid-item_paragraph": "<p>For corporate gifting – impress clients and colleagues with a premium, eco-friendly choice that reflects your values. </p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -314,20 +264,14 @@
           "type": "grid-item",
           "settings": {
             "grid-item_image": "shopify://shop_images/centered-step-3.png",
-            "grid-item_heading": "Step three",
-            "grid-item_paragraph": "<p>Once connected, turn on the water supply and let the pod do the rest. Its automatic valve shuts off when full and allows refilling in under two minutes once pressure is restored.</p>",
+            "grid-item_heading": "For every occasion",
+            "grid-item_paragraph": "<p>From weddings and birthdays to picnics, BBQs, and dinner parties.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
         }
       },
       "block_order": [
-        "grid_item_CQqKh6",
-        "grid_item_KTNEz8",
-        "grid_item_eizEj9",
-        "grid_item_QVNyJ8",
-        "grid_item_D3HzQk",
-        "grid_item_zH9XFa",
         "grid_item_phMUNa",
         "grid_item_qYLewE",
         "grid_item_Uq9bF6"
@@ -337,7 +281,15 @@
         ".wl_three-cols-heading-icon_grid-item {max-width: 308px;}"
       ],
       "settings": {
-        "three-cols-heading-icon_heading": "How to use your H₂ Ortigator Pod"
+        "three-cols-heading-icon_heading": "The Perfect Gift"
+      }
+    },
+    "product_description_MjkRjW": {
+      "type": "product-description",
+      "settings": {
+        "product-description_heading": "Premium. Sustainable. Handmade in Hawke’s Bay.",
+        "product-description_text": "<p>Every Wool.Life wine carry bag is a reflection of what makes Aotearoa special: our wool, our people, and our responsibility to the environment. When you gift with Wool.Life, you’re sharing more than wine, you’re sharing a piece of New Zealand.</p>",
+        "product-description_background_color": "#FFF5E5"
       }
     },
     "product_related_products_RF49cV": {
@@ -395,6 +347,7 @@
     "case_studies_listing_3bFiYk",
     "3_columns_heading_icons_tcnqe4",
     "3_columns_heading_icons_3f8xrp",
+    "product_description_MjkRjW",
     "product_related_products_RF49cV",
     "17387296613bbc73c3"
   ]
