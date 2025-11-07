@@ -315,15 +315,6 @@
     },
     "17387296613bbc73c3": {
       "type": "apps",
-      "blocks": {
-        "upsell_product_add_ons_sg_app_block_Pi6VQb": {
-          "type": "shopify://apps/upsell-product-add-ons-sg/blocks/app-block/b5caaaa1-43aa-4d84-9497-26284c984153",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "upsell_product_add_ons_sg_app_block_Pi6VQb"
-      ],
       "settings": {
         "include_margins": true
       }
