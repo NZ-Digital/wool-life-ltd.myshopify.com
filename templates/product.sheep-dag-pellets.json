@@ -335,21 +335,20 @@
         "three-cols-heading-icon_heading": "Using Sheep Dag Pellets with Wool Mulch Mats"
       }
     },
-    "product_description_zwqNBt": {
-      "type": "product-description",
-      "custom_css": [],
-      "settings": {
-        "product-description_heading": "{{ product.metafields.shopify[\"color-pattern\"] | metafield_text: field: 'label' }}",
-        "product-description_text": "<p>· Open in a well-ventilated area and avoid breathing dust.</p><p>\n\n</p><p>· Wash hands after use.</p><p>\n\n</p><p>· Store sealed in a cool, dry place.</p><p>\n\n</p><p>· Keep out of reach of children and pets.</p><p>\n\n</p><p>· Not for human or animal consumption.</p>",
-        "product-description_background_color": "#154734"
-      }
-    },
     "product_description_wmBKjP": {
       "type": "product-description",
       "settings": {
-        "product-description_heading": "Sustainability in Action",
-        "product-description_text": "<p>At Wool.Life, we believe the best fertiliser is one that’s good for the planet too. Our Sheep Dag Pellets are created from materials that were once considered waste, cleaned, heat-treated, and pelletised here in New Zealand.</p><p>\n\n</p><p>Each bag supports:</p><p>\n\n</p><p>· Reduced farm waste</p><p>\n\n</p><p>· Lower carbon emissions</p><p>\n\n</p><p>· Local processing and jobs</p>\n\n<p>· Regenerative soil health</p>",
+        "product-description_heading": "Safety & Handling",
+        "product-description_text": "<p>• Open in a well-ventilated area and avoid breathing dust.</p><p>\n</p><p>• Wash hands after use.</p><p>\n</p><p>• Store sealed in a cool, dry place.</p><p>\n</p><p>• Keep out of reach of children and pets.</p><p>\n</p><p>• Not for human or animal consumption.</p><p></p>",
         "product-description_background_color": "#E9DDC6"
+      }
+    },
+    "product_description_7t3qT9": {
+      "type": "product-description",
+      "settings": {
+        "product-description_heading": "Sustainability in Action",
+        "product-description_text": "<p>We’re proud to craft natural solutions that work in harmony with our environment. Our products are designed to last, return value to the land, and show that sustainability can start right here at home.</p><p>\n\n</p><p>• Reduced farm waste</p><p>\n</p><p>• Lower carbon emissions</p><p>\n</p><p>• Local processing and jobs</p><p>\n</p><p>• Regenerative soil health</p><p>\n</p><p>Circular. Local. That's the Wool.Life way.</p><p></p>",
+        "product-description_background_color": "#FFF5E5"
       }
     },
     "product_related_products_RF49cV": {
@@ -399,8 +398,8 @@
     "3_columns_heading_icons_tcnqe4",
     "3_columns_heading_icons_3f8xrp",
     "3_columns_heading_icons_WhY93J",
-    "product_description_zwqNBt",
     "product_description_wmBKjP",
+    "product_description_7t3qT9",
     "product_related_products_RF49cV",
     "17387296613bbc73c3"
   ]
