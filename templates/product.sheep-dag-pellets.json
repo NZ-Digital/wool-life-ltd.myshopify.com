@@ -1,0 +1,335 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_7DLRrh": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "{background: #fff5e5;}",
+        ".gradient {background: inherit; max-width: 1280px; margin: auto;}",
+        ".wl_product_breadcrumbs a {text-decoration: underline;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"wl_product_breadcrumbs\">\n<p>Shop / products / <a href=\"/collections/garden\">Garden</a></p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 96,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_eKkNei": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"wl_product-cat\">Garden</p>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title_weight": "400"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_X3gXdw": {
+          "type": "text",
+          "settings": {
+            "text": "Handmade in Hawke’s Bay from 100% recycled New Zealand wool, our wine bags cushion and insulate your bottle while adding a stylish, eco-friendly touch. Durable, reusable, and crafted with care, they’re the perfect way to elevate gifting and celebrate Kiwi craftsmanship.",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_eKkNei",
+        "title",
+        "price",
+        "text_X3gXdw",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "design_style": "current",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 40,
+        "padding_bottom": 96
+      }
+    },
+    "product_description_YWHVBE": {
+      "type": "product-description",
+      "custom_css": [
+        ".wl_product-description_box {display: none;}"
+      ],
+      "settings": {
+        "product-description_heading": "Product Description",
+        "product-description_text": "<p>The sustainable way to gift and protect your wine – proudly handmade in Hawke’s Bay.\n</p>\n\n<p>At Wool.Life, we believe that every product should tell a story of sustainability, craft, and care for the land we call home. Our 100% NZ recycled wool wine carry bags are more than just carriers, they’re a statement of premium quality, Kiwi ingenuity, and circular design. Each bag is handmade in Hawke’s Bay, supporting local communities while celebrating the natural strength and beauty of wool.</p>",
+        "product-description_background_color": "#E9DDC6"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "case_studies_listing_3bFiYk": {
+      "type": "case-studies-listing",
+      "disabled": true,
+      "custom_css": [
+        ".wl_case-studies-listing {padding-top: 32px;}",
+        ".wl_case-studies-listing_btn {display: none;}",
+        ".wl_case-studies-listing_item.item-1 {background-position: center;}",
+        ".wl_case-studies-listing_item.item-2 {display: none;}"
+      ],
+      "settings": {
+        "case-studies-listing_heading": "See it in action",
+        "case-studies-listing_description": "",
+        "case-studies-listing_case-study-1_img": "shopify://shop_images/STR_1965.jpg",
+        "case-studies-listing_case-study-1_title": "How To Use Mulch & Weed Mats and Rolls",
+        "case-studies-listing_case-study-1_link": "/blogs/growers-tips/how-to-use-mulch-weed-mats-and-rolls",
+        "case-studies-listing_case-study-2_img": "shopify://shop_images/the_yard_crew_featured_image.jpg",
+        "case-studies-listing_case-study-2_title": "The Yard Crew",
+        "case-studies-listing_case-study-2_link": "/blogs/case-studies/the-yard-crew"
+      }
+    },
+    "3_columns_heading_icons_tcnqe4": {
+      "type": "3-columns-heading-icons",
+      "blocks": {
+        "grid_item_GNQTNj": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/sheep-icon.png",
+            "grid-item_heading": "100% NZ Wool",
+            "grid-item_paragraph": "<p>Made from recycled New Zealand wool, keeping wool out of landfill and giving it a beautiful second life.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_CaBzRm": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Temperature_a26152fa-7479-4363-bb6a-47a60472d77e.png",
+            "grid-item_heading": "Natural Insulation & Protection",
+            "grid-item_paragraph": "<p>Wool cushions and regulates temperature, keeping your wine safe, cool, and stylishly presented.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_7CxwAJ": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/nz_icon_41a70ff8-5127-490c-8adf-1d97452a6729.png",
+            "grid-item_heading": "Handmade in Hawke’s Bay",
+            "grid-item_paragraph": "<p>Every bag is carefully crafted by local makers, supporting skilled jobs and regional communities.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_ABhiqB": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/PF_icon_4.svg",
+            "grid-item_heading": "Premium & Reusable",
+            "grid-item_paragraph": "<p>A durable alternative to disposable gift bags, made to last for years of gatherings, gifting, and celebrations.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_e3zKkG": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Biodegradable_beige_1.png",
+            "grid-item_heading": "Circular by Design",
+            "grid-item_paragraph": "<p>Each bag embodies our commitment to closing the loop: locally sourced, locally made, endlessly reusable.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_rXUdNA": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/PF_icon_3.svg",
+            "grid-item_heading": "Gift Ready",
+            "grid-item_paragraph": "<p>Thoughtfully designed to elevate any bottle, making sustainable gifting simple, elegant, and waste-free.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_GNQTNj",
+        "grid_item_CaBzRm",
+        "grid_item_7CxwAJ",
+        "grid_item_ABhiqB",
+        "grid_item_e3zKkG",
+        "grid_item_rXUdNA"
+      ],
+      "custom_css": [
+        "{background-color: #154734;}",
+        ".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",
+        ".wl_three-cols-heading-icon_grid-item_heading {color: #e9ddc6;}",
+        ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}"
+      ],
+      "settings": {
+        "three-cols-heading-icon_heading": "Why Wool.Life Wine Bags?"
+      }
+    },
+    "3_columns_heading_icons_3f8xrp": {
+      "type": "3-columns-heading-icons",
+      "blocks": {
+        "grid_item_phMUNa": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/heart_e88afd85-3b51-45d7-acff-da948764e344.png",
+            "grid-item_heading": "For Loved Ones",
+            "grid-item_paragraph": "<p>Pair a favourite bottle with a story of sustainability. </p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_qYLewE": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/gift_f13cc484-5d70-40ba-8bc2-7eac9478f28d.png",
+            "grid-item_heading": "For corporate gifting",
+            "grid-item_paragraph": "<p>For corporate gifting – impress clients and colleagues with a premium, eco-friendly choice that reflects your values. </p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_Uq9bF6": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/Wine-celebration_00e5965e-7094-4806-a080-cc5083d30a24.png",
+            "grid-item_heading": "For every occasion",
+            "grid-item_paragraph": "<p>From weddings and birthdays to picnics, BBQs, and dinner parties.</p>",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_phMUNa",
+        "grid_item_qYLewE",
+        "grid_item_Uq9bF6"
+      ],
+      "custom_css": [
+        ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
+        ".wl_three-cols-heading-icon_grid-item {max-width: 308px;}"
+      ],
+      "settings": {
+        "three-cols-heading-icon_heading": "The Perfect Gift"
+      }
+    },
+    "product_description_MjkRjW": {
+      "type": "product-description",
+      "settings": {
+        "product-description_heading": "Premium. Sustainable. Handmade in Hawke’s Bay.",
+        "product-description_text": "<p>Every Wool.Life wine carry bag is a reflection of what makes Aotearoa special: our wool, our people, and our responsibility to the environment. When you gift with Wool.Life, you’re sharing more than wine, you’re sharing a piece of New Zealand.</p>",
+        "product-description_background_color": "#E9DDC6"
+      }
+    },
+    "product_related_products_RF49cV": {
+      "type": "product-related-products",
+      "custom_css": [
+        ".card-information {display: none;}"
+      ],
+      "settings": {
+        "title": "Related Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "weed-mulch-mat-rolls",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "17387296613bbc73c3": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_7DLRrh",
+    "main",
+    "product_description_YWHVBE",
+    "related-products",
+    "case_studies_listing_3bFiYk",
+    "3_columns_heading_icons_tcnqe4",
+    "3_columns_heading_icons_3f8xrp",
+    "product_description_MjkRjW",
+    "product_related_products_RF49cV",
+    "17387296613bbc73c3"
+  ]
+}
