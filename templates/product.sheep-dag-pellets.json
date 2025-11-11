@@ -227,6 +227,29 @@
         "three-cols-heading-icon_heading": "The Benefits of Using Wool.Life Sheep Dag Pellets"
       }
     },
+    "rich_text_rizaeC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_QBQFji": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This combination locks in moisture, prevents weeds, and continuously feeds your plants as both the pellets and mulch mat break down naturally over time. Together, they create a self-sustaining soil ecosystem, healthier plants, less watering, and zero plastic waste.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_QBQFji"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-f301ee01-356b-4351-b6b3-1bed67944b4b",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
     "3_columns_heading_icons_3f8xrp": {
       "type": "3-columns-heading-icons",
       "blocks": {
@@ -272,6 +295,29 @@
       ],
       "settings": {
         "three-cols-heading-icon_heading": "How to Use"
+      }
+    },
+    "rich_text_CR9aWe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_rcNeee": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suitable for:</p><p>· Vegetable gardens</p><p>· Flower beds and shrubs</p><p>· Fruit trees and vines</p><p>· Lawns and pastures</p><p>· Potted plants and raised beds</p><p>A 2.5 kg bag covers approximately 6–8 m² of garden area.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_rcNeee"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4602b2f8-ff82-42a7-80ae-8be1f6b755b8",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 100
       }
     },
     "3_columns_heading_icons_WhY93J": {
@@ -387,49 +433,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "rich_text_rizaeC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_k6kmUJ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_QBQFji": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_j77J6n": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_k6kmUJ",
-        "text_QBQFji",
-        "button_j77J6n"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -439,12 +442,13 @@
     "related-products",
     "case_studies_listing_3bFiYk",
     "3_columns_heading_icons_tcnqe4",
+    "rich_text_rizaeC",
     "3_columns_heading_icons_3f8xrp",
+    "rich_text_CR9aWe",
     "3_columns_heading_icons_WhY93J",
     "product_description_wmBKjP",
     "product_description_7t3qT9",
     "product_related_products_RF49cV",
-    "17387296613bbc73c3",
-    "rich_text_rizaeC"
+    "17387296613bbc73c3"
   ]
 }
