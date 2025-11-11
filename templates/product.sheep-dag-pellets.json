@@ -221,7 +221,8 @@
         "{background-color: #154734;}",
         ".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",
         ".wl_three-cols-heading-icon_grid-item_heading {color: #e9ddc6;}",
-        ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}"
+        ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}",
+        ".wl_three-cols-heading-icon {padding-bottom: 42px;}"
       ],
       "settings": {
         "three-cols-heading-icon_heading": "The Benefits of Using Wool.Life Sheep Dag Pellets"
@@ -282,12 +283,22 @@
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
+        },
+        "grid_item_UqbJaW": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "",
+            "grid-item_paragraph": "",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
         }
       },
       "block_order": [
         "grid_item_phMUNa",
         "grid_item_qYLewE",
-        "grid_item_Uq9bF6"
+        "grid_item_Uq9bF6",
+        "grid_item_UqbJaW"
       ],
       "custom_css": [
         ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
