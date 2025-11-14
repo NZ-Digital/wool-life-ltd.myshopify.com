@@ -102,7 +102,7 @@
       ],
       "settings": {
         "product-description_heading": "Product Description",
-        "product-description_text": "<p>Turn waste into growth. Made from 100% New Zealand sheep dags, these natural pellets are an easy way to improve soil health, boost plant growth, and close the loop between farm and garden. Packed with slow-release nutrients and organic matter, Wool.Life Sheep Dag Pellets are the sustainable choice for gardeners who want results without chemicals or plastic.</p>\n\n<p>Suitable for:\n<br>· Vegetable gardens<br> · Flower beds and shrubs <br>· Fruit trees and vines <br>·Lawns and pastures<br>· Potted plants and raised bedsA 2.5 kg bag covers approximately 6–8 m² of garden area.</p>",
+        "product-description_text": "<p>Turn waste into growth. Made from 100% New Zealand sheep dags, these natural pellets are an easy way to improve soil health, boost plant growth, and close the loop between farm and garden. Packed with slow-release nutrients and organic matter, Wool.Life Sheep Dag Pellets are the sustainable choice for gardeners who want results without chemicals or plastic.</p>\n\n<p>Suitable for:\n<br>· Vegetable gardens<br> · Flower beds and shrubs <br>· Fruit trees and vines <br>· Lawns and pastures<br>· Potted plants and raised bedsA 2.5 kg bag covers approximately 6–8 m² of garden area.</p>",
         "product-description_background_color": "#E9DDC6"
       }
     },
@@ -367,7 +367,7 @@
         "{background-color: #154734;}",
         ".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",
         ".wl_three-cols-heading-icon_grid-item_heading {color: #e9ddc6;}",
-        ".wl_three-cols-heading-icon_grid-item p {color:#154734;}",
+        ".wl_three-cols-heading-icon_grid-item p {color: #154734;}",
         ".wl_three-cols-heading-icon_grid-item {max-width: 220px;}"
       ],
       "settings": {
