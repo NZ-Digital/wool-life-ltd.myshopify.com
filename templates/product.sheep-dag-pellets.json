@@ -102,7 +102,7 @@
       ],
       "settings": {
         "product-description_heading": "Product Description",
-        "product-description_text": "<p>Turn waste into growth. Made from 100% New Zealand sheep dags, these natural pellets are an easy way to improve soil health, boost plant growth, and close the loop between farm and garden. Packed with slow-release nutrients and organic matter, Wool.Life Sheep Dag Pellets are the sustainable choice for gardeners who want results without chemicals or plastic.</p>",
+        "product-description_text": "<p>Turn waste into growth. Made from 100% New Zealand sheep dags, these natural pellets are an easy way to improve soil health, boost plant growth, and close the loop between farm and garden. Packed with slow-release nutrients and organic matter, Wool.Life Sheep Dag Pellets are the sustainable choice for gardeners who want results without chemicals or plastic.</p>\n\n<p>Suitable for:\n<br>· Vegetable gardens<br> · Flower beds and shrubs <br>· Fruit trees and vines <br>·Lawns and pastures<br>· Potted plants and raised bedsA 2.5 kg bag covers approximately 6–8 m² of garden area.</p>",
         "product-description_background_color": "#E9DDC6"
       }
     },
@@ -143,6 +143,90 @@
         "case-studies-listing_case-study-2_img": "shopify://shop_images/the_yard_crew_featured_image.jpg",
         "case-studies-listing_case-study-2_title": "The Yard Crew",
         "case-studies-listing_case-study-2_link": "/blogs/case-studies/the-yard-crew"
+      }
+    },
+    "rich_text_CR9aWe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_rcNeee": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suitable for:</p><p>· Vegetable gardens</p><p>· Flower beds and shrubs</p><p>· Fruit trees and vines</p><p>· Lawns and pastures</p><p>· Potted plants and raised beds</p><p>A 2.5 kg bag covers approximately 6–8 m² of garden area.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_rcNeee"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-cf1615d6-d30a-4d12-ba4a-0765a39de418",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "3_columns_heading_icons_3f8xrp": {
+      "type": "3-columns-heading-icons",
+      "blocks": {
+        "grid_item_phMUNa": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/plant.svg",
+            "grid-item_heading": "1. Scatter pellets evenly over soil or around plants.",
+            "grid-item_paragraph": "",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_qYLewE": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/water-greem.svg",
+            "grid-item_heading": "2. Lightly water in or mix into the top few centimetres of soil.",
+            "grid-item_paragraph": "",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_Uq9bF6": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_image": "shopify://shop_images/grommet-icons_sun.png",
+            "grid-item_heading": "3. Reapply every 4–6 weeks or as needed during the growing season.",
+            "grid-item_paragraph": "",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        },
+        "grid_item_UqbJaW": {
+          "type": "grid-item",
+          "settings": {
+            "grid-item_heading": "",
+            "grid-item_paragraph": "",
+            "grid-item_btn-label": "",
+            "grid-item_btn-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_phMUNa",
+        "grid_item_qYLewE",
+        "grid_item_Uq9bF6",
+        "grid_item_UqbJaW"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
+        ".wl_three-cols-heading-icon_grid-item {max-width: 320px;}",
+        ".wl_three-cols-heading-icon {padding-bottom: 63px !important;}",
+        ".wl_three-cols-heading-icon_columns {margin-top: 0;}"
+      ],
+      "settings": {
+        "three-cols-heading-icon_heading": "How to Use"
       }
     },
     "3_columns_heading_icons_tcnqe4": {
@@ -229,111 +313,6 @@
         "three-cols-heading-icon_heading": "The Benefits of Using Wool.Life Sheep Dag Pellets"
       }
     },
-    "rich_text_rizaeC": {
-      "type": "rich-text",
-      "blocks": {
-        "text_QBQFji": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This combination locks in moisture, prevents weeds, and continuously feeds your plants as both the pellets and mulch mat break down naturally over time. Together, they create a self-sustaining soil ecosystem, healthier plants, less watering, and zero plastic waste.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_QBQFji"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-f301ee01-356b-4351-b6b3-1bed67944b4b",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 100
-      }
-    },
-    "3_columns_heading_icons_3f8xrp": {
-      "type": "3-columns-heading-icons",
-      "blocks": {
-        "grid_item_phMUNa": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/plant.svg",
-            "grid-item_heading": "1. Scatter pellets evenly over soil or around plants.",
-            "grid-item_paragraph": "",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_qYLewE": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/water-greem.svg",
-            "grid-item_heading": "2. Lightly water in or mix into the top few centimetres of soil.",
-            "grid-item_paragraph": "",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_Uq9bF6": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_image": "shopify://shop_images/grommet-icons_sun.png",
-            "grid-item_heading": "3. Reapply every 4–6 weeks or as needed during the growing season.",
-            "grid-item_paragraph": "",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        },
-        "grid_item_UqbJaW": {
-          "type": "grid-item",
-          "settings": {
-            "grid-item_heading": "",
-            "grid-item_paragraph": "",
-            "grid-item_btn-label": "",
-            "grid-item_btn-link": ""
-          }
-        }
-      },
-      "block_order": [
-        "grid_item_phMUNa",
-        "grid_item_qYLewE",
-        "grid_item_Uq9bF6",
-        "grid_item_UqbJaW"
-      ],
-      "custom_css": [
-        ".wl_three-cols-heading-icon_grid-item img {margin-bottom: 0px; height: 200px; width: auto;}",
-        ".wl_three-cols-heading-icon_grid-item {max-width: 320px;}",
-        ".wl_three-cols-heading-icon {padding-bottom: 63px !important;}",
-        ".wl_three-cols-heading-icon_columns {margin-top: 0;}"
-      ],
-      "settings": {
-        "three-cols-heading-icon_heading": "How to Use"
-      }
-    },
-    "rich_text_CR9aWe": {
-      "type": "rich-text",
-      "blocks": {
-        "text_rcNeee": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Suitable for:</p><p>· Vegetable gardens</p><p>· Flower beds and shrubs</p><p>· Fruit trees and vines</p><p>· Lawns and pastures</p><p>· Potted plants and raised beds</p><p>A 2.5 kg bag covers approximately 6–8 m² of garden area.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_rcNeee"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-4602b2f8-ff82-42a7-80ae-8be1f6b755b8",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 100
-      }
-    },
     "3_columns_heading_icons_WhY93J": {
       "type": "3-columns-heading-icons",
       "blocks": {
@@ -388,15 +367,39 @@
         "{background-color: #154734;}",
         ".wl_three-cols-heading-icon_heading {color: #e9ddc6;}",
         ".wl_three-cols-heading-icon_grid-item_heading {color: #e9ddc6;}",
-        ".wl_three-cols-heading-icon_grid-item p {color: rgba(233, 221, 198, 0.8);}",
+        ".wl_three-cols-heading-icon_grid-item p {color:#154734;}",
         ".wl_three-cols-heading-icon_grid-item {max-width: 220px;}"
       ],
       "settings": {
         "three-cols-heading-icon_heading": "Using Sheep Dag Pellets with Wool Mulch Mats"
       }
     },
+    "rich_text_rizaeC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_QBQFji": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This combination locks in moisture, prevents weeds, and continuously feeds your plants as both the pellets and mulch mat break down naturally over time. Together, they create a self-sustaining soil ecosystem, healthier plants, less watering, and zero plastic waste.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_QBQFji"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-f301ee01-356b-4351-b6b3-1bed67944b4b",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
     "product_description_wmBKjP": {
       "type": "product-description",
+      "disabled": true,
       "settings": {
         "product-description_heading": "Safety & Handling",
         "product-description_text": "<p>• Open in a well-ventilated area and avoid breathing dust.</p><p>\n</p><p>• Wash hands after use.</p><p>\n</p><p>• Store sealed in a cool, dry place.</p><p>\n</p><p>• Keep out of reach of children and pets.</p><p>\n</p><p>• Not for human or animal consumption.</p><p></p>",
@@ -455,11 +458,11 @@
     "product_description_YWHVBE",
     "related-products",
     "case_studies_listing_3bFiYk",
-    "3_columns_heading_icons_tcnqe4",
-    "rich_text_rizaeC",
-    "3_columns_heading_icons_3f8xrp",
     "rich_text_CR9aWe",
+    "3_columns_heading_icons_3f8xrp",
+    "3_columns_heading_icons_tcnqe4",
     "3_columns_heading_icons_WhY93J",
+    "rich_text_rizaeC",
     "product_description_wmBKjP",
     "product_description_7t3qT9",
     "product_related_products_RF49cV",
