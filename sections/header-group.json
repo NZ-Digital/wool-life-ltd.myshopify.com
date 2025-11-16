@@ -46,7 +46,7 @@
         "announcement_eYHCGY"
       ],
       "custom_css": [
-        ".announcement-bar-section {position: sticky; top: 100px; z-index: 20;}",
+        ".announcement-bar-section {position: sticky; top: 112px; z-index: 20;}",
         ".section-header {top: 15px;}"
       ],
       "name": "t:sections.announcement-bar.presets.name",
