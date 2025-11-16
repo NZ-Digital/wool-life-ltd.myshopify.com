@@ -45,7 +45,10 @@
       "block_order": [
         "announcement_eYHCGY"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".announcement-bar-section {position: sticky; top: 0; z-index: 20; }",
+        ".section-header {top: 15px;}"
+      ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
         "color_scheme": "scheme-2ac39497-9df7-453f-af63-44f618d2464d",
