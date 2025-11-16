@@ -124,7 +124,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/pillows.png",
             "grid-item_heading": "",
-            "grid-item_paragraph": "<p>100% natural cotton outer cover to protect and shape the cushion.</p>",
+            "grid-item_paragraph": "<p>100% cotton cover quilted with pure NZ wool for natural loft and temperature control.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
@@ -192,12 +192,9 @@
     },
     "product_description_qtj3nK": {
       "type": "product-description",
-      "custom_css": [
-        ".wl_product-description_box {display: none;}"
-      ],
       "settings": {
-        "product-description_heading": "Care Instructions",
-        "product-description_text": "<p>To refresh, simply air outdoors in sunlight. Outer covers are removable and machine-washable (check individual fabric tags). Inner wool pad can be aired as needed.</p>",
+        "product-description_heading": "",
+        "product-description_text": "<p>Made to be lived with, not just looked at, our wool cushions soften the spaces where life happens. They invite comfort, warmth, and connection, whether you’re curling up with a book or sharing a quiet moment with loved ones. It’s everyday comfort, made better by nature.</p>",
         "product-description_background_color": "#E9DDC6"
       }
     },
