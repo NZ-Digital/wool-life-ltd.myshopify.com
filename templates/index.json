@@ -11,6 +11,10 @@
   "sections": {
     "hero_video_EcKnNb": {
       "type": "hero-video",
+      "custom_css": [
+        ".utility-bar {position: fixed !important; top: 0; left: 0; right: 0; z-index: 9999;}",
+        "body {padding-top: 48px;}"
+      ],
       "settings": {
         "hero-video_subheading": "",
         "hero-video_heading": "100% NZ Wool Products",
