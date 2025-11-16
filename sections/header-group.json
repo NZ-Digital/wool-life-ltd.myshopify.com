@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "🖤 Spend $200+ this Black Friday & Get a FREE Wine Bag (Valued at $34.99) |  Shop Now 🖤",
-            "link": ""
+            "link": "shopify://collections/all"
           }
         }
       },
