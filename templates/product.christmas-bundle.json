@@ -146,7 +146,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Product Description</strong>",
-            "text": "<p>Give the gardener in your life a gift that keeps their plants thriving through summer! Our Christmas gift pack. It is packed with natural, NZ-made products designed to boost soil health, lock in moisture, and protect the garden during the hottest months of the year, even while you're away on holiday. Choose from recycled wool or white wool, and enjoy this complete set of garden essentials.</p><p></p>",
+            "text": "<p>Give the gardener in your life a gift that keeps their garden thriving through summer. <br/><br/>Our <strong>Christmas Gift Pack</strong>is filled with natural, NZ-made products designed to<strong>boost soil health</strong>, <strong>lock in moisture</strong>, and <strong>protect plants from summer heat </strong>even while you’re away on holiday.<br/><br/>Perfect for getting your <strong>home or bach garden summer-ready</strong>, it’s an easy, sustainable way to keep everything tidy, hydrated, and flourishing. <br/><br/>Lay the groundwork now for a <strong>bountiful harvest of fresh vegetables in time for Christmas lunch</strong>, and enjoy a garden that looks as good as it grows.<br/><br/>Choose from <strong>Recycled Wool </strong>or <strong>White Wool</strong>, and give the gift of effortless summer gardening, naturally.</p>",
             "link_label": "",
             "link": ""
           }
@@ -265,7 +265,7 @@
           "settings": {
             "grid-item_image": "shopify://shop_images/Pest_resistant_beige_1.png",
             "grid-item_heading": "Naturally Pest Resistant",
-            "grid-item_paragraph": "<p>Wool might feel soft to the touch, but wool fibres have very fine scales, and tiny barbs - which means that slugs and snails go out of their way to avoid them! The composition of our mats also means that birds can’t scrape the mat away from your garden.</p>",
+            "grid-item_paragraph": "<p>Wool might feel soft to the touch, but each fibre is covered in fine scales and tiny barbs making it highly unappealing to slugs and snails, which will go out of their way to avoid it. The natural composition and density of our mats also mean that birds can’t lift, move, or scrape them away from your garden beds, keeping plants fully protected.</p>",
             "grid-item_btn-label": "",
             "grid-item_btn-link": ""
           }
