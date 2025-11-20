@@ -1,0 +1,64 @@
+{% if request.page_type == 'collection' and collection.handle == 'commercial' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Wool.Life - Commercial Products Collection",
+  "url": "https://woollife.co.nz/collections/commercial",
+  "numberOfItems": 3,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Wool Packaging",
+        "description": "Sustainable wool-based packaging for eco-friendly transport of sensitive products. Durable, shock-absorbent, and biodegradable.",
+        "brand": "Wool.Life",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://woollife.co.nz/collections/commercial#packaging",
+          "priceCurrency": "NZD",
+          "price": "Contact for price",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Household Insulation",
+        "description": "Wool blend insulation combining thermal and acoustic performance, fire-resistant, non-toxic, and sustainable.",
+        "brand": "Wool.Life",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://woollife.co.nz/collections/commercial#household-insulation",
+          "priceCurrency": "NZD",
+          "price": "Contact for price",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Commercial Planting - Mulch & Weed Mats",
+        "description": "Mulch and weed mats for large-scale commercial planting projects. Retain moisture, release nutrients, support plant growth and reduce weeds.",
+        "brand": "Wool.Life",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://woollife.co.nz/collections/commercial#commercial-planting",
+          "priceCurrency": "NZD",
+          "price": "Contact for price",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
