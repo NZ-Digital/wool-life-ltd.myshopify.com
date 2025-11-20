@@ -1,0 +1,33 @@
+{% if request.page_type == 'collection' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Wool.Life – {{ collection.title | strip | escape }}",
+  "url": "{{ shop.url }}{{ collection.url }}",
+  "numberOfItems": {{ collection.products_count }},
+  "itemListElement": [
+    {% for product in collection.products %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "Product",
+        "name": {{ product.title | json }},
+        "image": {{ product.featured_image | img_url: '800x' | prepend: 'https:' | json }},
+        "description": {{ product.description | strip_html | truncate: 300 | json }},
+        "brand": {{ shop.name | json }},
+        "offers": {
+          "@type": "Offer",
+          "url": {{ shop.url | append: product.url | json }},
+          "priceCurrency": {{ cart.currency.iso_code | json }},
+          "price": {{ product.price | divided_by: 100.0 | json }},
+          "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}"
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
