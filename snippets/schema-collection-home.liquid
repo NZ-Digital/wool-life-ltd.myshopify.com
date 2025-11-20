@@ -1,0 +1,49 @@
+{% if request.page_type == 'collection' and collection.handle == 'home' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Wool.Life - Home Products Collection",
+  "url": "https://woollife.co.nz/collections/home",
+  "numberOfItems": 2,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Wool.Life Comfort Knops (750g)",
+        "image": "https://woollife.co.nz/cdn/shop/files/comfort-knops.jpg",
+        "description": "Sustainable and incredibly comfortable alternative to traditional cushion inners or beanbag fill.",
+        "brand": "Wool.Life",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://woollife.co.nz/products/comfort-knops",
+          "priceCurrency": "NZD",
+          "price": "39.50",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Wool.Life Pillows",
+        "image": "https://woollife.co.nz/cdn/shop/files/wool-pillow.jpg",
+        "description": "The ultimate sleep solution for a healthier and more sustainable future.",
+        "brand": "Wool.Life",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://woollife.co.nz/products/woollife-pillows",
+          "priceCurrency": "NZD",
+          "price": "115.00",
+          "availability": "https://schema.org/OutOfStock"
+        }
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
