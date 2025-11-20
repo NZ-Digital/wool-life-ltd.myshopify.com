@@ -466,28 +466,43 @@
 
 {% if request.page_type == 'index' %}
 
+  {%- comment -%} HOMEPAGE: full graph (Org + WebSite + WebPage + featured Product) {%- endcomment -%}
   {% render 'schema-home-global' %}
 
 {%- elsif request.page_type == 'collection' -%}
 
+  {%- comment -%} COLLECTIONS: Organization + collection-specific ItemList {%- endcomment -%}
   {% render 'schema-org-global' %}
-  {% render 'schema-collection-itemlist' %}
+
+  {% case collection.handle %}
+    {% when 'home' %}
+      {% render 'schema-collection-home' %}
+    {% when 'garden' %}
+      {% render 'schema-collection-garden' %}
+    {% when 'pet' %}
+      {% render 'schema-collection-pet' %}
+    {% when 'commercial' %}
+      {% render 'schema-collection-commercial' %}
+    {% else %}
+      {%- comment -%} Fallback: dynamic ItemList for all other collections (including /collections/all) {%- endcomment -%}
+      {% render 'schema-collection-itemlist' %}
+  {% endcase %}
 
 {%- elsif request.page_type == 'product' -%}
 
-  {# -- PRODUCT PAGES: Organization + Product -- #}
+  {%- comment -%} PRODUCT PAGES: Organization + Product {%- endcomment -%}
   {% render 'schema-org-global' %}
   {% render 'schema-product-global' %}
 
 {%- elsif request.page_type == 'page' and page.handle == 'why-choose-wool-life' -%}
 
-  {# -- FAQ PAGE: Organization + FAQPage -- #}
+  {%- comment -%} FAQ PAGE: Organization + FAQPage {%- endcomment -%}
   {% render 'schema-org-global' %}
   {% render 'schema-faq-why-woollife' %}
 
 {%- else -%}
 
-  {# -- EVERYTHING ELSE: just Organization -- #}
+  {%- comment -%} EVERYTHING ELSE: just Organization {%- endcomment -%}
   {% render 'schema-org-global' %}
 
 {%- endif -%}
