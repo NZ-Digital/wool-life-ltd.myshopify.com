@@ -492,12 +492,13 @@
 
   {%- comment -%} PRODUCT PAGES: Organization + Product {%- endcomment -%}
   {% render 'schema-org-global' %}
-  {% render 'schema-product-global' %}
+  {% comment %} {% render 'schema-product-global' %} {% endcomment %}
 
 {%- elsif request.page_type == 'page' and page.handle == 'why-choose-wool-life' -%}
 
   {%- comment -%} FAQ PAGE: Organization + FAQPage {%- endcomment -%}
   {% render 'schema-org-global' %}
+  {% comment %} {% render 'schema-faq-why-woollife' %} {% endcomment %}
 
 {%- else -%}
 
