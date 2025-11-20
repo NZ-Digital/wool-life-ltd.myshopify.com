@@ -1,0 +1,64 @@
+{% if request.page_type == 'collection' and collection.handle == 'pet' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Wool.Life - Pet Products Collection",
+  "url": "https://woollife.co.nz/collections/pet",
+  "numberOfItems": 1,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Fully Circular Dog Bed",
+        "image": "https://woollife.co.nz/cdn/shop/files/dog-bed.jpg",
+        "description": "New Zealand’s only fully circular dog bed made from 80% wool-rich recycled textiles. Recyclable, durable, and designed for comfort.",
+        "brand": "Wool.Life",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://woollife.co.nz/products/dog-bed",
+          "priceCurrency": "NZD",
+          "price": "149.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "12"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Maddie R, Nelson"
+            },
+            "datePublished": "2025-04-21",
+            "reviewBody": "Best bed we’ve ever bought — sturdy, soft, and made from recycled NZ materials. Our border collie loves it!",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Jess W, Christchurch"
+            },
+            "datePublished": "2025-05-04",
+            "reviewBody": "Comfy, eco, and built to last. Our lab took to it straight away, great value for something so durable.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
