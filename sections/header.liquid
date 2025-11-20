@@ -467,10 +467,9 @@
 {% if request.page_type == 'index' %}
 
   {% render 'schema-home-global' %}
-  
+
 {%- elsif request.page_type == 'collection' -%}
 
-  {# -- COLLECTION PAGES: Organization + ItemList -- #}
   {% render 'schema-org-global' %}
   {% render 'schema-collection-itemlist' %}
 
