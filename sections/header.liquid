@@ -465,10 +465,33 @@
 {% endjavascript %}
 
 {% if request.page_type == 'index' %}
+
   {% render 'schema-home-global' %}
-{% else %}
+  
+{%- elsif request.page_type == 'collection' -%}
+
+  {# -- COLLECTION PAGES: Organization + ItemList -- #}
   {% render 'schema-org-global' %}
-{% endif %}
+  {% render 'schema-collection-itemlist' %}
+
+{%- elsif request.page_type == 'product' -%}
+
+  {# -- PRODUCT PAGES: Organization + Product -- #}
+  {% render 'schema-org-global' %}
+  {% render 'schema-product-global' %}
+
+{%- elsif request.page_type == 'page' and page.handle == 'why-choose-wool-life' -%}
+
+  {# -- FAQ PAGE: Organization + FAQPage -- #}
+  {% render 'schema-org-global' %}
+  {% render 'schema-faq-why-woollife' %}
+
+{%- else -%}
+
+  {# -- EVERYTHING ELSE: just Organization -- #}
+  {% render 'schema-org-global' %}
+
+{%- endif -%}
 
 {% schema %}
 {
