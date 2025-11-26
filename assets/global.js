@@ -1273,7 +1273,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const loadMoreBtn = document.getElementById('wl-load-more');
   if (!loadMoreBtn) return;
 
-  const listing = document.querySelector('.wl_growers-tips-archive_listing');
+  // Work for Growers *or* News archive
+  const listing = document.querySelector(
+    '.wl_growers-tips-archive_listing, .wl_news-archive_listing'
+  );
   if (!listing) return;
 
   async function loadMore(url) {
@@ -1286,14 +1289,24 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!res.ok) throw new Error('Network error');
       const html = await res.text();
 
-      // Parse the returned page
       const doc = new DOMParser().parseFromString(html, 'text/html');
 
-      // 1) Grab the next page’s items and append
-      const nextItems = doc.querySelectorAll('.wl_growers-tips-archive_listing .wl_growers-tips-archive_item');
-      nextItems.forEach(el => listing.appendChild(el));
+      // Find the next page’s listing (Growers or News)
+      const nextListing =
+        doc.querySelector('.wl_growers-tips-archive_listing, .wl_news-archive_listing');
 
-      // 2) Find the next "Load more" button on that page to get its next URL
+      if (!nextListing) {
+        loadMoreBtn.remove();
+        return;
+      }
+
+      // Grab its items (Growers or News) and append
+      const nextItems = nextListing.querySelectorAll(
+        '.wl_growers-tips-archive_item, .wl_news-archive_item'
+      );
+      nextItems.forEach((el) => listing.appendChild(el));
+
+      // Get the next "Load more" button from that page for chaining
       const nextBtn = doc.getElementById('wl-load-more');
       if (nextBtn && nextBtn.dataset.nextUrl) {
         loadMoreBtn.dataset.nextUrl = nextBtn.dataset.nextUrl;
