@@ -249,62 +249,95 @@
     text-decoration: none;
     margin-top: 32px;
   }
-  
+
+  .wl-load-more-btn {
+    display: flex;
+    padding-bottom: 80px;
+    justify-content: center;
+  }
+
+  .wl-load-more {
+    background: #154734;
+    padding: 20px 48px;
+    cursor: pointer !important;
+    color: #e9ddc6;
+    text-align: center;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    width: fit-content;
+  }
+
 {%- endstyle -%}
 
 {%- paginate blog.articles by 6 -%}
   <div class="wl_case-studies-archive">
-
     <div class="wl_news-archive_listing">
       {%- for article in blog.articles -%}
         <div class="wl_news-archive_item">
-        <div class="wl_news-archive_img-cont">
+          <div class="wl_news-archive_img-cont">
             {% if article.image.src %}
-              <img class="wl_news-archive_img-cont_img" src="{{ article.image.src | img_url: '488x488' }}" alt="{{ article.image.alt }}">
+              <img
+                class="wl_news-archive_img-cont_img"
+                src="{{ article.image.src | img_url: '488x488' }}"
+                alt="{{ article.image.alt }}"
+              >
             {% endif %}
-        </div>
-        <div class="wl_news-archive_item_content">
-          <a class="wl_news-archive_item_title-a" href="{{ article.url }}">
-            <h3 class="wl_news-archive_item_title">{{ article.title }}</h3>
-          </a>
-          <div class="wl_news-archive_item_content_excerpt">{{ article.excerpt }}</div>
-          <a class="wl_news-archive_item_link" href="{{ article.url }}">Read more</a>
-        </div>
+          </div>
+          <div class="wl_news-archive_item_content">
+            <a class="wl_news-archive_item_title-a" href="{{ article.url }}">
+              <h3 class="wl_news-archive_item_title">{{ article.title }}</h3>
+            </a>
+            <div class="wl_news-archive_item_content_excerpt">
+              {{ article.excerpt }}
+            </div>
+            <a class="wl_news-archive_item_link" href="{{ article.url }}">
+              Read more
+            </a>
+          </div>
         </div>
       {%- endfor -%}
-
-      {% comment %} <div class="wl_news-archive_item">
-        <div class="wl_news-archive_img-cont">
-            
-              <img class="wl_news-archive_img-cont_img" src="https://cdn.shopify.com/s/files/1/0716/3884/3606/files/95b62872-07e9-1bdc-44be-2c18846161fe.jpg?v=1738126770" alt="Support NZ Farmers Grow Your Garden Sustainably">
-            
-        </div>
-        <div class="wl_news-archive_item_content">
-          <a class="wl_news-archive_item_title-a" target="_blank" href="https://mailchi.mp/9f12aa30182a/why-use-woollife-this-spring-18072244">
-            <h3 class="wl_news-archive_item_title">Support NZ Farmers 🇳🇿🪴 Grow Your Garden Sustainably</h3>
-          </a>
-          <div class="wl_news-archive_item_content_excerpt"><p>Wool.Life wool mats and rolls do more than lock in moisture - they help protect plants, soil, and our planet.<br></p></div>
-          <a class="wl_news-archive_item_link" target="_blank" href="https://mailchi.mp/9f12aa30182a/why-use-woollife-this-spring-18072244">Read more</a>
-        </div>
-        </div> {% endcomment %}
-
-            {% comment %} <div class="wl_news-archive_item">
-        <div class="wl_news-archive_img-cont">
-            
-              <img class="wl_news-archive_img-cont_img" src="https://cdn.shopify.com/s/files/1/0716/3884/3606/files/1572c265-fdda-afb7-6b01-97b6f54a8ae3.jpg?v=1738126999" alt="Your Summer Garden, Sorted">
-            
-        </div>
-        <div class="wl_news-archive_item_content">
-          <a class="wl_news-archive_item_title-a" target="_blank" href="https://mailchi.mp/ed59cfd3d937/why-use-woollife-this-spring-18071226">
-            <h3 class="wl_news-archive_item_title">Your Summer Garden, Sorted 😎</h3>
-          </a>
-          <div class="wl_news-archive_item_content_excerpt"><p>Worried about the garden this holiday? Don't be! Wool.Life has you covered.<br></p></div>
-          <a class="wl_news-archive_item_link" target="_blank" href="https://mailchi.mp/ed59cfd3d937/why-use-woollife-this-spring-18071226">Read more</a>
-        </div>
-        </div> {% endcomment %}
-
     </div>
   </div>
+
+  {%- if paginate.pages > 1 -%}
+    <div class="wl-load-more-btn">
+      <a
+        id="wl-load-more"
+        class="wl-load-more"
+        data-next-url="{{ paginate.next.url }}"
+        aria-label="Load more articles"
+      >
+        Load more
+      </a>
+
+      <noscript>
+        <nav class="wl_news-archive-pagination">
+          {%- if paginate.previous -%}
+            <a href="{{ paginate.previous.url }}">&larr; Previous</a>
+          {%- endif -%}
+
+          {%- for part in paginate.parts -%}
+            {%- if part.is_link -%}
+              <a href="{{ part.url }}">{{ part.title }}</a>
+            {%- else -%}
+              <span>{{ part.title }}</span>
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if paginate.next -%}
+            <a href="{{ paginate.next.url }}">Next &rarr;</a>
+          {%- endif -%}
+        </nav>
+      </noscript>
+    </div>
+  {%- endif -%}
 {%- endpaginate -%}
 
 {% schema %}
