@@ -693,7 +693,6 @@
         "faq_row_NjVATM",
         "faq_row_DAXX7x"
       ],
-      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
@@ -969,6 +968,7 @@
         "faq_row_6gjW8A",
         "faq_row_hyPfrw"
       ],
+      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
