@@ -393,37 +393,6 @@
         "padding_bottom": 28
       }
     },
-    "product_related_products_RF49cV": {
-      "type": "product-related-products",
-      "custom_css": [
-        ".card-information {display: none;}"
-      ],
-      "settings": {
-        "title": "Related Products",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "fleck-socks",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 96,
-        "padding_bottom": 96
-      }
-    },
     "faqs_YGjiyE": {
       "type": "faqs",
       "blocks": {
@@ -693,6 +662,7 @@
         "faq_row_NjVATM",
         "faq_row_DAXX7x"
       ],
+      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
@@ -968,11 +938,41 @@
         "faq_row_6gjW8A",
         "faq_row_hyPfrw"
       ],
-      "disabled": true,
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
         "open_first_collapsible_row": false
+      }
+    },
+    "product_related_products_RF49cV": {
+      "type": "product-related-products",
+      "custom_css": [
+        ".card-information {display: none;}"
+      ],
+      "settings": {
+        "title": "Related Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fleck-socks",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 96,
+        "padding_bottom": 96
       }
     }
   },
@@ -987,8 +987,8 @@
     "image_with_content_tpneW4",
     "image_with_content_MxzqfW",
     "related-products",
-    "product_related_products_RF49cV",
     "faqs_YGjiyE",
-    "faqs2_QUTPhe"
+    "faqs2_QUTPhe",
+    "product_related_products_RF49cV"
   ]
 }
