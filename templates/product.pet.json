@@ -693,6 +693,282 @@
         "faq_row_NjVATM",
         "faq_row_DAXX7x"
       ],
+      "disabled": true,
+      "name": "FAQs",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "open_first_collapsible_row": false
+      }
+    },
+    "faqs2_QUTPhe": {
+      "type": "faqs2",
+      "blocks": {
+        "title_text_h3RRLa": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Benefits and Health-related Questions"
+          }
+        },
+        "faq_row_r4Ppff": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Why are Wool.Life dog beds good for dogs?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life dog beds are filled with an 80% wool-rich recycled textile blend that is breathable, soft, and supportive. The natural wool regulates temperature, while the recycled fibres add resilience, giving dogs comfort year-round.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_GbHPHT": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life dog beds help with a dog's arthritis or joint pain?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Our wool-rich filling cushions joints and retains gentle warmth, helping relieve stiffness in older dogs or those with arthritis.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_xmFyjK": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life dog beds hypoallergenic?",
+            "subtitle": "",
+            "row_content": "<p>Wool is naturally resistant to dust mites and bacteria, making our beds a healthier choice for dogs prone to sensitivities. The polycotton cover and dust-protected inner add another layer of comfort and hygiene.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_8DtQm3": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do dogs like the smell of Wool.Life dog beds?",
+            "subtitle": "",
+            "row_content": "<p>Our beds carry only a mild, natural scent from recycled wool textiles, which quickly fades. Dogs adapt easily to the familiar, earthy smell without exposure to chemical odours.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_KENHX9": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life dog beds safe and non-toxic for pets?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life beds are made from recycled NZ wool textiles and a small amount of virgin polymer for structure, with no harmful foams or chemicals. They are completely safe for dogs to rest on.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_UBExX9": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life dog beds keep dogs warm in winter and cool in summer?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The wool-rich filling regulates body temperature naturally, providing insulation in the cold and breathability in the heat.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_bdEMJN": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How does wool in a Wool.Life dog bed help regulate body temperature?",
+            "subtitle": "",
+            "row_content": "<p>The crimped wool fibres in our recycled filling trap air for insulation and wick away moisture, creating a stable microclimate that keeps dogs comfortable.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_i9kbEn": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is a Wool.Life dog bed good for puppies?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Our beds are soft, breathable, and non-toxic, making them safe for puppies. They also provide the warmth and comfort young dogs need as they grow.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_pNUmLp": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Practicality and Maintenance Questions"
+          }
+        },
+        "faq_row_r349qY": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you clean a Wool.Life dog bed?",
+            "subtitle": "",
+            "row_content": "<p>Each bed comes with a removable 100% polycotton cover that can be machine-washed. The wool-rich inner pad is<br/>enclosed in a dust cover (which can be removed and washed), the inner can be spot-cleaned or aired outdoors.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_LhAHqw": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life dog beds machine washable?",
+            "subtitle": "",
+            "row_content": "<p>The polycotton cover and dust cover are machine washable. The inner filling should not be machine-washed but can be<br/>spot-cleaned and refreshed in the sun.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_r4R4xb": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you get dog hair off a Wool.Life bed?",
+            "subtitle": "",
+            "row_content": "<p>Hair can be vacuumed or brushed off the polycotton cover. With the inner the wool fibres naturally resist deep embedding of fur, making cleaning easier.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_38natF": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life dog beds smell or hold onto odours?",
+            "subtitle": "",
+            "row_content": "<p>No. Wool naturally neutralises odours and resists bacteria. Regular airing keeps Wool.Life beds fresh without trapping<br/>smells.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_L9c9Pz": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long do Wool.Life dog beds last?",
+            "subtitle": "",
+            "row_content": "<p>The combination of wool fibres and polymer binding gives our beds strength and durability. With care, they last for years,<br/>and through our trade-in programme, they can be recycled instead of ending up in landfill.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_hFC4jW": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life dog beds flatten or lose their shape?",
+            "subtitle": "",
+            "row_content": "<p>Our wool-rich blend maintains loft and resilience better than pure synthetic fills. Some settling may occur, but shaking or<br/>airing restores shape.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_BAarM8": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life dog beds resistant to chewing?",
+            "subtitle": "",
+            "row_content": "<p>The natural wool blend is strong, but no bed is fully chewproof. While our materials are tougher than standard polyester fills, persistent chewers may still cause damage.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_xzq8hE": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the best dog bed fabrics for durability?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life uses a wool-rich recycled textile inner, a protective dust cover, and a heavy-duty polycotton outer cover for a balance of durability, sustainability, and comfort.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_b7Lq78": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Comparison and Buying Questions"
+          }
+        },
+        "faq_row_pdX4kq": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Wool vs. memory foam dog beds: which is better?",
+            "subtitle": "",
+            "row_content": "<p>Memory foam offers firm orthopaedic support, while Wool.Life beds combine natural wool comfort with recycled<br/>durability. Our beds also regulate temperature, resist odours, and can be recycled at end of life benefits memory foam<br/>cannot provide.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_DgNzR7": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Why choose a Wool.Life dog bed over a synthetic one?",
+            "subtitle": "",
+            "row_content": "<p>Synthetic beds are often made with plastic foams that trap heat and end up in landfill. Wool.Life beds use natural, recycled, and recyclable materials, are healthier for pets, and align with circular sustainability.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_4K3PDr": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life dog beds more expensive?",
+            "subtitle": "",
+            "row_content": "<p>They may cost more than mass-produced synthetics, but they offer longer lifespan, comfort, and recyclability. You also<br/>support New Zealand manufacturing and sustainable farming when you purchase a Wool.Life dog bed.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_PrhzA6": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy a Wool.Life dog bed in New Zealand?",
+            "subtitle": "",
+            "row_content": "<p>Our beds are available online at woollife.co.nz with nationwide delivery.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_6gjW8A": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What’s the difference between sheepskin and Wool.Life wool dog beds?",
+            "subtitle": "",
+            "row_content": "<p>Sheepskin beds use hides, while Wool.Life uses recycled wool rich textiles. Our approach is cruelty-free, sustainable,<br/>and practical for everyday use.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_hyPfrw": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool-filled beds better than wool-covered ones?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life beds are fully wool-rich filled, so your dog benefits from comfort, insulation, and breathability throughout<br/>the bed not just on the surface.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_text_h3RRLa",
+        "faq_row_r4Ppff",
+        "faq_row_GbHPHT",
+        "faq_row_xmFyjK",
+        "faq_row_8DtQm3",
+        "faq_row_KENHX9",
+        "faq_row_UBExX9",
+        "faq_row_bdEMJN",
+        "faq_row_i9kbEn",
+        "title_text_pNUmLp",
+        "faq_row_r349qY",
+        "faq_row_LhAHqw",
+        "faq_row_r4R4xb",
+        "faq_row_38natF",
+        "faq_row_L9c9Pz",
+        "faq_row_hFC4jW",
+        "faq_row_BAarM8",
+        "faq_row_xzq8hE",
+        "title_text_b7Lq78",
+        "faq_row_pdX4kq",
+        "faq_row_DgNzR7",
+        "faq_row_4K3PDr",
+        "faq_row_PrhzA6",
+        "faq_row_6gjW8A",
+        "faq_row_hyPfrw"
+      ],
       "name": "FAQs",
       "settings": {
         "heading": "Frequently Asked Questions",
@@ -712,6 +988,7 @@
     "image_with_content_MxzqfW",
     "related-products",
     "product_related_products_RF49cV",
-    "faqs_YGjiyE"
+    "faqs_YGjiyE",
+    "faqs2_QUTPhe"
   ]
 }
