@@ -1,0 +1,346 @@
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background: #154734;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    align-items: end;
+    justify-items: start;
+    width: 100%;
+    padding: 100px 20px 110px 20px !important;
+    max-width: 950px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
+      grid-column: 1 / -1;
+      max-width: 950px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_heading {
+    color: #FFF5E5;
+    font-family: Sora;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+    max-width: 100%;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordions-container {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion {
+    color: #FFF5E5;
+    margin-bottom: 10px;
+    border: 1px solid #FFF5E5;
+    border-radius: 0px;
+    background: transparent;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-title {
+    color: #FFF5E5;
+    font-family: "Sora";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2;
+    max-width: 95%;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_detail {
+    padding: 18px 22px;
+    border-radius: 0px !important;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-content {
+      word-break: break-word;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 0;
+      padding-top: 0;
+      max-height: 0;
+      transition: max-height 300ms ease;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-content p {
+      color: #FFF5E5;
+      font-family: Sora;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-content p a {
+      color: #FFF5E5;
+      text-decoration: underline;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_summary .icon-caret {
+      right: 0;
+      transition: transform 300ms ease;
+  }
+  #shopify-section-{{ section.id }} details[open] .wl_faqs_summary .icon-caret {
+      transform: rotate(180deg);
+  }
+  #shopify-section-{{ section.id }} details[open] .wl_faqs_accordion-content {
+      padding-top: 12px;
+  }
+  #shopify-section-{{ section.id }} .no-transition {
+      transition: none !important;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs {
+      padding-top: 0px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_accordion-subtitle {
+      color: #FFF5E5;
+      font-family: Sora;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      margin: 0 0 8px 0;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_cta {
+      grid-column: 1 / -1;
+      width: 100%;
+      margin-top: 4px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_cta a {
+      color: #FFF5E5;
+      font-weight: 700;
+      font-style: bold;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_cta a:hover {
+      text-decoration: underline;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_text_title h3 {
+    font-size: 16px;
+    font-weight: 300 !important;
+    font-family: 'Sora';
+    padding-left: 3px;
+  }
+  #shopify-section-{{ section.id }} .wl_faqs_text_title {
+      padding-top: 18px;
+      padding-bottom: 10px;
+  }
+
+  @media screen and (max-width: 1280px) {
+     #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
+        grid-column: 3 / 10;
+    }
+  }
+  @media screen and (max-width: 767px) {
+     #shopify-section-{{ section.id }} .wl_faqs {
+      padding: 80px 20px 60px 20px;
+    }
+     #shopify-section-{{ section.id }} .wl_faqs_header-wrapper {
+        grid-column: span 12;
+    }
+    #shopify-section-{{ section.id }} .wl_faqs_accordions-container {
+      grid-column: span 12;
+    }
+    #shopify-section-{{ section.id }} .wl_faqs_heading {
+       font-size: 31px; 
+    }
+    #shopify-section-{{ section.id }} .wl_faqs_cta {
+       grid-column: span 12;
+    }
+  }
+{%- endstyle -%}
+
+<div class="wl_faqs">
+
+        <div class="wl_faqs_header-wrapper">
+            <h2 class="wl_faqs_heading">{{ section.settings.heading }}</h2>
+        </div>
+        
+        <div class="wl_faqs_accordions-container">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'faq_row' -%}
+                  <div class="wl_faqs_accordion">
+                    <details
+                      class="wl_faqs_detail"
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                      {% if section.settings.open_first_collapsible_row and forloop.first %}
+                        open
+                      {% endif %}
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}" class="wl_faqs_summary">
+                        <h3 class="wl_faqs_accordion-title inline-richtext h4">
+                          {{ block.settings.heading | escape }}
+                        </h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="wl_faqs_accordion-content"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {%- if block.settings.subtitle != blank -%}
+                          <p class="wl_faqs_accordion-subtitle">{{ block.settings.subtitle | escape }}</p>
+                        {%- endif -%}
+                        {{ block.settings.row_content }}
+                        {%- if block.settings.cta_url != blank and block.settings.cta_text != blank -%}
+                          <div class="wl_faqs_cta">
+                            <a href="{{ block.settings.cta_url }}" class="link underlined-link">{{ block.settings.cta_text }}</a>
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </details>
+                  </div>
+                {%- when 'title_text' -%}
+                  <div class="wl_faqs_text_title" style="grid-column: 1 / -1; width: 100%; margin: 24px 0 0px 0;">
+                    <h3 class="inline-richtext h4" style="color:#154734;">{{ block.settings.title_text }}</h3>
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+        </div>
+
+</div>
+
+<script>
+  (function() {
+    const section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+    const detailsElements = section.querySelectorAll('.wl_faqs details');
+
+    detailsElements.forEach((details) => {
+      const summary = details.querySelector('summary');
+      const content = details.querySelector('.wl_faqs_accordion-content');
+      if (!summary || !content) return;
+
+      // Set initial max-height for already-open details (e.g., open first row)
+      if (details.hasAttribute('open')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+        // If closing
+        if (details.open) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          requestAnimationFrame(() => {
+            content.style.maxHeight = '0px';
+          });
+          const onCloseEnd = () => {
+            details.open = false;
+            content.style.maxHeight = '';
+            content.removeEventListener('transitionend', onCloseEnd);
+          };
+          content.addEventListener('transitionend', onCloseEnd);
+        } else {
+          // Opening
+          details.open = true;
+          content.style.maxHeight = '0px';
+          requestAnimationFrame(() => {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          });
+          const onOpenEnd = () => {
+            content.style.maxHeight = '';
+            content.removeEventListener('transitionend', onOpenEnd);
+          };
+          content.addEventListener('transitionend', onOpenEnd);
+        }
+      });
+
+      // Recalculate height when content inside changes (images, fonts)
+      const ro = new ResizeObserver(() => {
+        if (details.open) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+      ro.observe(content);
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "FAQs",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first_collapsible_row",
+      "default": false,
+      "label": "Open first row by default"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_row",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "richtext",
+          "id": "row_content",
+          "label": "Answer"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "Bottom link URL"
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "Bottom link text"
+        }
+      ]
+    },
+    {
+      "type": "title_text",
+      "name": "Text title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_text",
+          "label": "Title text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQs",
+      "blocks": [
+        { "type": "faq_row" },
+        { "type": "title_text" },
+        { "type": "faq_row" },
+        { "type": "faq_row" },
+        { "type": "faq_row" }
+      ]
+    }
+  ]
+}
+{% endschema %}
