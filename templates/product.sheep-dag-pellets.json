@@ -414,6 +414,306 @@
         "product-description_background_color": "#FFF5E5"
       }
     },
+    "faqs2_NeyjqQ": {
+      "type": "faqs2",
+      "blocks": {
+        "title_text_LaR4x4": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "About the Product"
+          }
+        },
+        "faq_row_pxERRy": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are Sheep Dag Pellets?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life Sheep Dag Pellets are 100 % New Zealand-made garden pellets created from cleaned, dried, sheep dags and manure. A natural, nutrient-rich fertiliser that returns goodness to the soil.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_GDtfKt": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are Sheep Dag Pellets used for?",
+            "subtitle": "",
+            "row_content": "<p>They’re used as an organic soil conditioner and slow-release fertiliser for vegetables, flowers, fruit trees, and lawns.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_CYMMyW": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Sheep Dag Pellets safe to use in home gardens?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They’re fully composted, pathogen-free, and safe for organic gardens, pets, and people.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_NMMFVy": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Sheep Dag Pellets smell?",
+            "subtitle": "",
+            "row_content": "<p>Only mildly earthy at first; any odour quickly fades once applied and watered in.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_xnThTB": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Sheep Dag Pellets made in New Zealand?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They’re produced locally from NZ sheep dags that would otherwise go to waste, supporting sustainable farming and circular manufacturing.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_DdP7J3": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Benefits & Performance"
+          }
+        },
+        "faq_row_KHYF4L": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the benefits of using Sheep Dag Pellets?",
+            "subtitle": "",
+            "row_content": "<p>They improve soil structure, increase organic matter, boost worm activity, and supply long-lasting nutrients while reducing landfill waste.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_LUweXz": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Sheep Dag Pellets a good fertiliser?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They release nitrogen, potassium, and trace minerals slowly over time, feeding plants naturally without burning roots.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_efjbHC": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Sheep Dag Pellets retain soil moisture?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The wool fibres in each pellet help soils hold water, reducing watering frequency during dry spells.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_YXC9Fn": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Sheep Dag Pellets help worms and soil life?",
+            "subtitle": "",
+            "row_content": "<p>Absolutely. They encourage earthworms and beneficial microbes that keep soil healthy and aerated.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_bNeRDN": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Sheep Dag Pellets suitable for all plants?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They’re safe for vegetables, natives, ornamentals, and lawns, any soil that needs organic enrichment.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_qFUwG6": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Sustainability & Circularity"
+          }
+        },
+        "faq_row_qpbiWU": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Sheep Dag Pellets organic?",
+            "subtitle": "",
+            "row_content": "<p>They’re made from natural, chemical-free materials and suit organic and regenerative gardening systems.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_3VMqj7": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do Sheep Dag Pellets support sustainability?",
+            "subtitle": "",
+            "row_content": "<p>They turn waste wool dags into valuable garden nutrients, cutting agricultural waste and reducing the need for synthetic fertilisers.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_mqJwY7": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Sheep Dag Pellets biodegradable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They fully break down in the soil, releasing nutrients and leaving no residue.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_QLkcem": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Sheep Dag Pellets replace synthetic fertilisers?",
+            "subtitle": "",
+            "row_content": "<p>They can. Many gardeners use them as a natural alternative or supplement to reduce chemical inputs.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_i8jNfp": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is packaging for Sheep Dag Pellets recyclable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life uses stamped paper bags which are fully recyclable or compostable in NZ systems.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_dBGVBt": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Application & Use"
+          }
+        },
+        "faq_row_cxdLDx": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you apply Sheep Dag Pellets?",
+            "subtitle": "",
+            "row_content": "<p>Sprinkle a handful around each plant or broadcast over beds, then water in well. The pellets swell slightly and begin releasing nutrients as they decompose.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_eea4GC": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How often should I use Sheep Dag Pellets?",
+            "subtitle": "",
+            "row_content": "<p>Apply every 6–8 weeks during the growing season, or mix into soil before planting for steady nourishment.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_cK7NC3": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can I use Sheep Dag Pellets in pots or planters?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Use smaller quantities in pots, they improve drainage and moisture retention while feeding the soil.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_AEGyeJ": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long do Sheep Dag Pellets last in soil?",
+            "subtitle": "",
+            "row_content": "<p>They release nutrients gradually over 2–3 months, depending on temperature and soil moisture.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_4QXaWr": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Sheep Dag Pellets need special storage?",
+            "subtitle": "",
+            "row_content": "<p>Keep them dry and sealed between uses to maintain freshness and prevent clumping.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_KmQ7VJ": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Buying & Availability"
+          }
+        },
+        "faq_row_rXwPWU": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy Sheep Dag Pellets in New Zealand?",
+            "subtitle": "",
+            "row_content": "<p><a href=\"https://woollife.co.nz/\" target=\"_blank\"><span style=\"text-decoration:underline\">They’re available nationwide at woollife.co.nz. </span></a></p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_EjTVgY": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do you offer bulk or wholesale supply?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life supplies landscapers, councils, and nurseries with bulk and trade quantities on request.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_kFeB7L": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How much do Sheep Dag Pellets cost?",
+            "subtitle": "",
+            "row_content": "<p>Retail packs typically range from $12 to $24 depending on size, with discounts for bulk orders.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_text_LaR4x4",
+        "faq_row_pxERRy",
+        "faq_row_GDtfKt",
+        "faq_row_CYMMyW",
+        "faq_row_NMMFVy",
+        "faq_row_xnThTB",
+        "title_text_DdP7J3",
+        "faq_row_KHYF4L",
+        "faq_row_LUweXz",
+        "faq_row_efjbHC",
+        "faq_row_YXC9Fn",
+        "faq_row_bNeRDN",
+        "title_text_qFUwG6",
+        "faq_row_qpbiWU",
+        "faq_row_3VMqj7",
+        "faq_row_mqJwY7",
+        "faq_row_QLkcem",
+        "faq_row_i8jNfp",
+        "title_text_dBGVBt",
+        "faq_row_cxdLDx",
+        "faq_row_eea4GC",
+        "faq_row_cK7NC3",
+        "faq_row_AEGyeJ",
+        "faq_row_4QXaWr",
+        "title_text_KmQ7VJ",
+        "faq_row_rXwPWU",
+        "faq_row_EjTVgY",
+        "faq_row_kFeB7L"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "open_first_collapsible_row": false
+      }
+    },
     "product_related_products_RF49cV": {
       "type": "product-related-products",
       "custom_css": [
@@ -465,6 +765,7 @@
     "rich_text_rizaeC",
     "product_description_wmBKjP",
     "product_description_7t3qT9",
+    "faqs2_NeyjqQ",
     "product_related_products_RF49cV",
     "17387296613bbc73c3"
   ]
