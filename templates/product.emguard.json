@@ -34,7 +34,10 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "title_size": "h1",
+            "title_weight": "400"
+          }
         },
         "price": {
           "type": "price",
@@ -76,6 +79,7 @@
         "buy_buttons"
       ],
       "settings": {
+        "design_style": "current",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "large",
@@ -197,6 +201,536 @@
         "three-cols-heading-icon_heading": "Key Benefits"
       }
     },
+    "faqs2_QjrzEr": {
+      "type": "faqs2",
+      "blocks": {
+        "title_text_dNw86B": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "About the Product & Its Benefits"
+          }
+        },
+        "faq_row_9JMGXH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What is an EmGuard™ plant protector?",
+            "subtitle": "",
+            "row_content": "<p>EmGuard™ is a NZ-made biodegradable plant guard made from majority recycled pulp cardboard that protects young plants from wind, frost, and pests while promoting strong growth.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_jwewRw": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How are EmGuard™ plant guards different from plastic ones?",
+            "subtitle": "",
+            "row_content": "<p>Unlike plastic sleeves, EmGuard™ guards are recyclable, breathable, and naturally decompose, no removal or landfill waste required.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_FJVyNm": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are EmGuard™ plant guards biodegradable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. EmGuard™ guards naturally break down after plant establishment, leaving no microplastics or residue in the environment.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_UbGM88": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long do EmGuard™ plant guards last?",
+            "subtitle": "",
+            "row_content": "<p>In normal NZ riparian conditions, EmGuard™ guards last over a year before softening and decomposing.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_mrbKtR": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do EmGuard™ plant guards protect plants from hares and pukeko?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Their triangular shape and sturdy cardboard walls protect seedlings from browsing animals like hares, rabbits, and pukeko.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_dDH7wk": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are EmGuard™ plant guards safe for waterways?",
+            "subtitle": "",
+            "row_content": "<p>Yes. If a guard is washed into a stream, it will naturally biodegrade without harming aquatic life.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_MWamzr": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Practical Application & Performance"
+          }
+        },
+        "faq_row_tr8V4i": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you install an EmGuard™ plant guard?",
+            "subtitle": "",
+            "row_content": "<p>Fold along the creases to form a triangle, then secure with one 900 mm stake through the pre-cut slots. The design grips tightly and won’t blow away.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_NHNbaC": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do EmGuard™ guards protect plants from frost and wind?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The triangular design shelters plants from wind, cold, and exposure, helping seedlings establish faster.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_7JPeEa": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can you use EmGuard™ plant guards for native trees?",
+            "subtitle": "",
+            "row_content": "<p>Absolutely. They’re ideal for native and riparian planting, protecting seedlings through their first growing season.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_mFXyYh": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do EmGuard™ guards reduce weeding and maintenance?",
+            "subtitle": "",
+            "row_content": "<p>Yes. By shading the soil, they limit weed competition and reduce the need for chemical or manual weeding.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_hyREiY": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do EmGuard™ guards need to be removed?",
+            "subtitle": "",
+            "row_content": "<p>No. They naturally break down in the field, saving time and disposal costs.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_L974tg": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do EmGuard™ guards help with plant growth?",
+            "subtitle": "",
+            "row_content": "<p>They create a stable microclimate that retains warmth and moisture, improving plant survival and early growth rates.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_JzMJVz": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Environmental & Sustainability"
+          }
+        },
+        "faq_row_33MKgL": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are EmGuard™ plant guards made of?",
+            "subtitle": "",
+            "row_content": "<p>They’re made from majority recycled pulp cardboard with a food-safe, FDA-compliant moisture barrier for strength and durability.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_V7HcRr": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Why is cardboard better than plastic for plant guards?",
+            "subtitle": "",
+            "row_content": "<p>Cardboard guards biodegrade, enrich soil, and eliminate plastic waste, while plastic guards need collection and disposal.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_gdcrBR": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do EmGuard™ guards have any plastic in them?",
+            "subtitle": "",
+            "row_content": "<p>No. They’re made entirely from cardboard and a safe biodegradable coating, no hidden plastics.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_qwW8Vb": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Will EmGuard™ guards break down into microplastics?",
+            "subtitle": "",
+            "row_content": "<p>No. They decompose naturally into organic matter without leaving plastic particles behind.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_8Nd8tg": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is the manufacturing of EmGuard™ environmentally friendly?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They’re produced in New Zealand using recycled materials and low-impact processes.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_F7caaV": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are EmGuard™ plant guards made in New Zealand?",
+            "subtitle": "",
+            "row_content": "<p>Yes. EmGuard™ is proudly NZ-made, designed to suit local conditions and planting projects.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_XKBEbc": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Comparison & Value"
+          }
+        },
+        "faq_row_nJAj6P": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are EmGuard™ plant guards worth the cost?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They save labour, don’t need removal, and reduce maintenance offering better long-term value than disposable plastic guards.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Jkyqi8": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "EmGuard™ vs. other biodegradable plant guards: which is better?",
+            "subtitle": "",
+            "row_content": "<p>EmGuard™ stands out for strength, quick installation with one stake, and proven NZ field performance.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_8FpTKr": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can EmGuard™ guards be used with mulch mats?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They pair perfectly with Wool.Life wool mulch mats for maximum weed suppression and moisture retention.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_JkPP9J": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy EmGuard™ plant guards in NZ?",
+            "subtitle": "",
+            "row_content": "<p>Available nationwide through woollife.co.nz </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_7qDf6A": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "General Questions About Plant Protectors"
+          }
+        },
+        "faq_row_nBGUfw": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are plant protectors for?",
+            "subtitle": "",
+            "row_content": "<p>They shield young plants from wind, frost, animals, and herbicide drift during early establishment.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_YYnjNM": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Why use a plant protector in NZ?",
+            "subtitle": "",
+            "row_content": "<p>New Zealand’s variable climate and browsing wildlife make plant guards essential for native restoration success.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_DCAAfP": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What’s the difference between a plant protector and a tree guard?",
+            "subtitle": "",
+            "row_content": "<p>Tree guards are taller and used for woody plants; protectors like EmGuard™ suit seedlings and shrubs.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_BWp7Dh": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do plant protectors really work?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Field trials show significantly higher survival and growth rates when guards are used.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_jhx66a": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do plant protectors help plants grow faster?",
+            "subtitle": "",
+            "row_content": "<p>They trap warmth, retain moisture, and protect against stress, allowing consistent, healthy growth.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_gFa6DK": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Protection from Animals & Pests"
+          }
+        },
+        "faq_row_jMWHdK": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What can I use to protect plants from rabbits and hares in NZ?",
+            "subtitle": "",
+            "row_content": "<p>Use sturdy cardboard guards like EmGuard™, which block access and withstand chewing.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_A8Dbwc": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you protect young plants from pukeko?",
+            "subtitle": "",
+            "row_content": "<p>Emguards rigid sides and triangular design prevent birds from pulling out seedlings.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_QHwbLQ": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What can I use to stop birds from eating my seedlings?",
+            "subtitle": "",
+            "row_content": "<p>Cardboard guards and light mesh covers deter birds while allowing airflow and sunlight.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_RMPnxV": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do plant protectors keep slugs and snails away?",
+            "subtitle": "",
+            "row_content": "<p>They help reduce slug and snail activity by limiting access and keeping the soil drier near stems.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Gwe7z8": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What height do plant guards need to be to protect against hares?",
+            "subtitle": "",
+            "row_content": "<p>Guards should be around 350 mm high exactly the height of EmGuard™ for effective protection.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_GLHgTp": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Protection from Weather & Environment"
+          }
+        },
+        "faq_row_ehQz9N": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How to protect plants from frost in NZ?",
+            "subtitle": "",
+            "row_content": "<p>Use guards like EmGuard™ that trap ground heat and reduce frost settling around stems.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_pyL6qX": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What’s the best way to protect seedlings from wind?",
+            "subtitle": "",
+            "row_content": "<p>Install a triangular cardboard guard to deflect wind and prevent root rock.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_zRANrT": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do plant protectors prevent sun scorching?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They provide shade and reduce reflection from surrounding soil.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Ez66iM": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you create a microclimate for plants in NZ?",
+            "subtitle": "",
+            "row_content": "<p>Combining plant guards with wool mulch mats locks in moisture and stabilises soil temperature.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_mPthYa": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do plant protectors help with water retention?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Guards reduce evaporation, especially when paired with biodegradable mulch.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_HBGQC6": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Protection from Weather & Environment"
+          }
+        },
+        "faq_row_pUrjVp": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are biodegradable plant protectors better?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They save time, reduce waste, and break down safely ideal for eco-restoration.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_FrBFe9": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are plant protectors made of?",
+            "subtitle": "",
+            "row_content": "<p>Cardboard, wool, or natural fibres each chosen for biodegradability and plant safety.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_GawtDD": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Wool vs. plastic plant protectors: which is more eco-friendly?",
+            "subtitle": "",
+            "row_content": "<p>Wool and cardboard guards are far better; they return nutrients to the soil instead of creating plastic waste.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_pQyq4U": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do plastic plant protectors break down and harm the environment?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Plastic guards degrade into microplastics that pollute soil and waterways.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_pVPAQH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are cardboard plant guards effective?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Modern cardboard guards like EmGuard™ are moisture-resistant, durable, and proven in NZ conditions.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_text_dNw86B",
+        "faq_row_9JMGXH",
+        "faq_row_jwewRw",
+        "faq_row_FJVyNm",
+        "faq_row_UbGM88",
+        "faq_row_mrbKtR",
+        "faq_row_dDH7wk",
+        "title_text_MWamzr",
+        "faq_row_tr8V4i",
+        "faq_row_NHNbaC",
+        "faq_row_7JPeEa",
+        "faq_row_mFXyYh",
+        "faq_row_hyREiY",
+        "faq_row_L974tg",
+        "title_text_JzMJVz",
+        "faq_row_33MKgL",
+        "faq_row_V7HcRr",
+        "faq_row_gdcrBR",
+        "faq_row_qwW8Vb",
+        "faq_row_8Nd8tg",
+        "faq_row_F7caaV",
+        "title_text_XKBEbc",
+        "faq_row_nJAj6P",
+        "faq_row_Jkyqi8",
+        "faq_row_8FpTKr",
+        "faq_row_JkPP9J",
+        "title_text_7qDf6A",
+        "faq_row_nBGUfw",
+        "faq_row_YYnjNM",
+        "faq_row_DCAAfP",
+        "faq_row_BWp7Dh",
+        "faq_row_jhx66a",
+        "title_text_gFa6DK",
+        "faq_row_jMWHdK",
+        "faq_row_A8Dbwc",
+        "faq_row_QHwbLQ",
+        "faq_row_RMPnxV",
+        "faq_row_Gwe7z8",
+        "title_text_GLHgTp",
+        "faq_row_ehQz9N",
+        "faq_row_pyL6qX",
+        "faq_row_zRANrT",
+        "faq_row_Ez66iM",
+        "faq_row_mPthYa",
+        "title_text_HBGQC6",
+        "faq_row_pUrjVp",
+        "faq_row_FrBFe9",
+        "faq_row_GawtDD",
+        "faq_row_pQyq4U",
+        "faq_row_pVPAQH"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "open_first_collapsible_row": false
+      }
+    },
     "product_related_products_RF49cV": {
       "type": "product-related-products",
       "custom_css": [
@@ -250,6 +784,7 @@
     "product_description_YWHVBE",
     "related-products",
     "3_columns_heading_icons_4ed3yN",
+    "faqs2_QjrzEr",
     "product_related_products_RF49cV",
     "1738729467f6164255"
   ]
