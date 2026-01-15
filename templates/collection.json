@@ -55,11 +55,283 @@
         "image-with-content_button_name": "{{ collection.metafields.custom.button_name.value }}",
         "image-with-content_button_link": "{{ collection.url }}"
       }
+    },
+    "faqs_CF4Uqb": {
+      "type": "faqs",
+      "blocks": {
+        "title_text_e9nyPe": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "General & How-To"
+          }
+        },
+        "faq_row_Rd3ERz": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What is wool mulch?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life mulch is made from both post-industrial recycled and non-recycled New Zealand wool textiles, pressed into mats or rolls. It acts as a natural, biodegradable alternative to plastic or synthetic mulches.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_hzkiQV": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you use wool mulch in the garden?",
+            "subtitle": "",
+            "row_content": "<p>Simply lay Wool.Life mulch around plants or over garden beds, leaving space around the stem. Water it in to settle the fibres, and it will naturally suppress weeds, hold moisture, and break down over time. Follow our preparation  guide to ensure you prepare the ground correctly. </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_FUTMXk": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long does it take for wool mulch to decompose?",
+            "subtitle": "",
+            "row_content": "<p>In most New Zealand conditions, wool mulch lasts 12–24 months before breaking down fully, depending on rainfall, soil biology, and exposure.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_GN6WmW": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can you use raw wool for mulch?",
+            "subtitle": "",
+            "row_content": "<p>Raw wool can be used, but as it is loose it can blow away, allow more weeds to grow through and is messier to handle. Wool.Life mulch is processed into easy to handle rolls and mats, making it cleaner, easier to handle, and more consistent.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_bjzEgm": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool mulch good for all plants?",
+            "subtitle": "",
+            "row_content": "<p>Yes, Wool.Life mulch can be used with natives, ornamentals, fruit trees, and vegetables. It’s especially useful for water-sensitive plants as it locks in soil moisture.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_DHMVKg": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Benefits & Pros"
+          }
+        },
+        "faq_row_4f7xKf": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the benefits of using wool mulch?",
+            "subtitle": "",
+            "row_content": "<p>Wool mulch suppresses weeds, retains moisture, enriches soil as it biodegrades, regulates temperature, and reduces plastic waste in gardens.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_TeXK4W": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool mulch a good fertiliser?",
+            "subtitle": "",
+            "row_content": "<p>While not a fertiliser on its own, Wool.Life mulch slowly releases nitrogen and other nutrients as it decomposes, boosting soil health naturally.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_MwKyib": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Does wool mulch stop weeds from growing?",
+            "subtitle": "",
+            "row_content": "<p>Yes, Wool.Life mulch blocks light from reaching weed seeds, significantly reducing weed growth while still allowing air and water to reach the soil.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_AUezk8": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Does wool mulch help with moisture retention?",
+            "subtitle": "",
+            "row_content": "<p>Absolutely. Wool fibres absorb and release water, helping soils stay moist for longer and reducing the need for frequent watering.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Ci4jUi": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Does wool mulch deter slugs and snails?",
+            "subtitle": "",
+            "row_content": "<p>Yes, the coarse wool fibres create a barrier that many slugs and snails avoid crossing, reducing damage to tender seedlings.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_t8CbYJ": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Does wool mulch help regulate soil temperature?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool acts as a natural insulator, keeping soils cooler in summer and warmer in winter, protecting plant roots from stress.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_HYCepi": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool mulch good for sandy soil?",
+            "subtitle": "",
+            "row_content": "<p>Yes, it’s especially helpful in sandy soils because it reduces water loss, prevents nutrient leaching, and improves organic matter over time.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_7XgbtH": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Comparisons & Cons"
+          }
+        },
+        "faq_row_ARHjYH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool mulch better than bark mulch?",
+            "subtitle": "",
+            "row_content": "<p>Wool mulch lasts longer, suppresses weeds more effectively, and adds nutrients as it decomposes. Bark mulch is decorative, but it breaks down more quickly and doesn’t regulate soil as efficiently.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_xqF3BH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Wool mulch vs. straw mulch: which is better?",
+            "subtitle": "",
+            "row_content": "<p>Straw is cheap and easy to spread but breaks down quickly and can introduce weed seeds. Wool mulch is denser, longer-lasting, and offers better weed suppression and moisture control.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_peMij7": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the disadvantages of using wool mulch?",
+            "subtitle": "",
+            "row_content": "<p>The main drawback is cost—it’s more expensive than bark or straw upfront. However, its longer life, nutrient return, and environmental benefits make it excellent long-term value.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_hyCRNX": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Does wool mulch attract pests?",
+            "subtitle": "",
+            "row_content": "<p>No, Wool.Life mulch doesn’t attract rodents or insects. In fact, its texture can deter slugs and snails.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_fM37H6": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool mulch more expensive than other types of mulch?",
+            "subtitle": "",
+            "row_content": "<p>Yes, initially. But Wool.Life mulch lasts longer and provides more benefits than cheaper options, so the lifetime cost is competitive.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_kbdnVR": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Practical & Environmental"
+          }
+        },
+        "faq_row_KDMXay": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy wool mulch in NZ?",
+            "subtitle": "",
+            "row_content": "<p>You can order Wool.Life mulch online at woollife.co.nz with nationwide delivery. Bulk and wholesale orders are also available for landscapers and councils.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_n78a8m": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool mulch organic?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool is a natural, biodegradable material. Our mulch is made from 100% NZ wool without synthetic coatings.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_DzEpLb": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool mulch safe for vegetables?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life mulch is safe for use in vegetable gardens, helping improve soil health while protecting crops.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_tQrqA3": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can you put wool mulch in a compost bin?",
+            "subtitle": "",
+            "row_content": "<p>Yes, wool mulch can be composted once it has broken down in the garden. It contributes nitrogen and organic matter to your compost system.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_text_e9nyPe",
+        "faq_row_Rd3ERz",
+        "faq_row_hzkiQV",
+        "faq_row_FUTMXk",
+        "faq_row_GN6WmW",
+        "faq_row_bjzEgm",
+        "title_text_DHMVKg",
+        "faq_row_4f7xKf",
+        "faq_row_TeXK4W",
+        "faq_row_MwKyib",
+        "faq_row_AUezk8",
+        "faq_row_Ci4jUi",
+        "faq_row_t8CbYJ",
+        "faq_row_HYCepi",
+        "title_text_7XgbtH",
+        "faq_row_ARHjYH",
+        "faq_row_xqF3BH",
+        "faq_row_peMij7",
+        "faq_row_hyCRNX",
+        "faq_row_fM37H6",
+        "title_text_kbdnVR",
+        "faq_row_KDMXay",
+        "faq_row_n78a8m",
+        "faq_row_DzEpLb",
+        "faq_row_tQrqA3"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "open_first_collapsible_row": false
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "image_with_content_JULkYe"
+    "image_with_content_JULkYe",
+    "faqs_CF4Uqb"
   ]
 }
