@@ -223,6 +223,394 @@
         "product-description_background_color": "#E9DDC6"
       }
     },
+    "faqs2_6PTPby": {
+      "type": "faqs2",
+      "blocks": {
+        "title_text_3NzyQG": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Comfort & Sleep Quality"
+          }
+        },
+        "faq_row_w689qx": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows comfortable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life pillows are luxuriously firm and supportive, adapting to your head and neck for naturally comfortable sleep.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_aV7jMd": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows firm or soft?",
+            "subtitle": "",
+            "row_content": "<p>They are medium to firm but can have pearls removed to personally adjust firmness. Soft enough for comfort but supportive enough to maintain healthy alignment.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_XNebkj": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows good for side sleepers?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The loft and resilience of our wool pearls make them ideal for side sleepers who need consistent neck and shoulder support.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_NCdw3n": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows help with neck pain?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life pillows contour gently and retain their shape, helping relieve tension and promote proper spinal alignment.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_P3AF6w": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows stay cool all night?",
+            "subtitle": "",
+            "row_content": "<p>Absolutely. Wool fibres breathe and wick away moisture, keeping your head cool and dry through the night.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_9kh3DQ": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows noisy or crunchy?",
+            "subtitle": "",
+            "row_content": "<p>No. The soft wool pearls move quietly and smoothly inside the pillow for silent, uninterrupted rest.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_cQfFpi": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows feel itchy or scratchy?",
+            "subtitle": "",
+            "row_content": "<p>No. Our fine New Zealand wool pearls are smooth, fully scoured, and encased in a premium cotton cover that feels soft to the touch.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_W3qUKM": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows lose their loft over time?",
+            "subtitle": "",
+            "row_content": "<p>Wool pearls naturally spring back after compression. A quick fluff or airing restores their shape and volume.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_RTJbaW": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Health & Hygiene"
+          }
+        },
+        "faq_row_gaRmzK": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows good for allergies?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool naturally repels dust mites and mould, making it an excellent choice for allergy sufferers.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_b7P6rH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows hypoallergenic?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life pillows are free from foams, synthetics, and chemicals — ideal for sensitive sleepers.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_MBFGpU": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows attract dust mites?",
+            "subtitle": "",
+            "row_content": "<p>No. Wool fibres stay dry and breathable, creating an environment dust mites can’t thrive in.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_GfqaWr": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows get smelly?",
+            "subtitle": "",
+            "row_content": "<p>No. Wool neutralises odours by absorbing and releasing moisture without trapping bacteria.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_cimCm8": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows naturally antibacterial?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool’s natural keratin structure resists bacteria growth, keeping pillows fresher for longer.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_aPPQVh": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is a wool pillow a healthy choice?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool regulates temperature, improves airflow, and promotes cleaner, more restful sleep.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_YM7W3n": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Maintenance & Care"
+          }
+        },
+        "faq_row_XpinLH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you wash a wool pillow?",
+            "subtitle": "",
+            "row_content": "<p>Spot-clean with a damp cloth or remove pearls and wash the outer and air the knops. Do not wash the knops.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Kx4znJ": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can I put a wool pillow in the washing machine?",
+            "subtitle": "",
+            "row_content": "<p>Only the cover can be put in the washing machine, the pearls cannot be washed and should be aired only. </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Vkw8en": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you fluff a wool pillow?",
+            "subtitle": "",
+            "row_content": "<p>Shake and knead gently to redistribute the wool pearls and restore natural loft.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_VkMCRw": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows need to be aired out?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Air them outside regularly to release moisture and refresh the fibres.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_VnFcnJ": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long do wool pillows last?",
+            "subtitle": "",
+            "row_content": "<p>With good care, Wool.Life pillows typically last 5–7 years,  longer than most synthetic pillows.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_7gFKfn": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool pillows come with a removable cover?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Each pillow includes a breathable 100 % cotton zip cover that can be removed and washed.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_aF3GyD": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Material & Sustainability"
+          }
+        },
+        "faq_row_aBEreY": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are wool pillows made of?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life pillows are filled with natural New Zealand wool pearls bound for lasting loft, encased in a pure cotton quilted cover with a wool batting.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_rwqqa9": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Is wool a sustainable material for pillows?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool is renewable, biodegradable, and grown year after year without synthetics or petroleum inputs.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_mHxTF9": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where does the wool for pillows come from?",
+            "subtitle": "",
+            "row_content": "<p>Our wool is responsibly sourced from New Zealand farms with high animal-welfare and environmental standards.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_jLxK3a": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are wool pearls?",
+            "subtitle": "",
+            "row_content": "<p>Wool pearls are small clusters of crimped wool fibre that provide bounce, airflow, and durable comfort inside the pillow.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_DN94kT": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows better than down or synthetic?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool offers natural temperature control, allergy resistance, and long life, without the ethical or environmental issues of down or plastic fibres.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Uwm4WR": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are wool pillows biodegradable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Both the wool fill and cotton cover will naturally decompose, returning nutrients to the soil.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_t7CkkN": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Comparison & Buying"
+          }
+        },
+        "faq_row_UUCMjK": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Wool vs. down pillow: which is better?",
+            "subtitle": "",
+            "row_content": "<p>Wool pillows breathe better, manage moisture, and stay fresh longer, while down can trap heat and allergens.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_MDQDpC": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Wool vs. memory foam pillow: which is better?",
+            "subtitle": "",
+            "row_content": "<p>Memory foam can overheat and off-gas; wool provides breathable comfort and is made from renewable natural fibres.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_RyXbMD": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy a wool pillow in New Zealand?",
+            "subtitle": "",
+            "row_content": "<p><a href=\"https://woollife.co.nz/\" target=\"_blank\"><span style=\"text-decoration:underline\">Wool.Life pillows are available nationwide at woollife.co.nz with fast, secure delivery.</span></a></p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_kJBizH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the best wool pillows in NZ?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life’s NZ-made wool-pearl pillows are among the best for comfort, sustainability, and lasting performance.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_m9NYcf": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How much do wool pillows cost?",
+            "subtitle": "",
+            "row_content": "<p>Prices vary by size and style, and can be between $139 and $189 for premium NZ-made natural wool pillows. Wool.Life pillows however are competitively priced at $124.99. </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_text_3NzyQG",
+        "faq_row_w689qx",
+        "faq_row_aV7jMd",
+        "faq_row_XNebkj",
+        "faq_row_NCdw3n",
+        "faq_row_P3AF6w",
+        "faq_row_9kh3DQ",
+        "faq_row_cQfFpi",
+        "faq_row_W3qUKM",
+        "title_text_RTJbaW",
+        "faq_row_gaRmzK",
+        "faq_row_b7P6rH",
+        "faq_row_MBFGpU",
+        "faq_row_GfqaWr",
+        "faq_row_cimCm8",
+        "faq_row_aPPQVh",
+        "title_text_YM7W3n",
+        "faq_row_XpinLH",
+        "faq_row_Kx4znJ",
+        "faq_row_Vkw8en",
+        "faq_row_VkMCRw",
+        "faq_row_VnFcnJ",
+        "faq_row_7gFKfn",
+        "title_text_aF3GyD",
+        "faq_row_aBEreY",
+        "faq_row_rwqqa9",
+        "faq_row_mHxTF9",
+        "faq_row_jLxK3a",
+        "faq_row_DN94kT",
+        "faq_row_Uwm4WR",
+        "title_text_t7CkkN",
+        "faq_row_UUCMjK",
+        "faq_row_MDQDpC",
+        "faq_row_RyXbMD",
+        "faq_row_kJBizH",
+        "faq_row_m9NYcf"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "open_first_collapsible_row": false
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -280,6 +668,7 @@
     "product_description_YWHVBE",
     "3_columns_heading_icons_z6hzbL",
     "product_description_qtj3nK",
+    "faqs2_6PTPby",
     "related-products",
     "product_related_products_RF49cV"
   ]
