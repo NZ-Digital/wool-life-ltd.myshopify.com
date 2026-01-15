@@ -282,6 +282,266 @@
         "product-description_background_color": "#E9DDC6"
       }
     },
+    "faqs2_ARDmaY": {
+      "type": "faqs2",
+      "blocks": {
+        "title_text_RRDNDw": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "About the Product"
+          }
+        },
+        "faq_row_4KMmBG": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are Wool.Life Wine Carry Bags?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life Wine Carry Bags are stylish, reusable bottle carriers made in New Zealand from recycled wool. They combine sustainable materials with premium design for gifting and everyday use.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_nXMzMY": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How many bottles fit in a Wool.Life Wine Bag?",
+            "subtitle": "",
+            "row_content": "<p>Each bag holds one standard 750 ml wine bottle securely, with a snug wool lining that cushions and insulates.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_PC3BJ4": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are the bags made from?",
+            "subtitle": "",
+            "row_content": "<p>They’re crafted from recycled NZ wool and natural fibres, repurposing textile waste into a durable, biodegradable fabric.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_EyyBxR": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Wine Bags insulated?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The natural wool fibres provide light insulation, helping maintain your wine’s temperature while you travel.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_cicxYi": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Wine Bags washable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Spot-clean gently with a damp cloth and mild detergent, then air dry, wool naturally resists stains and odours.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_rQhXtm": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Sustainability & Materials"
+          }
+        },
+        "faq_row_nmirPy": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Wine Bags eco-friendly?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They’re made from recycled NZ wool that would otherwise go to landfill, turning waste into long-lasting, practical products.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_rTXyQV": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Wine Bags biodegradable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The wool fabric and paper-based tags will naturally break down over time, unlike plastic alternatives. All you need to do is remove the label on the bag and it can then be put into the garden. </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_JckMRw": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where are Wool.Life Wine Bags made?",
+            "subtitle": "",
+            "row_content": "<p>They’re proudly made in New Zealand using locally sourced, recycled wool and sustainable packaging.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_rfCgWy": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Wine Bags use synthetic materials?",
+            "subtitle": "",
+            "row_content": "<p>The only synthetic material is the label which can be removed with the bag then able to be put into the garden at the end of its life. </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_N9Uj88": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do Wool.Life Wine Bags support sustainability?",
+            "subtitle": "",
+            "row_content": "<p>By reusing local wool waste, they reduce landfill impact and promote circular manufacturing within New Zealand.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_zPztmb": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Use & Gifting"
+          }
+        },
+        "faq_row_LVVEGh": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can Wool.Life Wine Bags be reused?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They’re designed to be reused for years perfect for picnics, travel, or gifting special bottles sustainably.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_DAUqT6": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are they suitable for corporate gifts?",
+            "subtitle": "",
+            "row_content": "",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_cm9Txa": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can I customise Wine Carry Bags with my logo?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life offers custom branding for bulk or corporate orders — ideal for wineries or sustainable gifting campaigns.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_GRFFrL": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Wine Bags make good gifts?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They’re an elegant, reusable way to present NZ wine while reflecting care for the planet.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_HUgd6a": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can they be used for non-wine bottles?",
+            "subtitle": "",
+            "row_content": "<p>Yes. They fit olive oil, craft beer, and specialty beverage bottles of similar size.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_A3XcTE": {
+          "type": "title_text",
+          "settings": {
+            "title_text": ""
+          }
+        },
+        "faq_row_DKr6zA": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Why choose a wool wine bag over a paper or plastic one?",
+            "subtitle": "",
+            "row_content": "<p>Wool bags are stronger, reusable, and biodegradable, offering insulation and durability paper or plastic can’t match.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_CBNCMN": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long do Wool.Life Wine Bags last?",
+            "subtitle": "",
+            "row_content": "<p>With gentle care, they can last for many years, far outlasting single-use options.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_NEaakr": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Wine Bags expensive?",
+            "subtitle": "",
+            "row_content": "<p>No. They’re competitively priced for a reusable NZ-made gift bag and provide long-term value compared to disposable packaging.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_7YVyrD": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Wine Bags come in different colours?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Each batch has unique tones depending on the recycled wool blend, giving every bag its own character.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_VRBrMi": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy Wool.Life Wine Bags in New Zealand?",
+            "subtitle": "",
+            "row_content": "<p><a href=\"https://woollife.co.nz/\" target=\"_blank\"><span style=\"text-decoration:underline\">You can purchase them online at woollife.co.nz, with nationwide delivery and trade pricing for bulk orders.</span></a></p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_text_RRDNDw",
+        "faq_row_4KMmBG",
+        "faq_row_nXMzMY",
+        "faq_row_PC3BJ4",
+        "faq_row_EyyBxR",
+        "faq_row_cicxYi",
+        "title_text_rQhXtm",
+        "faq_row_nmirPy",
+        "faq_row_rTXyQV",
+        "faq_row_JckMRw",
+        "faq_row_rfCgWy",
+        "faq_row_N9Uj88",
+        "title_text_zPztmb",
+        "faq_row_LVVEGh",
+        "faq_row_DAUqT6",
+        "faq_row_cm9Txa",
+        "faq_row_GRFFrL",
+        "faq_row_HUgd6a",
+        "title_text_A3XcTE",
+        "faq_row_DKr6zA",
+        "faq_row_CBNCMN",
+        "faq_row_NEaakr",
+        "faq_row_7YVyrD",
+        "faq_row_VRBrMi"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "open_first_collapsible_row": false
+      }
+    },
     "product_related_products_RF49cV": {
       "type": "product-related-products",
       "custom_css": [
@@ -329,6 +589,7 @@
     "3_columns_heading_icons_tcnqe4",
     "3_columns_heading_icons_3f8xrp",
     "product_description_MjkRjW",
+    "faqs2_ARDmaY",
     "product_related_products_RF49cV",
     "17387296613bbc73c3"
   ]
