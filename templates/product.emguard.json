@@ -443,7 +443,7 @@
           "settings": {
             "heading": "Where can I buy EmGuard™ plant guards in NZ?",
             "subtitle": "",
-            "row_content": "<p>Available nationwide through woollife.co.nz </p>",
+            "row_content": "<p><a href=\"https://woollife.co.nz/\" target=\"_blank\"><span style=\"text-decoration:underline\">Available nationwide through woollife.co.nz </span></a></p>",
             "cta_url": "",
             "cta_text": ""
           }
