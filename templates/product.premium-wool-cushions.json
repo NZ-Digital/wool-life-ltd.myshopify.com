@@ -217,6 +217,317 @@
         "padding_bottom": 28
       }
     },
+    "faqs2_fDLLgr": {
+      "type": "faqs2",
+      "blocks": {
+        "title_text_BGADmd": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "About the Product"
+          }
+        },
+        "faq_row_LbJNC7": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "What are Wool.Life Cushions made from?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life cushions feature a premium quilted cotton outer with a layer of natural wool batting and a soft fill of Joma wool pearls, delivering long-lasting comfort and breathability.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_eQitja": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where are Wool.Life Cushions made?",
+            "subtitle": "",
+            "row_content": "<p>They’re proudly made in New Zealand using locally sourced wool and sustainable manufacturing practices.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_dCNrkp": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Cushions comfortable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The quilted cotton and Joma wool pearls create a soft yet supportive feel that stays plush and cool in any season.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_BQ9tr6": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Cushions come in different sizes or colours?",
+            "subtitle": "",
+            "row_content": "<p>No, Currently they are a 45cm x 45cm cushion only so they can fit inside a standard cushion cover.  </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_ARYHFL": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Cushions suitable for both homes and commercial spaces?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Their premium materials and durability make them ideal for lounges, offices, and accommodation environments.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_zMWhhw": {
+          "type": "title_text",
+          "settings": {
+            "title_text": ""
+          }
+        },
+        "faq_row_MHargC": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do wool-filled cushions stay cool or warm?",
+            "subtitle": "",
+            "row_content": "<p>Wool regulates temperature naturally keeping you warm in winter and cool in summer for year-round comfort.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_E7jkB9": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Cushions flatten over time?",
+            "subtitle": "",
+            "row_content": "<p>No. The Joma wool pearls spring back easily, maintaining shape and loft far longer than synthetic fills.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Ehe7nK": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Cushions soft or firm?",
+            "subtitle": "",
+            "row_content": "<p>They provide medium support, soft for relaxation yet firm enough to hold their shape on furniture.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_9RdjzR": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Cushions breathable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. The cotton quilt and wool fill allow airflow, preventing heat build-up and condensation.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_MpEGpH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Cushions smell like wool?",
+            "subtitle": "",
+            "row_content": "<p>Only faintly at first; any natural scent disappears quickly, leaving a clean, neutral finish.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_9PkhzR": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Sustainability & Materials"
+          }
+        },
+        "faq_row_a6tdzC": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Cushions eco-friendly?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Made from renewable NZ wool and natural cotton, they’re biodegradable and produced with minimal waste.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_UKznGc": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Cushions biodegradable?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Both the wool fill and cotton cover will safely decompose at the end of their life.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_9QJT68": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Cushions contain synthetic materials?",
+            "subtitle": "",
+            "row_content": "<p>No virgin synthetics are used only natural fibres and the Joma wool pearls derived from pure NZ wool.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_UwaCdh": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do Wool.Life Cushions support sustainability?",
+            "subtitle": "",
+            "row_content": "<p>By using renewable materials and local production, they reduce imports, support NZ farming, and promote circular design.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_tURWcQ": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Care & Maintenance"
+          }
+        },
+        "faq_row_PjqVDe": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you clean Wool.Life Cushions?",
+            "subtitle": "",
+            "row_content": "<p>Remove the outer cover and hand-wash or machine-wash it on a gentle cycle. Air the inner pearls outdoors to refresh the wool.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_E7rKez": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can Wool.Life Cushions be machine-washed?",
+            "subtitle": "",
+            "row_content": "<p>The quilted cotton cover can be; the pearls should be aired only. </p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_V6peEK": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Cushions need to be aired out?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Air them occasionally in sunlight to release moisture and keep fibres fresh.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_FUWTBf": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long do Wool.Life Cushions last?",
+            "subtitle": "",
+            "row_content": "<p>With normal use, they can last for many years thanks to the resilience of wool and quality construction.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_Cd7BDQ": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do Wool.Life Cushions shed fibres?",
+            "subtitle": "",
+            "row_content": "<p>Minimal shedding may occur initially, but this quickly settles as the fibres bind within the quilted layers.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "title_text_pzKGCk": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Buying & Style"
+          }
+        },
+        "faq_row_z8GFCF": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy Wool.Life Cushions in New Zealand?",
+            "subtitle": "",
+            "row_content": "<p><a href=\"https://woollife.co.nz/\" target=\"_blank\"><span style=\"text-decoration:underline\">They’re available nationwide at woollife.co.nz</span></a></p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_4Rmtjj": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can I order custom colours or sizes?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Wool.Life can create custom cushion sizes or colour palettes for interior designers and commercial projects.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_nrcqcg": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Are Wool.Life Cushions good for gifting?",
+            "subtitle": "",
+            "row_content": "<p>Yes. Their NZ-made quality, natural materials, and timeless design make them an ideal sustainable gift.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_zhNbyH": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How much do Wool.Life Cushions cost?",
+            "subtitle": "",
+            "row_content": "<p>Prices typically range from $84.99 depending on size and fabric choice.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_YazTRk": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Why choose a wool cushion over synthetic or feather?",
+            "subtitle": "",
+            "row_content": "<p>Wool cushions breathe better, last longer, and are naturally hypoallergenic, without the flattening or allergy issues common in synthetic or feather fillings.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_text_BGADmd",
+        "faq_row_LbJNC7",
+        "faq_row_eQitja",
+        "faq_row_dCNrkp",
+        "faq_row_BQ9tr6",
+        "faq_row_ARYHFL",
+        "title_text_zMWhhw",
+        "faq_row_MHargC",
+        "faq_row_E7jkB9",
+        "faq_row_Ehe7nK",
+        "faq_row_9RdjzR",
+        "faq_row_MpEGpH",
+        "title_text_9PkhzR",
+        "faq_row_a6tdzC",
+        "faq_row_UKznGc",
+        "faq_row_9QJT68",
+        "faq_row_UwaCdh",
+        "title_text_tURWcQ",
+        "faq_row_PjqVDe",
+        "faq_row_E7rKez",
+        "faq_row_V6peEK",
+        "faq_row_FUWTBf",
+        "faq_row_Cd7BDQ",
+        "title_text_pzKGCk",
+        "faq_row_z8GFCF",
+        "faq_row_4Rmtjj",
+        "faq_row_nrcqcg",
+        "faq_row_zhNbyH",
+        "faq_row_YazTRk"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "open_first_collapsible_row": false
+      }
+    },
     "product_related_products_RF49cV": {
       "type": "product-related-products",
       "custom_css": [
@@ -256,6 +567,7 @@
     "3_columns_heading_icons_z6hzbL",
     "product_description_qtj3nK",
     "related-products",
+    "faqs2_fDLLgr",
     "product_related_products_RF49cV"
   ]
 }
