@@ -671,6 +671,62 @@
             "cta_url": "",
             "cta_text": ""
           }
+        },
+        "title_text_DhFgAX": {
+          "type": "title_text",
+          "settings": {
+            "title_text": "Installation & Sourcing"
+          }
+        },
+        "faq_row_jndNFY": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How do you install a plant protector?",
+            "subtitle": "",
+            "row_content": "<p>Form the guard, insert a single stake, and press into the ground quick, stable, and efficient.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_kqCPdi": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Where can I buy plant protectors in NZ?",
+            "subtitle": "",
+            "row_content": "<p>Wool.Life supply them online with nationwide delivery.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_fycy69": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Can you make your own plant protectors?",
+            "subtitle": "",
+            "row_content": "<p>Yes, but purpose-made EmGuard™ guards are stronger, faster to install, and field-tested.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_9LeGjt": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "How long should you leave a plant protector on?",
+            "subtitle": "",
+            "row_content": "<p>Keep it in place for the first 12–18 months or until the plant is well established.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
+        },
+        "faq_row_cKpGUa": {
+          "type": "faq_row",
+          "settings": {
+            "heading": "Do I need a stake with my plant protector?",
+            "subtitle": "",
+            "row_content": "<p>Yes. One 900 mm × 10–12 mm bamboo stake securely holds each EmGuard™ in place.</p>",
+            "cta_url": "",
+            "cta_text": ""
+          }
         }
       },
       "block_order": [
@@ -723,7 +779,13 @@
         "faq_row_FrBFe9",
         "faq_row_GawtDD",
         "faq_row_pQyq4U",
-        "faq_row_pVPAQH"
+        "faq_row_pVPAQH",
+        "title_text_DhFgAX",
+        "faq_row_jndNFY",
+        "faq_row_kqCPdi",
+        "faq_row_fycy69",
+        "faq_row_9LeGjt",
+        "faq_row_cKpGUa"
       ],
       "name": "FAQs",
       "settings": {
