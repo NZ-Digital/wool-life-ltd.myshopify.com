@@ -101,6 +101,7 @@
     },
     "single_column_q6kWKx": {
       "type": "single-column",
+      "disabled": true,
       "custom_css": [
         ".wl_single-column {align-items: center;}",
         "h4 {color: #154734; text-align: center; font-family: Sora; font-size: 25px; font-style: normal; font-weight: 400; line-height: 175%;}",
