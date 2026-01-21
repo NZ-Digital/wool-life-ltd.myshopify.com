@@ -113,14 +113,6 @@
         "single-column_background_color": "#E9DDC6"
       }
     },
-    "image_full_width_jNNTJf": {
-      "type": "image-full-width",
-      "name": "Image",
-      "settings": {
-        "image-full-width_image_picker": "{{ article.metafields.custom.blog_in_page_image.value }}",
-        "image-full-width_show-squiggles": ""
-      }
-    },
     "call_to_action_HcGT7f": {
       "type": "call-to-action",
       "settings": {
@@ -138,7 +130,6 @@
     "main",
     "single_column_TQdLCQ",
     "single_column_q6kWKx",
-    "image_full_width_jNNTJf",
     "call_to_action_HcGT7f"
   ]
 }
