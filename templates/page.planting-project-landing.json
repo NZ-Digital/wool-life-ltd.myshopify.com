@@ -62,9 +62,9 @@
     "image_with_content_HYHMAi": {
       "type": "image-with-content",
       "custom_css": [
-        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-style: normal; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
+        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
         ".wl_image-with-content_content a:hover {background: #15473480;}",
-        "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 32px; font-size: 14px; }}"
+        "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 0px; font-size: 14px; }}"
       ],
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
@@ -84,7 +84,7 @@
     "image_with_content_QXPkHJ": {
       "type": "image-with-content",
       "custom_css": [
-        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-style: normal; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
+        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
         ".wl_image-with-content_content a:hover {background: #15473480;}",
         "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 0px; font-size: 14px; }}"
       ],
