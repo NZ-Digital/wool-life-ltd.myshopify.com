@@ -81,8 +81,31 @@
         "image-with-content_button_link": ""
       }
     },
+    "image_with_content_QXPkHJ": {
+      "type": "image-with-content",
+      "custom_css": [
+        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-style: normal; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
+        ".wl_image-with-content_content a:hover {background: #15473480;}",
+        "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 0px; font-size: 14px; }}"
+      ],
+      "settings": {
+        "image-with-content_layout": "image-with-content_text-first",
+        "image-with-content_image_picker": "shopify://shop_images/STR_2437.jpg",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "Supporting Large-Scale Planting Projects",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "Wool.Life’s mulch and weed mats are engineered for large-scale planting projects, including public green spaces and revegetation.\n<br><br>\nThe dense wool mats suppress weed growth, lock in soil moisture, and break down naturally over time, enriching the soil with essential nutrients.\n<br><br>\nWool.Life's solutions reduce the need for chemical weed control and irrigation, helping businesses save time and resources while promoting more sustainable practices. \n\n<a href=\"/pages/contact\">Contact us</a>",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
+    },
     "image_full_width_AadA93": {
       "type": "image-full-width",
+      "disabled": true,
       "settings": {
         "image-full-width_image_picker": "shopify://shop_images/STR_2447_1_crop.jpg",
         "image-full-width_show-squiggles": ""
@@ -90,6 +113,7 @@
     },
     "heading_text_columns_separate_RfkNpc": {
       "type": "heading-text-columns-separate",
+      "disabled": true,
       "custom_css": [
         ".wl_heading-text-columns-separate_heading-col {max-width: 448px;}",
         "a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-style: normal; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
@@ -142,7 +166,7 @@
       "custom_css": [],
       "name": "WL Contact Form",
       "settings": {
-        "heading": "Enquire Now for Commercial Rates &  Options"
+        "heading": "Enquire Now for Commercial Rate Options"
       }
     }
   },
@@ -151,6 +175,7 @@
     "hero_JV8Lrd",
     "rich_text_4XgbrT",
     "image_with_content_HYHMAi",
+    "image_with_content_QXPkHJ",
     "image_full_width_AadA93",
     "heading_text_columns_separate_RfkNpc",
     "image_with_content_qjWyWw",
