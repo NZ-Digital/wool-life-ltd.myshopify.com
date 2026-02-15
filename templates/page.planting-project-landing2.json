@@ -101,7 +101,7 @@
         "image-with-content_preimage_location": "col",
         "image-with-content_heading": "Supporting Large-Scale Planting Projects",
         "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "Wool.Life’s mulch and weed mats are engineered for large-scale planting projects, including public green spaces and revegetation.\n<br><br>\nThe dense wool mats suppress weed growth, lock in soil moisture, and break down naturally over time, enriching the soil with essential nutrients.\n<br><br>\nWool.Life's solutions reduce the need for chemical weed control and irrigation, helping businesses save time and resources while promoting more sustainable practices. \n\n<a href=\"/pages/contact\">Contact us</a>",
+        "image-with-content_text": "Wool.Life mulch and weed mats are engineered for large-scale planting, public spaces, and revegetation projects.\n<br><br>\nDense wool fibres suppress weeds, retain moisture, and naturally enrich the soil as they break down.\n<br><br>\nReduce chemical use. Reduce irrigation. Save time. Support sustainable planting.\n\n<a href=\"/pages/contact\">Contact us</a>",
         "image-with-content_text_richtext": "",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
@@ -141,15 +141,14 @@
     },
     "image_with_content_qjWyWw": {
       "type": "image-with-content",
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
         "image-with-content_image_picker": "shopify://shop_images/STR_1915.jpg",
         "image-with-content_preimage_location": "col",
-        "image-with-content_heading": "",
+        "image-with-content_heading": "Built for Projects That Need to Perform",
         "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "We’re here to help with any commercial enquiries. Whether you need bulk pricing, tailored product recommendations, or support for a large-scale planting project, our team is ready to assist.\n<br><br><br>\nCall Us<br>\n<strong><a href=\"tel:0224710010\">022 471 0010</a></strong>\n<br><br>\nEmail Us<br>\n<strong><a href=\"mailto:contact@woollife.co.nz\">contact@woollife.co.nz</a></strong>",
+        "image-with-content_text": "From council contracts to large-scale revegetation, our wool matting solutions are designed for reliability, consistency, and supply at scale.\n<br><br>\nTell us your scope, we’ll recommend the right product and quantities to get the job done.",
         "image-with-content_text_richtext": "",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
@@ -175,24 +174,6 @@
       "settings": {
         "heading": "Start Your Project Today"
       }
-    },
-    "image_with_content_TnaYyA": {
-      "type": "image-with-content",
-      "name": "Image with Content",
-      "settings": {
-        "image-with-content_layout": "image-with-content_image-first",
-        "image-with-content_image_picker": "shopify://shop_images/STR_2447_1_crop.jpg",
-        "image-with-content_preimage_location": "col",
-        "image-with-content_heading": "Supporting Large-Scale Planting Projects",
-        "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "Wool.Life’s mulch and weed mats are engineered for large-scale planting projects, including public green spaces and revegetation.\n<br><br>\nThe dense wool mats suppress weed growth, lock in soil moisture, and break down naturally over time, enriching the soil with essential nutrients.\n<br><br>\nWool.Life's solutions reduce the need for chemical weed control and irrigation, helping businesses save time and resources while promoting more sustainable practices. \n\n<a href=\"/pages/contact\">Contact us</a>",
-        "image-with-content_text_richtext": "",
-        "image-with-content_text_color": "#154734",
-        "image-with-content_background_color": "#FFF5E5",
-        "image-with-content_id": "",
-        "image-with-content_button_name": "",
-        "image-with-content_button_link": ""
-      }
     }
   },
   "order": [
@@ -206,7 +187,6 @@
     "heading_text_columns_separate_RfkNpc",
     "image_with_content_qjWyWw",
     "text_column_eTNtAa",
-    "wl_contact_form_2_brWMrA",
-    "image_with_content_TnaYyA"
+    "wl_contact_form_2_brWMrA"
   ]
 }
