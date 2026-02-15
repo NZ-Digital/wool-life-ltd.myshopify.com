@@ -28,6 +28,45 @@
         "hero_background_color": "#154734"
       }
     },
+    "image_with_text_q8PCF4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rKx3Gh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mulch Matting Made to Scale",
+            "heading_size": "hxl"
+          }
+        },
+        "text_F4yPPD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cost-effective. NZ-Made. Reliable supply. 100% New Zealand wool.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rKx3Gh",
+        "text_F4yPPD"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Badge-gif-final.gif",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-f301ee01-356b-4351-b6b3-1bed67944b4b",
+        "color_scheme": "scheme-f301ee01-356b-4351-b6b3-1bed67944b4b",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
     "rich_text_4XgbrT": {
       "type": "rich-text",
       "blocks": {
@@ -49,6 +88,7 @@
         "heading_tPrGMH",
         "text_7Qytc8"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -179,6 +219,7 @@
   "order": [
     "main",
     "hero_JV8Lrd",
+    "image_with_text_q8PCF4",
     "rich_text_4XgbrT",
     "wl_contact_form_2_HrVTew",
     "image_with_content_HYHMAi",
