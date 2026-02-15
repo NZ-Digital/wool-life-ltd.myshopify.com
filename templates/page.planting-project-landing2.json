@@ -59,9 +59,8 @@
         "padding_bottom": 52
       }
     },
-    "wl_contact_form_EKkLK3": {
-      "type": "wl-contact-form",
-      "custom_css": [],
+    "wl_contact_form_2_HrVTew": {
+      "type": "wl-contact-form-2",
       "name": "WL Contact Form",
       "settings": {
         "heading": "Start Your Project Today"
@@ -142,6 +141,7 @@
     },
     "image_with_content_qjWyWw": {
       "type": "image-with-content",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
@@ -169,12 +169,11 @@
         "text-column_btn-link": ""
       }
     },
-    "wl_contact_form_pDhJY9": {
-      "type": "wl-contact-form",
-      "custom_css": [],
+    "wl_contact_form_2_brWMrA": {
+      "type": "wl-contact-form-2",
       "name": "WL Contact Form",
       "settings": {
-        "heading": "Tell Us About Your Project"
+        "heading": "Start Your Project Today"
       }
     }
   },
@@ -182,13 +181,13 @@
     "main",
     "hero_JV8Lrd",
     "rich_text_4XgbrT",
-    "wl_contact_form_EKkLK3",
+    "wl_contact_form_2_HrVTew",
     "image_with_content_HYHMAi",
     "image_with_content_QXPkHJ",
     "image_full_width_AadA93",
     "heading_text_columns_separate_RfkNpc",
     "image_with_content_qjWyWw",
     "text_column_eTNtAa",
-    "wl_contact_form_pDhJY9"
+    "wl_contact_form_2_brWMrA"
   ]
 }
