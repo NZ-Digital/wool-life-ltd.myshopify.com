@@ -176,47 +176,22 @@
         "heading": "Start Your Project Today"
       }
     },
-    "rich_text_yqhaxW": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_q3h9YU": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_pVUJag": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_a6mDEN": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_q3h9YU",
-        "text_pVUJag",
-        "button_a6mDEN"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+    "image_with_content_TnaYyA": {
+      "type": "image-with-content",
+      "name": "Image with Content",
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_image_picker": "shopify://shop_images/STR_2447_1_crop.jpg",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "Supporting Large-Scale Planting Projects",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "Wool.Life’s mulch and weed mats are engineered for large-scale planting projects, including public green spaces and revegetation.\n<br><br>\nThe dense wool mats suppress weed growth, lock in soil moisture, and break down naturally over time, enriching the soil with essential nutrients.\n<br><br>\nWool.Life's solutions reduce the need for chemical weed control and irrigation, helping businesses save time and resources while promoting more sustainable practices. \n\n<a href=\"/pages/contact\">Contact us</a>",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
       }
     }
   },
@@ -224,7 +199,6 @@
     "main",
     "hero_JV8Lrd",
     "rich_text_4XgbrT",
-    "rich_text_yqhaxW",
     "wl_contact_form_2_HrVTew",
     "image_with_content_HYHMAi",
     "image_with_content_QXPkHJ",
@@ -232,6 +206,7 @@
     "heading_text_columns_separate_RfkNpc",
     "image_with_content_qjWyWw",
     "text_column_eTNtAa",
-    "wl_contact_form_2_brWMrA"
+    "wl_contact_form_2_brWMrA",
+    "image_with_content_TnaYyA"
   ]
 }
