@@ -175,12 +175,56 @@
       "settings": {
         "heading": "Start Your Project Today"
       }
+    },
+    "rich_text_yqhaxW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_q3h9YU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_pVUJag": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_a6mDEN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_q3h9YU",
+        "text_pVUJag",
+        "button_a6mDEN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "hero_JV8Lrd",
     "rich_text_4XgbrT",
+    "rich_text_yqhaxW",
     "wl_contact_form_2_HrVTew",
     "image_with_content_HYHMAi",
     "image_with_content_QXPkHJ",
