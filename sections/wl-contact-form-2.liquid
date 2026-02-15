@@ -156,15 +156,17 @@
     font-weight: 600;
   }
 
-  .wl_contact-details a {
-    color: #E9DDC6;
-    font-weight: 600;
-    text-decoration: none;
-  }
+.wl_contact-details a {
+  color: #E9DDC6 !important;
+  font-weight: 600;         
+  text-decoration: underline;
+  text-underline-offset: 3px; 
+  transition: font-weight 0.2s ease;
+}
 
-  .wl_contact-details a:hover {
-    text-decoration: underline;
-  }
+.wl_contact-details a:hover {
+  font-weight: 700; 
+}
 {%- endstyle -%}
 
 <div class="wl_contact-form">
