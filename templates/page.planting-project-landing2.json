@@ -1,0 +1,185 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_JV8Lrd": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "hero_subheading": "Wool.Life",
+        "hero_heading": "Cost-Effective, NZ-Made Wool Products for Your Planting Project",
+        "hero_subheading_color": "#E9DDC680",
+        "hero_heading_color": "#E9DDC6",
+        "hero_background_color": "#154734"
+      }
+    },
+    "rich_text_4XgbrT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tPrGMH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cost-Effective, NZ-Made Wool Products for Your Planting Project",
+            "heading_size": "h0"
+          }
+        },
+        "text_7Qytc8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wool.Life provides natural, NZ-made wool solutions designed for large-scale planting, landscaping, and restoration projects. Our mulch mats and rolls deliver proven performance in tough Kiwi conditions locking in moisture, suppressing weeds, and improving soil health naturally. Whether you’re managing a council project, growing at scale, or supplying commercial clients, we tailor quantities, sizes, and pricing to suit your needs. With reliable bulk supply and cost-effective commercial rates, we make it easy to choose a sustainable solution that works.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tPrGMH",
+        "text_7Qytc8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4602b2f8-ff82-42a7-80ae-8be1f6b755b8",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_content_HYHMAi": {
+      "type": "image-with-content",
+      "custom_css": [
+        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
+        ".wl_image-with-content_content a:hover {background: #15473480;}",
+        "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 0px; font-size: 14px; }}"
+      ],
+      "settings": {
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_image_picker": "shopify://shop_images/Wool.Life_IRL_-_St_Josephs_20240512_3.jpg",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "Mulch and Weed Mat Solutions for Commercial Planting",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "We provide mulch and weed mat products for large-scale planting projects in native revegetation, riparian planting, commercial landscaping, viticulture, and horticulture. Our Wool Mulch Mats retain moisture, release essential nutrients into the soil as they biodegrade, supporting plant growth while minimising maintenance and suppress weeds.\n\n<a href=\"/collections/commercial-planting\">Read more</a>",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
+    },
+    "image_with_content_QXPkHJ": {
+      "type": "image-with-content",
+      "custom_css": [
+        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
+        ".wl_image-with-content_content a:hover {background: #15473480;}",
+        "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 0px; font-size: 14px; }}"
+      ],
+      "settings": {
+        "image-with-content_layout": "image-with-content_text-first",
+        "image-with-content_image_picker": "shopify://shop_images/STR_2437.jpg",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "Supporting Large-Scale Planting Projects",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "Wool.Life’s mulch and weed mats are engineered for large-scale planting projects, including public green spaces and revegetation.\n<br><br>\nThe dense wool mats suppress weed growth, lock in soil moisture, and break down naturally over time, enriching the soil with essential nutrients.\n<br><br>\nWool.Life's solutions reduce the need for chemical weed control and irrigation, helping businesses save time and resources while promoting more sustainable practices. \n\n<a href=\"/pages/contact\">Contact us</a>",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
+    },
+    "image_full_width_AadA93": {
+      "type": "image-full-width",
+      "disabled": true,
+      "settings": {
+        "image-full-width_image_picker": "shopify://shop_images/STR_2447_1_crop.jpg",
+        "image-full-width_show-squiggles": ""
+      }
+    },
+    "heading_text_columns_separate_RfkNpc": {
+      "type": "heading-text-columns-separate",
+      "disabled": true,
+      "custom_css": [
+        ".wl_heading-text-columns-separate_heading-col {max-width: 448px;}",
+        "a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-style: normal; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
+        "a:hover {background: #15473480;}",
+        "@media only screen and (max-width: 767px) {a {margin-top: 32px; font-size: 14px; }}"
+      ],
+      "name": "Heading Text Columns Separate",
+      "settings": {
+        "heading-text-columns-separate_heading": "Supporting Large-Scale Planting Projects",
+        "heading-text-columns-separate_heading_color": "#154734",
+        "heading-text-columns-separate_heading-size": "large",
+        "heading-text-columns-separate_text_1": "Wool.Life’s mulch and weed mats are engineered for large-scale planting projects, including public green spaces and revegetation.\n<br><br>\nThe dense wool mats suppress weed growth, lock in soil moisture, and break down naturally over time, enriching the soil with essential nutrients.",
+        "heading-text-columns-separate_text_2": "Wool.Life's solutions reduce the need for chemical weed control and irrigation, helping businesses save time and resources while promoting more sustainable practices. \n\n<a href=\"/pages/contact\">Contact us</a>",
+        "heading-text-columns-separate_text_color": "#154734",
+        "heading-text-columns-separate_background_color": "#FFF5E5",
+        "heading-text-columns-separate_id": ""
+      }
+    },
+    "image_with_content_qjWyWw": {
+      "type": "image-with-content",
+      "custom_css": [],
+      "settings": {
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_image_picker": "shopify://shop_images/STR_1915.jpg",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "We’re here to help with any commercial enquiries. Whether you need bulk pricing, tailored product recommendations, or support for a large-scale planting project, our team is ready to assist.\n<br><br><br>\nCall Us<br>\n<strong><a href=\"tel:0224710010\">022 471 0010</a></strong>\n<br><br>\nEmail Us<br>\n<strong><a href=\"mailto:contact@woollife.co.nz\">contact@woollife.co.nz</a></strong>",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
+    },
+    "text_column_eTNtAa": {
+      "type": "text-column",
+      "disabled": true,
+      "settings": {
+        "text-column_text": "By choosing Wool.Life, you’re helping to support local farmers, strengthen the New Zealand economy, and contribute to a greener, more sustainable future for us all.",
+        "text-column_text_color": "#154734",
+        "text-column_background_color": "#E9DDC6",
+        "text-column_btn-text": "",
+        "text-column_btn-link": ""
+      }
+    },
+    "wl_contact_form_pDhJY9": {
+      "type": "wl-contact-form",
+      "custom_css": [],
+      "name": "WL Contact Form",
+      "settings": {
+        "heading": "Enquire Now for our Commercial Rates and Options"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_JV8Lrd",
+    "rich_text_4XgbrT",
+    "image_with_content_HYHMAi",
+    "image_with_content_QXPkHJ",
+    "image_full_width_AadA93",
+    "heading_text_columns_separate_RfkNpc",
+    "image_with_content_qjWyWw",
+    "text_column_eTNtAa",
+    "wl_contact_form_pDhJY9"
+  ]
+}
