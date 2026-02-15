@@ -34,14 +34,14 @@
         "heading_tPrGMH": {
           "type": "heading",
           "settings": {
-            "heading": "Cost-Effective, NZ-Made Wool Products for Your Planting Project",
+            "heading": "Mulch Matting Made to Scale",
             "heading_size": "h0"
           }
         },
         "text_7Qytc8": {
           "type": "text",
           "settings": {
-            "text": "<p>Wool.Life provides natural, NZ-made wool solutions designed for large-scale planting, landscaping, and restoration projects. Our mulch mats and rolls deliver proven performance in tough Kiwi conditions locking in moisture, suppressing weeds, and improving soil health naturally. Whether you’re managing a council project, growing at scale, or supplying commercial clients, we tailor quantities, sizes, and pricing to suit your needs. With reliable bulk supply and cost-effective commercial rates, we make it easy to choose a sustainable solution that works.</p>"
+            "text": "<p>Cost-effective. NZ-Made. Reliable Supply. 100% New Zealand wool.</p><p>Tell us about your project and what you need and we’ll make it happen.<br/></p><p><br/>*Minimum order quantities apply.</p>"
           }
         }
       },
@@ -168,12 +168,20 @@
       "settings": {
         "heading": "Enquire Now for our Commercial Rates and Options"
       }
+    },
+    "wl_contact_form_2_AUDfNL": {
+      "type": "wl-contact-form-2",
+      "name": "WL Contact Form",
+      "settings": {
+        "heading": "Contact form"
+      }
     }
   },
   "order": [
     "main",
     "hero_JV8Lrd",
     "rich_text_4XgbrT",
+    "wl_contact_form_2_AUDfNL",
     "image_with_content_HYHMAi",
     "image_with_content_QXPkHJ",
     "image_full_width_AadA93",
