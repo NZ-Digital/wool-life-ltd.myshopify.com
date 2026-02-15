@@ -41,7 +41,7 @@
         "text_7Qytc8": {
           "type": "text",
           "settings": {
-            "text": "<p>Cost-effective. NZ-Made. Reliable Supply. 100% New Zealand wool.</p><p>Tell us about your project and what you need and we’ll make it happen.<br/> <br/>*Minimum order quantities apply.</p>"
+            "text": "<p>Cost-effective. NZ-Made. Reliable supply. 100% New Zealand wool.</p>"
           }
         }
       },
@@ -53,10 +53,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
-        "color_scheme": "scheme-4602b2f8-ff82-42a7-80ae-8be1f6b755b8",
+        "color_scheme": "scheme-f301ee01-356b-4351-b6b3-1bed67944b4b",
         "full_width": true,
         "padding_top": 100,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "wl_contact_form_2_HrVTew": {
