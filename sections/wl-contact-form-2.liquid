@@ -5,52 +5,70 @@
     background-color: #154734;
     color: #E9DDC6;
   }
+
+  /* Layout: 2-column (form + contact details) */
   #shopify-section-{{ section.id }} .wl_contact-form {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 64px;
     width: 100%;
     margin: 0 auto;
     padding: 128px 20px 80px 20px;
-    max-width: 512px;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
+    max-width: 1000px;
+    align-items: start;
   }
+
+  @media screen and (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl_contact-form {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 88px 20px 64px 20px;
+    }
+  }
+
+  /* Left column: form */
   .wl_contact-form_heading {
     color: #E9DDC6;
     font-family: Sora;
     font-size: 32px;
     font-style: normal;
     font-weight: 300;
-    line-height: 125%; /* 40px */
+    line-height: 125%;
+    margin: 0 0 24px 0;
   }
+
   .wl_contact-form_heading-message {
     color: #E9DDC6;
     font-family: Sora;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 125%; /* 40px */
+    line-height: 140%;
   }
+
   .wl_form-status-list li {
     color: #E9DDC6;
     font-family: Sora;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%; /* 40px */
+    line-height: 140%;
   }
+
   .contact__fields {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
   .wl_message-field {
     margin-top: 20px;
   }
+
   .contact__button {
     margin-top: 0;
   }
+
   .wl_button-submit {
     background: #E9DDC6;
     color: #154734 !important;
@@ -69,34 +87,73 @@
     margin-top: 48px !important;
     transition: background 0.3s ease;
   }
+
   .wl_button-submit:hover {
     background: #E9DDC680;
   }
-  input {
-    box-shadow: none;
-  }
+
+  input,
   textarea {
     box-shadow: none;
   }
+
   .field__input:focus {
     box-shadow: none;
   }
-  .field:hover.field:after , .field:after {
+
+  .field:hover.field:after,
+  .field:after {
     box-shadow: none;
   }
-  .wl_button-submit:before, .wl_button-submit:after {
+
+  .wl_button-submit:before,
+  .wl_button-submit:after {
     display: none;
   }
 
-  @media screen and (max-width: 767px) {
+  /* Right column: contact details */
+  .wl_contact-details {
+    color: #E9DDC6;
+    font-family: Sora;
+    padding-top: 6px; /* aligns nicer with form heading */
+  }
 
+  .wl_contact-details_heading {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 125%;
+    margin: 0 0 20px 0;
+  }
+
+  .wl_contact-details_item {
+    margin: 0 0 18px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+  }
+
+  .wl_contact-details_item strong {
+    font-weight: 600;
+  }
+
+  .wl_contact-details a {
+    color: #E9DDC6;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .wl_contact-details a:hover {
+    text-decoration: underline;
   }
 {%- endstyle -%}
 
 <div class="wl_contact-form">
+  <!-- LEFT: Form -->
+  <div class="wl_contact-form-left">
     {%- if section.settings.heading != blank -%}
       <h2 class="wl_contact-form_heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
+
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
         <h2 class="wl_contact-form_heading-message form-status form-status-list form__message" tabindex="-1" autofocus>
@@ -112,11 +169,12 @@
         </div>
         <ul class="wl_form-status-list form-status-list caption-large" role="list">
           <li>
-              {{ form.errors.translated_fields.email | capitalize }}
-              {{ form.errors.messages.email }}
+            {{ form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email }}
           </li>
         </ul>
       {%- endif -%}
+
       <div class="contact__fields">
         <div class="field">
           <input
@@ -130,6 +188,7 @@
           >
           <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
+
         <div class="field field--with-error">
           <input
             autocomplete="email"
@@ -149,8 +208,9 @@
           >
           <label class="field__label" for="ContactForm-email">
             {{- 'templates.contact.form.email' | t }}
-            <span aria-hidden="true">*</span></label
-          >
+            <span aria-hidden="true">*</span>
+          </label>
+
           {%- if form.errors contains 'email' -%}
             <small class="contact__field-error" id="ContactForm-email-error">
               <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
@@ -165,26 +225,45 @@
           {%- endif -%}
         </div>
       </div>
+
       <div class="wl_message-field field">
         <textarea
           rows="10"
           id="ContactForm-body"
           class="text-area field__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
-          placeholder="Tell us more about your project."
-        >
-          {{- form.body -}}
-        </textarea>
-      <label class="form__label field__label" for="ContactForm-body">
-  Tell Us About Your Project
-</label>
+          placeholder="Project size, location, timeframe and quantity required."
+        >{{- form.body -}}</textarea>
+
+        <label class="form__label field__label" for="ContactForm-body">
+          Tell Us About Your Project
+        </label>
       </div>
+
       <div class="contact__button">
-        <button type="submit" class="wl_button-submit button">
-  Enquire Now
-</button>
+        <button type="submit" class="wl_button-submit button">Enquire Now</button>
       </div>
     {%- endform -%}
+  </div>
+
+  <!-- RIGHT: Contact Details -->
+  <aside class="wl_contact-details" aria-label="Contact details">
+    <h3 class="wl_contact-details_heading">Prefer to talk?</h3>
+
+    <p class="wl_contact-details_item">
+      <strong>Call Us</strong><br>
+      <a href="tel:+64224710010">022 471 0010</a>
+    </p>
+
+    <p class="wl_contact-details_item">
+      <strong>Email Us</strong><br>
+      <a href="mailto:contact@woollife.co.nz">contact@woollife.co.nz</a>
+    </p>
+
+    <p class="wl_contact-details_item" style="margin-top: 28px;">
+      *Minimum order quantities apply.
+    </p>
+  </aside>
 </div>
 
 {% schema %}
