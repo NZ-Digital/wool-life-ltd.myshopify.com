@@ -68,6 +68,20 @@
 
 <div class="wl_single-column">
   <div class="wl_single-column_inner">
+    {%- if template.suffix == 'single-blog' -%}
+      {%- assign disable_toc = false -%}
+      {%- if section.settings.single-column_no_toc or article.tags contains 'no-toc' -%}
+        {%- assign disable_toc = true -%}
+      {%- endif -%}
+
+      {%- unless disable_toc -%}
+        <nav class="toc" id="toc" hidden>
+          <p class="toc-title">Table of Contents</p>
+          <ul class="toc-list"></ul>
+        </nav>
+      {%- endunless -%}
+    {%- endif -%}
+    
     {{ section.settings.single-column_text }}
   </div>
 </div>
