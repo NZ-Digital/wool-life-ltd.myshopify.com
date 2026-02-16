@@ -104,8 +104,8 @@
         "padding_bottom": 0
       }
     },
-    "wl_contact_form_2_HrVTew": {
-      "type": "wl-contact-form-2",
+    "contact_form_nopad_ARcGGD": {
+      "type": "contact-form-nopad",
       "name": "WL Contact Form",
       "settings": {
         "heading": "Start Your Project"
@@ -226,7 +226,7 @@
     "hero_JV8Lrd",
     "image_with_text_q8PCF4",
     "rich_text_4XgbrT",
-    "wl_contact_form_2_HrVTew",
+    "contact_form_nopad_ARcGGD",
     "image_with_content_HYHMAi",
     "image_with_content_QXPkHJ",
     "image_full_width_AadA93",
