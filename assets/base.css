@@ -3692,3 +3692,44 @@ details-disclosure > details {
   color: inherit;
   font-weight: 700;
 }
+
+/* TOC css */
+.toc {
+  margin: 1.5rem 0;
+  background: transparent;
+  font-size: 0.95em;
+}
+
+.toc-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.toc ul {
+  list-style: disc;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.3rem 0;
+}
+
+.toc ul ul {
+  padding-left: 1rem;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #154734; 
+}
+
+@media (max-width: 768px) {
+  .toc {
+    font-size: 0.9em;
+  }
+}
+
+.wl_single-column_inner img{
+    max-width: 100%;
+}
