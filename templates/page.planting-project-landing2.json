@@ -53,7 +53,8 @@
       "custom_css": [
         ".image-with-text__media {flex: 0 0 50%; max-width: 40%; height: 30%;}",
         ".image-with-text__text {max-width: 80%;}",
-        ".image-with-text__media img {max-height: 250px; object-fit: cover;}"
+        ".image-with-text__media img {max-height: 250px; object-fit: cover;}",
+        "@media screen and (max-width: 749px) {.image-with-text__media {margin-bottom: 1px !important; } .image-with-text__heading {margin-top: 0 !important; } .image-with-text__text {gap: 2px !important; }}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
