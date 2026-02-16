@@ -52,8 +52,8 @@
       ],
       "custom_css": [
         ".image-with-text__media {flex: 0 0 50%; max-width: 40%; height: 30%;}",
-        ".image-with-text__text {flex: 0 0 0; max-width: 80%;}",
-        ".image-with-text__media img {max-height: 260px; object-fit: cover;}"
+        ".image-with-text__text {max-width: 80%;}",
+        ".image-with-text__media img {max-height: 250px; object-fit: cover;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
