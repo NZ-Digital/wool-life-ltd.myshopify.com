@@ -54,7 +54,7 @@
         ".image-with-text__media {max-width: 40%; height: 30%;}",
         ".image-with-text__text {max-width: 80%;}",
         ".image-with-text__media img {max-height: 240px;}",
-        "@media screen and (max-width: 749px) {.image-with-text__content {display: flex; flex-direction: column; } .image-with-text__heading {display: flex; justify-content: space-between; gap: 16px; } .image-with-text__media {position: absolute; right: 20px; top: -75px; min-width: 130px; height: auto;}}"
+        "@media screen and (max-width: 749px) {.image-with-text__content {display: flex; flex-direction: column; } .image-with-text__heading {display: flex; justify-content: space-between; gap: 16px; } .image-with-text__media {position: absolute; right: 20px; top: -75px; min-width: 130px; height: auto; }}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -125,7 +125,7 @@
         "image-with-content_preimage_location": "col",
         "image-with-content_heading": "Commercial Wool Solutions, Done Right.",
         "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "We provide mulch and weed mat products for large-scale planting projects in native revegetation, riparian planting, commercial landscaping, viticulture, and horticulture.\n<br><br>\nOur Wool Mulch Mats retain moisture, release essential nutrients into the soil as they biodegrade, supporting plant growth while minimising maintenance and suppress weeds.\n\n<a href=\"/collections/commercial-planting\">Read more</a>",
+        "image-with-content_text": "We provide mulch and weed mat products for large-scale planting projects in native revegetation, riparian planting, commercial landscaping, viticulture, and horticulture.\n<br><br>\nOur Wool Mulch Mats retain moisture, release essential nutrients into the soil as they biodegrade, supporting plant growth while minimising maintenance and suppress weeds.\n<br>\n<a href=\"/collections/commercial-planting\">Read more</a>",
         "image-with-content_text_richtext": "",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
