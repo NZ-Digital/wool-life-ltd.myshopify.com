@@ -51,10 +51,10 @@
         "text_F4yPPD"
       ],
       "custom_css": [
-        ".image-with-text__media {flex: 0 0 50%; max-width: 40%; height: 30%;}",
+        ".image-with-text__media {max-width: 40%; height: 30%;}",
         ".image-with-text__text {max-width: 80%;}",
-        ".image-with-text__media img {max-height: 240px; object-fit: cover;}",
-        "@media screen and (max-width: 749px) {.image-with-text__content {display: flex; flex-direction: column; } .image-with-text__heading {display: flex; align-items: center; justify-content: space-between; gap: 16px; } .image-with-text__media {position: absolute; right: 20px; top: -75px; min-width: 130px; height: auto; }}"
+        ".image-with-text__media img {max-height: 240px;}",
+        "@media screen and (max-width: 749px) {.image-with-text__content {display: flex; flex-direction: column; } .image-with-text__heading {display: flex; justify-content: space-between; gap: 16px; } .image-with-text__media {position: absolute; right: 20px; top: -75px; min-width: 130px; height: auto;}}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
