@@ -90,7 +90,7 @@
   /* Make badge float above heading */
   #shopify-section-{{ section.id }} .wl-hero__badgeWrap {
     position: absolute;
-    top: -160px;     /* adjust to taste */
+    top: -200px;     /* adjust to taste */
     right: 10px;    /* pulls it inward */
     width: {{ section.settings.badge_size_mobile | default: 140 }}px;
     z-index: 3;
@@ -103,7 +103,7 @@
 
   #shopify-section-{{ section.id }} .wl-hero__subtext {
     font-size: 16px;
-    max-width: 85%;
+    max-width: 100%;
   }
 }
 {%- endstyle -%}
