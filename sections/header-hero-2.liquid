@@ -79,7 +79,7 @@
 
   #shopify-section-{{ section.id }} .wl-hero__row {
     flex-direction: column;
-    gap: 0; /* remove spacing so badge can overlap */
+    gap: 5; /* remove spacing so badge can overlap */
     position: relative;
   }
 
@@ -91,7 +91,7 @@
   #shopify-section-{{ section.id }} .wl-hero__badgeWrap {
     position: absolute;
     top: -20px;     /* adjust to taste */
-    right: 10px;    /* pulls it inward */
+    right: 50px;    /* pulls it inward */
     width: {{ section.settings.badge_size_mobile | default: 140 }}px;
     z-index: 3;
   }
