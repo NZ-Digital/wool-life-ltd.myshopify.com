@@ -4,28 +4,24 @@
     color: {{ section.settings.text_color | default: "#E9DDC6" }};
   }
 
-  /* Outer spacing */
   #shopify-section-{{ section.id }} .wl-hero {
     padding: 96px 20px;
   }
 
-  /* Constrains everything so the badge can't drift to the far right */
   #shopify-section-{{ section.id }} .wl-hero__inner {
     max-width: 1000px;
     margin: 0 auto;
-    position: relative; /* badge positions against THIS, not full page */
+    position: relative;
   }
 
-  /* Two-column layout: content + badge */
   #shopify-section-{{ section.id }} .wl-hero__row {
     display: flex;
     align-items: flex-start;
-    gap: 52px; /* controls how close badge is to the text column */
+    gap: 52px; 
   }
 
-  /* Content column */
   #shopify-section-{{ section.id }} .wl-hero__content {
-    max-width: 720px; /* IMPORTANT: makes body copy not too wide */
+    max-width: 720px; 
   }
 
   #shopify-section-{{ section.id }} .wl-hero__heading {
@@ -39,7 +35,7 @@
 
   #shopify-section-{{ section.id }} .wl-hero__subtext {
     margin: 0;
-    max-width: 560px; /* tighter like your screenshot */
+    max-width: 560px; 
     font-family: Sora, sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -72,8 +68,8 @@
   #shopify-section-{{ section.id }} .wl-hero__heading {
   display: flex;
   flex-direction: column;
-  gap: 0;            /* tighten line spacing */
-  line-height: 1.05; /* match your desktop feel */
+  gap: 0;  
+  line-height: 1.05;
 }
 
 #shopify-section-{{ section.id }} .wl-h-line {
@@ -84,16 +80,16 @@
 /* Mobile */
 @media (max-width: 767px) {
 
-  /* Make the SECTION the positioning context for the badge */
   #shopify-section-{{ section.id }} {
     position: relative;
   }
 
   #shopify-section-{{ section.id }} .wl-hero {
-    padding: 45px 45px 45px 45px; /* bottom padding 0 */
+    padding: 45px 45px 45px 45px;
   }
-
-  /* Stack layout */
+#shopify-section-{{ section.id }} .wl-hero__content {
+  padding-right: calc({{ section.settings.badge_size_mobile | default: 140 }}px + 20px) !important;
+}
   #shopify-section-{{ section.id }} .wl-hero__row {
     flex-direction: column !important;
     gap: 16px !important;
@@ -118,7 +114,7 @@
     font-size: 50px;
     line-height: 1.08;
     margin-bottom: 32px;
-    padding-top: 18px; /* gives badge breathing room */
+    padding-top: 18px; 
   }
 
   #shopify-section-{{ section.id }} .wl-hero__subtext {
