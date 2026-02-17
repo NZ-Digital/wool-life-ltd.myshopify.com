@@ -81,34 +81,43 @@
 }
 
 
-  /* Mobile: stack */
+/* Mobile */
 @media (max-width: 767px) {
-
   #shopify-section-{{ section.id }} .wl-hero {
-  { padding: 64px 20px 0 20px; }
+    padding: 64px 20px 0 20px; /* bottom padding 0 */
+  }
 
+  /* Stack layout */
   #shopify-section-{{ section.id }} .wl-hero__row {
-    flex-direction: column;
-    gap: 1; /* remove spacing so badge can overlap */
-    position: relative;
+    flex-direction: column !important;
+    gap: 16px !important;
   }
 
+  /* Ensure text column doesn't get squeezed */
   #shopify-section-{{ section.id }} .wl-hero__content {
+    width: 100% !important;
+    max-width: 100% !important;
     position: relative;
   }
 
-  /* Make badge float above heading */
+  /* Badge floats over top area (does NOT take column width) */
   #shopify-section-{{ section.id }} .wl-hero__badgeWrap {
-    position: absolute;
-    top: -16px;     /* adjust to taste */
-    right: 10px;    /* pulls it inward */
-    width: {{ section.settings.badge_size_mobile | default: 140 }}px;
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    width: {{ section.settings.badge_size_mobile | default: 140 }}px !important;
     z-index: 3;
+
+    /* critical: prevents it behaving like a flex column */
+    flex: none !important;
+    margin: 0 !important;
   }
 
   #shopify-section-{{ section.id }} .wl-hero__heading {
     font-size: 44px;
-    padding-top: 20px; /* prevents badge covering text */
+    line-height: 1.05;
+    margin-bottom: 16px;
+    padding-top: 24px; /* gives badge breathing room */
   }
 
   #shopify-section-{{ section.id }} .wl-hero__subtext {
@@ -116,6 +125,7 @@
     max-width: 100%;
   }
 }
+
 {%- endstyle -%}
 
 <section class="wl-hero">
