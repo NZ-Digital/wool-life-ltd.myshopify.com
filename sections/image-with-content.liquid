@@ -1,160 +1,368 @@
 {%- style -%}
-
-#shopify-section-{{ section.id }} {
-  background-color: {{ section.settings.image-with-content_background_color }};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content {
-  display: flex;
-  padding-top: 64px;
-  max-width: 1920px;
-  width: 100%;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content.image-with-content_image-first {
-  flex-direction: row;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content.image-with-content_text-first {
-  flex-direction: row-reverse;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_img-col {
-  width: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 510px;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_content-col {
-  width: 50%;
-  min-width: 640px;
-  background-color: {{ section.settings.image-with-content_background_color }};
-  padding: 96px 56px 96px 40px; /* reduced left gap */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 24px;
-  min-height: 510px;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_heading {
-  color: {{ section.settings.image-with-content_heading_color }};
-  font-family: Sora;
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 110%;
-  max-width: 448px;
-  width: 100%;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_content {
-  color: {{ section.settings.image-with-content_text_color }};
-  font-family: Sora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 175%;
-  max-width: 448px;
-  width: 100%;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_content a {
-  margin-top: 24px;
-  color: {{ section.settings.image-with-content_text_color }};
-  font-family: Sora;
-  font-size: 16px;
-  font-weight: 700;
-  text-decoration: underline;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_content a:hover {
-  opacity: 0.75;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_content a.wl_button {
-  padding: 20px 24px;
-  font-family: Sora;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.32px;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  min-width: fit-content;
-  margin-top: 48px !important;
-  transition: background 0.3s ease;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_content a.wl_button-beige {
-  background: #E9DDC6;
-  color: #154734 !important;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_content a.wl_button-beige:hover {
-  background: #E9DDC680;
-}
-
-#shopify-section-{{ section.id }} .wl_image-with-content_preimage {
-  height: 70px !important;
-  max-width: 100% !important;
-}
-
-#shopify-section-{{ section.id }} .wl_button.btn-1 {
-  background: #154734;
-  padding: 20px 48px;
-  color: #e9ddc6;
-  font-family: Sora;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.32px;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: background 0.3s ease;
-  width: fit-content;
-}
-
-#shopify-section-{{ section.id }} .wl_button.btn-1:hover {
-  background: #15473480;
-}
-
-@media (max-width: 1024px) {
-  #shopify-section-{{ section.id }} .wl_image-with-content_content-col {
-    padding: 48px 32px;
-    min-width: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  #shopify-section-{{ section.id }} .wl_image-with-content {
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.image-with-content_background_color }};
+    display: flex;
     flex-direction: column;
-    padding-top: 0;
+    align-items: center;
   }
-
-  #shopify-section-{{ section.id }} .wl_image-with-content_content-col {
+  #shopify-section-{{ section.id }} .wl_image-with-content {
+    display: flex;
+    padding-top: 64px;
+    max-width: 1920px;
     width: 100%;
-    padding: 60px 20px;
-    min-width: unset;
   }
-
+  #shopify-section-{{ section.id }} .wl_image-with-content.image-with-content_image-first {
+    flex-direction: row;
+  }
+  #shopify-section-{{ section.id }} .wl_image-with-content.image-with-content_text-first {
+      flex-direction: row-reverse;
+  }
   #shopify-section-{{ section.id }} .wl_image-with-content_img-col {
-    width: 100%;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 510px;
+  }
+  #shopify-section-{{ section.id }} .wl_image-with-content_content-col {
+    width: 50%;
+    min-width: 640px;
+    background-color: {{ section.settings.image-with-content_background_color }};
+    padding: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
     min-height: 320px;
+    height: fit-content;
+    min-height: 510px;
   }
-
   #shopify-section-{{ section.id }} .wl_image-with-content_heading {
-    font-size: 24px;
+    color: {{ section.settings.image-with-content_heading_color }};
+    font-family: Sora;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 35.2px */
+    max-width: 448px;
+    width: 100%;
   }
-
   #shopify-section-{{ section.id }} .wl_image-with-content_content {
-    font-size: 14px;
+    color: {{ section.settings.image-with-content_text_color }};
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+    max-width: 448px;
+    width: 100%;
   }
-}
+  #shopify-section-{{ section.id }} .wl_image-with-content_content a {
+    margin-top: 24px;
+    color: {{ section.settings.image-with-content_text_color }};
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  #shopify-section-{{ section.id }} .wl_image-with-content_content a:hover {
+    opacity: 0.75;
+  }
 
+  /* .wl_image-with-content.image-with-content_text-first .wl_image-with-content_heading {
+    align-self: flex-end;
+    width: 100%;
+  }
+  .wl_image-with-content.image-with-content_text-first .wl_image-with-content_content {
+    align-self: flex-end;
+    width: 100%;
+  } */
+
+   #shopify-section-{{ section.id }} .wl_image-with-content_content a.wl_button {
+    padding: 20px 24px;
+    text-align: center;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    min-width: fit-content;
+    max-width: fit-content;
+    margin-top: 48px !important;
+    transition: background 0.3s ease;
+  }
+   #shopify-section-{{ section.id }} .wl_image-with-content_content a.wl_button-beige {
+    background: #E9DDC6;
+    color: #154734 !important;
+  }
+   #shopify-section-{{ section.id }} .wl_image-with-content_content a.wl_button-beige:hover {
+    background: #E9DDC680;
+  }
+
+  #shopify-section-{{ section.id }} .wl_image-with-content_preimage{
+      width: auto !important;
+      height: 70px !important;
+      max-width: 100% !important;
+      margin-bottom: unset !important;
+
+    }
+
+    #shopify-section-{{ section.id }} .wl_button.btn-1{
+      background: #154734;
+      padding: 20px 48px;
+      color: #e9ddc6;
+      text-align: center;
+      font-family: Sora;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+      width: fit-content;
+
+    }
+
+    #shopify-section-{{ section.id }} .wl_button.btn-1:hover{
+      background: #15473480;
+    }
+
+    #shopify-section-{{ section.id }} .row{
+      display: flex;
+      flex-direction: row;
+    }
+
+    #shopify-section-{{ section.id }} .g-md{
+      gap: 24px;
+    }
+
+    #shopify-section-{{ section.id }} .col{
+      display: flex;
+      flex-direction: column;
+    
+    }
+
+  @media (max-width: 1024px) {
+    #shopify-section-{{ section.id }} .wl_image-with-content_content-col {
+        padding: 48px;
+        min-width: 500px;
+    }
+  }
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl_image-with-content {
+      display: flex;
+      padding-top: 0px;
+    }
+    #shopify-section-{{ section.id }} .wl_image-with-content.image-with-content_image-first {
+        flex-direction: column;
+    }
+    #shopify-section-{{ section.id }} .wl_image-with-content.image-with-content_text-first {
+        flex-direction: column;
+    }
+    #shopify-section-{{ section.id }} .wl_image-with-content_content-col {
+        width: 100%;
+        padding: 60px 20px;
+        min-height: unset;
+        min-width: unset;
+        align-items: flex-start;
+    }
+    #shopify-section-{{ section.id }} .wl_image-with-content_content {
+      max-width: 100%;
+      font-size: 14px;
+    }
+    #shopify-section-{{ section.id }} .wl_image-with-content_img-col {
+        width: 100%;
+        min-height: 320px;
+    }
+    #shopify-section-{{ section.id }} .wl_image-with-content_heading {
+        font-size: 24px;
+    }
+    #shopify-section-{{ section.id }} .wl_image-with-content_content a {
+         font-size: 14px;
+    }
+  }
 {%- endstyle -%}
+
+
+{% if section.settings.image-with-content_image_picker and section.settings.image-with-content_image_picker != '' %}
+<div class="wl_image-with-content {{ section.settings.image-with-content_layout }}" id="{{ section.settings.image-with-content_id }}">
+  <div class="wl_image-with-content_img-col" style="background-image: url('{{ section.settings.image-with-content_image_picker | image_url }}');">
+  </div>
+  <div class="wl_image-with-content_content-col">
+    <div class="{{ section.settings.image-with-content_preimage_location }} g-md">
+      {% if section.settings.image-with-content_preimage %}
+        <img src="{{ section.settings.image-with-content_preimage | image_url }}" alt="Preimage" class="wl_image-with-content_preimage">
+      {% endif %}
+      <h2 class="wl_image-with-content_heading">{{ section.settings.image-with-content_heading }}</h2>
+    </div>
+    {% if section.settings.image-with-content_text %}
+    <p class="wl_image-with-content_content">{{ section.settings.image-with-content_text }}</p>
+    {% endif %}
+    {% if section.settings.image-with-content_text_richtext %}
+    <p class="wl_image-with-content_content">{{ section.settings.image-with-content_text_richtext }}</p>
+    {% endif %}
+    {% if section.settings.image-with-content_button_link %}
+      <a href="{{ section.settings.image-with-content_button_link }}" class="wl_button btn-1 {{ section.settings.image-with-content_button_style }}">{{ section.settings.image-with-content_button_name }}</a>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Image with Content",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "image-with-content_layout",
+      "options": [
+        {
+          "value": "image-with-content_image-first",
+          "label": "Image First"
+        },
+        {
+          "value": "image-with-content_text-first",
+          "label": "Text First"
+        }
+      ],
+      "default": "image-with-content_image-first",
+      "label": "Layout"
+    },
+    {
+      "type": "image_picker",
+      "id": "image-with-content_image_picker",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image-with-content_preimage",
+      "label": "Preimage"
+    },
+    {
+      "type": "select",
+      "id": "image-with-content_preimage_location",
+      "label": "Pre-image Location",
+      "options": [
+        {
+          "value": "col",
+          "label": "Above"
+        },
+        {
+          "value": "row",
+          "label": "Left"
+        }
+      ],
+      "default": "col"
+    },
+    {
+      "type": "text",
+      "id": "image-with-content_heading",
+      "label": "Heading"
+    },    
+    {
+      "type": "select",
+      "id": "image-with-content_heading_color",
+      "label": "Heading Color",
+      "options": [
+        {
+          "value": "#154734",
+          "label": "Green - Dark"
+        },
+        {
+          "value": "#E9DDC6",
+          "label": "Beige"
+        }
+      ],
+      "default": "#154734"
+    },
+    {
+      "type": "textarea",
+      "id": "image-with-content_text",
+      "label": "Text"
+    },
+    {
+      "type": "richtext",
+      "id": "image-with-content_text_richtext",
+      "label": "Text (Richtext)"
+    },
+    {
+      "type": "select",
+      "id": "image-with-content_text_color",
+      "label": "Text Color",
+      "options": [
+        {
+          "value": "#154734",
+          "label": "Green - Dark"
+        },
+        {
+          "value": "#E9DDC6",
+          "label": "Beige"
+        },
+        {
+          "value": "rgba(233, 221, 198, 0.80)",
+          "label": "Beige - 80%"
+        }
+      ],
+      "default": "#154734"
+    },
+    {
+      "type": "select",
+      "id": "image-with-content_background_color",
+      "label": "Background Color",
+      "options": [
+        {
+          "value": "#FFF5E5",
+          "label": "Beige - Light"
+        },
+        {
+          "value": "#154734",
+          "label": "Green - Dark"
+        }
+      ],
+      "default": "#FFF5E5"
+    },
+    {
+      "type": "text",
+      "id": "image-with-content_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "text",
+      "id": "image-with-content_button_name",
+      "label": "Button Name"
+    },
+    {
+      "type": "url",
+      "id": "image-with-content_button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with Content"
+    }
+  ]
+}
+{% endschema %}
