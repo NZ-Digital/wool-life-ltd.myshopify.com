@@ -83,6 +83,12 @@
 
 /* Mobile */
 @media (max-width: 767px) {
+
+  /* Make the SECTION the positioning context for the badge */
+  #shopify-section-{{ section.id }} {
+    position: relative;
+  }
+
   #shopify-section-{{ section.id }} .wl-hero {
     padding: 45px 45px 45px 45px; /* bottom padding 0 */
   }
@@ -92,23 +98,18 @@
     flex-direction: column !important;
     gap: 16px !important;
   }
-
-  /* Ensure text column doesn't get squeezed */
   #shopify-section-{{ section.id }} .wl-hero__content {
     width: 90% !important;
     max-width: 90% !important;
     position: relative;
   }
-
-  /* Badge floats over top area (does NOT take column width) */
   #shopify-section-{{ section.id }} .wl-hero__badgeWrap {
     position: absolute !important;
     top: -40px !important;
-    right: -10px !important;
+    right: 10px !important;
     width: {{ section.settings.badge_size_mobile | default: 140 }}px !important;
     z-index: 3;
 
-    /* critical: prevents it behaving like a flex column */
     flex: none !important;
     margin: 0 !important;
   }
