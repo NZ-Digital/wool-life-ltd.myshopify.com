@@ -58,6 +58,7 @@
         "heading_rKx3Gh",
         "text_F4yPPD"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-with-text__media {max-width: 40%; height: 30%;}",
         ".image-with-text__text {max-width: 80%;}",
@@ -83,17 +84,16 @@
     },
     "header_hero_2_tQKNgA": {
       "type": "header-hero-2",
-      "disabled": true,
       "name": "WL Hero + Badge",
       "settings": {
         "heading": "Mulch Matting, Made to Scale",
         "subtext": "Bulk wool mulch mats and rolls for farms, planting projects, and large-scale use. Cost-effective. NZ-Made. Reliable Supply. 100% New Zealand wool.",
         "badge_image": "shopify://shop_images/Badge-gif-final.gif",
         "badge_alt": "Get bulk pricing",
-        "badge_size": 270,
-        "badge_size_mobile": 140,
+        "badge_size": 265,
+        "badge_size_mobile": 190,
         "bg_color": "#154734",
-        "text_color": "#E9DDC6"
+        "text_color": "#e9ddc6"
       }
     },
     "rich_text_4XgbrT": {
@@ -212,7 +212,19 @@
         ".wl_image-with-content_content a:hover {background: #15473480;}",
         "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 0px; font-size: 14px; }}"
       ],
-      "settings": {}
+      "settings": {
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
     },
     "image_with_content_QXPkHJ": {
       "type": "image-with-content",
@@ -222,7 +234,19 @@
         ".wl_image-with-content_content a:hover {background: #15473480;}",
         "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 0px; font-size: 14px; }}"
       ],
-      "settings": {}
+      "settings": {
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
     },
     "heading_text_columns_separate_RfkNpc": {
       "type": "heading-text-columns-separate",
@@ -249,7 +273,19 @@
       "type": "image-with-content",
       "disabled": true,
       "custom_css": [],
-      "settings": {}
+      "settings": {
+        "image-with-content_layout": "image-with-content_image-first",
+        "image-with-content_preimage_location": "col",
+        "image-with-content_heading": "",
+        "image-with-content_heading_color": "#154734",
+        "image-with-content_text": "",
+        "image-with-content_text_richtext": "",
+        "image-with-content_text_color": "#154734",
+        "image-with-content_background_color": "#FFF5E5",
+        "image-with-content_id": "",
+        "image-with-content_button_name": "",
+        "image-with-content_button_link": ""
+      }
     },
     "text_column_eTNtAa": {
       "type": "text-column",
