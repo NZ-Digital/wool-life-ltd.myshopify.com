@@ -138,16 +138,16 @@
     "image_content_2_JGqbBW": {
       "type": "image-content-2",
       "custom_css": [
-        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content; }",
-        " .wl_image-with-content_content a:hover {background: #15473480; }",
-        " @media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 20px; margin-bottom: 40px; font-size: 14px; } }"
+        ".wl_image-with-content_content a {background: #154734; padding: 20px 48px; color: #e9ddc6; text-align: center; font-family: Sora; font-size: 16px; font-weight: 700; line-height: 100%; letter-spacing: 0.32px; text-transform: uppercase; text-decoration: none; margin-top: 48px; transition: background 0.3s ease; width: fit-content;}",
+        ".wl_image-with-content_content a:hover {background: #15473480;}",
+        "@media only screen and (max-width: 767px) {.wl_image-with-content_content a {margin-top: 20px; margin-bottom: 40px; font-size: 14px; }}"
       ],
       "name": "Image with Content",
       "settings": {
         "image-with-content_layout": "image-with-content_image-first",
         "image-with-content_image_picker": "shopify://shop_images/Wool.Life_IRL_-_St_Josephs_20240512_3.jpg",
         "image-with-content_preimage_location": "col",
-        "image-with-content_heading": "Stronger Planting. Less Maintenance.",
+        "image-with-content_heading": "Commercial Wool Solutions, Done Right.",
         "image-with-content_heading_color": "#154734",
         "image-with-content_text": "We provide mulch and weed mat products for large-scale planting projects in native revegetation, riparian planting, commercial landscaping, viticulture, and horticulture.\n<br><br>\nOur Wool Mulch Mats retain moisture, release essential nutrients into the soil as they biodegrade, supporting plant growth while minimising maintenance and suppress weeds.\n\n<a href=\"/collections/commercial-planting\">Read more</a>",
         "image-with-content_text_richtext": "",
@@ -170,7 +170,7 @@
         "image-with-content_layout": "image-with-content_text-first",
         "image-with-content_image_picker": "shopify://shop_images/STR_2447_1_crop.jpg",
         "image-with-content_preimage_location": "row",
-        "image-with-content_heading": "",
+        "image-with-content_heading": "Stronger Planting. Less Maintenance.",
         "image-with-content_heading_color": "#154734",
         "image-with-content_text": "Wool.Life mulch and weed mats are engineered for large-scale planting, public spaces, and revegetation projects.\n<br><br>\nDense wool fibres suppress weeds, retain moisture, and naturally enrich the soil as they break down. Reduce chemical use and irrigation. Save time. Support sustainable planting.\n\n<a href=\"/pages/contact\">Contact us</a>",
         "image-with-content_text_richtext": "",
