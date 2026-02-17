@@ -69,6 +69,17 @@
     #shopify-section-{{ section.id }} .wl-hero__row { gap: 48px; }
     #shopify-section-{{ section.id }} .wl-hero__content { max-width: 640px; }
   }
+  #shopify-section-{{ section.id }} .wl-hero__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0;            /* tighten line spacing */
+  line-height: 1.05; /* match your desktop feel */
+}
+
+#shopify-section-{{ section.id }} .wl-h-line {
+  display: block;
+}
+
 
   /* Mobile: stack */
 @media (max-width: 767px) {
@@ -90,7 +101,7 @@
   /* Make badge float above heading */
   #shopify-section-{{ section.id }} .wl-hero__badgeWrap {
     position: absolute;
-    top: -200px;     /* adjust to taste */
+    top: -18px;     /* adjust to taste */
     right: 10px;    /* pulls it inward */
     width: {{ section.settings.badge_size_mobile | default: 140 }}px;
     z-index: 3;
