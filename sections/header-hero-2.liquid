@@ -1,168 +1,134 @@
 {%- style -%}
   #shopify-section-{{ section.id }} {
-    background: {{ section.settings.bg_color }};
-    color: {{ section.settings.text_color }};
+    background: {{ section.settings.bg_color | default: "#154734" }};
+    color: {{ section.settings.text_color | default: "#E9DDC6" }};
   }
 
-  #shopify-section-{{ section.id }} .wl-hero-badge__wrap {
-    max-width: {{ section.settings.max_width }}px;
+  /* Outer spacing */
+  #shopify-section-{{ section.id }} .wl-hero {
+    padding: 96px 20px;
+  }
+
+  /* Constrains everything so the badge can't drift to the far right */
+  #shopify-section-{{ section.id }} .wl-hero__inner {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: {{ section.settings.pad_top }}px {{ section.settings.pad_x }}px {{ section.settings.pad_bottom }}px;
+    position: relative; /* badge positions against THIS, not full page */
   }
 
-  #shopify-section-{{ section.id }} .wl-hero-badge__grid {
-    display: grid;
-    grid-template-columns: 1fr {{ section.settings.badge_col_width }}px;
-    gap: {{ section.settings.gap }}px;
-    align-items: start;
+  /* Two-column layout: content + badge */
+  #shopify-section-{{ section.id }} .wl-hero__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 72px; /* controls how close badge is to the text column */
   }
 
-.wl-hero {
-  position: relative;
-  background: #154734;
-  color: #E9DDC6;
-  padding: 140px 20px 100px;
-}
+  /* Content column */
+  #shopify-section-{{ section.id }} .wl-hero__content {
+    max-width: 720px; /* IMPORTANT: makes body copy not too wide */
+  }
 
-.wl-hero__inner {
-  max-width: 820px;
-  margin: 0 auto;
-}
+  #shopify-section-{{ section.id }} .wl-hero__heading {
+    margin: 0 0 20px 0;
+    font-family: Sora, sans-serif;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 1.05;
+    color: inherit;
+  }
 
-.wl-hero__heading {
-  font-family: Sora, sans-serif;
-  font-size: 64px;
-  line-height: 1.05;
-  font-weight: 300;
-  letter-spacing: -0.5px;
-  margin: 0 0 28px 0;
-}
-
-.wl-hero__body {
-  font-family: Sora, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  opacity: 0.9;
-  max-width: 640px;
-}
+  #shopify-section-{{ section.id }} .wl-hero__subtext {
+    margin: 0;
+    max-width: 560px; /* tighter like your screenshot */
+    font-family: Sora, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(233, 221, 198, 0.8);
+  }
 
   /* Badge column */
-  #shopify-section-{{ section.id }} .wl-hero-badge__badge {
-    justify-self: end;
-    position: relative;
-    top: {{ section.settings.badge_offset_y }}px;
-    right: {{ section.settings.badge_offset_x }}px;
+  #shopify-section-{{ section.id }} .wl-hero__badgeWrap {
+    flex: 0 0 auto;
+    width: {{ section.settings.badge_size | default: 160 }}px;
   }
 
-  #shopify-section-{{ section.id }} .wl-hero-badge__badge img {
-    width: {{ section.settings.badge_size }}px;
-    height: auto;
+  #shopify-section-{{ section.id }} .wl-hero__badge {
     display: block;
-
-    /* kill any theme “media” styling */
-    border: 0 !important;
-    outline: 0 !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    border-radius: 0 !important;
+    width: 100%;
+    height: auto;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    background: transparent;
   }
 
-  #shopify-section-{{ section.id }} .wl-hero-badge__badge::before,
-  #shopify-section-{{ section.id }} .wl-hero-badge__badge::after {
-    content: none !important;
+  /* Tablet */
+  @media (max-width: 1024px) {
+    #shopify-section-{{ section.id }} .wl-hero__heading { font-size: 56px; }
+    #shopify-section-{{ section.id }} .wl-hero__row { gap: 48px; }
+    #shopify-section-{{ section.id }} .wl-hero__content { max-width: 640px; }
   }
 
-  /* Optional faint guide column (OFF by default) */
-  {% if section.settings.show_badge_guide %}
-    #shopify-section-{{ section.id }} .wl-hero-badge__grid {
-      background-image: linear-gradient(
-        to right,
-        transparent 0,
-        transparent calc(100% - {{ section.settings.badge_col_width }}px),
-        rgba(255,255,255,0.06) calc(100% - {{ section.settings.badge_col_width }}px),
-        rgba(255,255,255,0.06) 100%
-      );
-      background-repeat: no-repeat;
+  /* Mobile: stack */
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .wl-hero {
+      padding: 64px 20px;
     }
-  {% endif %}
-
-  /* Mobile */
-  @media screen and (max-width: 749px) {
-    #shopify-section-{{ section.id }} .wl-hero-badge__grid {
-      grid-template-columns: 1fr;
-      gap: {{ section.settings.mobile_gap }}px;
+    #shopify-section-{{ section.id }} .wl-hero__row {
+      flex-direction: column;
+      gap: 24px;
     }
-
-    #shopify-section-{{ section.id }} .wl-hero-badge__badge {
-      justify-self: start;
-      top: {{ section.settings.mobile_badge_offset_y }}px;
-      right: 0;
-      order: -1;
+    #shopify-section-{{ section.id }} .wl-hero__badgeWrap {
+      width: {{ section.settings.badge_size_mobile | default: 140 }}px;
     }
-
-    #shopify-section-{{ section.id }} .wl-hero-badge__title {
-      font-size: {{ section.settings.mobile_heading_size }}px;
-    }
-
-    #shopify-section-{{ section.id }} .wl-hero-badge__body {
-      font-size: {{ section.settings.mobile_body_size }}px;
-      margin-top: {{ section.settings.mobile_body_spacing }}px;
-    }
+    #shopify-section-{{ section.id }} .wl-hero__heading { font-size: 44px; }
+    #shopify-section-{{ section.id }} .wl-hero__subtext { font-size: 16px; max-width: 100%; }
   }
 {%- endstyle -%}
 
-<div class="wl-hero-badge__wrap">
-  <div class="wl-hero-badge__grid">
-    <div class="wl-hero-badge__content">
-      {% if section.settings.heading != blank %}
-        <h2 class="wl-hero-badge__title">{{ section.settings.heading }}</h2>
-      {% endif %}
-
-      {% if section.settings.body != blank %}
-        <div class="wl-hero-badge__body">
-          {{ section.settings.body }}
-        </div>
-      {% endif %}
-    </div>
-
-    {% if section.settings.badge_image != blank %}
-      <div class="wl-hero-badge__badge" aria-hidden="true">
-        <img
-          src="{{ section.settings.badge_image | image_url }}"
-          alt=""
-          loading="eager"
-        >
+<section class="wl-hero">
+  <div class="wl-hero__inner">
+    <div class="wl-hero__row">
+      <div class="wl-hero__content">
+        <h1 class="wl-hero__heading">{{ section.settings.heading }}</h1>
+        <p class="wl-hero__subtext">{{ section.settings.subtext }}</p>
       </div>
-    {% endif %}
+
+      {%- if section.settings.badge_image != blank -%}
+        <div class="wl-hero__badgeWrap">
+          <img
+            class="wl-hero__badge"
+            src="{{ section.settings.badge_image | image_url }}"
+            alt="{{ section.settings.badge_alt | escape }}"
+            loading="lazy"
+          >
+        </div>
+      {%- endif -%}
+    </div>
   </div>
-</div>
+</section>
 
 {% schema %}
 {
   "name": "WL Hero + Badge",
+  "tag": "section",
+  "class": "section",
   "settings": [
-    { "type": "color", "id": "bg_color", "label": "Background", "default": "#154734" },
-
     { "type": "text", "id": "heading", "label": "Heading", "default": "Mulch Matting, Made to Scale" },
+    { "type": "textarea", "id": "subtext", "label": "Subtext", "default": "Bulk wool mulch mats and rolls for farms, planting projects, and large-scale use. Cost-effective. NZ-Made. Reliable Supply. 100% New Zealand wool." },
 
-    { "type": "richtext", "id": "body", "label": "Body copy", "default": "<p>Bulk wool mulch mats and rolls for farms, planting projects, and large-scale use. Cost-effective. NZ-Made. Reliable Supply. 100% New Zealand wool.</p>" },
+    { "type": "image_picker", "id": "badge_image", "label": "Badge image (GIF/PNG)" },
+    { "type": "text", "id": "badge_alt", "label": "Badge alt text", "default": "Get bulk pricing" },
 
-    { "type": "image_picker", "id": "badge_image", "label": "Badge image" },
+    { "type": "range", "id": "badge_size", "min": 60, "max": 480, "step": 5, "label": "Badge size (desktop)", "default": 200 },
+    { "type": "range", "id": "badge_size_mobile", "min": 60, "max": 320, "step": 5, "label": "Badge size (mobile)", "default": 140 },
 
-{ 
-  "type": "range", 
-  "id": "badge_size", 
-  "min": 60, 
-  "max": 480, 
-  "step": 5, 
-  "label": "Badge size", 
-  "default": 120 
-}
-
+    { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#154734" },
+    { "type": "color", "id": "text_color", "label": "Text colour", "default": "#E9DDC6" }
   ],
   "presets": [
     { "name": "WL Hero + Badge" }
   ]
 }
 {% endschema %}
-
