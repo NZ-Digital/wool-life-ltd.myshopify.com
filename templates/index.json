@@ -16,11 +16,13 @@
         "body {padding-top: 48px;}"
       ],
       "settings": {
+        "hero-video_media_type": "image",
+        "hero-video_video": "shopify://files/videos/HomepagePromoVideo_v3.mp4",
+        "hero-video_image": "shopify://shop_images/STR_1662.jpg",
         "hero-video_subheading": "",
         "hero-video_heading": "100% NZ Wool Products",
         "hero-video_button-text": "Discover more",
         "hero-video_button-url": "shopify://pages/why-choose-wool-life",
-        "hero-video_video": "shopify://files/videos/HomepagePromoVideo_v3.mp4",
         "hero-video_subheading_color": "#E9DDC680",
         "hero-video_heading_color": "#E9DDC6",
         "hero-video_background_color": "#154734"
