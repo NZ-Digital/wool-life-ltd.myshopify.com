@@ -137,7 +137,7 @@
 
     <div
       class="wl_hero-video_media wl_hero-video_image"
-      style="background-image: url('{{ section.settings.hero-video_image | image_url: width: 2000 }}');"
+      style="background-image: url('{{ section.settings.hero-video_image | image_url: width: 2000 | prepend: 'https:' }}');"
     ></div>
 
   {% endif %}
