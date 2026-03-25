@@ -17,7 +17,7 @@
       ],
       "settings": {
         "hero_subheading": "PRODUCT CATEGORY - GARDEN",
-        "hero_heading": "Mulch and Weed Mat Solutions for Every Garden",
+        "hero_heading": "Natural Weed Suppression Solutions for Thriving Gardens",
         "hero_subheading_color": "#15473480",
         "hero_heading_color": "#154734",
         "hero_background_color": "#FFF5E5"
@@ -33,6 +33,93 @@
         "show_collection_image": false,
         "color_scheme": "scheme-1"
       }
+    },
+    "featured_collection_home_3bpgQM": {
+      "type": "featured-collection-home",
+      "settings": {
+        "title": "Products for your garden",
+        "heading_size": "h1",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "garden",
+        "products_to_show": 8,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_reviews_WhUhLL": {
+      "type": "product-reviews",
+      "blocks": {
+        "review_xyERbD": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "",
+            "tag": "",
+            "date": "",
+            "number_of_stars": "5",
+            "review_title": "",
+            "review_description": ""
+          }
+        },
+        "review_R77f48": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "",
+            "tag": "",
+            "date": "",
+            "number_of_stars": "5",
+            "review_title": "",
+            "review_description": ""
+          }
+        },
+        "review_qGyMBK": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jess W, Christchurch",
+            "tag": "Verified Buyer",
+            "date": "4 May 2025",
+            "number_of_stars": "5",
+            "review_title": "“keeps weeds at bay”",
+            "review_description": "Wool.Life NZ went above and beyond! Their wool garden matting is absolutely brilliant, strong, natural, and keeps weeds at bay. It’s a relief to find something that truly works and is proudly made in New Zealand. A business that cares deeply about quality and customers. Highly recommend!"
+          }
+        },
+        "review_tQ3V8J": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Christine",
+            "tag": "Verified Buyer",
+            "date": "",
+            "number_of_stars": "5",
+            "review_title": "🐑  “Heavenly wool the plants love it”",
+            "review_description": "Had the wool around my strawberry's last season and I have just ordered some more to tidy them up for this season.would recommend for people to use in there garden."
+          }
+        }
+      },
+      "block_order": [
+        "review_xyERbD",
+        "review_R77f48",
+        "review_qGyMBK",
+        "review_tQ3V8J"
+      ],
+      "name": "Product Reviews",
+      "settings": {}
     },
     "image_with_content_rExKTg": {
       "type": "image-with-content",
@@ -76,36 +163,6 @@
         "image-with-content_id": "",
         "image-with-content_button_name": "",
         "image-with-content_button_link": ""
-      }
-    },
-    "featured_collection_home_3bpgQM": {
-      "type": "featured-collection-home",
-      "settings": {
-        "title": "Products for your garden",
-        "heading_size": "h1",
-        "description": "",
-        "button_label": "",
-        "button_url": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "garden",
-        "products_to_show": 8,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "product-grid": {
@@ -404,9 +461,10 @@
   "order": [
     "hero_7BNgpe",
     "banner",
+    "featured_collection_home_3bpgQM",
+    "product_reviews_WhUhLL",
     "image_with_content_rExKTg",
     "image_with_content_ptgAaD",
-    "featured_collection_home_3bpgQM",
     "product-grid",
     "faqs_C8gCbm"
   ]
