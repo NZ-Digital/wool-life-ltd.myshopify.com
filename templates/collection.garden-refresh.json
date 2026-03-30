@@ -57,7 +57,7 @@
         "hide_card_information": true,
         "show_shop_now": true,
         "shop_now_label": "Shop Now",
-        "show_label": false,
+        "show_label": true,
         "card_label": "",
         "image_ratio": "adapt",
         "image_shape": "default",
