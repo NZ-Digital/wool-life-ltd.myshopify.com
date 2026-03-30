@@ -29,7 +29,7 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  .featured-collection-home {
+  .featured-collection-new {
     background: #154734;
     padding: 128px 0px;
   }
@@ -57,7 +57,7 @@
       padding: 0;
       max-width: 488px;
   }
-  .wl_featured-collection-home_btn {
+  .wl_featured-collection-new_btn {
     background: #E9DDC6;
     padding: 20px 24px;
     color: #154734;
@@ -73,7 +73,7 @@
     min-width: fit-content;
     transition: background 0.3s ease;
   }
-  .wl_featured-collection-home_btn:hover {
+  .wl_featured-collection-new_btn:hover {
     background: #E9DDC680;
   }
   .featured-collection-slider-home {
@@ -86,7 +86,7 @@
   .featured-collection-slider-home ul {
     row-gap: 30px;
   }
-  .featured-collection-home_title {
+  .featured-collection-new_title {
     color: #E9DDC6;
     font-family: Sora;
     font-size: 48px;
@@ -95,7 +95,7 @@
     line-height: 110%; /* 52.8px */
     margin-bottom: 0;
   }
-  .featured-collection-home_paragraph {
+  .featured-collection-new_paragraph {
     color: rgba(233, 221, 198, 0.80);
     /* P */
     font-family: Sora;
@@ -104,10 +104,10 @@
     font-weight: 400;
     line-height: 175%; /* 28px */
   }
-  .featured-collection-home .card__heading {
+  .featured-collection-new .card__heading {
     margin-top: 5px;
   }
-  .featured-collection-home .card__heading a {
+  .featured-collection-new .card__heading a {
     color: #E9DDC6;
     font-family: Sora;
     font-size: 20px;
@@ -118,11 +118,11 @@
     transition: opacity 0.3s ease;
     padding-right: 40px;
   }
-  .featured-collection-home .card__information {
+  .featured-collection-new .card__information {
     padding-top: 32px;
     padding-bottom: 16px;
   }
-  .featured-collection-home .card__information .price {
+  .featured-collection-new .card__information .price {
     color: #D3BC8D;
     /* CTA */
     font-family: Sora;
@@ -134,7 +134,7 @@
     text-transform: uppercase;
     margin-bottom: 16px !important;
   }
-  .featured-collection-home .card-information .excerpt {
+  .featured-collection-new .card-information .excerpt {
     color: rgba(233, 221, 198, 0.80);
     font-family: Sora;
     font-size: 16px;
@@ -143,7 +143,7 @@
     line-height: 175%; /* 28px */
     margin-top: 16px !important;
   }
-  .featured-collection-home .card-information {
+  .featured-collection-new .card-information {
       margin-top: 15px;
   }
   .collection__view-all {
@@ -164,17 +164,17 @@
         flex-direction: column;
         gap: 30px;
     }
-    .featured-collection-home {
+    .featured-collection-new {
       padding: 60px 20px;
     }
     .featured-collection-slider-home {
         margin-top: 30px;
     }
-    .wl_featured-collection-home_btn {
+    .wl_featured-collection-new_btn {
       line-height: 110%;
       font-size: 14px;
     }
-    .featured-collection-home_title {
+    .featured-collection-new_title {
       font-size: 24px;
     }
     .product-card-wrapper .card__inner {
@@ -198,23 +198,23 @@
       slider-component.page-width {
           padding: 0 !important;
       }
-    .featured-collection-home .card__heading a {
+    .featured-collection-new .card__heading a {
         font-size: 14px;
         padding-right: 12px;
     }
-    .featured-collection-home .card-information .excerpt {
+    .featured-collection-new .card-information .excerpt {
       font-size: 10px;
       line-height: 125%;
       margin-top: 8px !important;
     }
-    .featured-collection-home .card-information {
+    .featured-collection-new .card-information {
         margin-top: 8px;
     }
-    .featured-collection-home .card__information {
+    .featured-collection-new .card__information {
         padding-top: 16px;
         padding-bottom: 8px;
     }
-    .featured-collection-home .card__information .price {
+    .featured-collection-new .card__information .price {
       margin-bottom: 12px !important;
     }
   }
@@ -241,7 +241,7 @@
 -%}
 
 <div
-  id="collection" class="featured-collection-home color-{{ section.settings.color_scheme }} isolate gradient"
+  id="collection" class="featured-collection-new color-{{ section.settings.color_scheme }} isolate gradient"
 >
   <div
     class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
@@ -251,7 +251,7 @@
     <div class="collection__title_outer">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="featured-collection-home_title title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="featured-collection-new_title title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
@@ -259,7 +259,7 @@
         or section.settings.show_description
         and section.settings.collection.description != empty
       -%}
-        <div class="featured-collection-home_paragraph collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="featured-collection-new_paragraph collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {%- if section.settings.show_description -%}
             {{ section.settings.collection.description }}
           {%- else -%}
@@ -268,7 +268,7 @@
         </div>
       {%- endif -%}
     </div>
-    <a href="{{ section.settings.button_url }}" class="wl_featured-collection-home_btn">{{ section.settings.button_label }}</a>
+    <a href="{{ section.settings.button_url }}" class="wl_featured-collection-new_btn">{{ section.settings.button_label }}</a>
   </div>
 
     <slider-component class="featured-collection-slider-home slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
