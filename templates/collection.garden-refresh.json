@@ -12,15 +12,15 @@
     "hero_7BNgpe": {
       "type": "hero",
       "custom_css": [
-        ".wl_hero_inner {max-width: 880px;}",
+        ".wl_hero_inner {max-width: 800px;}",
         "@media (min-width: 767px) {.wl_hero_heading {font-size: 48px; }}"
       ],
       "settings": {
-        "hero_subheading": "PRODUCT CATEGORY - GARDEN",
-        "hero_heading": "Natural Weed Suppression Solutions for Thriving Gardens",
-        "hero_subheading_color": "#15473480",
-        "hero_heading_color": "#154734",
-        "hero_background_color": "#FFF5E5"
+        "hero_subheading": "Shop / products / garden",
+        "hero_heading": "Natural Weed Control for Healthier Gardens",
+        "hero_subheading_color": "#E9DDC680",
+        "hero_heading_color": "#E9DDC6",
+        "hero_background_color": "#154734"
       }
     },
     "banner": {
@@ -37,8 +37,8 @@
     "featured_collection_home_3bpgQM": {
       "type": "featured-collection-home",
       "settings": {
-        "title": "Products for your garden",
-        "heading_size": "h1",
+        "title": "",
+        "heading_size": "h2",
         "description": "",
         "button_label": "",
         "button_url": "",
@@ -46,7 +46,7 @@
         "description_style": "body",
         "collection": "garden",
         "products_to_show": 8,
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -60,66 +60,9 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 24,
         "padding_bottom": 36
       }
-    },
-    "product_reviews_WhUhLL": {
-      "type": "product-reviews",
-      "blocks": {
-        "review_xyERbD": {
-          "type": "review",
-          "settings": {
-            "reviewer_name": "",
-            "tag": "",
-            "date": "",
-            "number_of_stars": "5",
-            "review_title": "",
-            "review_description": ""
-          }
-        },
-        "review_R77f48": {
-          "type": "review",
-          "settings": {
-            "reviewer_name": "",
-            "tag": "",
-            "date": "",
-            "number_of_stars": "5",
-            "review_title": "",
-            "review_description": ""
-          }
-        },
-        "review_qGyMBK": {
-          "type": "review",
-          "settings": {
-            "reviewer_name": "Jess W, Christchurch",
-            "tag": "Verified Buyer",
-            "date": "4 May 2025",
-            "number_of_stars": "5",
-            "review_title": "“keeps weeds at bay”",
-            "review_description": "Wool.Life NZ went above and beyond! Their wool garden matting is absolutely brilliant, strong, natural, and keeps weeds at bay. It’s a relief to find something that truly works and is proudly made in New Zealand. A business that cares deeply about quality and customers. Highly recommend!"
-          }
-        },
-        "review_tQ3V8J": {
-          "type": "review",
-          "settings": {
-            "reviewer_name": "Christine",
-            "tag": "Verified Buyer",
-            "date": "",
-            "number_of_stars": "5",
-            "review_title": "🐑  “Heavenly wool the plants love it”",
-            "review_description": "Had the wool around my strawberry's last season and I have just ordered some more to tidy them up for this season.would recommend for people to use in there garden."
-          }
-        }
-      },
-      "block_order": [
-        "review_xyERbD",
-        "review_R77f48",
-        "review_qGyMBK",
-        "review_tQ3V8J"
-      ],
-      "name": "Product Reviews",
-      "settings": {}
     },
     "image_with_content_rExKTg": {
       "type": "image-with-content",
@@ -134,7 +77,7 @@
         "image-with-content_preimage_location": "col",
         "image-with-content_heading": "Sustainable Mulch & Weed Mats",
         "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "Mulch & Weed Mats made from 100% New Zealand wool are the perfect natural solution for both home gardeners and commercial landscapers. These dense wool mats provide excellent moisture retention, giving plants a strong start, while breaking down over time to release essential nutrients like nitrogen and sulphur. This promotes healthy root development and robust plant growth, all while reducing weeds. Completely sustainable and biodegradable, these wool mats offer a practical and environmentally friendly choice for your gardening needs.\n<a href=\"#collection\">Shop now</a>",
+        "image-with-content_text": "Mulch & Weed Mats made from 100% New Zealand wool provide a natural way to retain moisture, suppress weeds, and support healthy plant growth. As they break down, they release nutrients into the soil, making them a sustainable, biodegradable solution for any garden.\n<a href=\"#collection\">Shop now</a>",
         "image-with-content_text_richtext": "",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
@@ -156,7 +99,7 @@
         "image-with-content_preimage_location": "col",
         "image-with-content_heading": "Mulch and Weed Mat Rolls for Versatile Garden Use",
         "image-with-content_heading_color": "#154734",
-        "image-with-content_text": "Available in 5m, 10m, and 20m lengths, Wool.Life’s mulch and weed mat rolls are the go-to solution for gardeners of all scales—from small home plots to expansive commercial landscaping projects. Made from either new or recycled 100% New Zealand wool, these mats not only suppress weeds but also nourish your garden as they break down, enriching the soil with natural elements. Easy to install and environmentally conscious, our mulch and weed mat rolls offer an effortless way to keep your garden thriving while giving back to nature.\n<a href=\"#collection\">Shop now</a>",
+        "image-with-content_text": "We use recycled wool in many of our products\nwhich would otherwise be destined for landfill,\ninstead, we recycle this wool into high-\nperformance products for you to use. This closed-\nloop process ensures that nothing is wasted and\nthat the products you use in your garden can return\nto the earth in a natural, beneficial way.<a href=\"#collection\">Shop now</a>",
         "image-with-content_text_richtext": "",
         "image-with-content_text_color": "#154734",
         "image-with-content_background_color": "#FFF5E5",
@@ -164,6 +107,78 @@
         "image-with-content_button_name": "",
         "image-with-content_button_link": ""
       }
+    },
+    "text_overlay_U7gpgR": {
+      "type": "text-overlay",
+      "name": "Text Overlay",
+      "settings": {
+        "background_image": "shopify://shop_images/divider-high-res.png",
+        "eyebrow_text": "5.0",
+        "eyebrow_text_size": "h1",
+        "number_of_stars": "5",
+        "header_text": "Happy Gardens, Happier Growers",
+        "header_text_size": "h0",
+        "header_max_width": "600px",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "product_reviews_WhUhLL": {
+      "type": "product-reviews",
+      "blocks": {
+        "review_xyERbD": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jess W, Christchurch",
+            "tag": "Verified Buyer",
+            "date": "30 September 2025",
+            "number_of_stars": "5",
+            "review_title": "“keeps weeds at bay”",
+            "review_description": "Wool.Life NZ went above and beyond! Their wool garden matting is absolutely brilliant, strong, natural, and keeps weeds at bay. It’s a relief to find something that truly works and is proudly made in New Zealand. A business that cares deeply about quality and customers. Highly recommend!"
+          }
+        },
+        "review_R77f48": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "",
+            "tag": "",
+            "date": "30 July 2025",
+            "number_of_stars": "5",
+            "review_title": "🐑  “Heavenly wool the plants love it”",
+            "review_description": "Had the wool around my strawberry's last season and I have just ordered some more to tidy them up for this season.would recommend for people to use in there garden."
+          }
+        },
+        "review_qGyMBK": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jess W, Christchurch",
+            "tag": "Verified Buyer",
+            "date": "30 September 2025",
+            "number_of_stars": "5",
+            "review_title": "“keeps weeds at bay”",
+            "review_description": "Wool.Life NZ went above and beyond! Their wool garden matting is absolutely brilliant, strong, natural, and keeps weeds at bay. It’s a relief to find something that truly works and is proudly made in New Zealand. A business that cares deeply about quality and customers. Highly recommend!"
+          }
+        },
+        "review_tQ3V8J": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Christine",
+            "tag": "Verified Buyer",
+            "date": "30 July 2025",
+            "number_of_stars": "5",
+            "review_title": "🐑  “Heavenly wool the plants love it”",
+            "review_description": "Had the wool around my strawberry's last season and I have just ordered some more to tidy them up for this season.would recommend for people to use in there garden."
+          }
+        }
+      },
+      "block_order": [
+        "review_xyERbD",
+        "review_R77f48",
+        "review_qGyMBK",
+        "review_tQ3V8J"
+      ],
+      "name": "Product Reviews",
+      "settings": {}
     },
     "product-grid": {
       "type": "main-collection-product-grid",
@@ -462,9 +477,10 @@
     "hero_7BNgpe",
     "banner",
     "featured_collection_home_3bpgQM",
-    "product_reviews_WhUhLL",
     "image_with_content_rExKTg",
     "image_with_content_ptgAaD",
+    "text_overlay_U7gpgR",
+    "product_reviews_WhUhLL",
     "product-grid",
     "faqs_C8gCbm"
   ]
