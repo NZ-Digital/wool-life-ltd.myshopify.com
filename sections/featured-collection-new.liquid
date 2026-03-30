@@ -390,35 +390,38 @@
 
               {%- comment -%} Card body {%- endcomment -%}
               <div class="fcn-card-body">
-                <a href="{{ product.url }}" class="fcn-card-title">{{ product.title }}</a>
+                <div class="fcn-card-body-top">
+                    <a href="{{ product.url }}" class="fcn-card-title">{{ product.title }}</a>
 
-                {%- comment -%} Optional card description/excerpt {%- endcomment -%}
-                {%- unless section.settings.hide_card_information -%}
-                  {%- if product.metafields.custom.excerpt != blank -%}
-                    <p class="fcn-card-excerpt">{{ product.metafields.custom.excerpt }}</p>
-                  {%- elsif product.description != blank -%}
-                    <p class="fcn-card-excerpt">{{ product.description | strip_html | truncate: 100 }}</p>
-                  {%- endif -%}
-                {%- endunless -%}
-
-                {%- comment -%} Price below card info {%- endcomment -%}
-                <div class="fcn-card-price">
-                  {%- if product.price_varies -%}
-                    From {{ product.price_min | money }}
-                  {%- else -%}
-                    {{ product.price | money }}
-                  {%- endif -%}
-                  {%- if product.compare_at_price > product.price -%}
-                    &nbsp;<s style="opacity:0.5;font-weight:400;">{{ product.compare_at_price | money }}</s>
-                  {%- endif -%}
+                    {%- comment -%} Optional card description/excerpt {%- endcomment -%}
+                    {%- unless section.settings.hide_card_information -%}
+                    {%- if product.metafields.custom.excerpt != blank -%}
+                        <p class="fcn-card-excerpt">{{ product.metafields.custom.excerpt }}</p>
+                    {%- elsif product.description != blank -%}
+                        <p class="fcn-card-excerpt">{{ product.description | strip_html | truncate: 100 }}</p>
+                    {%- endif -%}
+                    {%- endunless -%}
                 </div>
+                <div class="fcn-card-body-bottom">
+                {%- comment -%} Price below card info {%- endcomment -%}
+                    <div class="fcn-card-price">
+                    {%- if product.price_varies -%}
+                        From {{ product.price_min | money }}
+                    {%- else -%}
+                        {{ product.price | money }}
+                    {%- endif -%}
+                    {%- if product.compare_at_price > product.price -%}
+                        &nbsp;<s style="opacity:0.5;font-weight:400;">{{ product.compare_at_price | money }}</s>
+                    {%- endif -%}
+                    </div>
 
-                {%- comment -%} Shop Now button {%- endcomment -%}
-                {%- if section.settings.show_shop_now -%}
-                  <a href="{{ product.url }}" class="fcn-card-shop-btn">
-                    {{ section.settings.shop_now_label | default: 'Shop Now' }}
-                  </a>
-                {%- endif -%}
+                    {%- comment -%} Shop Now button {%- endcomment -%}
+                    {%- if section.settings.show_shop_now -%}
+                    <a href="{{ product.url }}" class="fcn-card-shop-btn">
+                        {{ section.settings.shop_now_label | default: 'Shop Now' }}
+                    </a>
+                    {%- endif -%}
+                </div>
               </div>
 
             </div>
