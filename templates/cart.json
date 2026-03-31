@@ -23,6 +23,30 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_dGxWqw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bxGR7E": {
+          "type": "heading",
+          "settings": {
+            "heading": "FREE shipping on all orders over $150",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bxGR7E"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4602b2f8-ff82-42a7-80ae-8be1f6b755b8",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -129,6 +153,7 @@
   },
   "order": [
     "cart-items",
+    "rich_text_dGxWqw",
     "cart-footer",
     "1738729337d1fe498d",
     "reviews_title_Acbpim",
