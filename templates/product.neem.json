@@ -34,11 +34,20 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "title_size": "h1",
+            "title_weight": "400"
+          }
         },
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "custom_liquid_dqiiHP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"text-align:left; margin:10px 0;\">\n  <img \n src=\"https://cdn.shopify.com/s/files/1/0550/3323/3469/files/freeship-pill-150_430x.png?v=1774990804\" \n    style=\"max-width:250px; width:100%; height:auto;\"\n  >"
+          }
         },
         "text_X3gXdw": {
           "type": "text",
@@ -70,12 +79,14 @@
         "custom_liquid_eKkNei",
         "title",
         "price",
+        "custom_liquid_dqiiHP",
         "text_X3gXdw",
         "variant_picker",
         "quantity_selector",
         "buy_buttons"
       ],
       "settings": {
+        "design_style": "current",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "large",
