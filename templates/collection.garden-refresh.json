@@ -117,6 +117,9 @@
     },
     "text_overlay_U7gpgR": {
       "type": "text-overlay",
+      "custom_css": [
+        ".p-xxl-t {padding-bottom: 20px; padding-top: 20px !important;}"
+      ],
       "name": "Text Overlay",
       "settings": {
         "background_image": "shopify://shop_images/divider-high-res.png",
@@ -147,8 +150,8 @@
         "review_R77f48": {
           "type": "review",
           "settings": {
-            "reviewer_name": "",
-            "tag": "",
+            "reviewer_name": "Christine",
+            "tag": "Verified Buyer",
             "date": "30 July 2025",
             "number_of_stars": "5",
             "review_title": "🐑  “Heavenly wool the plants love it”",
