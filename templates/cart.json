@@ -25,6 +25,7 @@
     },
     "custom_liquid_THnjkL": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
         ".cart-free-shipping {background: #f26a2e; color: #ffffff; padding: 20px 44px; border-radius: 0px; width: fit-content; max-width: 520px; margin: 20px 0; /* removes centering */ text-align: left; padding-left: 40px;}"
       ],
