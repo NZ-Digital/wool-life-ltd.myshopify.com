@@ -30,7 +30,7 @@
       ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n  <div class=\"cart-free-shipping\">\n    FREE shipping on all orders over $150\n  </div>\n</div>",
+        "custom_liquid": "<div class=\"page-width\">\n  <div class=\"cart-free-shipping\">\n      <strong>Free shipping</strong> on all orders over $150\n  </div>\n</div>",
         "color_scheme": "scheme-490a0fd8-7f44-4224-a4ad-fb3b7499b68e",
         "padding_top": 40,
         "padding_bottom": 4
