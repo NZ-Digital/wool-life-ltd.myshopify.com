@@ -50,6 +50,12 @@
           "type": "price",
           "settings": {}
         },
+        "custom_liquid_9FxiP7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"text-align:left; margin:10px 0; padding-bottom:20px;\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0550/3323/3469/files/free-ship-150-pill_430x.svg?v=1774992208\" \n    style=\"max-width:250px; width:100%; height:auto;\"\n  >\n</div>"
+          }
+        },
         "link_DPTjYM": {
           "type": "link",
           "disabled": true,
@@ -140,6 +146,7 @@
         "title",
         "rating_HCzLNc",
         "price",
+        "custom_liquid_9FxiP7",
         "link_DPTjYM",
         "variant_picker",
         "quantity_selector",
