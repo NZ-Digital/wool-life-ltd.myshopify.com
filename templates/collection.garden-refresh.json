@@ -47,7 +47,7 @@
         "button_label": "",
         "button_url": "",
         "collection": "garden",
-        "products_to_show": 8,
+        "products_to_show": 9,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -121,7 +121,7 @@
       "settings": {
         "background_image": "shopify://shop_images/divider-high-res.png",
         "eyebrow_text": "5.0",
-        "eyebrow_text_size": "h1",
+        "eyebrow_text_size": "h0",
         "number_of_stars": "5",
         "header_text": "Happy Gardens, Happier Growers",
         "header_text_size": "h0",
