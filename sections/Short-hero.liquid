@@ -2,6 +2,9 @@
   #shopify-section-{{ section.id }} {
     background-color: {{ section.settings.hero_background_color }};
   }
+  #shopify-section-{{ section.id }}.section {
+  padding-top: 12px !important;
+}
   .wl_hero {
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
