@@ -340,6 +340,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <meta name="msvalidate.01" content="03A39A30FD4C2F96BFE49C474A1EF1CB" />
     
+  {% if template == 'index' %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -364,6 +365,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ]
     }
     </script>
+    {% endif %}
+    
+    {% if template == 'page.contact' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Get in Touch with Wool.Life",
+      "url": "https://woollife.co.nz/pages/contact",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Wool.Life",
+        "telephone": "022 471 0010",
+        "email": "contact@woollife.co.nz",
+        "sameAs": [
+          "https://www.facebook.com/wool.life.nz/",
+          "https://www.instagram.com/woollifenz/",
+          "https://www.linkedin.com/company/wool-life/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "022 471 0010",
+          "email": "contact@woollife.co.nz",
+          "contactType": "customer support",
+          "availableLanguage": "English"
+        }
+      }
+    }
+    </script>
+    {% endif %}
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
