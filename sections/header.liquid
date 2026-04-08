@@ -3,6 +3,31 @@
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "Store"],
+  "name": "Wool.Life",
+  "url": "https://woollife.co.nz",
+  "logo": "https://woollife.co.nz/[ADD LOGO URL]",
+  "telephone": "022 471 0010",
+  "email": "contact@woollife.co.nz",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NZ"
+  },
+  "currenciesAccepted": "NZD",
+  "areaServed": "NZ",
+  "priceRange": "$$",
+  "description": "100% NZ wool products for garden, home and pets. Sustainable wool mulch mats, weed mats, pillows and dog beds.",
+  "sameAs": [
+    "https://www.facebook.com/wool.life.nz/",
+    "https://www.instagram.com/woollifenz/",
+    "https://www.linkedin.com/company/wool-life/"
+  ]
+}
+</script>
+
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
