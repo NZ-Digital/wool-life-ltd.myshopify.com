@@ -142,7 +142,7 @@
         "button_url": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "pet",
+        "collection": "animals",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
